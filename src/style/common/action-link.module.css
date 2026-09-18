@@ -1,0 +1,58 @@
+.link {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display), "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  line-height: 1;
+  text-transform: uppercase;
+  transition:
+    color 180ms var(--ease-out),
+    background-color 180ms var(--ease-out),
+    border-color 180ms var(--ease-out),
+    transform 180ms var(--ease-out);
+}
+
+.link:hover {
+  transform: translateY(-2px);
+}
+
+.link:active {
+  transform: translateY(0);
+}
+
+.primary {
+  background: var(--color-red);
+  color: white;
+}
+
+.primary:hover {
+  background: #e13c42;
+}
+
+.secondary {
+  border-color: #9ba2a6;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--color-ink);
+}
+
+.secondary:hover {
+  border-color: var(--color-ink);
+  background: var(--color-surface);
+}
+
+.dark {
+  background: var(--color-night);
+  color: white;
+}
+
+.dark:hover {
+  background: var(--color-red);
+}

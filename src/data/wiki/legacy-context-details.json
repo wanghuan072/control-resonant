@@ -1,0 +1,424 @@
+[
+  {
+    "group": "characters",
+    "slug": "casper-darling",
+    "title": "Dr. Casper Darling",
+    "type": "Returning FBC researcher",
+    "summary": "Darling's research and supervision of Dylan explain why a familiar Bureau scientist matters to CONTROL Resonant, without treating his role in the new story as known.",
+    "image": "/images/wiki/darling.png",
+    "imageAlt": "Casper Darling in imagery from CONTROL (2019)",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      { "label": "Original-game role", "value": "FBC Head of Research" },
+      {
+        "label": "Connection to Dylan",
+        "value": "Supervised the P6 Prime Candidate program"
+      },
+      { "label": "Portrayed by", "value": "Matthew Porretta" },
+      {
+        "label": "Resonant information",
+        "value": "Named in a returning-cast reveal; new-story outcome not established"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Why does Dylan know Darling?",
+        "paragraphs": [
+          "After the Ordinary incident, the FBC took Dylan into the Oldest House and treated his paranatural abilities as a subject of research. Darling supervised him as Prime Candidate 6. That makes Darling part of Dylan's personal history, not just the scientist in the first game's instructional recordings.",
+          "A returning player may recognize Darling's presentations about Objects of Power and resonance. For a new player, the important point is simpler: the Bureau's scientific interest in Dylan had a human cost. The sequel's trailers do not resolve how Dylan now judges Darling."
+        ]
+      },
+      {
+        "heading": "What should a Resonant player expect?",
+        "paragraphs": [
+          "The published cast material identifies Darling among returning faces. It does not confirm a mission chain, a permanent hub position, or an upgrade service provided by him. Older files about his work describe CONTROL (2019), not an unlock guide for Resonant.",
+          "When a Bureau explanation appears in the new game, distinguish what Darling recorded years earlier from what Dylan and Zoe can verify in Manhattan. That distinction matters because the new crisis extends outside the building where much of Darling's research took place."
+        ]
+      }
+    ],
+    "playerTakeaway": "Recognize Darling as the researcher who oversaw P6, then judge any new claims against Dylan's experience rather than assuming a familiar FBC voice is neutral.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "world/prime-candidate-program",
+      "world/oldest-house"
+    ],
+    "sourceIds": ["wiki-darling", "wiki-dylan", "cast-transcript"]
+  },
+  {
+    "group": "characters",
+    "slug": "emily-pope",
+    "title": "Emily Pope",
+    "type": "Returning FBC researcher",
+    "summary": "Emily Pope is a scientific ally of Jesse from CONTROL. Her Bureau role helps new players separate research staff from the people directing Dylan's field operation.",
+    "image": "/images/wiki/emily.png",
+    "imageAlt": "Emily Pope in imagery from CONTROL (2019)",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      { "label": "Original-game role", "value": "FBC research specialist" },
+      {
+        "label": "Key relationship",
+        "value": "Scientific ally of Jesse Faden"
+      },
+      { "label": "Portrayed by", "value": "Antonia Bernath" },
+      {
+        "label": "Resonant information",
+        "value": "Returning cast announced; specific mission role not established"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What was Emily's role in CONTROL?",
+        "paragraphs": [
+          "Emily helped Jesse interpret the Bureau's records while the Oldest House was under attack. Her work connects research terminology to decisions a player actually makes, but she was not the Director and did not control the Service Weapon.",
+          "She worked in the same research organization as Darling. Recognizing both names is useful when an FBC file refers to an experiment, yet their shared department does not mean they held the same views about Dylan or the Bureau."
+        ]
+      },
+      {
+        "heading": "Why does she matter to the sequel?",
+        "paragraphs": [
+          "The returning-cast announcement gives players a reason to recognize Emily, while Jesse's absence makes every familiar FBC relationship more interesting. Her exact location and involvement in Dylan's missions remain story questions.",
+          "If you are starting with Resonant, you do not need to study every original-game research note. Remember Emily as someone Jesse trusted for scientific interpretation, then let the new game establish what she knows about Manhattan."
+        ]
+      }
+    ],
+    "playerTakeaway": "Emily works with Jesse in CONTROL. No specific upgrade or quest service has been announced for her in Resonant.",
+    "related": [
+      "characters/jesse-faden",
+      "characters/casper-darling",
+      "world/federal-bureau-of-control"
+    ],
+    "sourceIds": ["wiki-pope", "wiki-jesse", "cast-transcript"]
+  },
+  {
+    "group": "characters",
+    "slug": "simon-arish",
+    "title": "Simon Arish",
+    "type": "Returning FBC security officer",
+    "summary": "Arish provides the security and Ranger side of the FBC's history. His original-game assignments should not be confused with a confirmed route through Resonant's Manhattan.",
+    "image": "/images/wiki/arish.png",
+    "imageAlt": "Simon Arish in imagery from CONTROL (2019)",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      {
+        "label": "Original-game work",
+        "value": "FBC Ranger and security officer"
+      },
+      { "label": "Original setting", "value": "Oldest House" },
+      { "label": "Portrayed by", "value": "Ronan Summers" },
+      {
+        "label": "Resonant information",
+        "value": "Returning cast announced; field assignment not established"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What perspective does Arish bring?",
+        "paragraphs": [
+          "In CONTROL, Arish is associated with keeping people alive inside an unsafe workplace. That differs from Darling's research focus and Jesse's responsibility as Director. Remembering his security background helps place him when familiar Bureau personnel appear together.",
+          "His earlier postings in Maintenance and Executive belong to the Oldest House. They are useful character context, not a map of his location or duties in the sequel's changed city."
+        ]
+      },
+      {
+        "heading": "What is known for Resonant?",
+        "paragraphs": [
+          "Published cast material names Arish among returning characters. No public mission order, combat role or reward list follows from that reveal. A player should wait for the new game before assigning him to a specific zone.",
+          "For newcomers, he is one of the FBC's people who dealt with containment at ground level. That is enough background to understand why he may react differently to a crisis than the Bureau's researchers do."
+        ]
+      }
+    ],
+    "playerTakeaway": "Read Arish as experienced FBC security. Do not mistake his original-game sector assignments for Resonant mission directions.",
+    "related": [
+      "characters/jesse-faden",
+      "characters/emily-pope",
+      "world/federal-bureau-of-control",
+      "world/oldest-house"
+    ],
+    "sourceIds": ["wiki-arish", "cast-transcript"]
+  },
+  {
+    "group": "characters",
+    "slug": "frederick-langston",
+    "title": "Frederick Langston",
+    "type": "Returning containment specialist",
+    "summary": "Langston supervised the Panopticon in CONTROL, where the FBC contained dangerous objects. His background explains containment language without implying a new-game item catalog.",
+    "image": "/images/wiki/langston.jpg",
+    "imageAlt": "Frederick Langston in imagery from CONTROL (2019)",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      { "label": "Original-game job", "value": "Panopticon supervisor" },
+      { "label": "Expertise", "value": "Altered Item containment and rituals" },
+      { "label": "Portrayed by", "value": "Derek Hagen" },
+      {
+        "label": "Resonant information",
+        "value": "Returning cast announced; new location not established"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Why is Langston associated with objects?",
+        "paragraphs": [
+          "The Panopticon in the Oldest House held Altered Items that needed procedures rather than ordinary storage. Langston's work was to oversee those containment routines. His name therefore often appears near files about anomalous objects.",
+          "An Altered Item from CONTROL is not automatically a craftable Artifact in Resonant. The terms describe different roles in different games, even when both sound like paranormal equipment."
+        ]
+      },
+      {
+        "heading": "How much of that history carries forward?",
+        "paragraphs": [
+          "The returning-cast reveal establishes Langston as a name to recognize. It does not establish that players revisit every Panopticon cell or collect the original game's object files again.",
+          "Use his old role to understand FBC vocabulary, then read any new item on its own terms. The sequel's Artifact system is about Dylan's build, not a reprint of the first game's containment inventory."
+        ]
+      }
+    ],
+    "playerTakeaway": "Connect Langston with containment procedures, but keep CONTROL's Altered Items separate from Resonant's build Artifacts.",
+    "related": [
+      "world/oldest-house",
+      "world/federal-bureau-of-control",
+      "combat/artifacts"
+    ],
+    "sourceIds": ["wiki-langston", "wiki-altered", "cast-transcript"]
+  },
+  {
+    "group": "world",
+    "slug": "federal-bureau-of-control",
+    "title": "Federal Bureau of Control",
+    "type": "Organization / series background",
+    "summary": "The FBC studies and contains paranatural events. To Dylan it is both the organization that confined him and the one sending him into Manhattan's current crisis.",
+    "image": "/images/map/oldest-house.jpg",
+    "imageAlt": "The Oldest House, headquarters of the Federal Bureau of Control",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      { "label": "Abbreviation", "value": "FBC" },
+      {
+        "label": "Original headquarters",
+        "value": "The Oldest House, New York"
+      },
+      { "label": "Director at sequel setup", "value": "Jesse Faden, missing" },
+      {
+        "label": "Dylan's relationship",
+        "value": "Former captive and current crisis responder"
+      },
+      {
+        "label": "Manhattan presence",
+        "value": "Field office and agents, including Zoe De Vera"
+      }
+    ],
+    "comparison": {
+      "heading": "The same Bureau, two player perspectives",
+      "introduction": "A useful way to read the sequel is to ask whose experience of the FBC a file assumes.",
+      "columns": ["Perspective", "CONTROL (2019)", "CONTROL Resonant setup"],
+      "rows": [
+        [
+          "Jesse",
+          "Enters the Oldest House and becomes Director",
+          "Missing Director sought by Dylan"
+        ],
+        [
+          "Dylan",
+          "Held and studied as Prime Candidate 6",
+          "Deployed into Manhattan after years of confinement"
+        ],
+        [
+          "Field staff",
+          "Manage a sealed internal crisis",
+          "Respond to a crisis beyond the building"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "What does the Bureau do?",
+        "paragraphs": [
+          "The FBC investigates events and objects that do not fit ordinary physical rules, then tries to contain and study them. That mission explains its case files, specialist staff and unusual language. It does not make every Bureau action automatically trustworthy or humane.",
+          "The first game showed the organization through Jesse's arrival at its headquarters. In Resonant, the emergency is outside the Oldest House, and Dylan's experience of being confined by the same agency changes how a player should read its orders."
+        ]
+      },
+      {
+        "heading": "Which FBC names should a new player know?",
+        "paragraphs": [
+          "Jesse is the missing Director, Dylan was P6 in the Prime Candidate program, and Zoe is his field contact. Darling's research, Emily's scientific work, Arish's security experience and Langston's containment duties are distinct parts of the organization.",
+          "A field office in Manhattan is a new operational hub. It should not be mistaken for the Oldest House's Executive, Research or Containment sectors; older maps describe the earlier game."
+        ]
+      }
+    ],
+    "playerTakeaway": "When an objective says FBC, identify whether it comes from command, research, containment or field staff before assuming those voices share one agenda.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "characters/zoe-de-vera",
+      "world/oldest-house",
+      "world/fbc-field-office"
+    ],
+    "sourceIds": ["wiki-fbc", "wiki-dylan", "wiki-resonant", "remedy-reveal"]
+  },
+  {
+    "group": "world",
+    "slug": "ordinary-awe",
+    "title": "Ordinary AWE",
+    "type": "CONTROL (2019) background event",
+    "summary": "The childhood incident in Ordinary connects Jesse, Dylan, the Slide Projector and the FBC's Prime Candidate program. It explains the siblings' different histories before Resonant.",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      { "label": "Original game", "value": "CONTROL (2019)" },
+      { "label": "Place", "value": "Ordinary, Maine" },
+      { "label": "Event type", "value": "Altered World Event (AWE)" },
+      { "label": "Object linked to event", "value": "Slide Projector" },
+      { "label": "People linked to event", "value": "Jesse and Dylan Faden" }
+    ],
+    "comparison": {
+      "heading": "Why the event still matters",
+      "introduction": "This is earlier-game context, not a mission list for Manhattan.",
+      "columns": [
+        "Thread",
+        "What CONTROL establishes",
+        "Why it matters at the sequel's start"
+      ],
+      "rows": [
+        [
+          "The siblings",
+          "Jesse and Dylan experience the same childhood AWE",
+          "Their later separation drives opposite searches"
+        ],
+        [
+          "The Slide Projector",
+          "The FBC acquires an Object of Power from Ordinary",
+          "Bureau files use terms Dylan grew up around"
+        ],
+        [
+          "Prime Candidates",
+          "The FBC takes Dylan and monitors Jesse",
+          "Dylan's distrust has a history older than Manhattan"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "What happened in Ordinary?",
+        "paragraphs": [
+          "Jesse and Dylan were children in Ordinary when an Altered World Event brought the Slide Projector to the FBC's attention. The Bureau's response split their lives: Dylan was taken into its custody while Jesse remained outside its walls.",
+          "For the sequel, the precise order of the original game's collectible reports is less important than that separation. Jesse later entered the Oldest House looking for Dylan; Resonant begins with Dylan outside it and searching for Jesse."
+        ]
+      },
+      {
+        "heading": "What should a new player remember?",
+        "paragraphs": [
+          "AWE means an event, not a quest type in Resonant. The Slide Projector is an Object of Power from the earlier story, not an announced piece of Dylan's equipment or a confirmed new-game collectible.",
+          "The Ordinary incident helps explain why the FBC knew about both Faden siblings and why Dylan's relationship with the agency is strained. It does not reveal how the new Manhattan crisis will be resolved."
+        ]
+      }
+    ],
+    "playerTakeaway": "Know the sequence—Ordinary, separation, P6, Jesse's search—without mistaking the first game's reports for Resonant missions or collectibles.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "world/prime-candidate-program",
+      "world/federal-bureau-of-control"
+    ],
+    "sourceIds": ["wiki-awe", "wiki-dylan", "wiki-jesse"]
+  },
+  {
+    "group": "world",
+    "slug": "prime-candidate-program",
+    "title": "Prime Candidate Program",
+    "type": "CONTROL (2019) Bureau program",
+    "summary": "The FBC's search for a future Director designated Dylan as P6 and Jesse as P7. These file labels explain older Bureau records, not a new progression tree for Resonant.",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      { "label": "Organization", "value": "Federal Bureau of Control" },
+      { "label": "Purpose", "value": "Identify potential future Directors" },
+      { "label": "Dylan's file label", "value": "P6 / Prime Candidate 6" },
+      { "label": "Jesse's file label", "value": "P7 / Prime Candidate 7" },
+      {
+        "label": "Scope",
+        "value": "Earlier-game background, not a Resonant Talent branch"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What were P6 and P7?",
+        "paragraphs": [
+          "The Prime Candidate program was the FBC's attempt to identify people who might become its Director. The Faden siblings were catalogued under different candidate numbers. P6 refers to Dylan; P7 refers to Jesse.",
+          "Dylan was taken to the Oldest House and raised under Bureau supervision, with Darling connected to his research and training. Jesse escaped that upbringing and later entered the building from outside. The labels are administrative, but the consequences were deeply personal."
+        ]
+      },
+      {
+        "heading": "How should players use these labels?",
+        "paragraphs": [
+          "When an old report says P6, it is discussing the person you play in Resonant. This can make earlier character files intelligible without reading every collectible in the original game.",
+          "Do not interpret the program as a set of playable candidates, a class system or a sequel upgrade screen. Jesse becoming Director did not erase Dylan's history with the FBC, and Resonant does not turn P6 into an item rarity."
+        ]
+      }
+    ],
+    "playerTakeaway": "Translate P6 to Dylan and P7 to Jesse while reading Bureau material; the labels explain a relationship, not a gameplay objective.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "characters/casper-darling",
+      "world/ordinary-awe",
+      "world/federal-bureau-of-control"
+    ],
+    "sourceIds": [
+      "wiki-dylan",
+      "wiki-jesse",
+      "wiki-darling",
+      "wiki-prime-candidate"
+    ]
+  },
+  {
+    "group": "enemies",
+    "slug": "the-hiss",
+    "title": "The Hiss",
+    "type": "Returning hostile resonance",
+    "summary": "The Hiss drove the crisis inside the Oldest House in CONTROL and is named among the threats in Resonant's Manhattan. Its old enemy list is not a new-game bestiary.",
+    "image": "/images/enemies/hiss-encounter.jpg",
+    "imageAlt": "Hiss-associated hostile figures shown in CONTROL Resonant imagery",
+    "updatedAt": "2026-09-17",
+    "facts": [
+      {
+        "label": "First game's role",
+        "value": "Hostile interdimensional resonance"
+      },
+      {
+        "label": "Original crisis",
+        "value": "Hiss invasion of the Oldest House"
+      },
+      {
+        "label": "Resonant status",
+        "value": "Named as a threat spreading into Manhattan"
+      },
+      {
+        "label": "Not equivalent to",
+        "value": "Every Resonant boss or the new cosmic entity"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What did the Hiss do in CONTROL?",
+        "paragraphs": [
+          "The Hiss was the hostile resonance behind the Oldest House emergency Jesse confronted. It corrupted Bureau personnel and made the organization's headquarters an unsafe place. Dylan's original-game history also includes the Hiss, but he is not simply the same enemy role in Resonant.",
+          "The earlier game had named Hiss enemy variants and specific containment conditions. Those are useful background for recognizing the faction, not a verified list of every foe Dylan will fight in Manhattan."
+        ]
+      },
+      {
+        "heading": "What is known in Resonant?",
+        "paragraphs": [
+          "Remedy's published description says the Hiss is among the influences overtaking Manhattan after threats spilled beyond the Oldest House. The Mold and new paranatural forces also appear, so calling every red-lit opponent a Hiss variant would blur distinct threats.",
+          "Bosses called Resonants are indexed separately. An official trailer or preview can identify a faction, but it cannot establish final enemy health, drops, weaknesses or the full roster before release testing."
+        ]
+      }
+    ],
+    "playerTakeaway": "Use the Hiss label for a returning hostile influence, not as a catch-all for every Manhattan enemy or a substitute for a tested weakness guide.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "world/oldest-house",
+      "enemies/central-resonant"
+    ],
+    "sourceIds": [
+      "remedy-recap",
+      "wiki-resonant",
+      "remedy-reveal",
+      "wiki-dylan"
+    ]
+  }
+]

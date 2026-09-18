@@ -1,0 +1,532 @@
+[
+  {
+    "id": "xbox-hands-on-june",
+    "kind": "First-party hands-on",
+    "publisher": "Xbox Wire",
+    "title": "CONTROL Resonant: Hands-On With This Ambitious Sequel's Shapeshifting Combat",
+    "date": "2026-06-11",
+    "url": "https://news.xbox.com/en-us/2026/06/11/control-resonant-hands-on-melee-combat/",
+    "note": "First-party preview names Flurry, Slash, Slice, Crush, Drill, Extend, Barrage, Seekers and Shield; descriptions are preview-build observations, not final balance figures.",
+    "topics": ["Combat", "Progression", "Characters"]
+  },
+  {
+    "id": "ps5-features",
+    "kind": "Official",
+    "publisher": "Remedy / PlayStation Blog",
+    "title": "Control Resonant: PS5 features detailed",
+    "date": "2026-09-15",
+    "url": "https://blog.playstation.com/2026/09/15/control-resonant-ps5-features-detailed/",
+    "note": "Remedy details main-story estimate, PS5 and PS5 Pro target modes, DualSense, 3D Audio, Activities and The Gap.",
+    "topics": ["Platforms", "Combat", "Progression"]
+  },
+  {
+    "id": "remedy-reveal",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "CONTROL Resonant reveal",
+    "date": "2025-12-12",
+    "url": "https://www.remedygames.com/article/remedy-entertainment-reveals-control-resonant-launching-in-2026",
+    "note": "The sequel, Dylan Faden, the Aberrant and Manhattan.",
+    "topics": ["Story", "Combat"]
+  },
+  {
+    "id": "remedy-gameplay",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "First gameplay details",
+    "date": "2026-02-13",
+    "url": "https://www.remedygames.com/article/remedy-entertainment-unveils-new-gameplay-details-for-control-resonant",
+    "note": "West Incursion Zone and Gravity Anomalies.",
+    "topics": ["Exploration"]
+  },
+  {
+    "id": "ps-combat",
+    "kind": "Official",
+    "publisher": "Remedy / PlayStation Blog",
+    "title": "Combat, buildcrafting and player choice",
+    "date": "2026-03-04",
+    "url": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/",
+    "note": "Developer-written explanation of the combat loop, The Gap, World Quests and build systems.",
+    "topics": ["Combat", "Progression"]
+  },
+  {
+    "id": "ps-ngplus",
+    "kind": "Official",
+    "publisher": "Remedy / PlayStation Blog",
+    "title": "New Game Plus details",
+    "date": "2026-04-30",
+    "url": "https://blog.playstation.com/2026/04/30/control-resonant-remedy-shares-first-details-on-new-game-plus/",
+    "note": "Carryover, traversal exceptions and Artifact slots.",
+    "topics": ["Progression"]
+  },
+  {
+    "id": "xbox",
+    "kind": "Official",
+    "publisher": "Xbox Wire",
+    "title": "Xbox Play Anywhere and self-publishing",
+    "date": "2026-05-08",
+    "url": "https://news.xbox.com/en-us/2026/05/08/control-resonant-remedy-exciting-sequel-xbox-play-anywhere-and-self-publishing/",
+    "note": "Xbox ecosystem support; not evidence of Game Pass inclusion.",
+    "topics": ["Platforms"]
+  },
+  {
+    "id": "release",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "Worldwide launch announcement",
+    "date": "2026-06-02",
+    "url": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+    "note": "Digital launch and platform availability. Later physical-release reporting is tracked separately.",
+    "topics": ["Release"]
+  },
+  {
+    "id": "faq",
+    "kind": "Official",
+    "publisher": "Remedy / Steam Community",
+    "title": "Pinned developer FAQ",
+    "date": "2026-06-02",
+    "url": "https://steamcommunity.com/app/3669870/discussions/0/750542279460065824/",
+    "note": "Offline play, Steam Deck and editions. Its initial 100 GB PC specification is superseded by the September requirements.",
+    "topics": ["Platforms", "Release"]
+  },
+  {
+    "id": "store",
+    "kind": "Official",
+    "publisher": "Steam",
+    "title": "CONTROL Resonant store listing",
+    "date": null,
+    "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+    "note": "Live listing for languages, features, editions and requirements. Checked September 15; regional prices can differ.",
+    "topics": ["PC", "Release"]
+  },
+  {
+    "id": "ps-store",
+    "kind": "Official",
+    "publisher": "PlayStation Store",
+    "title": "Digital Deluxe Edition listing",
+    "date": null,
+    "url": "https://store.playstation.com/en-us/product/EP5291-PPSA34547_00-0993602042148218",
+    "note": "Edition inclusions, accessibility tags and platform-specific early access.",
+    "topics": ["Release", "Accessibility"]
+  },
+  {
+    "id": "pc-final",
+    "kind": "Official",
+    "publisher": "Remedy / Steam",
+    "title": "Final PC system requirements",
+    "date": "2026-09-09",
+    "url": "https://store.steampowered.com/news/app/3669870/view/676256891013171635",
+    "note": "Final performance tiers and 120 GB SSD requirement supersede the early FAQ.",
+    "topics": ["PC"]
+  },
+  {
+    "id": "assist",
+    "kind": "Official",
+    "publisher": "Remedy / PlayStation Blog",
+    "title": "Expanded Assist Mode",
+    "date": "2026-09-10",
+    "url": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/",
+    "note": "Difficulty adjustments and trophy/achievement eligibility.",
+    "topics": ["Accessibility"]
+  },
+  {
+    "id": "metro",
+    "kind": "Video",
+    "publisher": "IGN First",
+    "title": "Exclusive Metro Fault mission gameplay",
+    "date": "2026-08-07",
+    "url": "https://www.youtube.com/watch?v=JfuY-NhK_tQ",
+    "note": "Publisher description identifies Metro Fault, train hazards, Mold and the Reach reward. Not an independently tested route.",
+    "topics": ["Exploration"]
+  },
+  {
+    "id": "central",
+    "kind": "Video",
+    "publisher": "IGN First",
+    "title": "Exclusive Central Resonant boss fight",
+    "date": "2026-08-14",
+    "url": "https://open.video/%40ign/v/control-resonant-exclusive-boss-fight-gameplay-ign-first",
+    "note": "IGN's syndicated video description names the boss and lava/magma attacks.",
+    "topics": ["Bosses"]
+  },
+  {
+    "id": "zones",
+    "kind": "Developer interview",
+    "publisher": "IGN / Simon Cardy (Yahoo syndication)",
+    "title": "How zones gain XP and bosses change the world",
+    "date": "2026-08-19",
+    "url": "https://tech.yahoo.com/gaming/articles/don-t-xp-zones-control-160000728.html",
+    "note": "Developer interview covering zone improvements, Talent points, escalation and the Patterning.",
+    "topics": ["Progression", "Enemies"]
+  },
+  {
+    "id": "cast",
+    "kind": "Video",
+    "publisher": "Remedy Entertainment",
+    "title": "Meet the Cast — Development Diary",
+    "date": "2026-09-10",
+    "url": "https://www.youtube.com/watch?v=N8wJs9Q9PVI",
+    "note": "Official cast reveals. Returning-character spoilers.",
+    "topics": ["Story"]
+  },
+  {
+    "id": "cast-transcript",
+    "kind": "Transcript",
+    "publisher": "The Sudden Stop",
+    "title": "Meet the Cast transcript and actor credits",
+    "date": "2026-09-10",
+    "url": "https://www.alanwake.info/2026/09/10th-september-2026-fifth-control.html",
+    "note": "Transcript used to check the official diary; clearly separated from independent hands-on evidence.",
+    "topics": ["Story"]
+  },
+  {
+    "id": "hands-on",
+    "kind": "Media preview",
+    "publisher": "Game Informer",
+    "title": "Hands-on with Remedy's surreal take on stylish action",
+    "date": "2026-06-05",
+    "url": "https://gameinformer.com/preview/2026/06/05/hands-on-with-remedys-surreal-take-on-stylish-action",
+    "note": "Preview build observations, not final item nomenclature or tested launch stats.",
+    "topics": ["Combat", "Exploration"]
+  },
+  {
+    "id": "no-parry",
+    "kind": "Developer interview",
+    "publisher": "GamesRadar+",
+    "title": "Why CONTROL Resonant does not use parries",
+    "date": "2026-02-04",
+    "url": "https://www.gamesradar.com/games/action-rpg/control-resonant-may-be-an-action-rpg-but-remedy-isnt-veering-into-hellishly-challenging-territory-there-are-no-parries-there-is-no-back-and-forth-with-a-single-enemy/",
+    "note": "Director interview about encounter philosophy and the seven-year story gap.",
+    "topics": ["Combat", "Story"]
+  },
+  {
+    "id": "length",
+    "kind": "Developer interview",
+    "publisher": "TechRadar",
+    "title": "Sergey Mohov interview: combat and game length",
+    "date": null,
+    "url": "https://www.techradar.com/gaming/i-asked-control-resonants-gameplay-designer-all-my-burning-questions-how-the-combats-melee-focus-differs-from-the-original-and-why-you-havent-played-anything-exactly-like-what-youll-see-in-its-30-hour-length",
+    "note": "Developer estimates are not completion-time measurements.",
+    "topics": ["Story", "Combat"]
+  },
+  {
+    "id": "reddit",
+    "kind": "Community",
+    "publisher": "r/controlgame",
+    "title": "Community hands-on questions from Summer Game Fest",
+    "date": null,
+    "url": "https://www.reddit.com/r/controlgame/comments/1uq8sqn/i_spent_an_hour_playing_control_resonant_at/",
+    "note": "Used to find questions about combat, lore and loadouts. Individual experiences are not official feature confirmation.",
+    "topics": ["Combat"]
+  },
+  {
+    "id": "ptt",
+    "kind": "Community",
+    "publisher": "PTT PlayStation",
+    "title": "Metro Fault gameplay discussion",
+    "date": "2026-08-08",
+    "url": "https://www.ptt.cc/bbs/PlayStation/M.1786180478.A.DAE.html",
+    "note": "Discussion discovery; mission facts are attributed to IGN's original video.",
+    "topics": ["Exploration"]
+  },
+  {
+    "id": "whirlpool",
+    "kind": "Community",
+    "publisher": "Whirlpool Forums",
+    "title": "CONTROL Resonant discussion archive",
+    "date": null,
+    "url": "https://forums.whirlpool.net.au/archive/9kppylxw",
+    "note": "Question and coverage discovery, not an authority for balance values.",
+    "topics": ["Progression"]
+  },
+  {
+    "id": "wiki-resonant",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "CONTROL Resonant overview",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Control_Resonant",
+    "note": "Read September 16, 2026. Community overview and image discovery. Its 2026/TBA infobox is less specific than newer official announcements.",
+    "topics": ["Story"]
+  },
+  {
+    "id": "wiki-dylan",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Dylan Faden",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Dylan_Faden",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-jesse",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Jesse Faden",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Jesse_Faden",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-zoe",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Zoe De Vera",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Zoe_De_Vera",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-darling",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Casper Darling",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Casper_Darling",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-pope",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Emily Pope",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Emily_Pope",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-arish",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Simon Arish",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Simon_Arish",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-langston",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Frederick Langston",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Frederick_Langston",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Characters"]
+  },
+  {
+    "id": "wiki-aberrant",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Aberrant",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Aberrant",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Items"]
+  },
+  {
+    "id": "wiki-missions",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "CONTROL (2019) mission directory",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Missions",
+    "note": "Read September 16, 2026. This directory covers CONTROL (2019), Expeditions and its DLC—not a Resonant mission list.",
+    "topics": ["Missions"]
+  },
+  {
+    "id": "wiki-oop",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Objects of Power",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Object_of_Power",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Lore"]
+  },
+  {
+    "id": "wiki-altered",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Altered Items",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Altered_Item",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Lore"]
+  },
+  {
+    "id": "wiki-fbc",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Federal Bureau of Control",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Federal_Bureau_of_Control",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Lore"]
+  },
+  {
+    "id": "wiki-para",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Parautilitarians",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Parautilitarian",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Lore"]
+  },
+  {
+    "id": "wiki-resonance",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Resonance",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Resonance",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Lore"]
+  },
+  {
+    "id": "wiki-awe",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Altered World Events",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Altered_World_Event",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Lore"]
+  },
+  {
+    "id": "wiki-house",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Oldest House",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Oldest_House",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Locations"]
+  },
+  {
+    "id": "wiki-service",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Service Weapon",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Service_Weapon",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Items"]
+  },
+  {
+    "id": "wiki-projector",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Slide Projector",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Slide_Projector",
+    "note": "Read September 16, 2026. Community-maintained reference; previous-game lore is labeled separately from Resonant announcements.",
+    "topics": ["Items"]
+  },
+  {
+    "id": "nvidia-rtx-bundle-announcement",
+    "kind": "Official",
+    "publisher": "NVIDIA",
+    "title": "CONTROL Resonant GeForce RTX 50 Series Bundle Available Now",
+    "date": "2026-08-25",
+    "url": "https://www.nvidia.com/en-ph/geforce/news/control-resonant-geforce-rtx-50-series-bundle/",
+    "note": "Checked September 17, 2026. Promotional game copy is tied to participating RTX 50 hardware, not all pre-orders.",
+    "topics": ["Platforms", "Buying"]
+  },
+  {
+    "id": "nvidia-rtx-bundle-terms",
+    "kind": "Official",
+    "publisher": "NVIDIA",
+    "title": "CONTROL Resonant GeForce RTX 50 Series Bundle Terms",
+    "date": "2026-08-25",
+    "url": "https://www.nvidia.com/en-us/geforce/campaigns/control-resonant-geforce-rtx-50-series-bundle/terms-conditions/",
+    "note": "Checked September 17, 2026. Dates, eligible GPU families, region exclusions, Steam entitlement and NVIDIA App redemption; confirm local partner terms before purchase.",
+    "topics": ["Platforms", "Buying"]
+  },
+  {
+    "id": "remedy-physical-update",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "CONTROL Resonant has gone gold; physical date moved",
+    "date": "2026-08-18",
+    "url": "https://www.linkedin.com/posts/remedy-entertainment_controlresonant-activity-7495494924339978240-aYLm",
+    "note": "Checked September 17, 2026. Publisher announcement moves physical release to October 15 while digital launch remains September 24.",
+    "topics": ["Release", "Buying"]
+  },
+  {
+    "id": "physical-steelbook-distributor",
+    "kind": "Distributor",
+    "publisher": "INNELEC",
+    "title": "CONTROL Resonant SteelBook Edition listing",
+    "date": null,
+    "url": "https://www.innelec.com/en_GB/product/03849000017-control-resonant-steelbook-ed-xbs-vf",
+    "note": "Checked September 17, 2026. Xbox regional listing describes disc, illustrated case, three art prints, poster and outer package. Other regions may vary.",
+    "topics": ["Editions", "Buying"]
+  },
+  {
+    "id": "remedy-story-trailer-video",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "CONTROL Resonant Story Trailer",
+    "date": "2026-06-02",
+    "url": "https://www.youtube.com/watch?v=JZuJlSGpgQo",
+    "note": "Checked September 17, 2026. Official Remedy channel; story and release-date reveal.",
+    "topics": ["Trailers", "Story"]
+  },
+  {
+    "id": "remedy-take-control-video",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "CONTROL Resonant Take CONTROL Trailer",
+    "date": "2026-06-07",
+    "url": "https://www.youtube.com/watch?v=lTHTfqPTQ1k",
+    "note": "Checked September 17, 2026. Official Remedy channel; combat and Manhattan premise.",
+    "topics": ["Trailers", "Combat"]
+  },
+  {
+    "id": "wiki-prime-candidate",
+    "kind": "Wiki",
+    "publisher": "Control Wiki contributors",
+    "title": "Prime Candidate Program",
+    "date": null,
+    "url": "https://control.fandom.com/wiki/Prime_Candidate_Program",
+    "note": "Indexed excerpt checked September 17, 2026. P6 and P7 are CONTROL-series Bureau designations; this does not establish a Resonant progression system.",
+    "topics": ["Characters", "Lore"]
+  },
+  {
+    "id": "remedy-recap",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment / Steam",
+    "title": "Previously on CONTROL",
+    "date": "2026-09-11",
+    "url": "https://store.steampowered.com/news/app/3669870/",
+    "note": "Indexed September 17, 2026. Official recap identifies Jesse, Dylan, the Oldest House and the Hiss as background for Resonant.",
+    "topics": ["Story", "Enemies"]
+  },
+  {
+    "id": "remedy-gameplay-video",
+    "kind": "Official video",
+    "publisher": "Remedy Entertainment",
+    "title": "CONTROL Resonant – Official Gameplay Reveal",
+    "date": "2026-02-12",
+    "url": "https://www.youtube.com/watch?v=RJTBoQhWaC0",
+    "note": "Video identity and date checked September 18, 2026. Edited footage establishes direction, not final balance or a full form list.",
+    "topics": ["Trailers", "Combat", "Traversal"]
+  },
+  {
+    "id": "ign-central-video",
+    "kind": "Media gameplay preview",
+    "publisher": "IGN First",
+    "title": "Control Resonant: Exclusive Boss Fight Gameplay",
+    "date": "2026-08-14",
+    "url": "https://www.youtube.com/watch?v=M-vbbp4CzoA",
+    "note": "Video description checked September 18, 2026. Identifies Central Resonant and previewed lava-floor and magma hazards; does not establish final phases or rewards.",
+    "topics": ["Bosses", "Trailers"]
+  }
+]

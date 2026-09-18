@@ -1,0 +1,292 @@
+[
+  {
+    "id": "walkthrough",
+    "title": "CONTROL Resonant walkthrough",
+    "description": "Start with the published Metro Fault route preview, then explore how Dylan's Journey and World Quests fit together. Retail mission-by-mission coverage is not yet verified.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "imageAlt": "Trains suspended along impossible directions in an official CONTROL Resonant screenshot",
+    "eyebrow": "Mission archive / pre-release",
+    "introTitle": "Choose the route you need",
+    "intro": "A useful walkthrough separates demonstrated preview content from completed launch routes. The guide index below contains the published mission evidence and the systems that affect navigation.",
+    "guideSlugs": [
+      "control-resonant-metro-fault-and-reach",
+      "control-resonant-world-quests-and-exploration",
+      "control-resonant-central-resonant-boss",
+      "control-resonant-beginners-guide"
+    ],
+    "table": {
+      "caption": "Current walkthrough coverage",
+      "headers": ["Route or quest type", "What is documented", "Coverage"],
+      "rows": [
+        [
+          "Metro Fault",
+          "Underground hazards, Mold and the Reach reward",
+          "IGN First preview"
+        ],
+        [
+          "Dylan's Journey",
+          "The main narrative campaign",
+          "Official quest structure"
+        ],
+        [
+          "World Quests",
+          "Self-contained optional narrative stories",
+          "Official quest structure"
+        ],
+        [
+          "Full campaign mission order",
+          "Not yet verified from the retail game",
+          "Not published here"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "id": "quest-types",
+        "title": "Campaign and optional quest structure",
+        "cards": [
+          {
+            "title": "Dylan's Journey",
+            "text": "The central campaign follows Dylan through Manhattan's crisis. A final mission list, chapter count and recommended-level route are not established by the official quest-category name.",
+            "href": "/guides/control-resonant-world-quests-and-exploration#dylans-journey"
+          },
+          {
+            "title": "World Quests",
+            "text": "Optional stories give Manhattan's inhabitants and strange events their own context. They should not be confused with every collectible or combat activity on the map.",
+            "href": "/guides/control-resonant-world-quests-and-exploration#world-quests"
+          },
+          {
+            "title": "Faults",
+            "text": "IGN presents Metro Fault as one of the dungeon-like Faults, associated with a traversal reward. The preview is indexed separately from a retail step-by-step completion.",
+            "href": "/guides/control-resonant-metro-fault-and-reach"
+          }
+        ]
+      },
+      {
+        "id": "route-reading",
+        "title": "How to use a preview route",
+        "paragraphs": [
+          "Check the evidence label before following a guide. Preview demonstrations may start with upgrades that a new save does not have. Reward names and route observations can be useful without proving every prerequisite or collectible location."
+        ],
+        "bullets": [
+          "Use named landmarks instead of invented map coordinates.",
+          "Separate required progression from optional exploration.",
+          "Check the demonstrated loadout before copying a combat approach.",
+          "Keep boss advice and reward verification attached to the actual encounter."
+        ]
+      }
+    ],
+    "sourceIds": ["metro", "ps-combat", "hands-on"],
+    "note": "This site has not independently completed the retail campaign. Exact mission triggers, collectible routes and final reward screens require launch verification.",
+    "quickLinks": [
+      {
+        "name": "Manhattan location index",
+        "href": "/wiki/world"
+      },
+      {
+        "name": "Reach preview",
+        "href": "/guides/control-resonant-metro-fault-and-reach"
+      },
+      {
+        "name": "Boss encounters",
+        "href": "/bosses"
+      }
+    ]
+  },
+  {
+    "id": "bosses",
+    "title": "CONTROL Resonant Bosses — Read the Fight Before You Commit",
+    "description": "Meet the Central Resonant, see the arena hazards shown in its fight, and learn how Resonant victories affect Dylan's Combat Ability choices.",
+    "image": "/images/bosses/resonant-fire.jpg",
+    "imageAlt": "Dylan facing a fiery Resonant in official CONTROL Resonant promotional media",
+    "eyebrow": "Boss fights and ability choices",
+    "introTitle": "Boss previews and preparation",
+    "intro": "The Central Resonant is already named in IGN's exclusive coverage. Other official images show major entities without providing a complete canonical roster.",
+    "guideSlugs": [
+      "control-resonant-central-resonant-boss",
+      "control-resonant-enemy-factions",
+      "control-resonant-difficulty-and-parry",
+      "control-resonant-assist-mode-and-accessibility"
+    ],
+    "table": {
+      "caption": "Published encounter evidence",
+      "headers": ["Encounter", "What is supported", "Still unverified"],
+      "rows": [
+        [
+          "Central Resonant",
+          "IGN names the boss; identifies lava and magma attacks",
+          "Full launch strategy, exact rewards and resistances"
+        ],
+        [
+          "Multi-armed entity",
+          "Shown in official promotional imagery",
+          "Canonical name and full encounter details"
+        ],
+        [
+          "Giant face entity",
+          "Shown in official promotional imagery",
+          "Canonical name and full encounter details"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "id": "rewards",
+        "title": "Why Resonant fights matter",
+        "cards": [
+          {
+            "title": "Combat Ability rewards",
+            "text": "Resonant victories connect boss progression to the build system. Some rewards involve choices; a general rule is not enough to name an individual boss's exact ability.",
+            "href": "/wiki/combat"
+          },
+          {
+            "title": "A changing world",
+            "text": "The August developer interview describes harder encounters as Resonants fall. A defeated boss affects more than the immediate arena.",
+            "href": "/guides/control-resonant-talents-and-progression-guide#zone-xp"
+          },
+          {
+            "title": "New Game Plus",
+            "text": "Later runs broaden the combinations available from boss abilities. Compare the confirmed carryover rules before planning a second run.",
+            "href": "/guides/control-resonant-new-game-plus"
+          }
+        ]
+      },
+      {
+        "id": "strategy",
+        "title": "Read an encounter, not an invented tier list",
+        "paragraphs": [
+          "A useful strategy needs to state the game version, loadout, settings, telegraphs and reward evidence. An elemental-looking boss does not prove a particular elemental weakness."
+        ],
+        "bullets": [
+          "Learn what changes the safe area of the arena.",
+          "Distinguish a ranged attack from a persistent ground hazard.",
+          "Test one setup change at a time.",
+          "Treat phase counts, timings and damage values as unverified until reproduced."
+        ]
+      }
+    ],
+    "sourceIds": ["central", "ps-combat", "ps-ngplus", "zones"],
+    "note": "Only named encounters shown so far appear here. Exact phases, weaknesses and rewards need to be checked in the released game.",
+    "quickLinks": [
+      {
+        "name": "Central Resonant preview",
+        "href": "/guides/control-resonant-central-resonant-boss"
+      },
+      {
+        "name": "Combat abilities",
+        "href": "/wiki/combat"
+      },
+      {
+        "name": "Enemy factions",
+        "href": "/wiki/enemies"
+      }
+    ]
+  },
+  {
+    "id": "builds",
+    "title": "CONTROL Resonant builds & progression",
+    "description": "Understand how Aberrant Forms, Combat Abilities, Talents and Artifacts fit together. Plan your setup with sourced mechanics rather than untested damage rankings.",
+    "image": "/images/gameplay/aberrant-hammer.jpg",
+    "imageAlt": "Dylan wielding a large Aberrant weapon against fungal enemies",
+    "eyebrow": "Build laboratory / systems guide",
+    "introTitle": "Build guides by system",
+    "intro": "Start with the combat loop, then refine the pieces that support it. These guides explain confirmed systems and clearly identify preview-only details.",
+    "guideSlugs": [
+      "control-resonant-combat-abilities-and-aberrant-forms",
+      "control-resonant-talents-and-progression-guide",
+      "control-resonant-artifacts-guide",
+      "control-resonant-new-game-plus"
+    ],
+    "table": {
+      "caption": "The four connected build systems",
+      "headers": ["System", "Role in a setup", "Example or distinction"],
+      "rows": [
+        [
+          "Aberrant Forms",
+          "Melee moveset",
+          "Primary, Secondary and Combo Enders"
+        ],
+        [
+          "Combat Abilities",
+          "Supernatural actions",
+          "Seekers and Mold Turrets"
+        ],
+        [
+          "Talents",
+          "Refine moves and interactions",
+          "Dodge Attack visible in the preview"
+        ],
+        ["Artifacts", "Passive modifiers", "Three slots initially; four in NG+"]
+      ]
+    },
+    "sections": [
+      {
+        "id": "combat-loop",
+        "title": "The confirmed combat resource loop",
+        "steps": [
+          {
+            "title": "Melee restores ability power",
+            "text": "Close-range attacks help supply the resource used by Combat Abilities."
+          },
+          {
+            "title": "Abilities create openings",
+            "text": "Abilities can interrupt enemies and help set up executions."
+          },
+          {
+            "title": "Executions reinforce melee",
+            "text": "An execution gives a temporary boost to melee damage, feeding the next attack sequence."
+          }
+        ]
+      },
+      {
+        "id": "planning",
+        "title": "Plan a loadout around an actual problem",
+        "cards": [
+          {
+            "title": "Reach and crowd pressure",
+            "text": "Compare the role of your Primary and Secondary Forms. The goal is to solve your encounter problem, not equip a name that sounds strongest.",
+            "href": "/wiki/combat"
+          },
+          {
+            "title": "Conditions and tradeoffs",
+            "text": "Read when an Artifact activates and what it gives up. A passive that never triggers in your playstyle is not a useful headline bonus.",
+            "href": "/wiki/combat"
+          },
+          {
+            "title": "Talent and respec decisions",
+            "text": "Use the zone XP and Talent guide to understand progression. Respec All is visible in preview UI; final refund and cost rules remain distinct questions.",
+            "href": "/guides/control-resonant-talents-and-progression-guide"
+          }
+        ]
+      },
+      {
+        "id": "ngplus",
+        "title": "First playthrough versus New Game Plus",
+        "paragraphs": [
+          "Remedy's NG+ description adds further Talent nodes, a fourth Artifact slot and broader Combat Ability combinations. Story-gated traversal unlocks are an exception to carryover. A first-run setup and an NG+ setup therefore need different assumptions."
+        ],
+        "bullets": [
+          "Check the available slot count before copying an Artifact combination.",
+          "Distinguish Combat Abilities from traversal skills.",
+          "Account for harder encounters rather than comparing damage alone."
+        ]
+      }
+    ],
+    "sourceIds": ["ps-combat", "ps-ngplus", "zones"],
+    "note": "There is no tested best-build tier list here yet. No DPS figures, boss clear times or final numerical rankings are invented.",
+    "quickLinks": [
+      {
+        "name": "Ability records",
+        "href": "/wiki/combat"
+      },
+      {
+        "name": "Talent records",
+        "href": "/wiki/combat"
+      },
+      {
+        "name": "Artifact records",
+        "href": "/wiki/combat"
+      }
+    ]
+  }
+]

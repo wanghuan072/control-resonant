@@ -1,0 +1,58 @@
+[
+  {
+    "id": "bundle-hardware",
+    "claim": "The offer applies to selected RTX 5090, 5080, 5070 Ti and 5070 desktop cards or systems and corresponding participating laptop GPUs.",
+    "sourceIds": ["nvidia-rtx-bundle-terms"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Regional NVIDIA promotion; participating partner models only"
+  },
+  {
+    "id": "bundle-dates",
+    "claim": "Qualifying purchases run August 25–September 29, 2026; redemption ends October 27, 2026.",
+    "sourceIds": ["nvidia-rtx-bundle-terms"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "NVIDIA promotional window"
+  },
+  {
+    "id": "bundle-entitlement",
+    "claim": "The promotion supplies one Steam game code per qualifying customer while supplies last, redeemed via NVIDIA App on eligible hardware.",
+    "sourceIds": ["nvidia-rtx-bundle-announcement", "nvidia-rtx-bundle-terms"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Eligible NVIDIA hardware purchase"
+  },
+  {
+    "id": "bundle-regions",
+    "claim": "NVIDIA terms exclude several regions and require participating partners; GPU family alone is insufficient.",
+    "sourceIds": ["nvidia-rtx-bundle-terms"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Region-specific NVIDIA terms"
+  },
+  {
+    "id": "physical-date",
+    "claim": "Remedy moved physical PS5 and Xbox Series editions to October 15 while digital release remains September 24, 2026.",
+    "sourceIds": ["remedy-physical-update", "release"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Published launch schedule"
+  },
+  {
+    "id": "steelbook-contents",
+    "claim": "A participating regional distributor lists the game, illustrated SteelBook case, three art prints, key-art poster and outer packaging.",
+    "sourceIds": ["physical-steelbook-distributor"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Distributor's Xbox regional listing; check each retail SKU"
+  },
+  {
+    "id": "story-trailer",
+    "claim": "Remedy published its Story Trailer on June 2, 2026, introducing Dylan's search for Jesse and the September release date.",
+    "sourceIds": ["remedy-story-trailer-video"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Official Remedy video"
+  },
+  {
+    "id": "take-control-trailer",
+    "claim": "Remedy published the Take CONTROL trailer on June 7, 2026, highlighting the Aberrant and Manhattan combat premise.",
+    "sourceIds": ["remedy-take-control-video"],
+    "checkedAt": "2026-09-17",
+    "appliesTo": "Official Remedy video"
+  }
+]

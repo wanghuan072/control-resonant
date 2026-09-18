@@ -1,0 +1,56 @@
+.video {
+  margin: 20px 0;
+}
+.video > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  min-height: 180px;
+  border: 1px solid #353f43;
+  background: var(--color-night);
+  color: white;
+  text-align: left;
+  cursor: pointer;
+}
+.video button > svg {
+  color: #ef4444;
+}
+.video button span {
+  font:
+    600 27px var(--font-display),
+    sans-serif;
+}
+.video button small {
+  display: block;
+  margin-top: 6px;
+  font:
+    12px var(--font-body),
+    sans-serif;
+  color: #b8c3c7;
+}
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0;
+}
+.video > p {
+  font-size: 13px !important;
+  color: var(--color-ink-soft);
+}
+.video > div {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--color-muted);
+}
+.video a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: underline;
+  min-height: 44px;
+}

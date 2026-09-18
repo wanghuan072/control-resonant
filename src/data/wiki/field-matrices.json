@@ -1,0 +1,200 @@
+{
+  "characters": {
+    "sourceIds": ["ps-combat", "xbox-hands-on-june", "cast"],
+    "verifiedAt": "2026-09-16",
+    "appliesTo": "Official announcements and pre-release hands-on",
+    "title": "Who connects Dylan to the crisis?",
+    "intro": "A relationship map is more useful before launch than an unverified cast-to-mission list.",
+    "columns": [
+      "Person",
+      "Known position",
+      "Connection to Dylan",
+      "What the player can expect"
+    ],
+    "rows": [
+      [
+        "Dylan Faden",
+        "Sole playable lead; former FBC captive",
+        "Jesse's younger brother",
+        "His search and Aberrant build drive the campaign"
+      ],
+      [
+        "Jesse Faden",
+        "Missing FBC Director",
+        "Older sister",
+        "Central story objective; not a second playable lead"
+      ],
+      [
+        "Zoe De Vera",
+        "FBC field agent",
+        "Handler and radio contact",
+        "Guidance and conversations during exploration"
+      ],
+      [
+        "Dr. Casper Darling",
+        "Returning FBC scientist",
+        "Part of Dylan's Bureau history",
+        "Seen in a previewed live-action segment"
+      ]
+    ]
+  },
+  "world": {
+    "sourceIds": ["ps-combat", "ps5-features", "xbox-hands-on-june"],
+    "verifiedAt": "2026-09-16",
+    "appliesTo": "Official announcements and pre-release hands-on",
+    "title": "Which place serves which purpose?",
+    "intro": "The city, hub, build space and previewed route are different locations with different player jobs.",
+    "columns": ["Place", "Known role", "Player use", "Important boundary"],
+    "rows": [
+      [
+        "Manhattan Zones",
+        "Handcrafted areas",
+        "Story, exploration, encounters and activities",
+        "Not announced as one seamless open world"
+      ],
+      [
+        "FBC field office",
+        "Evolving central hub",
+        "Connects major Zones",
+        "Full floor plan not published"
+      ],
+      [
+        "The Gap",
+        "Dylan's build space",
+        "Manage and test build; craft Artifacts",
+        "Distinct from the field office"
+      ],
+      [
+        "Oldest House",
+        "Returning FBC headquarters",
+        "Opening and story context",
+        "Old CONTROL maps do not map the new city"
+      ],
+      [
+        "West Incursion Zone",
+        "Named early Zone",
+        "Gravity and traversal preview",
+        "Not a complete zone checklist"
+      ]
+    ]
+  },
+  "combat": {
+    "sourceIds": ["ps-combat", "ps-ngplus", "xbox-hands-on-june"],
+    "verifiedAt": "2026-09-16",
+    "appliesTo": "Official announcements and pre-release hands-on",
+    "title": "What actually changes a build?",
+    "intro": "Weapon Forms, powers, Talents and Artifacts are separate systems; a term describing a slot is not an item.",
+    "columns": [
+      "System",
+      "How the choice opens",
+      "Known role",
+      "Known limit or caveat"
+    ],
+    "rows": [
+      [
+        "Aberrant Forms",
+        "Weapon-form choices",
+        "Attack speed, reach and target pattern",
+        "Six opening choices named; no complete retail list"
+      ],
+      [
+        "Combat Abilities",
+        "Major Resonant encounters",
+        "Supernatural attack, defense or summons",
+        "Some first-run branches are exclusive"
+      ],
+      [
+        "Talents",
+        "Progression trees",
+        "Modify synergies and combat behavior",
+        "Additional nodes open in NG+"
+      ],
+      [
+        "Artifacts",
+        "Craft Untapped Artifacts in the Gap",
+        "Passive modifiers and trade-offs",
+        "Three equipped in first run; four in NG+"
+      ],
+      [
+        "Reach and Shift",
+        "Story-linked traversal",
+        "Access gravity-altered routes",
+        "Not interchangeable with Combat Ability slots"
+      ]
+    ]
+  },
+  "enemies": {
+    "sourceIds": ["ps-combat", "xbox-hands-on-june", "central"],
+    "verifiedAt": "2026-09-16",
+    "appliesTo": "Official announcements and pre-release hands-on",
+    "title": "Faction, summon or individual encounter?",
+    "intro": "A hostile faction, a summoned ally and a named boss are not the same thing. Check the role before planning a fight.",
+    "columns": ["Name", "Class", "Shown behavior or role", "Do not infer"],
+    "rows": [
+      [
+        "Hiss",
+        "Returning hostile force",
+        "Corrupted Bureau personnel appear in the opening",
+        "Every Manhattan enemy is Hiss"
+      ],
+      [
+        "Mold",
+        "Returning paranatural threat",
+        "Mold-linked combat and summons are discussed",
+        "Every Mold appearance is the same enemy"
+      ],
+      [
+        "Resonants",
+        "Major boss class",
+        "Defeat can grant supernatural abilities",
+        "A full boss count or order"
+      ],
+      [
+        "First Resonant Entity",
+        "Previewed individual encounter",
+        "Partial head and telekinetic debris",
+        "A confirmed final boss name"
+      ],
+      [
+        "Central Resonant",
+        "Named preview encounter",
+        "Fire and magma hazards",
+        "Final damage values or drop table"
+      ]
+    ]
+  },
+  "missions": {
+    "sourceIds": ["ps-combat", "ps-ngplus", "metro"],
+    "verifiedAt": "2026-09-16",
+    "appliesTo": "Official announcements and pre-release preview",
+    "title": "Quest line or optional activity?",
+    "intro": "A mission category is not an individual quest. Only one specific Fault route has enough preview material for a file.",
+    "columns": ["Label", "Type", "Known player role", "Current coverage"],
+    "rows": [
+      [
+        "Dylan's Journey",
+        "Main narrative",
+        "Follow the central story",
+        "No verified chapter-by-chapter route"
+      ],
+      [
+        "World Quests",
+        "Optional narrative",
+        "Self-contained stories",
+        "Category known; full quest list not published"
+      ],
+      [
+        "Faults",
+        "Optional activity",
+        "Distinct challenges in Zones",
+        "Total count and rewards not published"
+      ],
+      [
+        "Metro Fault",
+        "Named preview route",
+        "Transit hazards and Reach traversal",
+        "Previewed route, not a final collectible map"
+      ]
+    ]
+  }
+}

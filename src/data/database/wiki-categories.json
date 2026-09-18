@@ -1,0 +1,563 @@
+[
+  {
+    "id": "items",
+    "eyebrow": "Player reference / items & equipment",
+    "title": "CONTROL Resonant Items & Equipment",
+    "description": "Understand the Aberrant, Artifacts and cosmetic bonuses—and avoid confusing Jesse's equipment from CONTROL with Dylan's loadout.",
+    "heroImage": "/images/gameplay/aberrant-hammer.jpg",
+    "heroAlt": "Dylan wielding the hammer-shaped Aberrant in promotional gameplay",
+    "sectionTitle": "Items & Equipment at a glance",
+    "sectionDescription": "Start with the entry you need. Each file separates its role, practical reading advice and the game it belongs to.",
+    "items": [
+      {
+        "id": "aberrant",
+        "name": "The Aberrant",
+        "label": "Resonant · transforming melee weapon",
+        "description": "This is Dylan's weapon, not a bag of separately looted swords. It changes shape for different attacks, so learning its Form system is more useful than looking for a conventional weapon shop.",
+        "href": "/wiki/combat/aberrant",
+        "details": [
+          {
+            "label": "Used by",
+            "value": "Dylan Faden"
+          },
+          {
+            "label": "Combat role",
+            "value": "Melee; multiple Forms"
+          }
+        ],
+        "background": {
+          "label": "Wiki classification",
+          "text": "Control Wiki identifies the Aberrant as an Object of Power. That lore category is not a rarity tier, equipment slot or confirmed explanation of every upgrade rule."
+        },
+        "playerNote": "Compare reach, recovery and attack flow when trying Forms. A dramatic silhouette alone does not establish damage or a best build.",
+        "sourceIds": ["wiki-aberrant", "ps-combat"]
+      },
+      {
+        "id": "untapped-artifacts",
+        "name": "Untapped Artifacts",
+        "label": "Resonant · crafting input",
+        "description": "An Untapped Artifact is a find you can shape into an equippable Artifact in the Gap. Keep the uncrafted object and its resulting passive effect separate when reading an item guide.",
+        "href": "/wiki/combat",
+        "details": [
+          {
+            "label": "Where it is used",
+            "value": "The Gap"
+          },
+          {
+            "label": "Purpose",
+            "value": "Artifact crafting"
+          }
+        ],
+        "playerNote": "Before committing to a setup, read the resulting effect and any activation condition. The original object's name is not a reliable description of the finished bonus.",
+        "sourceIds": ["ps-ngplus"]
+      },
+      {
+        "id": "pickpockets-tool",
+        "name": "Pickpocket's Tool",
+        "label": "Resonant · announced preorder Artifact",
+        "description": "A named Artifact included in the advertised preorder offer. The name does not prove a theft mechanic, extra currency, a loot multiplier or any particular combat bonus.",
+        "href": "/wiki/combat",
+        "details": [
+          {
+            "label": "Announced route",
+            "value": "Eligible preorder package"
+          },
+          {
+            "label": "Effect",
+            "value": "Not documented in the sources used here"
+          }
+        ],
+        "playerNote": "Check the edition and platform listing before buying. Do not plan an economy build around an effect that has not been verified.",
+        "sourceIds": ["store", "ps-store"]
+      },
+      {
+        "id": "wallet",
+        "name": "Wallet",
+        "label": "Resonant · Digital Deluxe Untapped Artifact",
+        "description": "Wallet is listed as an Untapped Artifact in the Digital Deluxe package. It is an item name, not evidence that the game gives you more money or a larger inventory.",
+        "href": "/wiki/combat",
+        "details": [
+          {
+            "label": "Package",
+            "value": "Digital Deluxe"
+          },
+          {
+            "label": "Item state",
+            "value": "Untapped"
+          }
+        ],
+        "playerNote": "If you are comparing editions, separate this uncrafted item from immediately usable cosmetics and from early-access terms.",
+        "sourceIds": ["store", "ps-store"]
+      },
+      {
+        "id": "communications-headset",
+        "name": "Communications Department Headset",
+        "label": "Resonant · announced newsletter cosmetic",
+        "description": "The announcement-era Wiki records this headset as a newsletter signup item. Treat it as an appearance bonus, not a confirmed Combat Ability or an Artifact with passive stats.",
+        "href": "/guides/control-resonant-editions-and-pre-order-bonuses",
+        "details": [
+          {
+            "label": "Offer recorded by",
+            "value": "Control Wiki's Resonant overview"
+          },
+          {
+            "label": "Current redemption terms",
+            "value": "Check Remedy's current signup offer"
+          }
+        ],
+        "playerNote": "Newsletter rewards and store preorder bonuses are different offers. Do not assume that buying an edition automatically satisfies newsletter eligibility.",
+        "sourceIds": ["wiki-resonant"]
+      },
+      {
+        "id": "optical-goggles",
+        "name": "Optical Filtering Goggles",
+        "label": "Resonant · announced newsletter cosmetic",
+        "description": "These goggles are the other signup item named in the Wiki overview. There is no basis in that listing for assigning them enhanced vision, hidden-object detection or a damage bonus.",
+        "href": "/guides/control-resonant-editions-and-pre-order-bonuses",
+        "details": [
+          {
+            "label": "Category",
+            "value": "Cosmetic apparel"
+          },
+          {
+            "label": "Offer status",
+            "value": "Announcement-era listing; current terms must be checked"
+          }
+        ],
+        "playerNote": "Use the official reward instructions for your platform. This reference does not promise that an earlier promotional offer is still redeemable.",
+        "sourceIds": ["wiki-resonant"]
+      },
+      {
+        "id": "service-weapon",
+        "name": "Service Weapon",
+        "label": "CONTROL (2019) · background, not Dylan's loadout",
+        "description": "Jesse's changing firearm is associated with the FBC Director and the Board. It helps explain why the Aberrant is compared with it, but the two weapons should not share a build list.",
+        "href": "/wiki/world",
+        "scope": "CONTROL (2019) background",
+        "details": [
+          {
+            "label": "Wielder in CONTROL",
+            "value": "Jesse Faden"
+          },
+          {
+            "label": "Bureau ID",
+            "value": "OOP1-KE"
+          }
+        ],
+        "playerNote": "If a guide recommends Grip or another Service Weapon Form, check which game it covers. A CONTROL gun configuration is not automatically usable in Resonant.",
+        "sourceIds": ["wiki-service"]
+      },
+      {
+        "id": "slide-projector",
+        "name": "Slide Projector",
+        "label": "CONTROL (2019) · story object",
+        "description": "This Object of Power opens doorways through its slides. Its connection to the Ordinary incident makes it important to the Faden siblings' history, not a normal item to add to a Resonant combat build.",
+        "href": "/wiki/characters/dylan-faden",
+        "scope": "CONTROL (2019) story background",
+        "details": [
+          {
+            "label": "Bureau ID",
+            "value": "OOP15-UE"
+          },
+          {
+            "label": "Connected event",
+            "value": "Ordinary AWE"
+          }
+        ],
+        "playerNote": "Read this as story context. The Wiki's Research Sector containment information is not a confirmed Resonant pickup location.",
+        "sourceIds": ["wiki-projector"]
+      }
+    ],
+    "facts": [
+      "Weapons, passive modifiers and cosmetics serve different purposes.",
+      "A preorder item name is not a verified stat description.",
+      "The two CONTROL (2019) entries are background references, not promised sequel equipment."
+    ],
+    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "guideSlug": "control-resonant-artifacts-guide",
+    "sourceIds": [
+      "wiki-aberrant",
+      "wiki-resonant",
+      "wiki-service",
+      "wiki-projector",
+      "ps-ngplus",
+      "store",
+      "ps-store"
+    ],
+    "checkedAt": "2026-09-16",
+    "seo": {
+      "title": "CONTROL Resonant Items & Equipment: Player Reference & Wiki",
+      "description": "Understand the Aberrant, Artifacts and cosmetic bonuses—and avoid confusing Jesse's equipment from CONTROL with Dylan's loadout."
+    }
+  },
+  {
+    "id": "missions",
+    "eyebrow": "Player reference / missions & quest types",
+    "title": "CONTROL Resonant Missions & Quest Types",
+    "description": "Find the main-story and optional quest categories, the named Metro Fault preview, and a clearly separated CONTROL (2019) replay checklist.",
+    "heroImage": "/images/gameplay/warped-transit.jpg",
+    "heroAlt": "A warped transit environment in CONTROL Resonant promotional media",
+    "sectionTitle": "Missions & Quest Types at a glance",
+    "sectionDescription": "Start with the entry you need. Each file separates its role, practical reading advice and the game it belongs to.",
+    "items": [
+      {
+        "id": "dylans-journey",
+        "name": "Dylan's Journey",
+        "label": "Resonant · main campaign category",
+        "description": "This is Remedy's name for the main campaign. It is a quest category, not the title of one mission or a published chapter-by-chapter list.",
+        "href": "/guides/story-walkthrough",
+        "details": [
+          {
+            "label": "Role",
+            "value": "Main story"
+          },
+          {
+            "label": "Complete mission order",
+            "value": "Not established by the sources used here"
+          }
+        ],
+        "playerNote": "Use the main-story route when you want to follow Dylan's central objective. Do not treat initial previews as a complete mission order.",
+        "sourceIds": ["ps-combat"]
+      },
+      {
+        "id": "world-quests",
+        "name": "World Quests",
+        "label": "Resonant · self-contained story category",
+        "description": "These are stories outside the main campaign route. Remedy distinguishes them from the broader mix of encounters, environmental challenges and hidden discoveries.",
+        "href": "/guides/control-resonant-world-quests-and-exploration",
+        "details": [
+          {
+            "label": "Role",
+            "value": "Additional narrative stories"
+          },
+          {
+            "label": "Quest names and rewards",
+            "value": "Only list individually when supported by evidence"
+          }
+        ],
+        "playerNote": "Choose a story because its situation interests you; a separate map activity is not automatically a World Quest.",
+        "sourceIds": ["ps-combat"]
+      },
+      {
+        "id": "faults",
+        "name": "Faults",
+        "label": "Resonant · previewed activity type",
+        "description": "Published coverage uses Fault terminology, with Metro Fault as a named example. One showcased Fault does not establish how every Fault works, its duration, or its reward.",
+        "href": "/guides/control-resonant-metro-fault-and-reach",
+        "details": [
+          {
+            "label": "Named example",
+            "value": "Metro Fault"
+          },
+          {
+            "label": "Coverage",
+            "value": "Pre-release preview"
+          }
+        ],
+        "playerNote": "Check the individual encounter's evidence before assuming all Faults give traversal upgrades.",
+        "sourceIds": ["metro"]
+      },
+      {
+        "id": "metro-fault",
+        "name": "Metro Fault",
+        "label": "Resonant · named IGN preview",
+        "description": "IGN's mission preview identifies a warped metro encounter with train hazards, Mold and the Reach traversal reward. The linked guide describes that published preview, not an independently tested launch route.",
+        "href": "/guides/control-resonant-metro-fault-and-reach",
+        "details": [
+          {
+            "label": "Environment",
+            "value": "Metro / train hazards"
+          },
+          {
+            "label": "Shown threats",
+            "value": "Mold"
+          },
+          {
+            "label": "Preview reward",
+            "value": "Reach"
+          }
+        ],
+        "playerNote": "The useful takeaway is the traversal unlock. Do not mistake a preview reward for a verified collectible count, difficulty rating or final mission completion time.",
+        "sourceIds": ["metro"]
+      }
+    ],
+    "facts": [
+      "There is no invented mission order here.",
+      "Dylan's Journey and World Quests are categories; Metro Fault is a named preview.",
+      "The older Wiki mission directory is explicitly for CONTROL and its expansions."
+    ],
+    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "guideSlug": "control-resonant-world-quests-and-exploration",
+    "sourceIds": ["ps-combat", "metro", "wiki-missions"],
+    "checkedAt": "2026-09-16",
+    "seo": {
+      "title": "CONTROL Resonant Missions & Quest Types: Player Reference & Wiki",
+      "description": "Find the main-story and optional quest categories, the named Metro Fault preview, and a clearly separated CONTROL (2019) replay checklist."
+    },
+    "backgroundList": {
+      "title": "Replaying CONTROL (2019)? The ten main missions",
+      "description": "This is the original game's campaign order, provided to identify older walkthroughs. None of these names is presented as a Resonant mission. Mission titles can reveal story progression.",
+      "items": [
+        "Welcome to the Oldest House",
+        "Unknown Caller",
+        "Directorial Override",
+        "Old Boys' Club",
+        "Threshold",
+        "My Brother's Keeper",
+        "The Face of the Enemy",
+        "Finnish Tango",
+        "Polaris",
+        "Take Control"
+      ],
+      "sourceId": "wiki-missions"
+    }
+  },
+  {
+    "id": "lore",
+    "eyebrow": "Player reference / lore & terminology",
+    "title": "CONTROL Resonant Lore & Terminology",
+    "description": "A player's glossary for FBC files: Altered Items, Objects of Power, resonance and more, with original-game lore separated from sequel mechanics.",
+    "heroImage": "/images/map/altered-interior.jpg",
+    "heroAlt": "A ritual-like interior in CONTROL Resonant promotional media",
+    "sectionTitle": "Lore & Terminology at a glance",
+    "sectionDescription": "Start with the entry you need. Each file separates its role, practical reading advice and the game it belongs to.",
+    "items": [
+      {
+        "id": "fbc",
+        "name": "Federal Bureau of Control",
+        "label": "Series background · organization",
+        "description": "The FBC is the secret agency that investigates, studies and contains paranatural phenomena. Its headquarters is the Oldest House. Dylan's complicated relationship with the Bureau is easier to follow if you remember that its personnel, research aims and containment decisions are not the same thing.",
+        "href": "/wiki/characters",
+        "scope": "Series background",
+        "details": [
+          {
+            "label": "Abbreviation",
+            "value": "FBC"
+          },
+          {
+            "label": "Headquarters",
+            "value": "Oldest House"
+          }
+        ],
+        "playerNote": "A Bureau file is an in-world institutional account. Pay attention to who wrote it, what is redacted and what the characters dispute; do not read every document as an omniscient explanation.",
+        "sourceIds": ["wiki-fbc"]
+      },
+      {
+        "id": "altered-items",
+        "name": "Altered Items",
+        "label": "Series background · object category",
+        "description": "Everyday objects can acquire strange, sometimes dangerous properties after contact with paranatural forces. The important distinction for a player is that an unusual object is not necessarily something you can equip or bind.",
+        "href": "/wiki/combat",
+        "scope": "Series background",
+        "details": [
+          {
+            "label": "Typical context",
+            "value": "Containment, investigation and object-specific behavior"
+          },
+          {
+            "label": "Not equivalent to",
+            "value": "An Artifact slot or ordinary inventory pickup"
+          }
+        ],
+        "playerNote": "Look for the object's behavior and containment instructions before thinking about loot. Do not merge a named story object, a passive Artifact and a collectible document into one item category.",
+        "sourceIds": ["wiki-altered"]
+      },
+      {
+        "id": "objects-of-power",
+        "name": "Objects of Power",
+        "label": "Series background · bindable paranatural objects",
+        "description": "Objects of Power are a special category associated with the Astral Plane. Many can be bound by people with paranatural aptitude, making their abilities usable. The lore is more nuanced than 'every strange object grants a skill'.",
+        "href": "/wiki/combat/aberrant",
+        "scope": "Series background",
+        "details": [
+          {
+            "label": "Common abbreviation",
+            "value": "OoP"
+          },
+          {
+            "label": "Compared with",
+            "value": "Altered Items"
+          }
+        ],
+        "playerNote": "Separate an object's story classification from its actual gameplay system. Calling the Aberrant an Object of Power does not tell you its damage, rarity or unlock cost.",
+        "sourceIds": ["wiki-oop", "wiki-aberrant"]
+      },
+      {
+        "id": "resonance",
+        "name": "Resonance",
+        "label": "Series background · paranatural energy",
+        "description": "The Bureau uses resonance to describe energies and frequencies involved in paranatural effects. Different resonances can affect people and reality differently; the Hiss is not a synonym for every supernatural force.",
+        "href": "/wiki/enemies",
+        "scope": "Series background",
+        "details": [
+          {
+            "label": "Do not confuse with",
+            "value": "Resonants, the sequel's boss class"
+          }
+        ],
+        "playerNote": "When a scene mentions a new resonance, avoid assuming it has the Hiss's exact behavior. The term provides a story framework, not a universal elemental weakness chart.",
+        "sourceIds": ["wiki-resonance"]
+      },
+      {
+        "id": "awe",
+        "name": "Altered World Event",
+        "label": "Series background · incident classification",
+        "description": "An AWE is an intrusion of paranatural forces that changes ordinary reality. Such incidents are central to the Bureau's investigations and can involve altered objects or other phenomena.",
+        "href": "/wiki/world/manhattan",
+        "scope": "Series background",
+        "details": [
+          {
+            "label": "Abbreviation",
+            "value": "AWE"
+          },
+          {
+            "label": "Separate use of the name",
+            "value": "AWE is also the title of CONTROL's second expansion"
+          }
+        ],
+        "playerNote": "Check the context when a guide says AWE: it may mean a type of incident, or the older downloadable expansion. Neither meaning gives you a Resonant quest name by itself.",
+        "sourceIds": ["wiki-awe"]
+      },
+      {
+        "id": "parautilitarian",
+        "name": "Parautilitarian",
+        "label": "Series background · person with paranatural abilities",
+        "description": "A parautilitarian is someone who demonstrates paranatural abilities. Those abilities can have different origins, including personal aptitude or connections with entities and objects. Jesse and Dylan are important examples.",
+        "href": "/wiki/characters",
+        "scope": "Series background",
+        "details": [
+          {
+            "label": "Describes",
+            "value": "A person and their paranatural capacity"
+          },
+          {
+            "label": "Not a confirmed",
+            "value": "Selectable player class"
+          }
+        ],
+        "playerNote": "Treat the word as a Bureau description of a person, not an RPG class selection. Dylan's playable setup is explained through Forms, Combat Abilities, Talents and Artifacts.",
+        "sourceIds": ["wiki-para"]
+      }
+    ],
+    "facts": [
+      "This glossary explains the fiction; it does not assign hidden gameplay stats.",
+      "A collectible file about an object and the object itself are different entries.",
+      "New players can use the definitions without reading complete character biographies."
+    ],
+    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "guideSlug": "control-resonant-characters-and-story",
+    "sourceIds": [
+      "wiki-fbc",
+      "wiki-altered",
+      "wiki-oop",
+      "wiki-resonance",
+      "wiki-awe",
+      "wiki-para"
+    ],
+    "checkedAt": "2026-09-16",
+    "seo": {
+      "title": "CONTROL Resonant Lore & Terminology: Player Reference & Wiki",
+      "description": "A player's glossary for FBC files: Altered Items, Objects of Power, resonance and more, with original-game lore separated from sequel mechanics."
+    }
+  },
+  {
+    "id": "locations",
+    "eyebrow": "Player reference / locations",
+    "title": "CONTROL Resonant Locations",
+    "description": "Know the difference between Manhattan, the West Incursion Zone, the Gap and the Oldest House before following a location or mission guide.",
+    "heroImage": "/images/map/manhattan-overlook.jpg",
+    "heroAlt": "Dylan overlooking distorted Manhattan in official promotional media",
+    "sectionTitle": "Locations at a glance",
+    "sectionDescription": "Start with the entry you need. Each file separates its role, practical reading advice and the game it belongs to.",
+    "items": [
+      {
+        "id": "manhattan",
+        "name": "Manhattan",
+        "label": "Resonant · main setting",
+        "description": "Dylan's journey takes place in a transformed Manhattan. The city is the broader setting; it should not be treated as one mission area with a single collectible total.",
+        "href": "/wiki/world/manhattan",
+        "details": [
+          {
+            "label": "World structure",
+            "value": "Distinct designed zones, not a conventional open-world checklist"
+          }
+        ],
+        "playerNote": "When using a location guide, check the zone and the named activity. A city-wide screenshot cannot establish a precise pickup location.",
+        "sourceIds": ["wiki-resonant", "ps-combat"]
+      },
+      {
+        "id": "west-incursion-zone",
+        "name": "West Incursion Zone",
+        "label": "Resonant · officially named gameplay area",
+        "description": "Remedy identifies this area in the first gameplay presentation. It is a concrete location name to recognize when comparing preview footage and exploration coverage.",
+        "href": "/wiki/world/west-incursion-zone",
+        "details": [
+          {
+            "label": "Evidence",
+            "value": "Official gameplay reveal"
+          }
+        ],
+        "playerNote": "Gravity-altered geometry makes the direction of travel important. Follow the demonstrated surfaces and route context instead of assuming a normal street map explains the space.",
+        "sourceIds": ["remedy-gameplay"]
+      },
+      {
+        "id": "the-gap",
+        "name": "The Gap",
+        "label": "Resonant · build-management space",
+        "description": "The Gap is a dreamlike space tied to Dylan. Its practical role is build management: it is where you think about abilities, Forms and upgrades rather than another neighborhood to clear.",
+        "href": "/guides/combat-builds",
+        "details": [
+          {
+            "label": "Player purpose",
+            "value": "Loadout and progression decisions"
+          },
+          {
+            "label": "Artifact connection",
+            "value": "Untapped Artifact crafting"
+          }
+        ],
+        "playerNote": "Use the build guides when you want to change your setup; use the map and mission indexes when you want to travel. These are different kinds of destinations.",
+        "sourceIds": ["ps-combat", "ps-ngplus"]
+      },
+      {
+        "id": "oldest-house",
+        "name": "Oldest House",
+        "label": "Series background · Bureau headquarters",
+        "description": "The changing brutalist building is the FBC headquarters and the main setting of CONTROL (2019). Its familiar sectors explain older guide terminology, but do not establish where Dylan can go in Resonant.",
+        "href": "/wiki/world",
+        "scope": "CONTROL (2019) setting / Resonant story context",
+        "details": [
+          {
+            "label": "Role",
+            "value": "FBC headquarters; Place of Power"
+          },
+          {
+            "label": "Older walkthrough sectors",
+            "value": "Executive, Maintenance, Research and Containment"
+          }
+        ],
+        "playerNote": "A Research Sector collectible coordinate from Jesse's game is not a Manhattan collectible coordinate. Check the game title before following any older route.",
+        "sourceIds": ["wiki-house"]
+      }
+    ],
+    "facts": [
+      "Locations, quest categories and traversal abilities are indexed separately.",
+      "The Oldest House entry supplies background, not a claimed complete Resonant interior map.",
+      "No unverified collectible pins or percentage-complete maps are supplied."
+    ],
+    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "guideSlug": "control-resonant-world-quests-and-exploration",
+    "sourceIds": [
+      "remedy-gameplay",
+      "ps-combat",
+      "ps-ngplus",
+      "wiki-house",
+      "wiki-resonant"
+    ],
+    "checkedAt": "2026-09-16",
+    "seo": {
+      "title": "CONTROL Resonant Locations: Player Reference & Wiki",
+      "description": "Know the difference between Manhattan, the West Incursion Zone, the Gap and the Oldest House before following a map or walkthrough."
+    }
+  }
+]

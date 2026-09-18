@@ -1,0 +1,37 @@
+.breadcrumb {
+  margin-bottom: 30px;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.breadcrumb a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-red);
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-bottom: 22px;
+  }
+}

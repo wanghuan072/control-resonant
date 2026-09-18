@@ -1,0 +1,48 @@
+[
+  {
+    "id": "characters",
+    "number": "01",
+    "title": "Characters",
+    "description": "Dylan, Jesse and Zoe first; returning Bureau figures are clearly marked as series background.",
+    "image": "/images/characters/zoe-and-dylan.jpg",
+    "categoryIds": ["characters"]
+  },
+  {
+    "id": "combat",
+    "number": "02",
+    "title": "Combat & Skills",
+    "description": "How the Aberrant, Combat Abilities, Forms, Talents and Artifacts fit together.",
+    "image": "/images/gameplay/aberrant-hammer.jpg",
+    "categoryIds": [
+      "abilities",
+      "aberrant-forms",
+      "talents",
+      "artifacts",
+      "items"
+    ]
+  },
+  {
+    "id": "enemies",
+    "number": "03",
+    "title": "Enemies & Bosses",
+    "description": "Known hostile factions and previewed Resonant encounters, not a complete bestiary.",
+    "image": "/images/enemies/hiss-encounter.jpg",
+    "categoryIds": ["enemies"]
+  },
+  {
+    "id": "world",
+    "number": "04",
+    "title": "World & Locations",
+    "description": "Known Manhattan Zones, traversal spaces and places shown so far.",
+    "image": "/images/map/manhattan-overlook.jpg",
+    "categoryIds": ["locations", "lore"]
+  },
+  {
+    "id": "missions",
+    "number": "05",
+    "title": "Missions & Activities",
+    "description": "The main campaign, World Quests, Faults and the few named activities shown so far.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "categoryIds": ["missions"]
+  }
+]

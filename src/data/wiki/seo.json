@@ -1,0 +1,106 @@
+{
+  "characters/dylan-faden": {
+    "title": "Dylan Faden - CONTROL Resonant Character Wiki",
+    "description": "Meet Dylan Faden, CONTROL Resonant's playable lead. Learn why the FBC sends him into Manhattan, how Jesse shapes his search and what his powers mean for play."
+  },
+  "characters/jesse-faden": {
+    "title": "Jesse Faden - CONTROL Resonant Character Wiki",
+    "description": "Learn Jesse Faden's role in CONTROL Resonant, why Dylan is searching for her, and how her history as FBC Director connects the sequel to the first game."
+  },
+  "characters/zoe-de-vera": {
+    "title": "Zoe De Vera - CONTROL Resonant Character Wiki",
+    "description": "Meet Zoe De Vera, Dylan's FBC field contact in CONTROL Resonant. See how she fits the Manhattan crisis and why their partnership matters to the story."
+  },
+  "characters/casper-darling": {
+    "title": "Dr. Casper Darling - CONTROL Resonant Character Wiki",
+    "description": "Review Dr. Casper Darling's connection to Dylan and the FBC before CONTROL Resonant. Separate his history in CONTROL from what the sequel has shown about him."
+  },
+  "characters/emily-pope": {
+    "title": "Emily Pope - CONTROL Resonant Character Wiki",
+    "description": "Understand Emily Pope's role in the FBC and her relationship with Jesse. See what her return adds to CONTROL Resonant without assuming unannounced quests."
+  },
+  "characters/simon-arish": {
+    "title": "Simon Arish - CONTROL Resonant Character Wiki",
+    "description": "Learn who Simon Arish is in CONTROL and why his FBC security role matters to returning CONTROL Resonant players, without confusing old missions with new ones."
+  },
+  "characters/frederick-langston": {
+    "title": "Frederick Langston - CONTROL Resonant Character Wiki",
+    "description": "Learn Frederick Langston's role in the FBC and the Panopticon. Understand the CONTROL history behind his name before seeing where he fits in Resonant."
+  },
+  "combat/aberrant": {
+    "title": "The Aberrant - CONTROL Resonant Weapon Wiki",
+    "description": "Learn how Dylan's Aberrant weapon works in CONTROL Resonant, including Primary and Secondary Forms, Combo Enders and its role in the melee-to-power loop."
+  },
+  "combat/reach": {
+    "title": "Reach - CONTROL Resonant Traversal Ability Wiki",
+    "description": "Find out what Reach does in CONTROL Resonant, where the Metro Fault preview places its unlock, and why this movement tool is separate from Combat Ability slots."
+  },
+  "combat/aberrant-forms": {
+    "title": "Aberrant Forms - CONTROL Resonant Combat Wiki",
+    "description": "Compare the six named Aberrant Forms shown for CONTROL Resonant. See their Primary or Secondary slots, attack roles and what each choice may solve in a fight."
+  },
+  "combat/combat-abilities": {
+    "title": "Combat Abilities - CONTROL Resonant Skills Wiki",
+    "description": "Compare Barrage, Seekers and Shield in CONTROL Resonant. Learn how boss-earned Combat Abilities use a resource restored through melee and change your approach."
+  },
+  "combat/artifacts": {
+    "title": "Artifacts - CONTROL Resonant Crafting Wiki",
+    "description": "Learn how CONTROL Resonant Artifacts work, why Untapped Artifacts need crafting in the Gap, and how equipped slots change from a first run to New Game Plus."
+  },
+  "combat/new-game-plus": {
+    "title": "New Game Plus - CONTROL Resonant Progression Wiki",
+    "description": "See what carries into CONTROL Resonant New Game Plus, what traversal abilities reset, and how Talents, Combat Abilities and an Artifact slot widen your build."
+  },
+  "world/manhattan": {
+    "title": "Manhattan - CONTROL Resonant World and Map Wiki",
+    "description": "See how CONTROL Resonant divides Manhattan into Zones, where World Quests and encounters fit, and why movement tools matter more than a guessed map pin."
+  },
+  "world/oldest-house": {
+    "title": "Oldest House - CONTROL Resonant Location Wiki",
+    "description": "Revisit the Oldest House in CONTROL Resonant: Dylan's former confinement and the setting of CONTROL. Learn how its story role differs from Manhattan Zones."
+  },
+  "world/west-incursion-zone": {
+    "title": "West Incursion Zone - CONTROL Resonant Location Wiki",
+    "description": "Explore what the West Incursion Zone shows about CONTROL Resonant's Manhattan: warped streets, Gravity Anomalies, combat and traversal across an early area."
+  },
+  "world/the-gap": {
+    "title": "The Gap - CONTROL Resonant Build Space Wiki",
+    "description": "Learn what Dylan can do in the Gap in CONTROL Resonant: upgrade the Aberrant, test a loadout, develop Talents and craft Artifacts between encounters."
+  },
+  "world/fbc-field-office": {
+    "title": "FBC Field Office - CONTROL Resonant Location Wiki",
+    "description": "See the FBC field office as a hub linking CONTROL Resonant's Manhattan Zones. Learn how it differs from the Gap and what is known about travel between areas."
+  },
+  "world/federal-bureau-of-control": {
+    "title": "FBC - CONTROL Resonant Federal Bureau Wiki",
+    "description": "Learn why the Federal Bureau of Control matters to Dylan Faden in CONTROL Resonant, from his confinement in the Oldest House to the crisis across Manhattan."
+  },
+  "world/ordinary-awe": {
+    "title": "Ordinary AWE - CONTROL Resonant Story Wiki",
+    "description": "Understand the childhood event in Ordinary that linked Jesse, Dylan, the Slide Projector and the FBC. See why this CONTROL history matters to Resonant."
+  },
+  "world/prime-candidate-program": {
+    "title": "Prime Candidate Program - CONTROL Resonant Wiki",
+    "description": "Learn why Dylan was called P6 and Jesse P7 in the FBC's Prime Candidate Program, and how those older Bureau files frame their CONTROL Resonant story."
+  },
+  "missions/metro-fault": {
+    "title": "Metro Fault - CONTROL Resonant Mission Wiki",
+    "description": "Identify the Metro Fault route in CONTROL Resonant, including warped transit, moving trains, Mold threats and the Reach traversal reward shown in the preview."
+  },
+  "missions/world-quests-and-faults": {
+    "title": "World Quests and Faults - CONTROL Resonant Wiki",
+    "description": "Tell CONTROL Resonant World Quests apart from Faults and Dylan's main story. See where Metro Fault fits and which activities offer optional paths through Zones."
+  },
+  "enemies/central-resonant": {
+    "title": "Central Resonant - CONTROL Resonant Boss Wiki",
+    "description": "Prepare for the Central Resonant in CONTROL Resonant by recognizing lava-like ground and magma projectiles, then review combat systems tied to boss victories."
+  },
+  "enemies/first-resonant-entity": {
+    "title": "First Resonant Entity - CONTROL Resonant Boss Wiki",
+    "description": "See what the early Resonant Entity shows in CONTROL Resonant: a huge street-bound head, telekinetic debris and a boss-linked ability, without a guessed name."
+  },
+  "enemies/the-hiss": {
+    "title": "The Hiss Faction - CONTROL Resonant Enemy Wiki",
+    "description": "Understand the Hiss as a threat in CONTROL Resonant, how its role in the Oldest House shapes Dylan's history, and why it is not the same as a Resonant boss."
+  }
+}

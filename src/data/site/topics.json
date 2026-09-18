@@ -1,0 +1,87 @@
+[
+  {
+    "id": "start",
+    "title": "Start here",
+    "category": "Getting Started",
+    "href": "/guides#getting-started",
+    "description": "Story context, the cast and your first steps into Manhattan.",
+    "image": "/images/characters/zoe-and-dylan.jpg",
+    "slugs": [
+      "control-resonant-beginners-guide",
+      "should-you-play-control-first",
+      "control-resonant-characters-and-story",
+      "is-control-resonant-a-sequel"
+    ]
+  },
+  {
+    "id": "combat",
+    "title": "Combat & enemies",
+    "category": "Gameplay",
+    "href": "/guides/combat-builds",
+    "description": "The Aberrant, supernatural abilities and the threats in your path.",
+    "image": "/images/gameplay/manhattan-melee.jpg",
+    "slugs": [
+      "control-resonant-gameplay-explained",
+      "control-resonant-combat-abilities-and-aberrant-forms",
+      "control-resonant-difficulty-and-parry",
+      "control-resonant-enemy-factions",
+      "control-resonant-central-resonant-boss"
+    ]
+  },
+  {
+    "id": "progression",
+    "title": "Builds & progression",
+    "category": "Progression",
+    "href": "/guides/combat-builds",
+    "description": "Understand zone XP, Talent points, passive modifiers and NG+.",
+    "image": "/images/talents/talent-tree.jpg",
+    "slugs": [
+      "control-resonant-talents-and-progression-guide",
+      "control-resonant-artifacts-guide",
+      "control-resonant-new-game-plus"
+    ]
+  },
+  {
+    "id": "exploration",
+    "title": "Missions & Manhattan",
+    "category": "Gameplay",
+    "href": "/guides/story-walkthrough",
+    "description": "Preview routes, World Quests and traversal unlocks.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "slugs": [
+      "control-resonant-metro-fault-and-reach",
+      "control-resonant-world-quests-and-exploration",
+      "how-long-is-control-resonant"
+    ]
+  },
+  {
+    "id": "pc",
+    "title": "PC, controls & accessibility",
+    "category": "Accessibility",
+    "href": "/guides#accessibility",
+    "description": "Compare hardware tiers and find the settings that suit you.",
+    "image": "/images/accessibility/assist-mode.jpg",
+    "slugs": [
+      "control-resonant-pc-system-requirements",
+      "control-resonant-pc-features-languages-and-controls",
+      "control-resonant-steam-deck-support",
+      "control-resonant-assist-mode-and-accessibility",
+      "does-control-resonant-use-denuvo"
+    ]
+  },
+  {
+    "id": "release",
+    "title": "Release & buying guide",
+    "category": "Game Information",
+    "href": "/guides#game-information",
+    "description": "Dates, platforms and edition differences before you buy.",
+    "image": "/images/home/manhattan-key-art.jpg",
+    "slugs": [
+      "control-resonant-release-date-and-platforms",
+      "control-resonant-editions-and-pre-order-bonuses",
+      "is-control-resonant-on-game-pass",
+      "is-control-resonant-single-player-or-multiplayer",
+      "is-control-resonant-coming-to-switch-2"
+    ]
+  }
+]

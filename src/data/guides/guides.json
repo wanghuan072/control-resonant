@@ -1,0 +1,824 @@
+[
+  {
+    "slug": "is-control-resonant-a-sequel",
+    "title": "Is CONTROL Resonant a Sequel?",
+    "category": "Game Information",
+    "excerpt": "How Dylan Faden's story connects to CONTROL, and why Remedy also calls it a new entry point.",
+    "introduction": "CONTROL Resonant returns to the same paranatural universe, but moves the action beyond the Oldest House and puts Dylan Faden at the center of the story.",
+    "quickAnswer": "Yes. Remedy describes CONTROL Resonant as a direct sequel to CONTROL (2019). It is also designed as a new entry point, so the first game is useful context rather than a prerequisite.",
+    "image": "/images/home/control-resonant-hero.jpg",
+    "imageAlt": "Dylan Faden carrying the shapeshifting Aberrant above warped Manhattan in CONTROL Resonant",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "facts": [
+      {
+        "label": "Series status",
+        "value": "Direct sequel"
+      },
+      {
+        "label": "Playable lead",
+        "value": "Dylan Faden"
+      },
+      {
+        "label": "Setting",
+        "value": "Paranaturally warped Manhattan"
+      },
+      {
+        "label": "New players",
+        "value": "First game not required"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Is CONTROL Resonant a direct sequel?",
+        "paragraphs": [
+          "CONTROL Resonant is the next main entry in the Control universe and follows the events of the original game. Remedy has used both “sequel” and “new entry point” to describe it: the story continues, but it is built to stand on its own."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "connection-to-control",
+        "title": "How CONTROL Resonant Connects to CONTROL",
+        "paragraphs": [
+          "The first game followed Jesse Faden inside the Oldest House. Resonant reverses that direction. The lockdown is failing, the crisis has reached Manhattan, and Dylan leaves the Bureau's headquarters to face what is spreading outside.",
+          "Jesse remains central to the story, but Remedy has confirmed that Dylan is the only playable character. His search for his missing sister connects the siblings' stories without repeating Jesse's journey."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "what-changed",
+        "title": "What Changes in the Sequel",
+        "bullets": [
+          "A larger, zone-based Manhattan replaces the mostly interior focus of the Oldest House.",
+          "Combat is built around the shapeshifting melee weapon called the Aberrant.",
+          "Supernatural Combat Abilities, Talents, Artifacts, and weapon forms create a deeper action-RPG progression system.",
+          "Dylan's Journey forms the main campaign, while World Quests provide self-contained stories."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "play-first",
+        "title": "Do You Need to Play CONTROL First?",
+        "paragraphs": [
+          "No. Remedy says Resonant can be a player's first step into the series. Playing CONTROL will still add context for Dylan, Jesse, the Hiss, the Federal Bureau of Control, and the Oldest House, so returning players are likely to notice more of the connections."
+        ],
+        "sourceRefs": [2]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Remedy — CONTROL Resonant reveal",
+        "href": "https://www.remedygames.com/article/remedy-entertainment-reveals-control-resonant-launching-in-2026",
+        "kind": "Official"
+      },
+      {
+        "label": "PlayStation Blog — A new paranatural crisis",
+        "href": "https://blog.playstation.com/2025/12/11/control-resonant-brings-a-new-paranatural-crisis-to-ps5-out-2026/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy — Worldwide launch announcement",
+        "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "should-you-play-control-first",
+      "control-resonant-editions-and-pre-order-bonuses",
+      "is-control-resonant-on-game-pass"
+    ],
+    "seo": {
+      "title": "Is CONTROL Resonant a Sequel? Story Connection Explained",
+      "description": "Yes, CONTROL Resonant is a direct sequel to CONTROL. Learn how Dylan and Jesse Faden's stories connect and whether you need to play the first game.",
+      "keywords": [
+        "Is CONTROL Resonant a Sequel?",
+        "Game Information",
+        "CONTROL Resonant"
+      ]
+    },
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  },
+  {
+    "slug": "should-you-play-control-first",
+    "title": "Should You Play CONTROL Before CONTROL Resonant?",
+    "category": "Getting Started",
+    "excerpt": "The short answer for newcomers, plus the story context returning players will already know.",
+    "introduction": "Resonant is tied closely to the Faden siblings and the Federal Bureau of Control, but Remedy has deliberately built the sequel for both returning players and newcomers.",
+    "quickAnswer": "You do not need to play CONTROL first. Remedy says Resonant stands on its own, though the original gives useful background on Dylan, Jesse, the Hiss, and the Oldest House.",
+    "image": "/images/map/oldest-house.jpg",
+    "imageAlt": "The interior of the Oldest House in CONTROL Resonant",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "facts": [
+      {
+        "label": "Required",
+        "value": "No"
+      },
+      {
+        "label": "Helpful context",
+        "value": "Yes"
+      },
+      {
+        "label": "Original lead",
+        "value": "Jesse Faden"
+      },
+      {
+        "label": "Resonant lead",
+        "value": "Dylan Faden"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Do you need to play CONTROL first?",
+        "paragraphs": [
+          "Start with Resonant if its Manhattan setting and melee-focused combat are what interest you. The game is written as a fresh entry point and does not require a completed CONTROL save."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "context",
+        "title": "What the First Game Adds",
+        "bullets": [
+          "Why Jesse entered the Oldest House and became Director of the FBC.",
+          "How Dylan was held by the Bureau and affected by the Hiss.",
+          "The nature of the Oldest House, Objects of Power, and paranatural containment.",
+          "The emotional history behind Jesse and Dylan's search for one another."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "new-story",
+        "title": "Why Resonant Still Works as a Starting Point",
+        "paragraphs": [
+          "Resonant changes protagonist, location, combat focus, and scale. Dylan emerges into Manhattan during a new cosmic crisis, meets characters such as FBC field agent Zoe De Vera, and learns systems that were not part of Jesse's original campaign.",
+          "That structure gives the sequel room to explain what Dylan needs to know when he needs to know it, instead of expecting every player to remember the 2019 story."
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "recommendation",
+        "title": "Our Recommendation",
+        "paragraphs": [
+          "Play CONTROL first if you enjoy story mysteries and have time before September 24. If not, watch an official story recap or begin with Resonant; the developers explicitly support that choice."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "PlayStation Blog — Remedy on the new entry point",
+        "href": "https://blog.playstation.com/2025/12/11/control-resonant-brings-a-new-paranatural-crisis-to-ps5-out-2026/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy — CONTROL Resonant reveal",
+        "href": "https://www.remedygames.com/article/remedy-entertainment-reveals-control-resonant-launching-in-2026",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "is-control-resonant-a-sequel",
+      "control-resonant-editions-and-pre-order-bonuses",
+      "is-control-resonant-coming-to-switch-2"
+    ],
+    "seo": {
+      "title": "Should You Play CONTROL Before CONTROL Resonant?",
+      "description": "You do not need to play CONTROL before CONTROL Resonant, but it adds useful story context. See what newcomers need to know before starting.",
+      "keywords": [
+        "Should You Play CONTROL Before CONTROL Resonant?",
+        "Getting Started",
+        "CONTROL Resonant"
+      ]
+    },
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  },
+  {
+    "slug": "control-resonant-editions-and-pre-order-bonuses",
+    "title": "CONTROL Resonant Editions and Pre-order Bonuses",
+    "category": "Game Information",
+    "excerpt": "Standard, Digital Deluxe, physical, and SteelBook editions compared with the latest release timing.",
+    "introduction": "CONTROL Resonant is sold digitally in Standard and Digital Deluxe editions, with Standard and SteelBook physical options for consoles. The physical release follows the digital launch.",
+    "quickAnswer": "Choose Standard for the complete base game. Digital Deluxe adds the digital artbook, soundtrack, AWE Mission Outfit, Untapped Artifact (Wallet), and a Starter Resource Bundle; PlayStation also lists 48-hour early access. No Collector's Edition is planned. Physical console editions release October 15, 2026.",
+    "image": "/images/guides/editions.jpg",
+    "imageAlt": "Warped Manhattan skyline used in official CONTROL Resonant promotional art",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "facts": [
+      {
+        "label": "Digital launch",
+        "value": "September 24, 2026"
+      },
+      {
+        "label": "Physical launch",
+        "value": "October 15, 2026"
+      },
+      {
+        "label": "Standard MSRP",
+        "value": "$59.99 USD"
+      },
+      {
+        "label": "Digital Deluxe MSRP",
+        "value": "$69.99 USD"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Which CONTROL Resonant edition should you buy?",
+        "paragraphs": [
+          "The base game is included in every announced edition. Deluxe extras are digital bonuses, while the SteelBook edition is a separate physical package for PS5 and Xbox Series X|S. Pricing and availability can vary by region and retailer."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "edition-comparison",
+        "title": "Edition Comparison",
+        "table": {
+          "headers": ["Edition", "Format", "Confirmed contents"],
+          "rows": [
+            ["Standard", "Digital", "Base game"],
+            [
+              "Digital Deluxe",
+              "Digital",
+              "Base game, artbook, soundtrack, AWE Mission Outfit, Untapped Artifact (Wallet), Starter Resource Bundle"
+            ],
+            ["Standard", "Physical", "Base game on PS5 or Xbox Series X|S"],
+            [
+              "SteelBook",
+              "Physical",
+              "Base game, SteelBook case, three fine-art prints, key-art poster"
+            ]
+          ],
+          "caption": "Edition Comparison"
+        },
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "pre-order-bonuses",
+        "title": "Pre-order Bonuses",
+        "paragraphs": [
+          "Steam lists the Hiss Corruption Outfit and Pickpocket's Tool Artifact for pre-purchase customers. The US PlayStation Store lists those two items plus the Occult Outfit. Store terms can differ by platform and region, so verify the bonus line on the exact listing where you plan to buy.",
+          "These are cosmetic or progression items, not story expansions. Remedy describes the base game as a complete launch experience."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "early-access",
+        "title": "Digital Deluxe Early Access",
+        "paragraphs": [
+          "The PlayStation Store advertises up to 48 hours of early access with Digital Deluxe, which points to September 22 on PS5. Do not assume the same timing on another platform unless its own store page states it."
+        ],
+        "sourceRefs": [2]
+      },
+      {
+        "id": "physical-release",
+        "title": "Physical Release Timing",
+        "paragraphs": [
+          "Remedy moved the physical console release to October 15, 2026, while the digital release remains September 24. Retail delivery dates can be later than the publisher date."
+        ],
+        "sourceRefs": [5]
+      },
+      {
+        "id": "collectors-edition",
+        "title": "Is there a Collector's Edition?",
+        "paragraphs": [
+          "No. Remedy's developer-pinned FAQ says a Collector's Edition is not planned. The SteelBook package is the premium physical option currently announced, but it should not be relabeled as a Collector's Edition."
+        ],
+        "sourceRefs": [4]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Steam — CONTROL Resonant store page",
+        "href": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+        "kind": "Official"
+      },
+      {
+        "label": "PlayStation — CONTROL Resonant editions",
+        "href": "https://www.playstation.com/en-us/games/control-resonant/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy — release and edition announcement",
+        "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+        "kind": "Official"
+      },
+      {
+        "label": "Steam Community — official developer FAQ",
+        "href": "https://steamcommunity.com/app/3669870/discussions/0/750542279460065824/",
+        "kind": "Official"
+      },
+      {
+        "label": "Physical release date update",
+        "href": "https://www.trueachievements.com/news/control-resonant-physical-copy-delay",
+        "kind": "Media preview"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-pc-system-requirements",
+      "is-control-resonant-on-game-pass",
+      "is-control-resonant-a-sequel"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Editions & Pre-order Bonuses Compared",
+      "description": "Compare CONTROL Resonant Standard, Digital Deluxe, physical, and SteelBook editions, confirmed bonuses, prices, and updated release dates.",
+      "keywords": [
+        "CONTROL Resonant Editions and Pre-order Bonuses",
+        "Game Information",
+        "CONTROL Resonant"
+      ]
+    },
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  },
+  {
+    "slug": "control-resonant-pc-system-requirements",
+    "title": "CONTROL Resonant PC System Requirements",
+    "category": "Game Information",
+    "excerpt": "Official minimum, recommended, ray tracing, and path tracing PC specifications in one clear guide.",
+    "introduction": "Remedy published the final PC requirements on September 9. Every tier requires 16 GB of RAM, Windows 10 or 11 64-bit, and 120 GB of SSD space.",
+    "quickAnswer": "For 1080p at 30 FPS on Low, Remedy lists a GTX 1070, RX 5600 XT, or Arc A580 with 6 GB VRAM and an i5-8500 or Ryzen 5 3500. The 1440p/60 recommended tier moves to an RTX 3060 Ti, RX 6700 XT, or Arc B580 with 8 GB VRAM.",
+    "image": "/images/guides/pc-system-requirements.jpg",
+    "imageAlt": "Official CONTROL Resonant PC requirements chart from Remedy Entertainment",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "facts": [
+      {
+        "label": "Storage",
+        "value": "120 GB SSD"
+      },
+      {
+        "label": "Memory",
+        "value": "16 GB RAM"
+      },
+      {
+        "label": "Operating system",
+        "value": "Windows 10/11 64-bit"
+      },
+      {
+        "label": "PC launch",
+        "value": "September 24, 2026"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "What PC hardware does CONTROL Resonant require?",
+        "paragraphs": [
+          "The minimum tier targets 1080p/30 with a Quality upscaler and Low graphics. Recommended targets 1440p/60 with Balanced upscaling and Medium graphics. Frame Generation was not used for Remedy's test configurations."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "reading-the-chart",
+        "title": "How to read the performance tiers",
+        "evidence": "Editorial advice",
+        "subsections": [
+          {
+            "title": "Match resolution and graphics settings",
+            "paragraphs": [
+              "A recommended GPU is tied to a target, not every setting. Compare resolution, preset and upscaler mode before choosing a tier."
+            ]
+          },
+          {
+            "title": "Separate capacity from performance",
+            "paragraphs": [
+              "Meeting RAM and storage requirements does not establish that a GPU can deliver the highest ray-tracing tier."
+            ]
+          },
+          {
+            "title": "Use the final chart",
+            "paragraphs": [
+              "The early FAQ lists initial requirements. The newer September announcement is the specification used below."
+            ]
+          }
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "standard-specs",
+        "title": "Minimum, Recommended, and Enthusiast Specs",
+        "table": {
+          "headers": ["Tier", "Target", "GPU", "CPU", "VRAM"],
+          "rows": [
+            [
+              "Minimum",
+              "1080p / 30 FPS / Low",
+              "GTX 1070, RX 5600 XT, or Arc A580",
+              "i5-8500 or Ryzen 5 3500",
+              "6 GB"
+            ],
+            [
+              "Recommended",
+              "1440p / 60 FPS / Medium",
+              "RTX 3060 Ti, RX 6700 XT, or Arc B580",
+              "i7-10700 or Ryzen 7 3700X",
+              "8 GB"
+            ],
+            [
+              "Enthusiast",
+              "2160p / 60 FPS / High",
+              "RTX 3080 or RX 6800 XT",
+              "i7-10700 or Ryzen 7 3700X",
+              "10 GB"
+            ]
+          ],
+          "caption": "Minimum, Recommended, and Enthusiast Specs"
+        },
+        "sourceRefs": [1]
+      },
+      {
+        "id": "ray-tracing-specs",
+        "title": "Ray Tracing and Path Tracing Specs",
+        "table": {
+          "headers": ["Tier", "Target", "GPU", "CPU", "VRAM"],
+          "rows": [
+            [
+              "Ray Tracing Minimum",
+              "1080p / 30 FPS / Low RT",
+              "RTX 2060 SUPER, RX 6600, or Arc A580",
+              "i7-8700K or Ryzen 5 3600X",
+              "8 GB"
+            ],
+            [
+              "Ray Tracing Recommended",
+              "1440p / 60 FPS / Medium RT",
+              "RTX 4070 Ti or RX 9070",
+              "i7-10700 or Ryzen 7 3700X",
+              "10 GB"
+            ],
+            [
+              "Path Tracing Enthusiast",
+              "2160p / 60 FPS / High PT",
+              "RTX 5080",
+              "i7-10700 or Ryzen 7 3700X",
+              "12 GB"
+            ]
+          ],
+          "caption": "Ray Tracing and Path Tracing Specs"
+        },
+        "sourceRefs": [1]
+      },
+      {
+        "id": "pc-features",
+        "title": "Confirmed PC Features",
+        "bullets": [
+          "Uncapped frame rate",
+          "NVIDIA DLSS 4.5 and AMD FSR 4.1 upscaling and Frame Generation",
+          "NVIDIA DLSS 4.5 Ray Reconstruction",
+          "Ray tracing and path tracing support",
+          "HDR and ultra-wide display support"
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "storage-note",
+        "title": "Storage and Upgrade Advice",
+        "paragraphs": [
+          "The 120 GB figure is required free SSD space, not necessarily the download size. Leave extra room for unpacking and updates. Match your monitor target first, then compare the GPU tier; the official chart already assumes upscaling at every listed performance target."
+        ],
+        "sourceRefs": [1]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Steam — final PC requirements announcement",
+        "href": "https://store.steampowered.com/news/app/3669870/view/676256891013171635",
+        "kind": "Official"
+      },
+      {
+        "label": "Steam — CONTROL Resonant store page",
+        "href": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy — worldwide launch announcement",
+        "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-editions-and-pre-order-bonuses",
+      "does-control-resonant-use-denuvo",
+      "is-control-resonant-on-game-pass"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant PC Requirements - Minimum to Path Tracing",
+      "description": "See the official CONTROL Resonant PC system requirements for minimum, recommended, ray tracing, and path tracing, including GPU, CPU, RAM, and SSD.",
+      "keywords": [
+        "CONTROL Resonant PC System Requirements",
+        "Game Information",
+        "CONTROL Resonant"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Is the storage requirement 100 GB or 120 GB?",
+        "answer": "The final September 9 requirements specify 120 GB of SSD space, superseding the initial June FAQ."
+      },
+      {
+        "question": "Are these native-resolution benchmarks?",
+        "answer": "No. The published performance targets use the upscaling settings in Remedy's chart. Frame Generation was not used in the stated test configurations."
+      }
+    ],
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  },
+  {
+    "slug": "is-control-resonant-on-game-pass",
+    "title": "Is CONTROL Resonant on Game Pass?",
+    "category": "Game Information",
+    "excerpt": "The latest launch status, and why Xbox Play Anywhere does not mean Game Pass.",
+    "introduction": "CONTROL Resonant has an Xbox release and Xbox Play Anywhere support, but those are separate from an Xbox Game Pass subscription listing.",
+    "quickAnswer": "No Game Pass launch has been announced as of September 15, 2026. CONTROL Resonant is confirmed for Xbox Series X|S and Xbox on PC with Xbox Play Anywhere, but Play Anywhere is not the same as Game Pass.",
+    "image": "/images/gameplay/paranatural-combat.jpg",
+    "imageAlt": "Dylan Faden fighting Hiss-corrupted enemies in CONTROL Resonant",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "facts": [
+      {
+        "label": "Game Pass",
+        "value": "Not announced"
+      },
+      {
+        "label": "Xbox consoles",
+        "value": "Series X|S"
+      },
+      {
+        "label": "Xbox PC app",
+        "value": "Confirmed"
+      },
+      {
+        "label": "Play Anywhere",
+        "value": "Confirmed at launch"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Is CONTROL Resonant coming to Game Pass?",
+        "paragraphs": [
+          "The official Xbox and Remedy announcements describe a paid release and highlight Xbox Play Anywhere. Neither announcement says CONTROL Resonant joins Game Pass on day one."
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "play-anywhere",
+        "title": "Xbox Play Anywhere vs Game Pass",
+        "paragraphs": [
+          "Xbox Play Anywhere lets a qualifying digital purchase work across Xbox console and Xbox on PC, with shared saves, add-ons, and achievements. Game Pass is a subscription catalog. A game can support one without being included in the other."
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "launch-options",
+        "title": "Confirmed Xbox Launch Options",
+        "bullets": [
+          "Xbox Series X|S digital release on September 24, 2026",
+          "Xbox on PC with Xbox Play Anywhere support",
+          "Physical Xbox release on October 15, 2026",
+          "Standard and Digital Deluxe purchasing options, depending on storefront"
+        ],
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "status",
+        "title": "What Could Change",
+        "paragraphs": [
+          "A later Game Pass agreement is always possible, but there is no basis to treat it as confirmed. This page will change only when Remedy or Xbox publishes a subscription announcement."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Xbox Wire — Remedy, Play Anywhere, and self-publishing",
+        "href": "https://news.xbox.com/en-us/2026/05/08/control-resonant-remedy-exciting-sequel-xbox-play-anywhere-and-self-publishing/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy — worldwide launch announcement",
+        "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-editions-and-pre-order-bonuses",
+      "control-resonant-pc-system-requirements",
+      "is-control-resonant-coming-to-switch-2"
+    ],
+    "seo": {
+      "title": "Is CONTROL Resonant on Game Pass? Current Launch Status",
+      "description": "CONTROL Resonant has Xbox Play Anywhere, but Game Pass has not been announced. See the confirmed Xbox console and PC launch options.",
+      "keywords": [
+        "Is CONTROL Resonant on Game Pass?",
+        "Game Information",
+        "CONTROL Resonant"
+      ]
+    },
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  },
+  {
+    "slug": "does-control-resonant-use-denuvo",
+    "title": "Does CONTROL Resonant Use Denuvo?",
+    "category": "Game Information",
+    "excerpt": "What the Steam listing currently discloses—and what remains unconfirmed before launch.",
+    "introduction": "DRM questions need a storefront disclosure or publisher statement. At present, the official PC pages do not provide enough evidence for a definite yes or no.",
+    "quickAnswer": "Denuvo has not been confirmed for CONTROL Resonant as of September 15, 2026. The Steam page does not currently display a Denuvo notice, but absence of that notice before release is not proof that the game is DRM-free.",
+    "image": "/images/guides/gravity-anomaly.jpg",
+    "imageAlt": "Dylan facing a giant face-like entity amid floating debris in official CONTROL Resonant media",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": false,
+    "facts": [
+      {
+        "label": "Denuvo status",
+        "value": "Not confirmed"
+      },
+      {
+        "label": "Steam DRM notice",
+        "value": "No Denuvo notice listed"
+      },
+      {
+        "label": "Publisher statement",
+        "value": "None located"
+      },
+      {
+        "label": "Last verified",
+        "value": "September 15, 2026"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Is Denuvo confirmed for CONTROL Resonant?",
+        "paragraphs": [
+          "There is currently no official Denuvo confirmation. Treat claims that it definitely has—or definitely does not have—Denuvo as unverified until Remedy or a storefront adds a clear disclosure."
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "steam-listing",
+        "title": "What the Steam Page Shows",
+        "paragraphs": [
+          "Steam lists the release date, supported features, languages, editions, and PC requirements. The page checked for this guide did not include a third-party Denuvo anti-tamper notice."
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "why-cautious",
+        "title": "Why the Answer Is Still Unconfirmed",
+        "paragraphs": [
+          "Store disclosures can be updated close to release, and the presence or absence of one line is weaker evidence than a direct publisher statement. We therefore record the status as unconfirmed instead of turning a missing label into a promise."
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "check-at-launch",
+        "title": "What to Check at Launch",
+        "bullets": [
+          "The third-party DRM disclosure on the Steam store page",
+          "The final Steam subscriber agreement shown before purchase",
+          "Any PC technical FAQ published by Remedy",
+          "Post-launch executable behavior reported by reputable PC outlets"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Steam — CONTROL Resonant store page",
+        "href": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
+        "kind": "Official"
+      },
+      {
+        "label": "Steam — official announcements",
+        "href": "https://steamcommunity.com/app/3669870/announcements/",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-pc-system-requirements",
+      "control-resonant-editions-and-pre-order-bonuses",
+      "is-control-resonant-on-game-pass"
+    ],
+    "seo": {
+      "title": "Does CONTROL Resonant Use Denuvo? Current PC DRM Status",
+      "description": "Denuvo is not officially confirmed for CONTROL Resonant. See what the Steam page currently discloses and why the final DRM status remains open.",
+      "keywords": [
+        "Does CONTROL Resonant Use Denuvo?",
+        "Game Information",
+        "CONTROL Resonant"
+      ]
+    },
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  },
+  {
+    "slug": "is-control-resonant-coming-to-switch-2",
+    "title": "Is CONTROL Resonant Coming to Nintendo Switch 2?",
+    "category": "Game Information",
+    "excerpt": "The confirmed platform list and the current status of a Switch 2 version.",
+    "introduction": "Remedy's launch announcements name PS5, Xbox Series X|S, Windows PC, and a later Mac release. Nintendo Switch 2 is not on that list.",
+    "quickAnswer": "No Nintendo Switch 2 version has been announced as of September 15, 2026. The confirmed digital launch platforms are PS5, Xbox Series X|S, Steam, and Epic Games Store, with Mac following later in 2026.",
+    "image": "/images/map/manhattan-zone.jpg",
+    "imageAlt": "Dylan Faden facing paranatural enemies in a warped Manhattan street",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": false,
+    "facts": [
+      {
+        "label": "Switch 2",
+        "value": "Not announced"
+      },
+      {
+        "label": "PlayStation",
+        "value": "PS5"
+      },
+      {
+        "label": "Xbox",
+        "value": "Series X|S"
+      },
+      {
+        "label": "PC",
+        "value": "Steam, Epic, Xbox on PC"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Is a Nintendo Switch 2 version announced?",
+        "paragraphs": [
+          "CONTROL Resonant is not currently announced for Nintendo Switch 2. No official trailer, store listing, or Remedy release notice includes Nintendo's console."
+        ],
+        "sourceRefs": [1]
+      },
+      {
+        "id": "confirmed-platforms",
+        "title": "Confirmed Platforms",
+        "bullets": [
+          "PlayStation 5 and PS5 Pro Enhanced",
+          "Xbox Series X|S and Xbox on PC",
+          "Windows PC through Steam and Epic Games Store",
+          "GeForce NOW at digital launch",
+          "Mac through Steam and the App Store later in 2026"
+        ],
+        "sourceRefs": [1, 3]
+      },
+      {
+        "id": "original-control",
+        "title": "What About the Original CONTROL on Switch?",
+        "paragraphs": [
+          "The original game reached Nintendo Switch as a cloud version. That history shows the series has appeared on Nintendo hardware, but it does not confirm a native or cloud edition of Resonant."
+        ]
+      },
+      {
+        "id": "status",
+        "title": "When This Status Changes",
+        "paragraphs": [
+          "A Switch 2 version should be considered real only after Remedy, Nintendo, or an official store publishes it. Hardware speculation and retailer placeholders are not confirmation."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Remedy — worldwide launch announcement",
+        "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+        "kind": "Official"
+      },
+      {
+        "label": "PlayStation — CONTROL Resonant",
+        "href": "https://www.playstation.com/en-us/games/control-resonant/",
+        "kind": "Official"
+      },
+      {
+        "label": "Xbox Wire — confirmed Xbox platforms",
+        "href": "https://news.xbox.com/en-us/2026/05/08/control-resonant-remedy-exciting-sequel-xbox-play-anywhere-and-self-publishing/",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "is-control-resonant-on-game-pass",
+      "control-resonant-pc-system-requirements",
+      "should-you-play-control-first"
+    ],
+    "seo": {
+      "title": "Is CONTROL Resonant Coming to Switch 2? Platform Status",
+      "description": "CONTROL Resonant is not announced for Nintendo Switch 2 as of September 2026. Check the confirmed PS5, Xbox, PC, GeForce NOW, and Mac platform plans.",
+      "keywords": [
+        "Is CONTROL Resonant Coming to Nintendo Switch 2?",
+        "Game Information",
+        "CONTROL Resonant"
+      ]
+    },
+    "publishedAt": "2026-09-15",
+    "coverage": "Official information"
+  }
+]

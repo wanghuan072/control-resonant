@@ -1,0 +1,48 @@
+.heading {
+  position: relative;
+  max-width: 760px;
+  padding-left: 24px;
+}
+
+.heading::before {
+  position: absolute;
+  top: 2px;
+  bottom: 4px;
+  left: 0;
+  width: 4px;
+  content: "";
+  background: var(--color-red);
+}
+
+.eyebrow {
+  margin-bottom: 9px;
+  color: var(--color-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.heading h2 {
+  margin-bottom: 12px;
+  font-size: clamp(2.25rem, 4vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: var(--color-ink-soft);
+}
+
+.inverted h2,
+.inverted .description {
+  color: var(--color-on-night);
+}
+
+.inverted .eyebrow {
+  color: #aab3b7;
+}

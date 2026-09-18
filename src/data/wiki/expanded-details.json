@@ -1,0 +1,476 @@
+[
+  {
+    "group": "world",
+    "slug": "the-gap",
+    "title": "The Gap",
+    "type": "Build and progression space",
+    "summary": "The Gap is Dylan's in-world build space: a place to adjust combat tools, develop Talents, craft Artifacts and test a loadout away from an encounter.",
+    "image": "/images/gameplay/gap-realm.jpg",
+    "imageAlt": "The Gap, a dark interior used for Dylan's build management",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Function", "value": "Build management and experimentation" },
+      {
+        "label": "Systems",
+        "value": "Aberrant, Combat Abilities, Talents, Artifacts"
+      },
+      {
+        "label": "Access",
+        "value": "Outside combat; fast travel described by Remedy"
+      },
+      {
+        "label": "Artifact use",
+        "value": "Craft discovered Untapped Artifacts"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What can you do in the Gap?",
+        "paragraphs": [
+          "Remedy describes the Gap as a space within Dylan's mind rather than an ordinary inventory screen. Weapon Forms, supernatural Combat Abilities and Talents are managed here. A September developer briefing also says players can craft Artifacts and test builds in the Gap.",
+          "The practical distinction is between collecting a possibility in Manhattan and making it part of a build. Finding an Untapped Artifact is not the same thing as equipping a finished Artifact: the crafting step belongs in the Gap."
+        ]
+      },
+      {
+        "heading": "When should you return?",
+        "paragraphs": [
+          "The official combat explanation places Gap access outside combat. Once a new Form, boss-granted ability, Talent or Untapped Artifact is available, review the combination before judging it in the next encounter. Remedy says travel between Manhattan's Zones and the Gap is near-instantaneous, but has not published a full list of every access point.",
+          "Do not read preview menu images as a complete launch inventory. The first run deliberately limits some choices; New Game Plus expands Talent options, Combat Ability combinations and Artifact capacity."
+        ]
+      }
+    ],
+    "playerTakeaway": "Use the Gap as a comparison and testing stop between encounters. Track the distinction between an unlocked option, a crafted Artifact and an equipped slot.",
+    "related": [
+      "combat/aberrant",
+      "combat/artifacts",
+      "combat/new-game-plus",
+      "world/manhattan"
+    ],
+    "sourceIds": ["ps-combat", "ps-ngplus", "ps5-features"]
+  },
+  {
+    "group": "world",
+    "slug": "fbc-field-office",
+    "title": "FBC Field Office",
+    "type": "Manhattan hub",
+    "summary": "The Federal Bureau of Control's field office is the evolving central hub linking the game's handcrafted Manhattan Zones; it is not a claim that the city is one seamless open-world map.",
+    "image": "/images/map/manhattan-zone.jpg",
+    "imageAlt": "Manhattan zone artwork; the field office itself is not identified in this image",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Organization", "value": "Federal Bureau of Control" },
+      { "label": "World role", "value": "Evolving central hub" },
+      { "label": "Connected areas", "value": "Handcrafted Manhattan Zones" },
+      {
+        "label": "Map structure",
+        "value": "Zone-based, not a seamless open world"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "How is Manhattan connected?",
+        "paragraphs": [
+          "In a developer-commented Xbox presentation, the city's major Zones branch from a central area containing the FBC field office. The office is described as an evolving hub. That gives players a better mental model than treating every distorted street as one continuous map.",
+          "Each Zone is intended to have a distinct appearance, encounters, lore and discoveries. The office connects that structure, while the Gap serves the separate purpose of shaping Dylan's build. The two should not be confused just because both are places a player may revisit."
+        ]
+      },
+      {
+        "heading": "What is not mapped yet?",
+        "paragraphs": [
+          "Official material has not supplied a complete office floor plan, every Zone entrance or a confirmed order for all routes. This page therefore explains the hub's role rather than inventing corridors, vendors or fast-travel markers.",
+          "For navigation, follow the currently available Zone and story objective. For equipment choices, use the Gap; for a specific previewed traversal challenge, see the Metro Fault file."
+        ]
+      }
+    ],
+    "playerTakeaway": "Think of the field office as the Zone hub, the Gap as the build space and the Oldest House as a distinct story location.",
+    "related": [
+      "world/manhattan",
+      "world/the-gap",
+      "world/oldest-house",
+      "missions/metro-fault"
+    ],
+    "sourceIds": ["ps-combat", "ps5-features", "remedy-gameplay"]
+  },
+  {
+    "group": "combat",
+    "slug": "aberrant-forms",
+    "title": "Aberrant Forms Compared",
+    "type": "Weapon-form system",
+    "summary": "Six named early weapon choices divide into Primary and Secondary Forms. They change the speed, reach and target pattern of Dylan's transforming Aberrant rather than representing six separate loot drops.",
+    "image": "/images/gameplay/aberrant-scythe.jpg",
+    "imageAlt": "Aberrant scythe form shown in gameplay artwork",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Primary choices shown", "value": "Flurry, Slash, Slice" },
+      { "label": "Secondary choices shown", "value": "Crush, Drill, Extend" },
+      { "label": "Additional pool", "value": "Combo Enders" },
+      { "label": "Weapon", "value": "The Aberrant" }
+    ],
+    "comparison": {
+      "heading": "Six previewed Forms at a glance",
+      "introduction": "These roles come from a first-party hands-on of the opening hour. They are tactical descriptions, not a final damage ranking or full unlock list.",
+      "columns": ["Form", "Pool", "Shown weapon", "Player-facing role"],
+      "rows": [
+        [
+          "Flurry",
+          "Primary",
+          "Twin daggers",
+          "Fast, close-range attacks; boosted critical chance"
+        ],
+        ["Slash", "Primary", "Scythe", "Wide attacks against groups"],
+        [
+          "Slice",
+          "Primary",
+          "Axe",
+          "High single-target damage; bonus from behind"
+        ],
+        ["Crush", "Secondary", "Mallet", "Large, slow smashing attacks"],
+        ["Drill", "Secondary", "Drill", "Directed sustained damage"],
+        ["Extend", "Secondary", "Chain staff", "Extra reach for a melee setup"]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "How do the Form pools work?",
+        "paragraphs": [
+          "The Xbox hands-on describes an early choice among Flurry, Slash and Slice, followed later in the preview by a choice among Crush, Drill and Extend. A separate Combo Ender pool supplies finishers. These pools let Dylan combine different attack roles within a single Aberrant loadout.",
+          "The previewer notes that other Forms can eventually be unlocked. That observation does not establish an exact unlock order, upgrade cost, complete Form count or a permanent lockout."
+        ]
+      },
+      {
+        "heading": "How should you choose an opening pair?",
+        "paragraphs": [
+          "A close-range Primary Form and a reach-oriented Secondary Form cover different situations; a wide Primary Form and a heavy Secondary Form emphasize crowd pressure and impact. Those are editorial comparisons based on the shown roles, not tested best-in-slot recommendations.",
+          "Watch what a fight asks of you—single target, group control, reach or sustained pressure—before treating one weapon animation as universally strongest. Talents, abilities and Artifacts may alter that judgment in the finished game."
+        ]
+      }
+    ],
+    "playerTakeaway": "Compare Forms by role first. No verified retail damage values, upgrade trees or complete Combo Ender list are available yet.",
+    "related": [
+      "combat/aberrant",
+      "combat/combat-abilities",
+      "combat/artifacts",
+      "world/the-gap"
+    ],
+    "sourceIds": ["xbox-hands-on-june", "ps-combat"]
+  },
+  {
+    "group": "combat",
+    "slug": "combat-abilities",
+    "title": "Combat Abilities Compared",
+    "type": "Supernatural ability system",
+    "summary": "Barrage, Seekers and Shield were presented as choices after an early Resonant encounter; their known functions point to different ways to regain control of a fight.",
+    "image": "/images/abilities/seekers-loadout.jpg",
+    "imageAlt": "Combat Ability selection shown in preview material",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      {
+        "label": "Acquisition pattern",
+        "value": "Major Resonant boss rewards"
+      },
+      { "label": "Early choices shown", "value": "Barrage, Seekers, Shield" },
+      {
+        "label": "Resource loop",
+        "value": "Melee hits restore Combat Ability resource"
+      },
+      {
+        "label": "First-run limitation",
+        "value": "Some boss choices are exclusive until later runs"
+      }
+    ],
+    "comparison": {
+      "heading": "Three early choices shown",
+      "introduction": "A hands-on preview describes these as an early choice, not a complete list of launch abilities or a measured tier list.",
+      "columns": [
+        "Ability",
+        "Shown action",
+        "Likely tactical use",
+        "Important distinction"
+      ],
+      "rows": [
+        [
+          "Barrage",
+          "Launches rocks from the ground",
+          "Ranged pressure",
+          "Projectile attack"
+        ],
+        [
+          "Seekers",
+          "Summons volatile entities",
+          "Independent pressure and detonation",
+          "Summon, not a weapon Form"
+        ],
+        [
+          "Shield",
+          "Raises floating rocks and supports a ram",
+          "Defense into a forward attack",
+          "Protective ability with offensive use"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Why does the choice matter?",
+        "paragraphs": [
+          "Remedy says powerful Resonants grant supernatural Combat Abilities and that some rewards branch into different playstyles. The opening hands-on identifies Barrage, Seekers and Shield after an early boss. A player choosing among them is choosing a role, not simply a different visual effect.",
+          "Melee hits restore the resource used by Combat Abilities. Abilities can stun enemies, enabling executions that temporarily raise melee damage. This loop explains why a defensive or summoning option can still support aggressive Aberrant play."
+        ]
+      },
+      {
+        "heading": "What changes in New Game Plus?",
+        "paragraphs": [
+          "The developer's NG+ explanation says multiple different Combat Abilities from the same boss can be equipped in a later run. It does not establish that every first-run branch is available immediately, or that the opening choice has no consequence.",
+          "Mold Turrets are a separate example of a tactical summon described by Remedy. Do not merge them with Seekers or count them as a named opening reward without a direct announcement."
+        ]
+      }
+    ],
+    "playerTakeaway": "Choose by the problem you want an ability to solve—distance, independent pressure or protection—and keep the Aberrant resource loop in mind.",
+    "related": [
+      "combat/aberrant",
+      "combat/aberrant-forms",
+      "combat/new-game-plus",
+      "enemies/first-resonant-entity"
+    ],
+    "sourceIds": ["xbox-hands-on-june", "ps-combat", "ps-ngplus"]
+  },
+  {
+    "group": "combat",
+    "slug": "artifacts",
+    "title": "Artifacts and Crafting",
+    "type": "Passive equipment system",
+    "summary": "Artifacts are passive equipment crafted from Untapped Artifacts in the Gap. The known first-run limit is three equipped slots; New Game Plus opens a fourth.",
+    "image": "/images/gameplay/gap-realm.jpg",
+    "imageAlt": "The Gap, where Artifacts can be crafted from Untapped Artifacts",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Category", "value": "Equippable passive modifiers" },
+      { "label": "Material", "value": "Untapped Artifacts found in the world" },
+      { "label": "Crafting location", "value": "The Gap" },
+      { "label": "Equip slots", "value": "Three in first run; four in NG+" }
+    ],
+    "comparison": {
+      "heading": "Do not confuse these states",
+      "introduction": "The acquisition and equipment steps are distinct. The numbers below describe slots, not the total number of Artifacts in the game.",
+      "columns": ["Term", "What it means", "Player action"],
+      "rows": [
+        [
+          "Untapped Artifact",
+          "A discovered, not-yet-crafted object",
+          "Bring it to the Gap"
+        ],
+        [
+          "Crafted Artifact",
+          "Usable passive equipment",
+          "Inspect its modifier and trade-off"
+        ],
+        [
+          "Equipped Artifact",
+          "A crafted item assigned to a slot",
+          "Compare it with the rest of the build"
+        ],
+        ["Fourth slot", "Additional NG+ capacity", "Available on a later run"]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "What can an Artifact change?",
+        "paragraphs": [
+          "Remedy describes passive effects covering survival, combat, exploration and resources. Some modifiers have conditions or trade-offs, so the highest-looking bonus is not automatically the best fit for every fight.",
+          "The official explanation gives a three-slot limit on a first playthrough and a fourth slot in New Game Plus. It does not provide a complete catalog of effects, crafting costs or acquisition locations."
+        ]
+      },
+      {
+        "heading": "How should you evaluate one?",
+        "paragraphs": [
+          "Start with the build's weakness. A modifier that helps resource recovery serves a different purpose from one that improves survival. Check whether the effect requires a condition you can reliably trigger with your chosen Forms and Combat Abilities.",
+          "A preorder or edition-linked Artifact is a specific entitlement, not evidence that every Artifact is sold separately or that the full crafting system is bypassed. Keep edition contents and in-game discoveries separate."
+        ]
+      }
+    ],
+    "playerTakeaway": "Record an Artifact's effect and condition before ranking it. The three-versus-four figure is an equip limit, not a collectible count.",
+    "related": [
+      "world/the-gap",
+      "combat/new-game-plus",
+      "combat/aberrant-forms",
+      "combat/combat-abilities"
+    ],
+    "sourceIds": ["ps-ngplus", "ps5-features", "store"]
+  },
+  {
+    "group": "combat",
+    "slug": "new-game-plus",
+    "title": "New Game Plus",
+    "type": "Replay and progression mode",
+    "summary": "NG+ carries much of Dylan's combat progression into a fresh run while story-gated traversal abilities reset. It also broadens Talent, ability and Artifact combinations.",
+    "image": "/images/talents/talent-tree.jpg",
+    "imageAlt": "CONTROL Resonant Talent interface from preview imagery",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      {
+        "label": "Carries over",
+        "value": "Aberrant upgrades, health and ability-resource upgrades, Combat Abilities, Talents, Artifacts"
+      },
+      {
+        "label": "Does not carry over",
+        "value": "Story-linked traversal abilities"
+      },
+      { "label": "New capacity", "value": "Fourth Artifact slot" },
+      {
+        "label": "New flexibility",
+        "value": "Additional Talent nodes and same-boss ability combinations"
+      }
+    ],
+    "comparison": {
+      "heading": "What follows Dylan into NG+?",
+      "introduction": "This is the developer's announced carry-over policy, not a claim about every inventory item or activity flag.",
+      "columns": ["System", "Announced NG+ behavior"],
+      "rows": [
+        ["Aberrant, health and ability resource", "Upgrades persist"],
+        [
+          "Combat Abilities, Talents and Artifacts",
+          "Unlocks persist; additional combinations become possible"
+        ],
+        ["Traversal abilities", "Reset with story progression"],
+        ["Artifact capacity", "A fourth equipped slot unlocks"]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Why is the second run different?",
+        "paragraphs": [
+          "Remedy says a first playthrough cannot unlock everything. NG+ allows new Talent nodes and combinations of different Combat Abilities gained from the same boss. That makes it a build-experiment run, not merely the same campaign with bigger numbers.",
+          "The world also pushes back: enemies and encounters evolve, and some bosses may have new behaviors. The announcement does not provide a fixed level scaling formula or list every modified encounter."
+        ]
+      },
+      {
+        "heading": "What needs to be reacquired?",
+        "paragraphs": [
+          "Traversal abilities remain tied to the story and do not carry over. That is different from supernatural Combat Abilities, which are explicitly part of the retained progression. Plan exploration around renewed route gates even if your combat build is already developed.",
+          "World Quests, bounties, collectibles and alternative side-story outcomes are reasons Remedy gives for returning. Their exact reset states and reward lists should be verified against the released game before a completion checklist is published."
+        ]
+      }
+    ],
+    "playerTakeaway": "Preserve build notes for NG+, but do not assume old traversal shortcuts remain open at the start of the new story.",
+    "related": [
+      "combat/artifacts",
+      "combat/combat-abilities",
+      "world/the-gap",
+      "missions/world-quests-and-faults"
+    ],
+    "sourceIds": ["ps-ngplus", "ps-combat"]
+  },
+  {
+    "group": "enemies",
+    "slug": "first-resonant-entity",
+    "title": "First Resonant Entity",
+    "type": "Previewed boss encounter",
+    "summary": "An opening-hours hands-on describes a giant partial head embedded in the street, using telekinetic debris. It is a preview encounter, not a confirmed final boss name.",
+    "image": "/images/guides/resonant-encounter.jpg",
+    "imageAlt": "Promotional Resonant encounter artwork; not an identification of the previewed boss",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Identity", "value": "Unannounced in the preview" },
+      { "label": "Encounter", "value": "Early Manhattan sequence" },
+      {
+        "label": "Shown threat",
+        "value": "Telekinetic debris and a large embedded head"
+      },
+      {
+        "label": "Previewed ability choice",
+        "value": "Barrage, Seekers or Shield"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What did the hands-on actually show?",
+        "paragraphs": [
+          "A first-party Xbox hands-on follows Dylan from the Oldest House into Manhattan and describes an early Resonant Entity as a large, partly embedded head. The encounter uses telekinetic debris. The previewer also sees the entity clearing Hiss from its surroundings, which distinguishes it from an ordinary Hiss enemy.",
+          "The report presents Barrage, Seekers and Shield as the supernatural ability options following this encounter. It does not publish a retail boss name, health value, elemental resistance or a guaranteed step-by-step pattern."
+        ]
+      },
+      {
+        "heading": "How should players read the preview?",
+        "paragraphs": [
+          "Treat the encounter as an introduction to what a Resonant can change in a build. Remedy says major Resonants are story-integrated bosses that grant Combat Abilities, sometimes with branching choices.",
+          "The separately previewed Central Resonant has fire and magma hazards. The two should not be merged into one entry merely because both are Resonants. A final retail boss route will need gameplay verification."
+        ]
+      }
+    ],
+    "playerTakeaway": "Expect a boss-linked ability decision, but do not rely on an unconfirmed boss name or pre-release damage strategy.",
+    "related": [
+      "enemies/central-resonant",
+      "combat/combat-abilities",
+      "characters/dylan-faden"
+    ],
+    "sourceIds": ["xbox-hands-on-june", "ps-combat"]
+  },
+  {
+    "group": "missions",
+    "slug": "world-quests-and-faults",
+    "title": "World Quests and Faults",
+    "type": "Optional activity types",
+    "summary": "World Quests are self-contained narrative stories. Faults are a distinct activity type; Metro Fault is a named preview route, not proof of a complete published Fault list.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "imageAlt": "Warped transit space used to illustrate a previewed Fault route",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Main narrative", "value": "Dylan's Journey" },
+      { "label": "Optional narrative", "value": "World Quests" },
+      {
+        "label": "Other activity",
+        "value": "Faults, encounters, challenges and discoveries"
+      },
+      { "label": "Named preview route", "value": "Metro Fault" }
+    ],
+    "comparison": {
+      "heading": "Which kind of objective is this?",
+      "introduction": "These are categories disclosed by Remedy and preview materials, not a complete quest log.",
+      "columns": ["Label", "Known role", "What is not established"],
+      "rows": [
+        [
+          "Dylan's Journey",
+          "Main campaign",
+          "A full chapter and mission order"
+        ],
+        [
+          "World Quest",
+          "Self-contained narrative story",
+          "All quest names, choices and rewards"
+        ],
+        [
+          "Fault",
+          "Distinct optional activity",
+          "Total count and full route map"
+        ],
+        [
+          "Metro Fault",
+          "One named previewed Fault",
+          "Final-build timings and every collectible"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "What does the mission structure tell us?",
+        "paragraphs": [
+          "Remedy identifies two primary narrative quest types: Dylan's Journey and World Quests. Zones also contain combat encounters, environmental challenges, hidden discoveries and optional activities. The stated design is exploration on the player's terms rather than clearing an icon-filled map.",
+          "A category name is not a mission title. Do not mistake the public term World Quest for a verified list of individual side missions. The known Metro Fault is a concrete preview route and belongs under the broader activity discussion."
+        ]
+      },
+      {
+        "heading": "How should you plan a route before launch?",
+        "paragraphs": [
+          "Use the main campaign for story progression and treat Zone activities as opportunities to gain context or test movement and combat. A preview of Metro Fault shows a traversal-focused space and the Reach reward, but does not establish that all Faults use the same objective pattern.",
+          "New Game Plus is expected to offer reasons to revisit missed World Quests, bounties and collectibles. Until the released quest log can be checked, no page here assigns fictional task steps or completion percentages."
+        ]
+      }
+    ],
+    "playerTakeaway": "Use this taxonomy to decide what to follow next; reserve exact routes and reward checklists for verified retail play.",
+    "related": [
+      "missions/metro-fault",
+      "world/manhattan",
+      "combat/new-game-plus"
+    ],
+    "sourceIds": ["ps-combat", "ps-ngplus", "metro"]
+  }
+]

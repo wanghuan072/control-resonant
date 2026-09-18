@@ -1,0 +1,101 @@
+{
+  "reviewedAt": "2026-09-18",
+  "sourceIds": [
+    "ps-combat",
+    "xbox-hands-on-june",
+    "ps-ngplus",
+    "assist",
+    "ps5-features"
+  ],
+  "forms": [
+    {
+      "name": "Flurry",
+      "slot": "Primary",
+      "shape": "Twin daggers",
+      "knownUse": "Fast, close-range attacks; the preview describes a higher critical chance.",
+      "decision": "Consider when you prefer repeated close hits over reach."
+    },
+    {
+      "name": "Slash",
+      "slot": "Primary",
+      "shape": "Scythe",
+      "knownUse": "Wide swings aimed at groups.",
+      "decision": "Consider when several enemies pressure the same space."
+    },
+    {
+      "name": "Slice",
+      "slot": "Primary",
+      "shape": "Axe",
+      "knownUse": "High single-target damage, with a previewed bonus from behind.",
+      "decision": "Consider when positioning for a focused target matters."
+    },
+    {
+      "name": "Crush",
+      "slot": "Secondary",
+      "shape": "Mallet",
+      "knownUse": "Slow, heavy smashing attacks.",
+      "decision": "Pairs a heavier option with a faster Primary Form."
+    },
+    {
+      "name": "Drill",
+      "slot": "Secondary",
+      "shape": "Drill",
+      "knownUse": "Directed, sustained damage in the hands-on build.",
+      "decision": "Consider when you can hold pressure on one target."
+    },
+    {
+      "name": "Extend",
+      "slot": "Secondary",
+      "shape": "Chain staff",
+      "knownUse": "Adds reach to a melee setup.",
+      "decision": "Pairs with a short-range Primary Form when spacing is difficult."
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Barrage",
+      "role": "Ranged pressure",
+      "previewedEffect": "Pulls rocks from the ground and launches them.",
+      "playerQuestion": "Need a ranged option when closing distance is unsafe?"
+    },
+    {
+      "name": "Seekers",
+      "role": "Summon / area pressure",
+      "previewedEffect": "Summons an attacking entity that can also be thrown and detonated.",
+      "playerQuestion": "Want damage or distraction while you reposition?"
+    },
+    {
+      "name": "Shield",
+      "role": "Defense and engage",
+      "previewedEffect": "Raises floating rocks and can turn the defense into an offensive dash.",
+      "playerQuestion": "Need a way to absorb pressure before closing in?"
+    }
+  ],
+  "assist": [
+    {
+      "problem": "Attacks arrive from too many directions",
+      "setting": "Enemy Aggression",
+      "effect": "Reduce how often enemies press the player."
+    },
+    {
+      "problem": "Dodge timing is difficult to read",
+      "setting": "Perfect Dodge Window",
+      "effect": "Widen the timing window without changing every other combat rule."
+    },
+    {
+      "problem": "Projectiles are too fast",
+      "setting": "Enemy Projectile Speed",
+      "effect": "Slow incoming projectiles."
+    },
+    {
+      "problem": "Abilities are hard to sustain",
+      "setting": "Power Recovery Speed",
+      "effect": "Increase the rate at which ability power returns."
+    },
+    {
+      "problem": "Melee attacks miss at close range",
+      "setting": "Enhanced Melee Magnetizing",
+      "effect": "Make melee positioning more forgiving."
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+[
+  {
+    "group": "characters",
+    "slug": "dylan-faden",
+    "title": "Dylan Faden",
+    "type": "Playable character",
+    "summary": "The former Bureau captive becomes CONTROL Resonant's sole playable lead. His search for Jesse runs through a Manhattan transformed by paranatural forces.",
+    "image": "/images/wiki/dylan-profile.png",
+    "imageAlt": "Dylan Faden in CONTROL Resonant promotional artwork",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Role", "value": "Sole playable protagonist" },
+      { "label": "Actor", "value": "Sean Durrie" },
+      { "label": "Family", "value": "Jesse Faden's younger brother" },
+      { "label": "Weapon", "value": "The Aberrant" },
+      { "label": "Bureau designation", "value": "Prime Candidate 6 / P6" }
+    ],
+    "sections": [
+      {
+        "heading": "What changes from CONTROL",
+        "paragraphs": [
+          "The first game followed Jesse into the Oldest House to find Dylan. Resonant reverses that movement: Dylan leaves years of Bureau confinement and searches for his missing sister in Manhattan.",
+          "His history with the FBC matters because the same organization that held and studied him now asks him to respond to a citywide crisis. A returning player will recognize P6 in older Bureau files; a newcomer only needs to know that Dylan's cooperation is not simple loyalty."
+        ]
+      },
+      {
+        "heading": "How Dylan plays",
+        "paragraphs": [
+          "Dylan fights at close range with the shape-shifting Aberrant and uses paranatural powers rather than Jesse's Service Weapon gunplay. Melee strikes feed the resource used by Combat Abilities, so the player is pushed to move between direct attacks and supernatural tools.",
+          "The Gap is his build space for weapon upgrades, abilities, Talents and crafted Artifacts. It is a planning space, not evidence that every previewed power can be equipped at once."
+        ]
+      }
+    ],
+    "playerTakeaway": "Read P6 as Dylan when revisiting older files. In Resonant, follow his relationship with Jesse and the Bureau before trying to memorize every term from the first game.",
+    "related": [
+      "characters/jesse-faden",
+      "characters/zoe-de-vera",
+      "combat/aberrant",
+      "world/manhattan"
+    ],
+    "sourceIds": ["wiki-dylan", "cast-transcript", "ps-combat"]
+  },
+  {
+    "group": "characters",
+    "slug": "jesse-faden",
+    "title": "Jesse Faden",
+    "type": "FBC Director",
+    "summary": "Jesse is Dylan's older sister and the missing Director whose absence helps set the sequel in motion.",
+    "image": "/images/wiki/jesse-director.png",
+    "imageAlt": "Jesse Faden's Director portrait from CONTROL",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Role", "value": "Federal Bureau of Control Director" },
+      { "label": "Actor", "value": "Courtney Hope" },
+      { "label": "Family", "value": "Dylan Faden's older sister" },
+      { "label": "First playable game", "value": "CONTROL (2019)" }
+    ],
+    "sections": [
+      {
+        "heading": "Why Jesse matters here",
+        "paragraphs": [
+          "In CONTROL, Jesse entered the Oldest House looking for Dylan and became Director of the FBC. Resonant begins with her missing; Dylan's search for her gives the new Manhattan crisis a personal thread.",
+          "Remedy identifies Dylan as the sole playable lead for this game. Jesse remains important to the premise, but the reason for her disappearance and the details of her journey are story questions, not facts established by the trailers."
+        ]
+      },
+      {
+        "heading": "The useful context for new players",
+        "paragraphs": [
+          "You do not need a full mission-by-mission recap to understand the sibling reversal. Jesse knows the Bureau from the inside, while Dylan's experience includes being confined by it. Their shared history makes the FBC more than a neutral mission-giving faction.",
+          "Older guides about Jesse's Service Weapon, upgrades or Oldest House collectibles refer to CONTROL, not Dylan's Resonant loadout."
+        ]
+      }
+    ],
+    "playerTakeaway": "Treat Jesse as a story objective and a returning character, not as an announced second playable character.",
+    "related": [
+      "characters/dylan-faden",
+      "world/oldest-house",
+      "characters/zoe-de-vera"
+    ],
+    "sourceIds": ["wiki-jesse", "cast-transcript", "wiki-resonant"]
+  },
+  {
+    "group": "characters",
+    "slug": "zoe-de-vera",
+    "title": "Zoe De Vera",
+    "type": "FBC field agent",
+    "summary": "Zoe is Dylan's Bureau field contact in Manhattan, connecting his isolated past with the crisis outside the Oldest House.",
+    "image": "/images/wiki/zoe-render.png",
+    "imageAlt": "Zoe De Vera in FBC field equipment",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Role", "value": "FBC field agent and Dylan's handler" },
+      { "label": "Actor", "value": "Frankie Kevich" },
+      { "label": "Primary connection", "value": "Dylan Faden" },
+      { "label": "Setting", "value": "Manhattan" }
+    ],
+    "sections": [
+      {
+        "heading": "Her place in Dylan's story",
+        "paragraphs": [
+          "Zoe works with Dylan as the Bureau responds to Manhattan's paranatural emergency. Unlike Dylan, she has direct experience of the outside crisis, making their conversations a way to understand what happened while he was confined.",
+          "Remedy has described dialogue that continues during exploration. That makes Zoe more than a name on a static briefing screen, but it does not establish her as a playable companion."
+        ]
+      },
+      {
+        "heading": "What to listen for",
+        "paragraphs": [
+          "Pay attention to how Zoe describes an objective versus how Dylan reacts to it. Her FBC role and his history with the Bureau create a useful tension when interpreting orders or claims in field reports.",
+          "Her confirmed role is handler and field contact. Quest outcomes, upgrade rewards and her full story arc should not be inferred from preview footage."
+        ]
+      }
+    ],
+    "playerTakeaway": "Use Zoe's exploration dialogue as orientation for the city and for Dylan's relationship with the FBC; do not mistake it for a confirmed co-op system.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "world/manhattan"
+    ],
+    "sourceIds": ["wiki-zoe", "cast-transcript", "ps-combat"]
+  },
+  {
+    "group": "combat",
+    "slug": "aberrant",
+    "title": "The Aberrant",
+    "type": "Shapeshifting melee weapon",
+    "summary": "Dylan's transforming weapon is the center of Resonant's melee combat and the anchor for Primary, Secondary and Combo Ender choices.",
+    "image": "/images/gameplay/aberrant-hammer.jpg",
+    "imageAlt": "Dylan using the Aberrant in a heavy melee form",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Wielder", "value": "Dylan Faden" },
+      { "label": "Combat role", "value": "Melee" },
+      { "label": "Form slots", "value": "Primary, Secondary and Combo Ender" },
+      {
+        "label": "Named Primary preview choices",
+        "value": "Flurry, Slash, Slice"
+      },
+      {
+        "label": "Named Secondary preview choices",
+        "value": "Crush, Drill, Extend"
+      },
+      { "label": "Upgrade space", "value": "The Gap" }
+    ],
+    "sections": [
+      {
+        "heading": "How the weapon fits together",
+        "paragraphs": [
+          "The Aberrant is one weapon that changes shape, not a collection of separately looted swords and hammers. Its Forms cover different reach, speed and attack patterns, while a separate Combo Ender choice changes how a chain finishes.",
+          "Xbox Wire's opening-hour hands-on names three Primary choices: Flurry's fast daggers, Slash's broad scythe swings and Slice's single-target axe. Later it presents Crush, Drill and Extend as Secondary choices. These are named preview options, not a complete retail Form count."
+        ]
+      },
+      {
+        "heading": "Upgrades and progression",
+        "paragraphs": [
+          "The Gap lets Dylan work on his Aberrant and the broader build. Talent branches and Artifacts interact with weapon choices, but their exact retail values and every upgrade prerequisite have not been published.",
+          "New Game Plus carries Aberrant upgrades forward and adds more progression options. Treat that as a reason to save a first-run build rather than assuming one playthrough unlocks every combination."
+        ]
+      }
+    ],
+    "playerTakeaway": "Use the six named preview choices to compare speed, crowd reach, sustained contact and heavy impact. Do not follow a pre-launch best-in-slot ranking based only on a trailer.",
+    "related": [
+      "characters/dylan-faden",
+      "combat/reach",
+      "enemies/central-resonant"
+    ],
+    "sourceIds": ["wiki-aberrant", "ps-combat", "xbox-hands-on-june"]
+  },
+  {
+    "group": "combat",
+    "slug": "reach",
+    "title": "Reach",
+    "type": "Traversal ability",
+    "summary": "Reach is a movement unlock associated with the previewed Metro Fault route, not a boss-granted Combat Ability slot.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "imageAlt": "Warped transit architecture in CONTROL Resonant",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "System", "value": "Traversal" },
+      { "label": "Previewed route", "value": "Metro Fault" },
+      {
+        "label": "Use",
+        "value": "Cross altered spaces with a grappling-style move"
+      },
+      { "label": "Not", "value": "A Resonant boss Combat Ability" }
+    ],
+    "sections": [
+      {
+        "heading": "Where Reach enters the route",
+        "paragraphs": [
+          "A published Metro Fault mission preview associates Reach with an underground route containing train hazards and Mold. The preview establishes the reward and the kind of environment where it is useful, not a final step-by-step retail walkthrough.",
+          "Reach gives Dylan a way to bridge or traverse spaces that ordinary jumping cannot explain. It belongs beside Shift and other movement tools when reading a zone guide."
+        ]
+      },
+      {
+        "heading": "Why the distinction matters",
+        "paragraphs": [
+          "Resonant bosses grant Combat Ability choices, whereas Reach is described as a traversal unlock. Putting it in a build-planner attack slot would mislead players about both systems.",
+          "After acquiring a movement tool, revisit routes that previously ended at inaccessible geometry. Exact collectibles behind those paths are not yet documented."
+        ]
+      }
+    ],
+    "playerTakeaway": "Follow the Metro Fault guide for the demonstrated route, then use Reach as a navigation capability rather than searching for it among offensive powers.",
+    "related": [
+      "missions/metro-fault",
+      "world/west-incursion-zone",
+      "combat/aberrant"
+    ],
+    "sourceIds": ["metro", "remedy-gameplay"]
+  },
+  {
+    "group": "world",
+    "slug": "manhattan",
+    "title": "Manhattan",
+    "type": "Main setting",
+    "summary": "Resonant leaves the Oldest House for a warped Manhattan built from distinct zones rather than a single checklist-sized map.",
+    "image": "/images/map/manhattan-overlook.jpg",
+    "imageAlt": "Paranaturally altered Manhattan in CONTROL Resonant",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "World structure", "value": "Distinct designed Zones" },
+      { "label": "Player character", "value": "Dylan Faden" },
+      {
+        "label": "Known activity types",
+        "value": "Dylan's Journey, World Quests and Faults"
+      },
+      { "label": "Named early area", "value": "West Incursion Zone" }
+    ],
+    "sections": [
+      {
+        "heading": "How to read the city",
+        "paragraphs": [
+          "The setting is New York's Manhattan transformed by impossible geometry and paranatural incursions. Remedy describes visually distinct Zones that unlock as Dylan progresses, so a citywide image should not be treated as a usable coordinate map.",
+          "Gravity Anomalies and traversal unlocks change which surfaces count as a route. When comparing two guides, the named Zone and the capability Dylan has acquired matter more than an ordinary street address."
+        ]
+      },
+      {
+        "heading": "What the player can do",
+        "paragraphs": [
+          "The main campaign is called Dylan's Journey. Separate World Quests, Faults, puzzles and other activities can pull you away from that route. Those labels describe activity types; they are not a published complete mission list.",
+          "Fast travel between Zones and The Gap is described in Remedy's PS5 feature breakdown. The exact retail map, collectibles and Zone completion totals remain unknown before launch."
+        ]
+      }
+    ],
+    "playerTakeaway": "Start with the Zone or mission name you can see in-game. Do not trust a guessed map pin or citywide collectible total.",
+    "related": [
+      "world/west-incursion-zone",
+      "world/oldest-house",
+      "missions/metro-fault",
+      "characters/dylan-faden"
+    ],
+    "sourceIds": [
+      "wiki-resonant",
+      "remedy-gameplay",
+      "ps-combat",
+      "ps5-features"
+    ]
+  },
+  {
+    "group": "world",
+    "slug": "oldest-house",
+    "title": "The Oldest House",
+    "type": "FBC headquarters",
+    "summary": "The Bureau's shifting headquarters is the main setting of CONTROL and a returning location in Dylan's Resonant story.",
+    "image": "/images/map/oldest-house.jpg",
+    "imageAlt": "Brutalist interior representing the Oldest House",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Organization", "value": "Federal Bureau of Control" },
+      { "label": "Classification", "value": "Place of Power" },
+      {
+        "label": "First-game role",
+        "value": "Primary setting of CONTROL (2019)"
+      },
+      {
+        "label": "Resonant role",
+        "value": "Dylan's former place of confinement and a returning space"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Why it matters to Dylan",
+        "paragraphs": [
+          "The Oldest House is where the FBC held and studied Dylan after the Ordinary incident. It is therefore both the Bureau's headquarters and a personal part of his history.",
+          "The new game moves much of the action into Manhattan while revisiting the Bureau's building. Published previews mention previously unseen spaces, but do not establish a complete sector map for Resonant."
+        ]
+      },
+      {
+        "heading": "Avoid mixing the two games",
+        "paragraphs": [
+          "Executive, Maintenance, Research and Containment are familiar sector names from Jesse's game. They are useful background when a returning character refers to an older event, not a promise that every old route or pickup remains in the sequel.",
+          "A collectible coordinate from CONTROL should never be copied into a Resonant location guide without retail verification."
+        ]
+      }
+    ],
+    "playerTakeaway": "Read Oldest House files as series context; use Resonant-specific routes when tracking Dylan's objectives.",
+    "related": [
+      "characters/dylan-faden",
+      "characters/jesse-faden",
+      "world/manhattan"
+    ],
+    "sourceIds": ["wiki-house", "wiki-dylan"]
+  },
+  {
+    "group": "world",
+    "slug": "west-incursion-zone",
+    "title": "West Incursion Zone",
+    "type": "Named Manhattan Zone",
+    "summary": "An early area used in the gameplay reveal to show shifting architecture, enemies and traversal through a distorted city.",
+    "image": "/images/map/manhattan-zone.jpg",
+    "imageAlt": "Distorted Manhattan Zone in CONTROL Resonant gameplay artwork",
+    "updatedAt": "2026-09-16",
+    "facts": [
+      { "label": "Setting", "value": "Manhattan" },
+      { "label": "Area type", "value": "Early Zone" },
+      {
+        "label": "Shown systems",
+        "value": "Combat, exploration and Gravity Anomalies"
+      },
+      { "label": "Precise map pins", "value": "Not established by the reveal" }
+    ],
+    "sections": [
+      {
+        "heading": "What the reveal actually shows",
+        "paragraphs": [
+          "Remedy named the West Incursion Zone while presenting the first extended gameplay. It demonstrates the sequel's move into larger, handcrafted Manhattan spaces instead of a return to one continuous Oldest House interior.",
+          "The geometry can be gravity-altered, so a path may depend on Dylan's orientation or traversal powers. That is a stronger route clue than a conventional north-south street description."
+        ]
+      },
+      {
+        "heading": "How to use this entry",
+        "paragraphs": [
+          "Use this name to match trailer footage, preview descriptions and early-game guide sections. The Zone has been shown; its full activity list, boundaries and collectible positions have not.",
+          "When the retail game arrives, this page can gain verified routes, landmarks and pickups without changing the Wiki hierarchy."
+        ]
+      }
+    ],
+    "playerTakeaway": "Treat preview footage as a view into the Zone, not as a finished interactive map.",
+    "related": ["world/manhattan", "combat/reach", "missions/metro-fault"],
+    "sourceIds": ["remedy-gameplay", "wiki-resonant"]
+  },
+  {
+    "group": "missions",
+    "slug": "metro-fault",
+    "title": "Metro Fault",
+    "type": "Previewed Fault route",
+    "summary": "The underground Fault shown in a mission preview combines warped transit, train hazards, Mold enemies and the Reach traversal reward.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "imageAlt": "Warped transit space associated with the Metro Fault preview",
+    "updatedAt": "2026-09-18",
+    "facts": [
+      { "label": "Activity type", "value": "Fault" },
+      { "label": "Environment", "value": "Underground metro" },
+      { "label": "Shown threat", "value": "Mold" },
+      { "label": "Previewed reward", "value": "Reach traversal ability" }
+    ],
+    "comparison": {
+      "heading": "Metro Fault: identify the obstacle before the route",
+      "introduction": "The published mission preview supports these route clues. It does not provide a verified entrance, room order or collectible path for the released game.",
+      "columns": ["Clue in the preview", "Why it matters", "Player check"],
+      "rows": [
+        [
+          "Warped transit space",
+          "This is a Fault activity, not a conventional Manhattan street route.",
+          "Confirm the activity name in the in-game objective."
+        ],
+        [
+          "Moving trains",
+          "The environment itself is a traversal hazard.",
+          "Read the movement cycle before crossing; do not rely on a guessed shortcut."
+        ],
+        [
+          "Mold opposition",
+          "Combat and movement occur in the same route.",
+          "Keep space for a dodge instead of committing to a long attack next to a hazard."
+        ],
+        [
+          "Reach reward",
+          "The demonstrated payoff is a movement tool, not a slotted Combat Ability.",
+          "After the unlock, reconsider gaps that were previously inaccessible."
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Route at a glance",
+        "paragraphs": [
+          "The published preview follows Dylan through a metro space where moving trains and warped architecture shape the encounter. Mold appears along the route. That establishes the activity's identity, but not every room, checkpoint or objective in a retail build.",
+          "The important progression result is Reach, a grappling-style movement unlock. Its role is traversal rather than a slotted Combat Ability."
+        ]
+      },
+      {
+        "heading": "What to prepare for",
+        "paragraphs": [
+          "Watch the moving environment and use the route's visual cues instead of assuming straight-line travel. The preview supports that general approach; it does not support a precise input sequence or a claim about guaranteed drops.",
+          "For now, Metro Fault tells you what kind of challenge to expect and why Reach matters. Exact turns and puzzle steps need to be checked in the released game."
+        ]
+      }
+    ],
+    "playerTakeaway": "If you are looking for Reach, this is the named route to recognize. Use the connected guide for the preview sequence.",
+    "related": ["combat/reach", "world/manhattan", "world/west-incursion-zone"],
+    "sourceIds": ["metro"]
+  },
+  {
+    "group": "enemies",
+    "slug": "central-resonant",
+    "title": "Central Resonant",
+    "type": "Named boss encounter",
+    "summary": "A previewed Resonant battle whose arena is shaped by lava-like ground hazards and magma attacks.",
+    "image": "/images/bosses/resonant-fire.jpg",
+    "imageAlt": "Fiery Resonant boss in CONTROL Resonant preview imagery",
+    "updatedAt": "2026-09-18",
+    "facts": [
+      { "label": "Encounter class", "value": "Resonant boss" },
+      {
+        "label": "Shown hazards",
+        "value": "Lava-like ground and magma projectiles"
+      },
+      {
+        "label": "Reward type",
+        "value": "Resonant victories grant Combat Ability choices"
+      },
+      { "label": "Exact reward", "value": "Not established by the preview" }
+    ],
+    "comparison": {
+      "heading": "Central Resonant: what to diagnose in an attempt",
+      "introduction": "The published encounter footage identifies arena and attack hazards, but not a complete retail move list or a guaranteed safe spot.",
+      "columns": [
+        "If the attempt fails because…",
+        "What the preview shows",
+        "What to test"
+      ],
+      "rows": [
+        [
+          "The floor cuts off an approach",
+          "Lava-like ground is part of the arena.",
+          "Keep a traversable exit before committing to melee pressure."
+        ],
+        [
+          "A ranged attack interrupts you",
+          "Magma projectiles are shown.",
+          "Watch the attack cue and time a dodge before rebuilding the whole loadout."
+        ],
+        [
+          "You run out of ability resource",
+          "Remedy says melee hits restore Combat Ability resource generally.",
+          "Use safe melee openings to rebuild power; do not assume a boss-specific refill rule."
+        ],
+        [
+          "A repeated cue remains too fast",
+          "Assist Mode can adjust dodge timing, projectile speed and damage.",
+          "Change only the setting causing the problem and retest; exact boss timing needs retail play."
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "heading": "What makes the encounter distinct",
+        "paragraphs": [
+          "The published boss footage names the Central Resonant and shows fire and magma defining the fight space. The ground hazard matters because staying aggressive for ability resource must be balanced against keeping a safe route through the arena.",
+          "Those observations identify a threat pattern, not final health values, resistances or a guaranteed winning build. A preview edit cannot establish every phase."
+        ]
+      },
+      {
+        "heading": "Progression and strategy",
+        "paragraphs": [
+          "Remedy's broader combat explanation says major Resonants grant new Combat Abilities, sometimes with a branching choice. The exact ability granted by this particular fight has not been established by its public preview.",
+          "For now, learn to read the hazardous floor and projectile windows. A frame-by-frame retail strategy will belong in a dedicated Guide after the game can be tested."
+        ]
+      }
+    ],
+    "playerTakeaway": "Use the arena hazard and attack telegraphs as planning information; ignore pre-release claims of exact drops or damage weaknesses.",
+    "related": ["combat/aberrant", "world/manhattan", "missions/metro-fault"],
+    "sourceIds": ["central", "ps-combat"]
+  }
+]

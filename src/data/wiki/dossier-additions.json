@@ -1,0 +1,652 @@
+{
+  "characters/dylan-faden": {
+    "sections": [
+      {
+        "heading": "A short route through Dylan's history",
+        "paragraphs": [
+          "Start with the Ordinary AWE: Jesse and Dylan encountered an Altered World Event as children, and the Bureau's response separated their lives. Dylan was taken into FBC custody and labelled P6 under the Prime Candidate program. In CONTROL, Jesse entered the Oldest House looking for him. Resonant reverses the direction of that search: Dylan goes out into Manhattan looking for Jesse.",
+          "This sequence explains why three names recur in files about Dylan: Ordinary is the incident, P6 is the Bureau designation, and the Oldest House is where his confinement took place. None of those is a Resonant upgrade category. Zoe's role as field handler belongs to the present crisis, while Jesse and the Bureau explain the history Dylan carries into it."
+        ],
+        "connections": [
+          {
+            "path": "world/ordinary-awe",
+            "reason": "Read the childhood event behind the siblings' separation."
+          },
+          {
+            "path": "world/prime-candidate-program",
+            "reason": "Decode P6 and the Bureau's candidate files."
+          },
+          {
+            "path": "characters/zoe-de-vera",
+            "reason": "Meet the field contact guiding Dylan in Manhattan."
+          }
+        ]
+      }
+    ]
+  },
+  "characters/jesse-faden": {
+    "sections": [
+      {
+        "heading": "Jesse's story versus Dylan's objective",
+        "paragraphs": [
+          "Jesse's search through the Oldest House is the spine of CONTROL (2019). That game establishes her as Director and reunites the Faden siblings after years of separation. A wiki page about Jesse therefore contains two different kinds of information: established history from the first game and the still-unanswered question of where she is during Resonant.",
+          "For the sequel, the useful chain is Ordinary to the Prime Candidate files, then the Oldest House, then Dylan's search in Manhattan. Do not mistake an older Jesse ability guide or Bureau collectible for a confirmed Resonant objective. The announced playable lead is Dylan; Jesse's absence supplies a story motive, not a second announced character campaign."
+        ],
+        "connections": [
+          {
+            "path": "characters/dylan-faden",
+            "reason": "See who is searching for Jesse in the new game."
+          },
+          {
+            "path": "world/oldest-house",
+            "reason": "Understand the setting of Jesse's original journey."
+          },
+          {
+            "path": "world/ordinary-awe",
+            "reason": "Trace the shared event that preceded both games."
+          }
+        ]
+      }
+    ]
+  },
+  "characters/zoe-de-vera": {
+    "sections": [
+      {
+        "heading": "How Zoe connects the field operation",
+        "paragraphs": [
+          "Zoe belongs to the present-day side of this story. Dylan knows the Bureau through confinement inside the Oldest House; Zoe has lived through the Manhattan emergency outside it. Her handler role puts those perspectives in direct contact as the player moves through distinct city zones.",
+          "This makes her a useful orientation point rather than an assumed quest dispenser. When dialogue describes a new location, separate the immediate field objective from the Bureau's wider interpretation of the crisis. The published material establishes a working relationship and exploration dialogue, but not a complete list of Zoe missions, choices or rewards."
+        ],
+        "connections": [
+          {
+            "path": "characters/dylan-faden",
+            "reason": "Compare Dylan's Bureau history with Zoe's field role."
+          },
+          {
+            "path": "world/fbc-field-office",
+            "reason": "See the hub that links the Manhattan operation."
+          },
+          {
+            "path": "world/federal-bureau-of-control",
+            "reason": "Understand the organization they both work with differently."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/aberrant": {
+    "sections": [
+      {
+        "heading": "A weapon, a loadout, and a resource loop",
+        "paragraphs": [
+          "The Aberrant is one transforming weapon, not a collection of six unrelated drops. A build combines a Primary Form, a Secondary Form and a Combo Ender. The Forms page compares the named early choices by combat role; this page explains the system holding them together. The Gap is where players review and change the resulting setup outside combat.",
+          "The reason to compare Forms is the resource loop around them. Melee hits restore Combat Ability resource, abilities can stun enemies, and executions temporarily improve melee damage. A slower or wider attack pattern changes how easily you keep that loop going against a given group. Preview footage shows the principle, not reliable final damage rankings for each Form."
+        ],
+        "connections": [
+          {
+            "path": "combat/aberrant-forms",
+            "reason": "Compare the six named early Form choices."
+          },
+          {
+            "path": "combat/combat-abilities",
+            "reason": "See where the resource earned by melee is spent."
+          },
+          {
+            "path": "world/the-gap",
+            "reason": "Find where the loadout is assembled and tested."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/reach": {
+    "sections": [
+      {
+        "heading": "Movement unlock, not attack selection",
+        "paragraphs": [
+          "Reach is associated with traversal through the previewed Metro Fault. It belongs in a different mental category from Barrage, Seekers and Shield, the Combat Ability choices described after an early Resonant encounter. That difference matters when reading preview routes: gaining Reach opens a way across space rather than occupying one of the attack choices shown in a combat menu.",
+          "The published route gives a useful example of a world ability that can gate movement. It does not establish every place Reach will be required, a complete unlock order, or a final collectible path. New Game Plus information says story-gated traversal abilities are reacquired, so a returning build may be strong while its movement route still depends on story progress."
+        ],
+        "connections": [
+          {
+            "path": "missions/metro-fault",
+            "reason": "See the preview route linked to Reach."
+          },
+          {
+            "path": "combat/combat-abilities",
+            "reason": "Distinguish traversal from the combat ability choices."
+          },
+          {
+            "path": "combat/new-game-plus",
+            "reason": "Check what resets when a new run starts."
+          }
+        ]
+      }
+    ]
+  },
+  "world/manhattan": {
+    "sections": [
+      {
+        "heading": "How the city is organized for players",
+        "paragraphs": [
+          "Resonant's Manhattan is described as a set of distinct, handcrafted zones, not an endlessly repeating open-world checklist. The FBC Field Office connects those areas as a hub. Within a zone, the published structure separates Dylan's Journey, self-contained World Quests, combat encounters, environmental challenges and discoveries.",
+          "That hierarchy is more useful than treating every preview image as a named map marker. Start with a zone and the activity type you are pursuing; then use the relevant mission or world file for context. No official full map, exact collectible coordinates or final count of activities has been released for this pre-launch index."
+        ],
+        "connections": [
+          {
+            "path": "world/fbc-field-office",
+            "reason": "Learn how the known zones connect through the hub."
+          },
+          {
+            "path": "missions/world-quests-and-faults",
+            "reason": "Separate story quests from other activities."
+          },
+          {
+            "path": "world/west-incursion-zone",
+            "reason": "Inspect one zone actually shown in gameplay."
+          }
+        ]
+      }
+    ]
+  },
+  "world/oldest-house": {
+    "sections": [
+      {
+        "heading": "Which game does this location belong to?",
+        "paragraphs": [
+          "The Oldest House was the central playable setting of CONTROL. It housed the Bureau, its containment work, Jesse's search for Dylan and the P6 records that explain his confinement. That history is relevant to Resonant, but a room-by-room guide to the 2019 building is not automatically a guide to the new game's Manhattan zones.",
+          "For a new player, the important connection is institutional: the same FBC that studied Dylan inside the House deploys him outside during a citywide crisis. For a returning player, it helps explain why familiar names such as Darling, Pope and Arish carry different meanings for Dylan than they did for Jesse."
+        ],
+        "connections": [
+          {
+            "path": "world/federal-bureau-of-control",
+            "reason": "Read about the organization based in the House."
+          },
+          {
+            "path": "world/prime-candidate-program",
+            "reason": "Understand the P6 history recorded there."
+          },
+          {
+            "path": "world/manhattan",
+            "reason": "Move from the old setting to the new game's zones."
+          }
+        ]
+      }
+    ]
+  },
+  "world/west-incursion-zone": {
+    "sections": [
+      {
+        "heading": "Using a preview zone without inventing a map",
+        "paragraphs": [
+          "The West Incursion Zone is useful because it is a concrete example of the city's altered architecture and combat spaces. It shows what a named Manhattan area can look like, but it should not be read as a complete region guide. Preview cuts can rearrange encounters and leave out paths, transitions or objective text.",
+          "When looking for a route, first ask whether the activity is part of Dylan's Journey, a World Quest, or an environmental challenge. Then look for a published mission preview such as Metro Fault rather than deriving directions from a cinematic montage. This entry deliberately contains no unverified collectible pins or completion checklist."
+        ],
+        "connections": [
+          {
+            "path": "world/manhattan",
+            "reason": "Place this area within the zone-based city structure."
+          },
+          {
+            "path": "missions/world-quests-and-faults",
+            "reason": "Identify which activity type you are trying to follow."
+          },
+          {
+            "path": "world/fbc-field-office",
+            "reason": "See the known hub between city zones."
+          }
+        ]
+      }
+    ]
+  },
+  "missions/metro-fault": {
+    "sections": [
+      {
+        "heading": "What the preview route actually establishes",
+        "paragraphs": [
+          "Metro Fault is one named underground preview route, with transit hazards, Mold opposition and the Reach movement reward. Those elements make it a useful example of how traversal and combat can meet in a Fault. They are not evidence for a universal Fault template, a guaranteed reward table or a complete launch walkthrough.",
+          "The key reading distinction is between observed sequence and inferred route. The footage establishes the encounter ingredients and Reach association; it does not supply every turn, checkpoint or optional pickup. For a practical run, treat Reach as the significant unlock and return to a step-by-step guide only when its route can be checked against the shipped game."
+        ],
+        "connections": [
+          {
+            "path": "combat/reach",
+            "reason": "Understand the movement ability tied to this route."
+          },
+          {
+            "path": "missions/world-quests-and-faults",
+            "reason": "See how a Fault differs from a World Quest."
+          },
+          {
+            "path": "enemies/the-hiss",
+            "reason": "Avoid confusing older enemy history with this preview's Mold encounter."
+          }
+        ]
+      }
+    ]
+  },
+  "enemies/central-resonant": {
+    "sections": [
+      {
+        "heading": "Read the arena before choosing a build",
+        "paragraphs": [
+          "The Central Resonant preview distinguishes this fight through lava-like floor danger and magma attacks. That gives players a question to ask of a build: can it maintain pressure while moving out of unsafe ground? It does not give a verified final health value, resistance chart or guaranteed damage window.",
+          "A Resonant encounter also matters to progression because an early hands-on describes a post-fight Combat Ability choice. Do not assume every Resonant battle has identical rewards or that the unnamed first entity is the same enemy as the Central Resonant. The two preview files are kept separate for that reason."
+        ],
+        "connections": [
+          {
+            "path": "combat/combat-abilities",
+            "reason": "Review the known post-encounter ability choices."
+          },
+          {
+            "path": "enemies/first-resonant-entity",
+            "reason": "Compare the separate opening-hours preview encounter."
+          },
+          {
+            "path": "combat/aberrant-forms",
+            "reason": "Compare attack roles before thinking about arena pressure."
+          }
+        ]
+      }
+    ]
+  },
+  "world/the-gap": {
+    "sections": [
+      {
+        "heading": "A practical order for checking a new build",
+        "paragraphs": [
+          "The Gap joins several systems that are easy to confuse. Start by checking the Aberrant's Primary and Secondary Forms, then the Combat Ability choice, then Talents and crafted Artifacts. An Untapped Artifact found in the world is a crafting input; it is not already an equipped passive. The Gap is also described as a place to test a build before taking it into another encounter.",
+          "This order is a planning aid, not a prescribed optimal build. The published material shows different roles for Forms and abilities but no trustworthy final ranking. NG+ expands combinations and carries much combat progress forward, while story-gated movement still has to be reacquired."
+        ],
+        "connections": [
+          {
+            "path": "combat/aberrant-forms",
+            "reason": "Start with weapon role and attack pattern."
+          },
+          {
+            "path": "combat/artifacts",
+            "reason": "Separate an Untapped Artifact from an equipped passive."
+          },
+          {
+            "path": "combat/new-game-plus",
+            "reason": "See how a later run changes the available combinations."
+          }
+        ]
+      }
+    ]
+  },
+  "world/fbc-field-office": {
+    "sections": [
+      {
+        "heading": "The hub's place in the route",
+        "paragraphs": [
+          "The Field Office is the central Manhattan hub linking handcrafted zones. That tells players something about the game's geography: traveling between named areas is not the same as walking across one continuous open-world street grid. It also distinguishes the present field operation from the FBC's older headquarters inside the Oldest House.",
+          "A hub can organize a route without proving which services, NPCs or quest boards it contains at launch. Zoe is confirmed as Dylan's field handler, but her exact office location and a complete hub feature list should not be inferred from the role. Use the hub as the relationship between zones, not as a fabricated map with marked collectibles."
+        ],
+        "connections": [
+          {
+            "path": "world/manhattan",
+            "reason": "See the zone structure the office connects."
+          },
+          {
+            "path": "world/oldest-house",
+            "reason": "Separate the field hub from the original FBC headquarters."
+          },
+          {
+            "path": "characters/zoe-de-vera",
+            "reason": "Meet Dylan's confirmed field contact."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/aberrant-forms": {
+    "sections": [
+      {
+        "heading": "What the Form comparison can and cannot tell you",
+        "paragraphs": [
+          "A Form's useful first distinction is role: fast pressure, reach, broad coverage or a heavier commitment. The published early pool identifies Primary and Secondary choices, while Combo Enders provide another part of the weapon setup. Selecting a pair is therefore more informative than asking for a single best Form in isolation.",
+          "Official previews explain that close-range hits replenish Combat Ability resource. That means a Form's attack pattern affects how a player maintains the melee–ability–execution loop. The available footage does not justify a final numerical tier list, exact upgrade cost or universal boss recommendation. Treat the comparison table as a starting role map and test combinations in the Gap."
+        ],
+        "connections": [
+          {
+            "path": "combat/aberrant",
+            "reason": "See how Forms fit into the complete weapon system."
+          },
+          {
+            "path": "combat/combat-abilities",
+            "reason": "Connect melee pressure to ability resource use."
+          },
+          {
+            "path": "world/the-gap",
+            "reason": "Find the space for changing and testing Forms."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/combat-abilities": {
+    "sections": [
+      {
+        "heading": "Choosing for a situation rather than a tier list",
+        "paragraphs": [
+          "The early Barrage, Seekers and Shield choice presents different functions, not a published best-to-worst ranking. The useful question is what your current weapon pair lacks: ranged pressure, autonomous targeting or protection while closing distance. An ability can also stun an enemy and create an execution opening, which feeds back into melee damage.",
+          "The choice described in a hands-on follows a Resonant encounter, but it should not be generalized into a guaranteed reward for every boss. NG+ later broadens ability combinations; a first-run choice and a second-run loadout are not the same decision. The Gap is where the available options are managed."
+        ],
+        "connections": [
+          {
+            "path": "combat/aberrant-forms",
+            "reason": "Pair an ability role with a weapon attack pattern."
+          },
+          {
+            "path": "combat/new-game-plus",
+            "reason": "See how later runs expand combinations."
+          },
+          {
+            "path": "world/the-gap",
+            "reason": "Review abilities alongside the rest of a loadout."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/artifacts": {
+    "sections": [
+      {
+        "heading": "From discovery to an equipped effect",
+        "paragraphs": [
+          "The important sequence is discovery, crafting and equipping. Untapped Artifacts are found during exploration, then crafted into usable Artifacts in the Gap. An Artifact changes a build as a passive component, alongside the active decisions made through the Aberrant and Combat Abilities. That is why a list of discovered names cannot be treated as an inventory of currently equipped effects.",
+          "The announced first-run limit is three Artifact slots, with a fourth opening in New Game Plus. That is a capacity rule, not proof of every Artifact's final effect, rarity or crafting ingredient. Compare an Artifact by what it adds to your present combat loop rather than assuming every found object belongs in a strongest-build list."
+        ],
+        "connections": [
+          {
+            "path": "world/the-gap",
+            "reason": "See where Untapped Artifacts become usable equipment."
+          },
+          {
+            "path": "combat/new-game-plus",
+            "reason": "Check when the additional slot opens."
+          },
+          {
+            "path": "combat/aberrant",
+            "reason": "Place passive effects alongside weapon choices."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/new-game-plus": {
+    "sections": [
+      {
+        "heading": "What a second run changes in practice",
+        "paragraphs": [
+          "NG+ retains Aberrant upgrades, health and combat-resource improvements, unlocked supernatural Combat Abilities, Talents and Artifacts. It also permits broader combinations, including the additional Artifact slot. The player therefore begins with combat options that were earned across the first run instead of repeating the same opening build decisions from zero.",
+          "That carryover is not universal. Story-gated traversal tools are reacquired as the route unfolds, so an upgraded weapon does not imply immediate access to every area. Read progression as two tracks: the build you bring forward and the route you still need to reopen. This distinction is especially relevant to previewed movement abilities such as Reach."
+        ],
+        "connections": [
+          {
+            "path": "combat/reach",
+            "reason": "Example of a story-linked movement unlock."
+          },
+          {
+            "path": "combat/artifacts",
+            "reason": "See the equipment category gaining a fourth slot."
+          },
+          {
+            "path": "world/the-gap",
+            "reason": "Plan the retained build between encounters."
+          }
+        ]
+      }
+    ]
+  },
+  "enemies/first-resonant-entity": {
+    "sections": [
+      {
+        "heading": "Keep two preview encounters separate",
+        "paragraphs": [
+          "The opening-hours hands-on describes a giant partial head emerging in the street and hurling debris through telekinetic force. That is enough to identify the preview encounter and its visible pressure, but not enough to assign a final in-game boss name, a health pool or a full phase sequence.",
+          "A different preview discusses the Central Resonant and its hazardous, magma-themed arena. The shared word Resonant is a category clue, not proof that both reports describe one enemy. The opening encounter is also associated with an early Combat Ability choice; the precise reward pattern across all Resonants remains unconfirmed."
+        ],
+        "connections": [
+          {
+            "path": "enemies/central-resonant",
+            "reason": "Compare the separate magma-arena preview."
+          },
+          {
+            "path": "combat/combat-abilities",
+            "reason": "Understand the known early post-fight choice."
+          },
+          {
+            "path": "world/manhattan",
+            "reason": "Place the street encounter in the altered city."
+          }
+        ]
+      }
+    ]
+  },
+  "missions/world-quests-and-faults": {
+    "sections": [
+      {
+        "heading": "A route-planning vocabulary",
+        "paragraphs": [
+          "Dylan's Journey names the main campaign; World Quests are self-contained narrative stories. Faults are another activity type, with Metro Fault providing a concrete published example. This vocabulary helps a player decide whether to follow the central plot, pursue a side story or inspect a contained challenge, without pretending a complete quest log has been published.",
+          "The city also contains combat encounters, environmental challenges and discoveries. These do not all become separate missions simply because they appear in a preview. If you are searching for a named route, start with the Metro Fault file. If you are choosing how to spend time in a zone, start with the Manhattan overview."
+        ],
+        "connections": [
+          {
+            "path": "missions/metro-fault",
+            "reason": "Open the one named Fault preview route."
+          },
+          {
+            "path": "world/manhattan",
+            "reason": "See how activity types fit into city zones."
+          },
+          {
+            "path": "world/fbc-field-office",
+            "reason": "Understand the hub between those zones."
+          }
+        ]
+      }
+    ]
+  },
+  "characters/casper-darling": {
+    "sections": [
+      {
+        "heading": "Why Darling's name matters",
+        "paragraphs": [
+          "A file naming Darling can point to research he performed before Resonant rather than to a current mission. In CONTROL, his Head of Research role and supervision of P6 connect him directly to Dylan's confinement. The Prime Candidate file explains the designation; the Ordinary file explains why the Bureau became interested in the siblings in the first place.",
+          "That chain is useful when the sequel invokes old Bureau language. It does not establish Darling's location, allegiance or services in Manhattan. Distinguish an archival account of what he did to Dylan from a new scene that would show what he does now."
+        ],
+        "connections": [
+          {
+            "path": "world/prime-candidate-program",
+            "reason": "Understand the P6 program Darling supervised."
+          },
+          {
+            "path": "characters/dylan-faden",
+            "reason": "See the person behind the research file."
+          },
+          {
+            "path": "world/ordinary-awe",
+            "reason": "Trace why the Bureau encountered the Fadens."
+          }
+        ]
+      }
+    ]
+  },
+  "characters/emily-pope": {
+    "sections": [
+      {
+        "heading": "Research contact, not a confirmed upgrade menu",
+        "paragraphs": [
+          "Emily's role in CONTROL was tied to investigating the Bureau's paranatural problems and supporting Jesse. For a sequel reader, that places her among the FBC's scientific staff and within Jesse's established network. It is different from Zoe's confirmed role as Dylan's field handler during the Manhattan crisis.",
+          "If Emily appears in a background file, the first question is whether it describes old research or a present objective. Her original-game association does not prove a specific Resonant quest chain, laboratory location or upgrade service. The FBC overview and Oldest House file supply the institutional context behind her title."
+        ],
+        "connections": [
+          {
+            "path": "characters/jesse-faden",
+            "reason": "Read about the Director Emily supported."
+          },
+          {
+            "path": "characters/zoe-de-vera",
+            "reason": "Contrast a research role with the current field handler."
+          },
+          {
+            "path": "world/oldest-house",
+            "reason": "Place Emily's known history in its original setting."
+          }
+        ]
+      }
+    ]
+  },
+  "characters/simon-arish": {
+    "sections": [
+      {
+        "heading": "Security history versus current field work",
+        "paragraphs": [
+          "Arish represents the FBC's security and Ranger perspective in the first game. That perspective differs from Darling's research and Pope's scientific work. Keeping these roles distinct helps when older Bureau names appear together: they were not all responsible for the same part of Dylan's treatment or Jesse's investigation.",
+          "The sequel's citywide crisis makes a security perspective relevant, but a named return does not disclose Arish's Manhattan assignment, playable route or reward list. The Oldest House file gives the original setting for his known work; the Field Office file describes the new hub without placing him there as a confirmed service."
+        ],
+        "connections": [
+          {
+            "path": "world/federal-bureau-of-control",
+            "reason": "See how security fits within the wider agency."
+          },
+          {
+            "path": "world/oldest-house",
+            "reason": "Read the location tied to his known work."
+          },
+          {
+            "path": "world/fbc-field-office",
+            "reason": "Distinguish the current Manhattan hub from the old one."
+          }
+        ]
+      }
+    ]
+  },
+  "characters/frederick-langston": {
+    "sections": [
+      {
+        "heading": "Containment terms worth separating",
+        "paragraphs": [
+          "Langston's Panopticon work in CONTROL concerned dangerous objects kept by the Bureau. That background explains why a file may use containment language when describing an Altered Item. It does not mean every object mentioned in Resonant is a Panopticon collectible or that Langston runs a new shop or mission board.",
+          "For a player, the useful separation is between the Bureau's old catalog of incidents and a new game's own activities. Manhattan previews mention optional discovery and the possibility of pursuing Altered Items, but no complete object list or coordinates are verified here. The FBC and Oldest House files explain the institutional history behind Langston's role."
+        ],
+        "connections": [
+          {
+            "path": "world/federal-bureau-of-control",
+            "reason": "Understand why the agency catalogs objects."
+          },
+          {
+            "path": "world/oldest-house",
+            "reason": "Place the Panopticon in the original game's setting."
+          },
+          {
+            "path": "world/manhattan",
+            "reason": "Separate old containment records from new city activities."
+          }
+        ]
+      }
+    ]
+  },
+  "world/federal-bureau-of-control": {
+    "sections": [
+      {
+        "heading": "A relationship map for the sequel",
+        "paragraphs": [
+          "The Bureau is not a single character with one view of Dylan. The P6 program and Darling's research belong to the history of his confinement. Jesse became Director in CONTROL. Zoe is the field agent who works with him during Resonant's Manhattan emergency. Those roles make the agency both a source of harm in his past and an operational partner in the present.",
+          "Reading FBC pages in that order prevents an easy continuity mistake: the Oldest House was the central setting of the original game, while the Field Office connects the new game's city zones. A familiar logo or title alone does not tell you which period a file is describing."
+        ],
+        "connections": [
+          {
+            "path": "world/prime-candidate-program",
+            "reason": "See how the Bureau classified Dylan and Jesse."
+          },
+          {
+            "path": "characters/zoe-de-vera",
+            "reason": "Meet its confirmed current field handler."
+          },
+          {
+            "path": "world/fbc-field-office",
+            "reason": "Find the agency's Manhattan hub."
+          }
+        ]
+      }
+    ]
+  },
+  "world/ordinary-awe": {
+    "sections": [
+      {
+        "heading": "Why Ordinary is the start of this family story",
+        "paragraphs": [
+          "The Ordinary AWE is a past event from CONTROL's history, not a newly announced Resonant mission. Jesse and Dylan encountered the Slide Projector as children, after which the Bureau took a close interest in both. Their paths diverged: Dylan was brought into custody and marked P6, while Jesse later came to the Oldest House searching for him.",
+          "That event gives meaning to the sequel's reversal. Dylan is no longer the missing child Jesse sought inside the Bureau's headquarters; he is the playable lead looking for her outside in Manhattan. The event also explains why P6 and P7 appear in old files, but neither label is a class or skill tree in Resonant."
+        ],
+        "connections": [
+          {
+            "path": "characters/dylan-faden",
+            "reason": "Follow the sibling taken into Bureau custody."
+          },
+          {
+            "path": "characters/jesse-faden",
+            "reason": "Follow the sibling who later searched for him."
+          },
+          {
+            "path": "world/prime-candidate-program",
+            "reason": "Understand the designations that followed the incident."
+          }
+        ]
+      }
+    ]
+  },
+  "world/prime-candidate-program": {
+    "sections": [
+      {
+        "heading": "Reading P6 and P7 correctly",
+        "paragraphs": [
+          "P6 and P7 are Bureau labels for Dylan and Jesse within the Prime Candidate program. They belong to the organization's search for a future Director after the Ordinary incident. The labels are valuable when reading old files because they identify which sibling a report concerns even when a personal name is absent.",
+          "They are not player ranks, playable character slots or sequel character classes. Dylan's Resonant build is defined through the Aberrant, Combat Abilities, Talents and Artifacts instead. Darling's connection is that he supervised research into Dylan; Jesse's later Director role belongs to the outcome of the first game, not a promised path for the player to select in Resonant."
+        ],
+        "connections": [
+          {
+            "path": "world/ordinary-awe",
+            "reason": "See the incident behind the candidate files."
+          },
+          {
+            "path": "characters/dylan-faden",
+            "reason": "Identify P6 in the sequel's playable lead."
+          },
+          {
+            "path": "characters/casper-darling",
+            "reason": "Read about the researcher tied to the program."
+          }
+        ]
+      }
+    ]
+  },
+  "enemies/the-hiss": {
+    "sections": [
+      {
+        "heading": "An old threat in a new setting",
+        "paragraphs": [
+          "The Hiss defined the emergency inside the Oldest House in CONTROL. Resonant material names it among the threats affecting Manhattan, but the exact roster and behavior of its new-game enemy variants cannot be copied from the 2019 bestiary. The city introduces a different setting, movement system and melee-focused combat loop.",
+          "When a preview shows an enemy, distinguish its visible attack from its presumed faction. Metro Fault also features Mold opposition; Resonants form another encounter category. Grouping all three under 'Hiss' would make an enemy index easier to fill but less useful in play. This file preserves the continuity context while leaving new-game combat claims to observed encounters."
+        ],
+        "connections": [
+          {
+            "path": "world/oldest-house",
+            "reason": "Read where the original Hiss crisis unfolded."
+          },
+          {
+            "path": "missions/metro-fault",
+            "reason": "Compare a preview route featuring Mold opposition."
+          },
+          {
+            "path": "enemies/central-resonant",
+            "reason": "See a different named enemy category."
+          }
+        ]
+      }
+    ]
+  }
+}

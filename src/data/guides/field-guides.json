@@ -1,0 +1,872 @@
+[
+  {
+    "slug": "control-resonant-beginners-guide",
+    "title": "CONTROL Resonant Beginner's Guide: Where to Start",
+    "category": "Getting Started",
+    "excerpt": "A spoiler-light preparation guide: choose your platform, catch up on the story, learn combat terminology and understand progression before launch.",
+    "introduction": "A spoiler-light preparation guide: choose your platform, catch up on the story, learn combat terminology and understand progression before launch.",
+    "quickAnswer": "Start with platform and storage checks, then learn the difference between the Aberrant, Combat Abilities, Talents and Artifacts. You do not have to finish CONTROL first. This is a preparation guide based on published information, not a claim that we have played the retail game.",
+    "image": "/images/home/control-resonant-hero.jpg",
+    "imageAlt": "CONTROL Resonant official promotional screenshot; scene illustration",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "coverage": "Planning guide",
+    "facts": [
+      {
+        "label": "Playable lead",
+        "value": "Dylan Faden"
+      },
+      {
+        "label": "Prior game required",
+        "value": "No"
+      },
+      {
+        "label": "PC storage",
+        "value": "120 GB SSD"
+      },
+      {
+        "label": "Guide type",
+        "value": "Pre-launch preparation"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "The shortest path into CONTROL Resonant",
+        "sourceRefs": [1, 2, 3]
+      },
+      {
+        "id": "before-installing",
+        "title": "Before installing: check the right platform information",
+        "evidence": "Editorial advice",
+        "steps": [
+          {
+            "title": "Separate digital, physical and Mac dates",
+            "text": "A date attached to one format is not automatically the date for another. The release guide keeps those cases separate."
+          },
+          {
+            "title": "Check the final PC table, not the early FAQ",
+            "text": "The September PC announcement supersedes the initial specifications. Leave room beyond the listed installation size for updates and other files."
+          },
+          {
+            "title": "Check the exact edition on your storefront",
+            "text": "Compare the actual bonus list and early-access entitlement on the platform where you intend to play. Regional pricing and store inclusions can differ."
+          }
+        ],
+        "links": [
+          {
+            "label": "Release schedule and platforms",
+            "href": "/guides/control-resonant-release-date-and-platforms"
+          },
+          {
+            "label": "Final PC requirements",
+            "href": "/guides/control-resonant-pc-system-requirements"
+          },
+          {
+            "label": "Edition comparison",
+            "href": "/guides/control-resonant-editions-and-pre-order-bonuses"
+          }
+        ]
+      },
+      {
+        "id": "story",
+        "title": "How much story do you need?",
+        "paragraphs": [
+          "Remedy positions the sequel as a standalone entry point. If you want to learn the world through play, begin without a full plot recap. If you enjoy continuity, the original game provides Jesse's perspective before Dylan's story."
+        ],
+        "sourceRefs": [1],
+        "links": [
+          {
+            "label": "Should you play CONTROL first?",
+            "href": "/guides/should-you-play-control-first"
+          },
+          {
+            "label": "Spoiler-light character and story setup",
+            "href": "/guides/control-resonant-characters-and-story"
+          }
+        ]
+      },
+      {
+        "id": "vocabulary",
+        "title": "Four terms that make build guides easier to read",
+        "table": {
+          "caption": "Build vocabulary",
+          "headers": ["Term", "What it describes", "Where to learn more"],
+          "rows": [
+            [
+              "Aberrant Forms",
+              "The shape and role of the melee weapon",
+              "Forms Wiki"
+            ],
+            [
+              "Combat Abilities",
+              "Supernatural actions in the loadout",
+              "Abilities Wiki"
+            ],
+            ["Talents", "Upgrades that refine the moveset", "Talent guide"],
+            ["Artifacts", "Equipped passive modifiers", "Artifact guide"]
+          ]
+        },
+        "sourceRefs": [3],
+        "links": [
+          {
+            "label": "Browse the connected systems Wiki",
+            "href": "/wiki"
+          }
+        ]
+      },
+      {
+        "id": "first-session",
+        "title": "Your first-session checklist",
+        "evidence": "Editorial advice",
+        "bullets": [
+          "Choose subtitle, audio, display and control options before the first demanding encounter.",
+          "Learn the camera and movement controls in a safe space.",
+          "Read the quest log instead of assuming every side activity is mandatory.",
+          "Try a consistent loadout before copying an untested tier list.",
+          "If a setting changes your comfort, keep it; difficulty is not an editorial scorecard."
+        ],
+        "links": [
+          {
+            "label": "Language and controller support",
+            "href": "/guides/control-resonant-pc-features-languages-and-controls"
+          },
+          {
+            "label": "Assist Mode settings",
+            "href": "/guides/control-resonant-assist-mode-and-accessibility"
+          }
+        ]
+      },
+      {
+        "id": "next-guide",
+        "title": "Choose the next guide for your question",
+        "subsections": [
+          {
+            "title": "I want the main route",
+            "paragraphs": [
+              "Start at the walkthrough index. Published preview missions are identified as previews, so you can distinguish a demonstrated location from a finished route."
+            ]
+          },
+          {
+            "title": "I want stronger builds",
+            "paragraphs": [
+              "Start with the combat resource loop, then the Talent and Artifact guides. A strong build explanation needs mechanics and conditions, not just a tier letter."
+            ]
+          },
+          {
+            "title": "I want to explore",
+            "paragraphs": [
+              "Read about World Quests and Metro Fault. Keep traversal unlocks separate from passive upgrades when tracking an inaccessible path."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Walkthrough index",
+            "href": "/guides/story-walkthrough"
+          },
+          {
+            "label": "Build planning",
+            "href": "/guides/combat-builds"
+          },
+          {
+            "label": "Exploration guide",
+            "href": "/guides/control-resonant-world-quests-and-exploration"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Remedy / Steam Community — Pinned developer FAQ",
+        "href": "https://steamcommunity.com/app/3669870/discussions/0/750542279460065824/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy / Steam — Final PC system requirements",
+        "href": "https://store.steampowered.com/news/app/3669870/view/676256891013171635",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — Combat, buildcrafting and player choice",
+        "href": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — Expanded Assist Mode",
+        "href": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "should-you-play-control-first",
+      "control-resonant-release-date-and-platforms",
+      "control-resonant-gameplay-explained"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Beginner's Guide: Where to Start",
+      "description": "A spoiler-light preparation guide: choose your platform, catch up on the story, learn combat terminology and understand progression before launch."
+    },
+    "faq": [
+      {
+        "question": "Is this a launch walkthrough?",
+        "answer": "No. It is a preparation guide using public information checked September 15, 2026. Retail mission routes and build tests are not claimed."
+      },
+      {
+        "question": "What should I read first if I have never played CONTROL?",
+        "answer": "Read the spoiler-light story entry and the four-system gameplay overview. A full ending explanation is not required to understand the basic setup."
+      }
+    ]
+  },
+  {
+    "slug": "control-resonant-metro-fault-and-reach",
+    "title": "CONTROL Resonant Metro Fault & Reach: Preview Guide",
+    "category": "Gameplay",
+    "excerpt": "What IGN's Metro Fault preview reveals about the underground dungeon, train hazards, Mold enemies and the Reach traversal unlock.",
+    "introduction": "What IGN's Metro Fault preview reveals about the underground dungeon, train hazards, Mold enemies and the Reach traversal unlock.",
+    "quickAnswer": "Metro Fault is a dungeon-like Fault shown in IGN First's August 7 gameplay coverage. Its reported reward is Reach, a grappling-style traversal ability. The preview describes underground train hazards and Mold encounters; this is a preview guide, not a verified launch walkthrough.",
+    "image": "/images/gameplay/warped-transit.jpg",
+    "imageAlt": "CONTROL Resonant official promotional screenshot; scene illustration",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "coverage": "Preview analysis",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Metro Fault"
+      },
+      {
+        "label": "Content type",
+        "value": "Fault / dungeon"
+      },
+      {
+        "label": "Reported reward",
+        "value": "Reach"
+      },
+      {
+        "label": "Evidence",
+        "value": "IGN First preview"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "What is Metro Fault?",
+        "sourceRefs": [1]
+      },
+      {
+        "id": "route-overview",
+        "title": "What was shown in the Metro Fault preview?",
+        "evidence": "Preview observation",
+        "table": {
+          "caption": "Metro Fault: what the publisher identifies",
+          "headers": [
+            "Part of the preview",
+            "What to expect",
+            "Verification limit"
+          ],
+          "rows": [
+            [
+              "Underground route",
+              "A dungeon-like space beneath Manhattan",
+              "No complete launch map published"
+            ],
+            [
+              "Traversal hazards",
+              "Trains approaching from changing directions",
+              "Exact timing and checkpoint placement not verified"
+            ],
+            [
+              "Combat",
+              "Fungal Mold enemies",
+              "No complete enemy count or spawn table"
+            ],
+            [
+              "Reward",
+              "Reach, a grappling-style movement skill",
+              "No final prerequisite chain verified"
+            ]
+          ]
+        },
+        "sourceRefs": [1]
+      },
+      {
+        "id": "reach",
+        "title": "Reach is a traversal unlock, not a Combat Ability",
+        "paragraphs": [
+          "The useful distinction is what the reward changes: Reach is described as a way to move through the world. Do not confuse it with the supernatural Combat Abilities awarded by defeating Resonants.",
+          "Remedy says story-gated traversal abilities do not carry into New Game Plus. That is a general system rule, not a published Metro Fault replay schedule."
+        ],
+        "sourceRefs": [1, 2],
+        "links": [
+          {
+            "label": "Compare NG+ carryover and traversal resets",
+            "href": "/guides/control-resonant-new-game-plus"
+          }
+        ]
+      },
+      {
+        "id": "preparation",
+        "title": "How to prepare without following an invented route",
+        "evidence": "Editorial advice",
+        "steps": [
+          {
+            "title": "Learn movement before chasing damage",
+            "text": "Use the controls and accessibility guides to identify movement options that suit you. A traversal challenge and a damage check require different preparation."
+          },
+          {
+            "title": "Separate the hazard from the enemy",
+            "text": "When reviewing the footage, pay attention to the environment before choosing a loadout. A weapon tier list cannot explain the direction a moving hazard takes."
+          },
+          {
+            "title": "Record the actual unlock conditions",
+            "text": "At launch, check the quest log, prerequisites and reward screen before relying on a community route. A preview may begin with abilities already unlocked."
+          },
+          {
+            "title": "Return to incomplete exploration notes",
+            "text": "If Reach opens a path you could not previously reach, record its exact location. Do not assume that every locked route uses this same ability."
+          }
+        ]
+      },
+      {
+        "id": "launch-checks",
+        "title": "What a complete Metro Fault walkthrough still needs",
+        "paragraphs": [
+          "There is no tested step-by-step launch route on this page yet. The missing information is specific: the starting quest, entrance, checkpoints, collectibles, unlock prerequisites and any differences between the preview and retail build."
+        ],
+        "bullets": [
+          "A numbered route with identifiable landmarks and actual screenshots.",
+          "Collectible locations separated from required objectives.",
+          "A confirmed reward screen and any prerequisite quests."
+        ],
+        "links": [
+          {
+            "label": "Browse the walkthrough index",
+            "href": "/guides/story-walkthrough"
+          },
+          {
+            "label": "Understand World Quests and Manhattan zones",
+            "href": "/guides/control-resonant-world-quests-and-exploration"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "IGN First — Exclusive Metro Fault mission gameplay",
+        "href": "https://www.youtube.com/watch?v=JfuY-NhK_tQ",
+        "kind": "Video"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — New Game Plus details",
+        "href": "https://blog.playstation.com/2026/04/30/control-resonant-remedy-shares-first-details-on-new-game-plus/",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-gameplay-explained",
+      "control-resonant-world-quests-and-exploration",
+      "control-resonant-talents-and-progression-guide"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Metro Fault & Reach: Preview Guide",
+      "description": "What IGN's Metro Fault preview reveals about the underground dungeon, train hazards, Mold enemies and the Reach traversal unlock."
+    },
+    "faq": [
+      {
+        "question": "Does Metro Fault unlock Reach?",
+        "answer": "IGN's published gameplay description identifies Reach as the reward at the end of this Fault."
+      },
+      {
+        "question": "Is the screenshot on this page a Metro Fault route map?",
+        "answer": "No. It is an official promotional scene used for visual context. The IGN video is the cited evidence; no collectible pins or route coordinates have been invented."
+      }
+    ],
+    "video": {
+      "id": "JfuY-NhK_tQ",
+      "title": "Exclusive Metro Fault Mission Gameplay",
+      "publisher": "IGN First",
+      "date": "2026-08-07",
+      "note": "Preview footage. Analysis here uses the publisher's description, not a claimed independent playthrough."
+    }
+  },
+  {
+    "slug": "control-resonant-central-resonant-boss",
+    "title": "CONTROL Resonant Central Resonant: Boss Preview",
+    "category": "Gameplay",
+    "excerpt": "Central Resonant's confirmed name, lava hazards and magma attacks, plus what the IGN preview does—and does not—establish about the fight.",
+    "introduction": "Central Resonant's confirmed name, lava hazards and magma attacks, plus what the IGN preview does—and does not—establish about the fight.",
+    "quickAnswer": "Central Resonant is the named fiery boss in IGN First's August 14 preview. IGN describes lava covering the floor and magma bursts aimed at Dylan. No launch-tested phase chart, numerical weakness or exact reward is established here.",
+    "image": "/images/bosses/resonant-fire.jpg",
+    "imageAlt": "CONTROL Resonant official promotional screenshot; scene illustration",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": true,
+    "coverage": "Preview analysis",
+    "facts": [
+      {
+        "label": "Boss",
+        "value": "Central Resonant"
+      },
+      {
+        "label": "Shown hazards",
+        "value": "Lava and magma"
+      },
+      {
+        "label": "Source date",
+        "value": "August 14, 2026"
+      },
+      {
+        "label": "Coverage",
+        "value": "Preview, not a tested kill"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Who is the Central Resonant?",
+        "sourceRefs": [1]
+      },
+      {
+        "id": "attacks",
+        "title": "Attacks identified by IGN",
+        "table": {
+          "caption": "Reported attacks and their limits",
+          "headers": [
+            "Observed feature",
+            "What it tells us",
+            "What it does not prove"
+          ],
+          "rows": [
+            [
+              "Lava on the floor",
+              "Ground safety changes during the encounter",
+              "An exact phase transition or damage tick"
+            ],
+            [
+              "Magma bursts",
+              "Dylan faces directed ranged pressure",
+              "A fixed dodge count or invulnerability window"
+            ],
+            [
+              "Large fiery form",
+              "The boss has a distinct visual identity",
+              "An automatic weakness to ice or any other element"
+            ]
+          ]
+        },
+        "sourceRefs": [1]
+      },
+      {
+        "id": "approach",
+        "title": "What to watch when learning the fight",
+        "evidence": "Editorial advice",
+        "subsections": [
+          {
+            "title": "Read the arena before the health bar",
+            "paragraphs": [
+              "If floor hazards are what end an attempt, begin by identifying safe movement. Increasing damage is not a substitute for understanding where you can stand. The retail encounter will need its own annotated arena guide."
+            ]
+          },
+          {
+            "title": "Test one change at a time",
+            "paragraphs": [
+              "Keep your loadout consistent while learning a telegraph. Then change one ability, Artifact or Assist setting so you can tell what helped. This is a learning method, not a proven best build."
+            ]
+          },
+          {
+            "title": "Do not assume fire appearance equals an elemental weakness",
+            "paragraphs": [
+              "A boss's visual design is not a damage-resistance table. Compare actual hits under consistent conditions before calling an element effective."
+            ]
+          }
+        ],
+        "links": [
+          {
+            "label": "Choose Assist Mode settings",
+            "href": "/guides/control-resonant-assist-mode-and-accessibility"
+          },
+          {
+            "label": "Understand the four build systems",
+            "href": "/guides/combat-builds"
+          }
+        ]
+      },
+      {
+        "id": "rewards",
+        "title": "Boss rewards and world progression",
+        "paragraphs": [
+          "Resonant victories award Combat Abilities, but the general reward system is not enough to name this boss's exact drop. Some boss rewards offer choices; NG+ expands ability combinations. Treat a claimed item or ability name as unverified unless the reward screen or an explicit source supports it."
+        ],
+        "sourceRefs": [2, 3],
+        "links": [
+          {
+            "label": "Read about zone XP and progression",
+            "href": "/guides/control-resonant-talents-and-progression-guide"
+          }
+        ]
+      },
+      {
+        "id": "fight-status",
+        "title": "Is a full boss strategy available?",
+        "paragraphs": [
+          "This page does not yet claim a completed retail fight. Required quest, exact entrance, health values, attack timings, guaranteed openings and reward branches must be checked in the released game. The linked IGN feature is the best starting point for the currently published encounter."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "IGN First — Exclusive Central Resonant boss fight",
+        "href": "https://open.video/%40ign/v/control-resonant-exclusive-boss-fight-gameplay-ign-first",
+        "kind": "Video"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — Combat, buildcrafting and player choice",
+        "href": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — New Game Plus details",
+        "href": "https://blog.playstation.com/2026/04/30/control-resonant-remedy-shares-first-details-on-new-game-plus/",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-gameplay-explained",
+      "control-resonant-world-quests-and-exploration",
+      "control-resonant-talents-and-progression-guide"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Central Resonant: Boss Preview",
+      "description": "Central Resonant's confirmed name, lava hazards and magma attacks, plus what the IGN preview does—and does not—establish about the fight."
+    },
+    "faq": [
+      {
+        "question": "Is Central Resonant an official boss name or a fan nickname?",
+        "answer": "IGN identifies the boss as Central Resonant in its published exclusive gameplay description. It is not a name invented from the screenshot."
+      },
+      {
+        "question": "What is the Central Resonant's weakness?",
+        "answer": "No tested elemental weakness is established by the material used here. Lava attacks alone do not prove a particular resistance or vulnerability."
+      }
+    ],
+    "video": {
+      "id": "M-vbbp4CzoA",
+      "title": "Exclusive Boss Fight Gameplay",
+      "publisher": "IGN First",
+      "date": "2026-08-14",
+      "note": "Boss spoilers. The publisher's syndicated description is linked in the sources."
+    }
+  },
+  {
+    "slug": "control-resonant-difficulty-and-parry",
+    "title": "CONTROL Resonant Difficulty: Parry & Dodge Explained",
+    "category": "Gameplay",
+    "excerpt": "Does CONTROL Resonant have parries? Understand the director's answer, dodge-focused combat and the difference between difficulty and Assist Mode.",
+    "introduction": "Does CONTROL Resonant have parries? Understand the director's answer, dodge-focused combat and the difference between difficulty and Assist Mode.",
+    "quickAnswer": "CONTROL Resonant does not use a parry mechanic, according to director Mikael Kasurinen's interview with GamesRadar+. The design focuses on flowing through groups of enemies. Assist Mode provides separate controls for players who want to change the challenge.",
+    "image": "/images/gameplay/manhattan-melee.jpg",
+    "imageAlt": "CONTROL Resonant official promotional screenshot; scene illustration",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": false,
+    "coverage": "Preview analysis",
+    "facts": [
+      {
+        "label": "Parry mechanic",
+        "value": "No, per director interview"
+      },
+      {
+        "label": "Combat focus",
+        "value": "Movement and melee"
+      },
+      {
+        "label": "Difficulty tuning",
+        "value": "Assist Mode"
+      },
+      {
+        "label": "Trophy restriction",
+        "value": "None from Assist Mode"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Can you parry in CONTROL Resonant?",
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "combat-design",
+        "title": "Why there is no parry",
+        "paragraphs": [
+          "Kasurinen describes encounter design around movement between enemies rather than a prolonged exchange with a single opponent. The absence of a parry is a design choice, not a missing input in the button layout.",
+          "Remedy's combat explanation instead connects melee, ability power, Falter and executions. Learning those relationships is more useful than searching for a universal counterattack window."
+        ],
+        "sourceRefs": [1, 3]
+      },
+      {
+        "id": "difficulty-options",
+        "title": "Difficulty and Assist Mode are different questions",
+        "paragraphs": [
+          "Assist Mode lets players adjust particular sources of pressure, including enemy aggression, dodge timing and projectile speed. Remedy says using these options does not prevent trophies or achievements."
+        ],
+        "sourceRefs": [2],
+        "links": [
+          {
+            "label": "See the complete Assist Mode settings table",
+            "href": "/guides/control-resonant-assist-mode-and-accessibility"
+          }
+        ]
+      },
+      {
+        "id": "learning",
+        "title": "A practical learning order",
+        "evidence": "Editorial advice",
+        "steps": [
+          {
+            "title": "Identify what interrupted your attack",
+            "text": "Was the problem an enemy telegraph, camera position, a floor hazard or an empty resource meter? Name the problem before changing every setting."
+          },
+          {
+            "title": "Practice movement with a familiar weapon",
+            "text": "A consistent moveset makes it easier to distinguish timing mistakes from unfamiliar attack recovery. Save broad loadout experiments for after you can read the encounter."
+          },
+          {
+            "title": "Build the resource loop",
+            "text": "Connect a melee sequence to an ability opportunity rather than treating every button as an isolated damage source. Use the combat guide for the confirmed system relationships."
+          },
+          {
+            "title": "Tune only the pressure you want to change",
+            "text": "Consider dodge timing for timing difficulty or projectile speed for ranged readability. Pick settings for comfort; there is no requirement to copy another player's configuration."
+          }
+        ]
+      },
+      {
+        "id": "genre",
+        "title": "Is it fair to call it a Soulslike?",
+        "paragraphs": [
+          "A genre comparison does not tell you enough about the controls. Melee combat alone does not establish parries, stamina rules, death penalties or a particular boss difficulty. For a purchase decision, compare the confirmed mechanics you care about rather than treating a genre label as a feature list."
+        ],
+        "links": [
+          {
+            "label": "Read the gameplay overview",
+            "href": "/guides/control-resonant-gameplay-explained"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "GamesRadar+ — Why CONTROL Resonant does not use parries",
+        "href": "https://www.gamesradar.com/games/action-rpg/control-resonant-may-be-an-action-rpg-but-remedy-isnt-veering-into-hellishly-challenging-territory-there-are-no-parries-there-is-no-back-and-forth-with-a-single-enemy/",
+        "kind": "Developer interview"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — Expanded Assist Mode",
+        "href": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/",
+        "kind": "Official"
+      },
+      {
+        "label": "Remedy / PlayStation Blog — Combat, buildcrafting and player choice",
+        "href": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/",
+        "kind": "Official"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-gameplay-explained",
+      "control-resonant-world-quests-and-exploration",
+      "control-resonant-talents-and-progression-guide"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Difficulty: Parry & Dodge Explained",
+      "description": "Does CONTROL Resonant have parries? Understand the director's answer, dodge-focused combat and the difference between difficulty and Assist Mode."
+    },
+    "faq": [
+      {
+        "question": "Can Assist Mode make the game easier without disabling trophies?",
+        "answer": "Yes. Remedy explicitly says Assist Mode does not lock trophies or achievements."
+      },
+      {
+        "question": "Should I look for a parry build?",
+        "answer": "No. The director has said there are no parries. Build planning should use the actual melee, ability, Talent and Artifact systems."
+      }
+    ]
+  },
+  {
+    "slug": "control-resonant-enemy-factions",
+    "title": "CONTROL Resonant Enemy Factions: Hiss, Mold & Patterning",
+    "category": "Gameplay",
+    "excerpt": "A preview threat guide separating the returning Hiss and Mold from the newly described Patterning and the game's Resonant bosses.",
+    "introduction": "A preview threat guide separating the returning Hiss and Mold from the newly described Patterning and the game's Resonant bosses.",
+    "quickAnswer": "The Hiss and Mold return, while IGN's August developer feature identifies the Patterning as a new threat that transforms the landscape. Resonants are major boss encounters. These are broad groups, not a complete list of launch enemy variants.",
+    "image": "/images/enemies/hiss-encounter.jpg",
+    "imageAlt": "CONTROL Resonant official promotional screenshot; scene illustration",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "readTime": "",
+    "featured": false,
+    "coverage": "Preview analysis",
+    "facts": [
+      {
+        "label": "Returning threats",
+        "value": "Hiss and Mold"
+      },
+      {
+        "label": "New named threat",
+        "value": "The Patterning"
+      },
+      {
+        "label": "Boss group",
+        "value": "Resonants"
+      },
+      {
+        "label": "Variant list",
+        "value": "Not complete"
+      }
+    ],
+    "sections": [
+      {
+        "id": "quick-answer",
+        "title": "Which enemy groups are confirmed?",
+        "sourceRefs": [1, 2]
+      },
+      {
+        "id": "comparison",
+        "title": "Enemy families and evidence",
+        "table": {
+          "caption": "Threat families, not a launch bestiary",
+          "headers": ["Group", "Published context", "Avoid this assumption"],
+          "rows": [
+            [
+              "The Hiss",
+              "A returning corrupting resonance",
+              "Every original-game variant is guaranteed to return"
+            ],
+            [
+              "The Mold",
+              "A returning fungal threat; identified in Metro Fault coverage",
+              "A friendly Mold Turret makes all Mold non-hostile"
+            ],
+            [
+              "The Patterning",
+              "IGN describes a new landscape-transforming influence",
+              "Its visual patterns reveal a complete weakness table"
+            ],
+            [
+              "Resonants",
+              "Major encounters linked to ability rewards",
+              "Every large hostile uses the same phases or rewards"
+            ]
+          ]
+        },
+        "sourceRefs": [1, 2, 3]
+      },
+      {
+        "id": "recognition",
+        "title": "Identify behavior before choosing a counter",
+        "evidence": "Editorial advice",
+        "subsections": [
+          {
+            "title": "Separate ranged pressure from environmental hazards",
+            "paragraphs": [
+              "An enemy attack and an unsafe floor can look equally urgent but require different responses. Note what is causing damage before assigning a weakness to the nearest target."
+            ]
+          },
+          {
+            "title": "Check the in-game name before extending the Wiki",
+            "paragraphs": [
+              "A silhouette is useful for recognition but not enough to name a new species. Record the exact label, location and behavior together so two descriptions of the same enemy do not become duplicate records."
+            ]
+          },
+          {
+            "title": "Do not transfer the original game's numbers",
+            "paragraphs": [
+              "A returning family does not guarantee identical damage, health, resistances or spawn behavior. The sequel's melee-focused combat changes the context in which those enemies are fought."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bosses",
+        "title": "Why bosses have their own index",
+        "paragraphs": [
+          "A boss guide needs an encounter location, readable attack patterns and verified rewards. The Central Resonant has a named preview; other pictured entities may still lack a confirmed label. Those cases should not be presented as equally complete records."
+        ],
+        "links": [
+          {
+            "label": "Central Resonant preview",
+            "href": "/guides/control-resonant-central-resonant-boss"
+          },
+          {
+            "label": "Boss index and evidence status",
+            "href": "/bosses"
+          }
+        ]
+      },
+      {
+        "id": "field-log",
+        "title": "What to record when testing a launch enemy",
+        "evidence": "Editorial advice",
+        "bullets": [
+          "The exact in-game name and the zone where it appears.",
+          "Its attack telegraphs, ranges and environmental interactions.",
+          "The player's loadout, difficulty settings and game version.",
+          "Any claimed resistance tested against a comparable attack.",
+          "Whether the behavior changes after progression or in NG+."
+        ],
+        "links": [
+          {
+            "label": "Browse enemy records",
+            "href": "/wiki/enemies"
+          },
+          {
+            "label": "Understand zone progression",
+            "href": "/guides/control-resonant-talents-and-progression-guide"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Remedy Entertainment — CONTROL Resonant reveal",
+        "href": "https://www.remedygames.com/article/remedy-entertainment-reveals-control-resonant-launching-in-2026",
+        "kind": "Official"
+      },
+      {
+        "label": "IGN / Simon Cardy (Yahoo syndication) — How zones gain XP and bosses change the world",
+        "href": "https://tech.yahoo.com/gaming/articles/don-t-xp-zones-control-160000728.html",
+        "kind": "Developer interview"
+      },
+      {
+        "label": "IGN First — Exclusive Metro Fault mission gameplay",
+        "href": "https://www.youtube.com/watch?v=JfuY-NhK_tQ",
+        "kind": "Video"
+      }
+    ],
+    "relatedSlugs": [
+      "control-resonant-gameplay-explained",
+      "control-resonant-world-quests-and-exploration",
+      "control-resonant-talents-and-progression-guide"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Enemy Factions: Hiss, Mold & Patterning",
+      "description": "A preview threat guide separating the returning Hiss and Mold from the newly described Patterning and the game's Resonant bosses."
+    },
+    "faq": [
+      {
+        "question": "What is the Patterning?",
+        "answer": "It is the new threat named in IGN's August 19 developer feature. The report describes its influence on the environment; a full launch taxonomy is not established here."
+      },
+      {
+        "question": "Is this every enemy in the game?",
+        "answer": "No. This guide indexes broad groups supported by current sources. It does not invent variant names or claim a complete launch bestiary."
+      }
+    ]
+  }
+]

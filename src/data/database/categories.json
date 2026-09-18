@@ -1,0 +1,662 @@
+[
+  {
+    "id": "abilities",
+    "eyebrow": "Wiki / supernatural systems",
+    "title": "CONTROL Resonant Abilities",
+    "description": "A player-focused record of the supernatural Combat Abilities Dylan earns from Resonants, how they affect encounters, and how they connect to buildcrafting.",
+    "heroImage": "/images/abilities/elemental-power.jpg",
+    "heroAlt": "Dylan using paranatural power during combat in Manhattan",
+    "sectionTitle": "Ability records",
+    "sectionDescription": "Remedy and first-party hands-on material name multiple Combat Abilities and explain the Falter-to-execution loop. Preview values are not treated as final balance.",
+    "items": [
+      {
+        "name": "Barrage",
+        "label": "Combat Ability · first-party hands-on",
+        "description": "Pulls rocks from the ground and launches them at range. Xbox Wire saw it offered among three ability choices after an early Resonant Entity fight.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "barrage",
+        "playerNote": "Use its ranged role as a contrast to close-quarters Aberrant attacks; the preview does not establish final damage or cooldown values.",
+        "sourceIds": ["xbox-hands-on-june", "ps5-features"]
+      },
+      {
+        "name": "Shield",
+        "label": "Combat Ability · first-party hands-on",
+        "description": "Raises floating rocks defensively and can turn them into an offensive ram during a dash. It appeared alongside Barrage and Seekers in an early boss-reward choice.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "shield",
+        "playerNote": "This is an offensive-defensive option, not proof that every incoming attack can be blocked; test its limits in the final build.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Seekers (Summon)",
+        "label": "Named Combat Ability",
+        "description": "Summons a telekinetic entity. Remedy's loadout screenshot shows that a Seeker can be thrown or detonated and exposes its duration, health, power cost, and damage statistics.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "seekers-summon",
+        "playerNote": "The preview names a summoned entity with throw and detonate actions. Learn what each action does before reading the on-screen preview values as permanent balance rules."
+      },
+      {
+        "name": "Mold Turrets",
+        "label": "Named ability example",
+        "description": "Deployable friendly Mold growths independently attack hostile targets and apply status effects while Dylan continues fighting elsewhere.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "mold-turrets",
+        "playerNote": "A summon-oriented setup still needs space to operate. Compare this role with close-range abilities; no numerical best-build ranking has been tested here."
+      },
+      {
+        "name": "Falter",
+        "label": "Combat state",
+        "description": "Combat Abilities can build Falter and leave applicable enemies open to executions. Assist Mode includes a separate Outgoing Falter adjustment.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "falter"
+      },
+      {
+        "name": "Execution boost",
+        "label": "Combat loop reward",
+        "description": "Executing a vulnerable enemy temporarily increases melee damage, feeding power back into the Aberrant-centered rhythm.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "execution-boost"
+      },
+      {
+        "name": "Elemental and status effects",
+        "label": "Ability behavior",
+        "description": "Official footage shows abilities with elemental and status-driven effects. Individual names are withheld where the interface has not identified them.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "elemental-and-status-effects"
+      },
+      {
+        "name": "Resonant ability choice",
+        "label": "Boss reward",
+        "description": "Major Resonants grant unique Combat Ability choices. A later NG+ run can pursue another ability branch from the same boss.",
+        "href": "/bosses",
+        "id": "resonant-ability-choice"
+      },
+      {
+        "name": "Reach",
+        "label": "Traversal ability · IGN preview",
+        "description": "A grappling-style movement unlock identified as the Metro Fault reward. It belongs to traversal progression, not the Combat Ability reward category.",
+        "href": "/guides/control-resonant-metro-fault-and-reach",
+        "id": "reach",
+        "playerNote": "If your route involves a grappling-style traversal unlock, look for Reach rather than searching the Combat Ability loadout. The two systems solve different problems."
+      }
+    ],
+    "facts": [
+      "A Resonant encounter rewards Dylan with that boss’s unique Combat Ability.",
+      "Melee hits restore the resource spent on Combat Abilities.",
+      "Abilities can build Falter and set up execution attacks.",
+      "Some boss rewards present branching choices that support different builds.",
+      "New Game Plus allows more than one ability from the same Resonant to be equipped."
+    ],
+    "note": "Pre-release UI can still be balanced. Names are included only when visible in official material; exact launch values and unlock locations require final-game verification.",
+    "guideSlug": "control-resonant-combat-abilities-and-aberrant-forms",
+    "sourceIds": ["ps-combat", "metro", "xbox-hands-on-june", "ps5-features"],
+    "seo": {
+      "title": "CONTROL Resonant Abilities Wiki: Names & Roles",
+      "description": "A player-focused record of the supernatural Combat Abilities Dylan earns from Resonants and how they connect to buildcrafting."
+    }
+  },
+  {
+    "id": "aberrant-forms",
+    "eyebrow": "Wiki / shapeshifting weapon",
+    "title": "CONTROL Resonant Aberrant Forms",
+    "description": "The Aberrant is Dylan Faden’s shape-changing melee weapon. This index separates six named preview Forms, weapon-slot roles and final-game unknowns.",
+    "heroImage": "/images/home/control-resonant-hero.jpg",
+    "heroAlt": "Dylan Faden carrying a large transformed Aberrant weapon",
+    "sectionTitle": "Forms shown so far",
+    "sectionDescription": "Xbox Wire's first-party hands-on named three opening Primary and three Secondary choices. Roles reflect that preview, not tested retail balance.",
+    "items": [
+      {
+        "name": "Flurry",
+        "label": "Primary Form · first-party hands-on",
+        "description": "Twin daggers with fast, close-range attacks and a previewed critical-chance boost; one of three opening Primary choices described by Xbox Wire.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "flurry",
+        "playerNote": "Consider it when you prefer quick contact and frequent repositioning; the preview does not establish a final best-in-slot ranking.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Slash",
+        "label": "Primary Form · first-party hands-on",
+        "description": "A scythe-like Primary Form whose broad swings were described as useful against groups in the Xbox hands-on.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "slash",
+        "playerNote": "Its previewed value is coverage of multiple enemies, not a proven single-target damage number.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Slice",
+        "label": "Primary Form · first-party hands-on",
+        "description": "An axe Primary Form described as high single-target damage with a bonus for attacking from behind in the preview build.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "slice",
+        "playerNote": "Positioning is part of its reported advantage; do not transfer preview damage values to launch guides.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Crush",
+        "label": "Secondary Form · first-party hands-on",
+        "description": "A huge, slow mallet used for heavy smashing attacks; one of the three Secondary choices in the first-party hands-on.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "crush",
+        "playerNote": "Its slower commitment suggests testing attack windows against mobile enemies instead of assuming every heavy hit will land.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Drill",
+        "label": "Secondary Form · first-party hands-on",
+        "description": "A directed, sustained-damage Secondary Form named in the Xbox Wire preview.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "drill",
+        "playerNote": "Treat sustained contact as its shown role, not as a verified final damage-per-second figure.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Extend",
+        "label": "Secondary Form · first-party hands-on",
+        "description": "A whip-like chain staff used for extra reach, shown as a Secondary complement to a close-range Primary setup.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "extend",
+        "playerNote": "Use the range distinction when comparing Form pairs; exact hitboxes and final upgrade ranks require retail testing.",
+        "sourceIds": ["xbox-hands-on-june"]
+      },
+      {
+        "name": "Primary Forms",
+        "label": "Loadout role",
+        "description": "The core moveset branch. An official Talent screen gives Primary its own progression tab alongside Secondary and Combo Enders.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "primary-forms"
+      },
+      {
+        "name": "Secondary Forms",
+        "label": "Loadout role",
+        "description": "A second Form category used to vary range, speed, and function inside one setup. Preview descriptions include whip-like and hammer options.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "secondary-forms"
+      },
+      {
+        "name": "Combo Enders",
+        "label": "Finisher role",
+        "description": "Powerful attacks placed at the end of strings. A hands-on preview observed rapid gauntlet strikes and a thrown glaive-like attack.",
+        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "id": "combo-enders"
+      }
+    ],
+    "facts": [
+      "The Aberrant is built around melee combat rather than the Service Weapon’s gunplay.",
+      "The official interface separates Primary, Secondary, and Combo Ender Talent branches.",
+      "Forms can flow into connected attack strings and special enders.",
+      "Combo enders and supernatural abilities deepen the weapon’s build synergy."
+    ],
+    "note": "Flurry, Slash, Slice, Crush, Drill and Extend are named in Xbox Wire's first-party June 11 hands-on. Their preview roles should not be converted into final balance statistics.",
+    "guideSlug": "control-resonant-combat-abilities-and-aberrant-forms",
+    "sourceIds": ["ps-combat", "hands-on", "xbox-hands-on-june"],
+    "seo": {
+      "title": "CONTROL Resonant Aberrant Forms Wiki: Names & Roles",
+      "description": "The Aberrant is Dylan Faden’s shape-changing melee weapon. This index separates confirmed combat structure from names that have not been formally documented."
+    }
+  },
+  {
+    "id": "talents",
+    "eyebrow": "Wiki / progression",
+    "title": "CONTROL Resonant Talents",
+    "description": "Talents refine Dylan’s build by strengthening connections between Aberrant Forms, Combat Abilities, executions, recovery, and personal playstyle.",
+    "heroImage": "/images/talents/talent-tree.jpg",
+    "heroAlt": "The CONTROL Resonant Talent tree with branching melee upgrades",
+    "sectionTitle": "Talent system overview",
+    "sectionDescription": "The interface reveals three attack tabs and one readable node. This Wiki does not extrapolate a full tree from partially visible icons.",
+    "items": [
+      {
+        "name": "Primary branch",
+        "label": "Talent tab",
+        "description": "A dedicated branch for the selected Primary Form and its attack behavior. The official screenshot shows a branching node network rather than a linear upgrade rail.",
+        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "id": "primary-branch"
+      },
+      {
+        "name": "Secondary branch",
+        "label": "Talent tab",
+        "description": "Talents attached to the Secondary Form role, supporting a second set of reach, speed, or utility choices in the same loadout.",
+        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "id": "secondary-branch"
+      },
+      {
+        "name": "Combo Enders branch",
+        "label": "Talent tab",
+        "description": "A separate progression tab for the powerful attacks that finish connected melee strings.",
+        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "id": "combo-enders-branch"
+      },
+      {
+        "name": "Dodge Attack",
+        "label": "Named node",
+        "description": "The official preview node adds a post-dodge attack that launches enemies and deals extra damage. Exact launch values are not published in the screenshot.",
+        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "id": "dodge-attack"
+      },
+      {
+        "name": "Aberrant Strength",
+        "label": "Preview interface label",
+        "description": "Aberrant Strength is displayed beside the selected Talent. The screenshot does not establish that the displayed number is its purchase price or final prerequisite.",
+        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "id": "aberrant-strength"
+      },
+      {
+        "name": "New Game+ nodes",
+        "label": "Expanded progression",
+        "description": "Additional Talent nodes become available in New Game Plus alongside broader ability combinations and more dangerous encounters.",
+        "href": "/guides/control-resonant-new-game-plus",
+        "id": "new-game-nodes"
+      },
+      {
+        "name": "Zone XP and Talent points",
+        "label": "Developer interview",
+        "description": "Activities grant zone XP. Each zone level provides a local improvement and a Talent point; see the progression guide for the developer's examples.",
+        "href": "/guides/control-resonant-talents-and-progression-guide#zone-xp",
+        "id": "zone-xp-and-talent-points"
+      },
+      {
+        "name": "Respec All",
+        "label": "Visible preview control",
+        "description": "The official Talent screen includes Respec All. Final resource costs and refund rules are not established by its icon or counter.",
+        "href": "/guides/control-resonant-talents-and-progression-guide#respec",
+        "id": "respec-all"
+      }
+    ],
+    "facts": [
+      "Zone progression and Talent upgrades are connected.",
+      "Primary, Secondary and Combo Enders are visible Talent tabs.",
+      "Respec All is visible in the official preview UI.",
+      "New Game Plus adds Talent nodes."
+    ],
+    "note": "The screenshot is a pre-release interface and can change. The launch database will record exact wording, prerequisites, ranks, and practical use from the final build.",
+    "guideSlug": "control-resonant-talents-and-progression-guide",
+    "sourceIds": ["ps-combat", "zones", "ps-ngplus"],
+    "seo": {
+      "title": "CONTROL Resonant Talents Wiki: Names & Roles",
+      "description": "Talents refine Dylan’s build by strengthening connections between Aberrant Forms, Combat Abilities, executions, recovery, and personal playstyle."
+    }
+  },
+  {
+    "id": "artifacts",
+    "eyebrow": "Wiki / passive modifiers",
+    "title": "CONTROL Resonant Artifacts",
+    "description": "Artifacts are build items with passive effects. Their conditions and trade-offs can reinforce a focused playstyle rather than simply raise a universal number.",
+    "heroImage": "/images/gameplay/gap-realm.jpg",
+    "heroAlt": "The blue dreamlike Gap shown in official CONTROL Resonant promotional media",
+    "sectionTitle": "Artifact rules",
+    "sectionDescription": "Official material explains the slot and crafting structure. Individual effects will be indexed with exact wording from the released game.",
+    "items": [
+      {
+        "name": "Equipped Artifacts",
+        "label": "Passive modifier",
+        "description": "Artifacts can change survivability, combat, exploration, or resource economy. Some include activation conditions or meaningful tradeoffs.",
+        "href": "/guides/control-resonant-artifacts-guide",
+        "id": "equipped-artifacts"
+      },
+      {
+        "name": "Untapped Artifacts",
+        "label": "Crafting input",
+        "description": "Untapped finds can be taken into The Gap and shaped into usable Artifacts, connecting optional exploration with build progression.",
+        "href": "/guides/control-resonant-artifacts-guide",
+        "id": "untapped-artifacts"
+      },
+      {
+        "name": "Pickpocket's Tool",
+        "label": "Preorder Artifact",
+        "description": "A named preorder bonus on Steam and PlayStation. Its final in-game effect should be read from the launch inventory rather than inferred from the name.",
+        "href": "/guides/control-resonant-artifacts-guide",
+        "id": "pickpocket-s-tool",
+        "playerNote": "Check your store's eligible preorder package. The name alone does not prove a money, theft or loot-rate bonus."
+      },
+      {
+        "name": "Wallet",
+        "label": "Digital Deluxe Untapped Artifact",
+        "description": "The Digital Deluxe package includes an Untapped Artifact named Wallet. Store pages do not publish a complete final effect description.",
+        "href": "/guides/control-resonant-artifacts-guide",
+        "id": "wallet",
+        "playerNote": "Do not confuse an Untapped Artifact with a finished passive effect. Compare edition inclusions separately from build advice."
+      },
+      {
+        "name": "Three first-run slots",
+        "label": "Initial limit",
+        "description": "The first playthrough supports three equipped Artifacts, requiring players to choose which passive effects belong in a focused setup.",
+        "href": "/guides/control-resonant-artifacts-guide",
+        "id": "three-first-run-slots"
+      },
+      {
+        "name": "Fourth Artifact slot",
+        "label": "New Game+",
+        "description": "New Game Plus adds a fourth slot for combinations that are not possible during the initial campaign.",
+        "href": "/guides/control-resonant-new-game-plus",
+        "id": "fourth-artifact-slot"
+      }
+    ],
+    "facts": [
+      "Artifacts provide passive modifiers and may include conditions or trade-offs.",
+      "Untapped Artifacts are discovered during play and crafted in the Gap.",
+      "Three Artifact slots are available in an initial playthrough.",
+      "New Game Plus unlocks a fourth Artifact slot."
+    ],
+    "note": "Named preorder items are not assigned effects the storefront does not disclose. Rarity, numerical ranges, world locations, and pairings require repeatable final-game evidence.",
+    "guideSlug": "control-resonant-artifacts-guide",
+    "sourceIds": ["ps-ngplus", "store"],
+    "seo": {
+      "title": "CONTROL Resonant Artifacts Wiki: Names & Roles",
+      "description": "Artifacts are build items with passive effects. Their conditions and trade-offs can reinforce a focused playstyle rather than simply raise a universal number."
+    }
+  },
+  {
+    "id": "characters",
+    "eyebrow": "Wiki / personnel",
+    "title": "CONTROL Resonant Characters",
+    "description": "Who's who around Dylan: recognize the Faden siblings, Zoe and the returning Bureau cast, with character portraits, relationships and spoiler-conscious background.",
+    "heroImage": "/images/characters/zoe-and-dylan.jpg",
+    "heroAlt": "FBC field agent Zoe De Vera speaking with Dylan Faden",
+    "sectionTitle": "Meet the people behind the names",
+    "sectionDescription": "Start with Dylan, Jesse and Zoe. Later entries include publicly announced returning-cast spoilers. Returning characters’ backgrounds refer to CONTROL (2019); Zoe’s file covers her Resonant role.",
+    "items": [
+      {
+        "name": "Dylan Faden",
+        "label": "Playable protagonist",
+        "description": "Dylan is the character you control in Resonant. He enters Manhattan with the Aberrant while searching for Jesse, his older sister. His long confinement by the FBC makes working alongside the Bureau a complicated part of his story.",
+        "href": "/guides/control-resonant-characters-and-story",
+        "id": "dylan-faden",
+        "scope": "Resonant character / CONTROL background",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Sean Durrie"
+          },
+          {
+            "label": "Key connection",
+            "value": "Jesse's younger brother; Zoe's field contact"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "The Bureau calls Dylan P6, short for Prime Candidate 6. In CONTROL (2019), he was held and studied by the organization that hoped to use his abilities. That history helps explain his distrust of Bureau authority."
+        },
+        "playerNote": "P6 in Bureau documents means Dylan. Keeping that designation in mind helps you connect old case files with the person you now play.",
+        "sourceIds": ["wiki-dylan", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/dylan-profile.png",
+          "alt": "Dylan Faden in his CONTROL Resonant announcement portrait",
+          "caption": "CONTROL Resonant · announcement portrait",
+          "sourceUrl": "https://control.fandom.com/wiki/File:Control_Resonant_announcement_Dylan_Faden_profile.png",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      },
+      {
+        "name": "Jesse Faden",
+        "label": "Missing FBC Director",
+        "description": "Jesse is Dylan's older sister and the FBC Director. She is missing in the public Resonant setup, turning the original game's sibling search around: this time you follow Dylan as he looks for her.",
+        "href": "/guides/control-resonant-characters-and-story",
+        "id": "jesse-faden",
+        "scope": "Resonant character / CONTROL background",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Courtney Hope"
+          },
+          {
+            "label": "Key connection",
+            "value": "Dylan's older sister; FBC Director"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "Jesse is the protagonist of CONTROL (2019). She entered the Oldest House looking for Dylan and became the Bureau's Director. The sibling relationship matters more to a newcomer than memorizing every event in the original game."
+        },
+        "playerNote": "If you skipped CONTROL, the useful starting point is the relationship: Jesse spent the first game trying to find Dylan. That makes his search for her more than another Bureau assignment.",
+        "sourceIds": ["wiki-jesse", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/jesse-director.png",
+          "alt": "Jesse Faden's Director portrait from CONTROL, used as character background",
+          "caption": "CONTROL (2019) · Director portrait",
+          "sourceUrl": "https://control.fandom.com/wiki/File:Director_Faden_Photograph.png",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      },
+      {
+        "name": "Zoe De Vera",
+        "label": "FBC field agent and handler",
+        "description": "Zoe is the Bureau agent assigned to work with Dylan. Remedy describes conversations continuing while you explore, making her a recurring narrative presence rather than simply a name in a mission briefing.",
+        "href": "/guides/control-resonant-characters-and-story",
+        "id": "zoe-de-vera",
+        "scope": "Resonant character",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Frankie Kevich"
+          },
+          {
+            "label": "Key connection",
+            "value": "Dylan's assigned FBC handler"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "The Wiki identifies her as a Special Agent and handler. Zoe has experience dealing with the crisis outside while Dylan has spent years isolated. That contrast is useful context for their conversations."
+        },
+        "playerNote": "Listen to the conversations during exploration. Zoe's experience outside the Oldest House gives context to the world Dylan is only now getting to know.",
+        "sourceIds": ["wiki-zoe", "ps-combat", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/zoe-render.png",
+          "alt": "Zoe De Vera wearing FBC equipment in a character render",
+          "caption": "CONTROL Resonant · character render",
+          "sourceUrl": "https://control.fandom.com/wiki/File:ZoeControlResonantHighResRender.png",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      },
+      {
+        "name": "Dr. Casper Darling",
+        "label": "Official cast reveal · returning-character spoiler",
+        "description": "Darling is the scientist behind many of CONTROL's research recordings, and the published cast diary confirms his return. He matters to Dylan's story because he helped shape the Bureau's treatment of him.",
+        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "id": "dr-casper-darling",
+        "scope": "Resonant character / CONTROL background",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Matthew Porretta"
+          },
+          {
+            "label": "Key connection",
+            "value": "Bureau researcher connected to Dylan's confinement"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "He was the FBC's Head of Research and oversaw Dylan's early years inside the Bureau. His recordings in CONTROL explain many of the terms the organization uses for objects and supernatural incidents."
+        },
+        "playerNote": "Look for the difference between Darling explaining a phenomenon and a character responding to its consequences. His research background is useful context when reading Bureau files.",
+        "sourceIds": ["wiki-darling", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/darling.png",
+          "alt": "Dr. Casper Darling in character imagery from CONTROL",
+          "caption": "CONTROL (2019) · character image",
+          "sourceUrl": "https://control.fandom.com/wiki/File:Dr._Darling.png",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      },
+      {
+        "name": "Emily Pope",
+        "label": "Official cast reveal · returning-character spoiler",
+        "description": "Emily brings the Bureau's scientific perspective to the returning cast. Her connection to both Darling and Jesse makes her a useful name to recognize when research, leadership and the paranatural overlap.",
+        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "id": "emily-pope",
+        "scope": "Resonant character / CONTROL background",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Antonia Bernath"
+          },
+          {
+            "label": "Key connection",
+            "value": "Research specialist and Jesse's scientific ally"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "In CONTROL she works in research, was Darling's assistant and becomes an important ally to Jesse. Her connection to Darling is professional, not evidence that the two share the same role or conclusions."
+        },
+        "playerNote": "Remember Emily as Jesse's scientific ally and Darling's former assistant. That relationship helps you place research conversations without memorizing the Bureau's entire organization chart.",
+        "sourceIds": ["wiki-pope", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/emily.png",
+          "alt": "Emily Pope in character imagery from CONTROL",
+          "caption": "CONTROL (2019) · character image",
+          "sourceUrl": "https://control.fandom.com/wiki/File:Emily_Pope.png",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      },
+      {
+        "name": "Simon Arish",
+        "label": "Official cast reveal · returning-character spoiler",
+        "description": "Arish is the returning Bureau security specialist. Where Darling and Emily are associated with research, his background centers on protecting people and keeping a dangerous workplace functioning.",
+        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "id": "simon-arish",
+        "scope": "Resonant character / CONTROL background",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Ronan Summers"
+          },
+          {
+            "label": "Key connection",
+            "value": "Bureau security; ally of Jesse"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "In CONTROL, Arish begins as the Maintenance Sector's security chief after serving as a Ranger. Older guides may place him at NSC Security and later Central Executive; those are original-game locations."
+        },
+        "playerNote": "Arish's Ranger and security experience gives you a different lens on the FBC: people living with the danger, rather than only scientists studying it.",
+        "sourceIds": ["wiki-arish", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/arish.png",
+          "alt": "Simon Arish in character imagery from CONTROL",
+          "caption": "CONTROL (2019) · character image",
+          "sourceUrl": "https://control.fandom.com/wiki/File:Simon_Arish.png",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      },
+      {
+        "name": "Frederick Langston",
+        "label": "Official cast reveal · returning-character spoiler",
+        "description": "Langston supervises the Panopticon in CONTROL and is named in Resonant's returning cast. His background is the day-to-day care and containment of objects that do not behave like ordinary possessions.",
+        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "id": "frederick-langston",
+        "scope": "Resonant character / CONTROL background",
+        "details": [
+          {
+            "label": "Portrayed by",
+            "value": "Derek Hagen"
+          },
+          {
+            "label": "Key connection",
+            "value": "Panopticon supervisor; containment specialist"
+          }
+        ],
+        "background": {
+          "label": "Background to recognize",
+          "text": "In CONTROL, he supervises the Panopticon and its paranatural objects. His approach includes the rituals used to keep them contained. The title 'supervisor' is his job, not an enemy rank."
+        },
+        "playerNote": "Connect Langston with containment procedures and unusual objects. That makes his background a useful companion to the Altered Item glossary, especially if you skipped the original game's side missions.",
+        "sourceIds": ["wiki-langston", "cast-transcript"],
+        "image": {
+          "src": "/images/wiki/langston.jpg",
+          "alt": "Frederick Langston in a scene from CONTROL",
+          "caption": "CONTROL (2019) · character image",
+          "sourceUrl": "https://control.fandom.com/wiki/File:Frederick_Langston.jpg",
+          "credit": "Game imagery © Remedy Entertainment; hosted by Control Wiki."
+        }
+      }
+    ],
+    "facts": [
+      "Dylan is the announced playable lead; Jesse is missing in the public Resonant setup.",
+      "Zoe is Dylan's handler. This role does not establish a playable co-op partner.",
+      "Character appearance announcements do not confirm quest roles, map locations or ending outcomes.",
+      "Portrait captions distinguish Resonant imagery from pictures of the original game."
+    ],
+    "note": "Background includes mild CONTROL (2019) story context. Returning-cast information comes from the published diary; detailed sequel outcomes are not supplied.",
+    "guideSlug": "control-resonant-characters-and-story",
+    "sourceIds": [
+      "ps-combat",
+      "cast",
+      "cast-transcript",
+      "wiki-dylan",
+      "wiki-jesse",
+      "wiki-zoe",
+      "wiki-darling",
+      "wiki-pope",
+      "wiki-arish",
+      "wiki-langston"
+    ],
+    "seo": {
+      "title": "CONTROL Resonant Characters: Portraits, Roles & Relationships",
+      "description": "Meet Dylan, Jesse, Zoe and the returning FBC cast. Character portraits, actor credits and player-focused background distinguish Resonant from CONTROL."
+    },
+    "checkedAt": "2026-09-16"
+  },
+  {
+    "id": "enemies",
+    "eyebrow": "Wiki / hostile entities",
+    "title": "CONTROL Resonant Enemies",
+    "description": "A threat index for enemy groups and behaviors shown or named by official sources, separated from the Resonant boss archive.",
+    "heroImage": "/images/enemies/hiss-encounter.jpg",
+    "heroAlt": "Paranatural hostile entities confronting Dylan in Manhattan",
+    "sectionTitle": "Threat groups",
+    "sectionDescription": "Returning threats and newly named groups, with developer information distinguished from final-game testing.",
+    "items": [
+      {
+        "name": "The Hiss",
+        "label": "Returning corrupting influence",
+        "description": "The hostile resonance from CONTROL has spread beyond the Oldest House and remains part of the conflict in Manhattan.",
+        "href": "/guides/control-resonant-enemy-factions",
+        "id": "the-hiss"
+      },
+      {
+        "name": "The Mold",
+        "label": "Returning invasive organism",
+        "description": "The extradimensional Mold returns in new contexts. Remedy also uses friendly Mold Turrets as an example of a Combat Ability.",
+        "href": "/guides/control-resonant-enemy-factions",
+        "id": "the-mold"
+      },
+      {
+        "name": "Resonants",
+        "label": "Major boss class",
+        "description": "Powerful paranatural entities act as major encounters and grant unique, sometimes branching Combat Ability rewards.",
+        "href": "/bosses",
+        "id": "resonants"
+      },
+      {
+        "name": "Mysterious cosmic entity",
+        "label": "Central threat",
+        "description": "Official store copy says Dylan is charged with combating a reality-bending cosmic entity. Its identity and relationship to the new resonance remain undisclosed.",
+        "href": "/guides/control-resonant-enemy-factions",
+        "id": "mysterious-cosmic-entity"
+      },
+      {
+        "name": "The Patterning",
+        "label": "Named in IGN developer feature",
+        "description": "The August 19 developer feature identifies the Patterning as a new environmental threat. A complete variant list and launch weakness table are not established.",
+        "href": "/guides/control-resonant-enemy-factions",
+        "id": "the-patterning"
+      }
+    ],
+    "facts": [
+      "Hiss and Mold return.",
+      "IGN's developer feature names the Patterning.",
+      "Resonants are indexed separately as bosses.",
+      "Broad factions are not a complete variant catalog."
+    ],
+    "note": "Preview silhouettes are not treated as formal enemy names. Variant pages require an in-game label and reproducible combat observations.",
+    "guideSlug": "control-resonant-enemy-factions",
+    "sourceIds": ["remedy-reveal", "zones", "metro"],
+    "seo": {
+      "title": "CONTROL Resonant Enemies Wiki: Names & Roles",
+      "description": "A threat index for enemy groups and behaviors shown or named by official sources, separated from the Resonant boss archive."
+    }
+  }
+]

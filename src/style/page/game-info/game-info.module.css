@@ -1,0 +1,341 @@
+.hero {
+  position: relative;
+  min-height: 450px;
+  isolation: isolate;
+  overflow: hidden;
+}
+.hero > img {
+  object-fit: cover;
+  object-position: 66% center;
+  z-index: -2;
+}
+.shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    #0b1116fa 0%,
+    #0b1116e8 45%,
+    #0b111632 80%
+  );
+}
+.heroInner {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 40px;
+}
+.heroInner > p:first-child,
+.answers header span,
+.buying header span,
+.updates header span {
+  color: var(--color-red-dark);
+  font:
+    600 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  max-width: 720px;
+  margin: 14px 0 20px;
+  font: 400 clamp(48px, 7vw, 82px)/0.9 var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.065em;
+}
+.lead {
+  max-width: 540px;
+  font-size: 16px;
+}
+.factStrip {
+  background: #172129;
+  border-block: 1px solid var(--color-line);
+}
+.factStrip > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.factStrip > div > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 12px;
+  padding: 19px 22px;
+  border-right: 1px solid var(--color-line);
+}
+.factStrip svg {
+  grid-row: 1/3;
+  align-self: center;
+}
+.factStrip span {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.factStrip strong {
+  font-size: 13px;
+}
+.answers {
+  padding-block: 48px 58px;
+}
+.platformModes {
+  padding-block: 44px;
+  border-bottom: 1px solid var(--color-line);
+}
+.platformModes header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 32px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.platformModes header span {
+  grid-column: 1 / -1;
+  color: var(--color-red-dark);
+  font:
+    600 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.platformModes h2 {
+  margin: 0;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.platformModes header p,
+.modeNote {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 12px;
+}
+.modeTable {
+  overflow-x: auto;
+  border-top: 2px solid var(--color-ink);
+}
+.modeTable table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  text-align: left;
+}
+.modeTable th,
+.modeTable td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 12px;
+}
+.modeTable th {
+  font-weight: 700;
+}
+.modeTable thead {
+  background: var(--color-night);
+  color: #fff;
+  text-transform: uppercase;
+}
+.modeNote {
+  max-width: 800px;
+  margin-top: 18px;
+}
+.answers > header {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 26px;
+}
+.answers h2,
+.buying h2,
+.updates h2 {
+  margin: 6px 0 0;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.answers header > p {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+.answerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--color-ink);
+}
+.answerGrid article {
+  min-width: 0;
+  padding: 24px 20px 10px 0;
+  border-right: 1px solid var(--color-line);
+}
+.answerGrid article:not(:first-child) {
+  padding-left: 20px;
+}
+.answerGrid > article > span {
+  color: var(--color-red);
+  font: 700 30px var(--font-heading);
+}
+.answerGrid h3 {
+  margin: 8px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.answerGrid p {
+  min-height: 64px;
+  color: var(--color-muted);
+  font-size: 12px;
+}
+.answerGrid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.answerGrid li {
+  border-top: 1px solid var(--color-line);
+}
+.answerGrid a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  min-height: 43px;
+  font-size: 11px;
+}
+.answerGrid a:hover {
+  color: var(--color-red-dark);
+}
+.buying {
+  padding: 45px 0 55px;
+  background: var(--color-night);
+  color: white;
+}
+.buying h2 {
+  color: white;
+}
+.buying header {
+  margin-bottom: 22px;
+}
+.buying > div > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.updates {
+  padding-block: 50px 70px;
+}
+.updates > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 24px;
+}
+.updates header > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.updates ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-ink);
+}
+.updates li {
+  display: grid;
+  grid-template-columns: 110px 120px 1fr;
+  gap: 25px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.updates time,
+.updates li > span {
+  font:
+    10px ui-monospace,
+    monospace;
+  text-transform: uppercase;
+}
+.updates li > span {
+  color: var(--color-red-dark);
+}
+.updates h3 {
+  margin: 0 0 5px;
+  font-size: 19px;
+}
+.updates li p {
+  max-width: 780px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 12px;
+}
+.updates li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: var(--color-red-dark);
+  font-size: 11px;
+}
+@media (max-width: 1024px) {
+  .factStrip > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .answerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .buying > div > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .platformModes header {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    min-height: 520px;
+  }
+  .heroInner {
+    min-height: 520px;
+    justify-content: end;
+  }
+  .shade {
+    background: linear-gradient(0deg, #0b1116f8 0%, #0b1116e8 60%, #0b111644);
+  }
+  .hero h1 {
+    font-size: 49px;
+  }
+  .factStrip > div {
+    grid-template-columns: 1fr;
+  }
+  .factStrip > div > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .answers > header {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .answerGrid,
+  .buying > div > div {
+    grid-template-columns: 1fr;
+  }
+  .answerGrid article:nth-child(n) {
+    padding: 20px 0;
+    border-right: 0;
+  }
+  .answerGrid p {
+    min-height: auto;
+  }
+  .updates > header {
+    align-items: start;
+    flex-direction: column;
+  }
+  .updates li {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 18px;
+  }
+  .updates li > div {
+    grid-column: 1/-1;
+  }
+}
