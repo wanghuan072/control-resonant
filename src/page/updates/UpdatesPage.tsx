@@ -102,6 +102,11 @@ export default function UpdatesPage() {
                       Updated guide →
                     </Link>
                   )}
+                  {"detailPath" in u && u.detailPath && (
+                    <Link href={u.detailPath}>
+                      {"detailLabel" in u ? u.detailLabel : "Read more"} →
+                    </Link>
+                  )}
                 </div>
               </article>
             </li>

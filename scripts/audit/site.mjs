@@ -400,6 +400,50 @@ try {
     (await page.getByRole("timer").textContent())?.includes("--") === false,
     "Countdown hydrates into a current value",
   );
+  await page.getByRole("link", { name: "Release and platforms" }).click();
+  await page.waitForURL("**/game-info#release-date");
+  check(
+    await page
+      .getByRole("heading", { name: "When can you play CONTROL Resonant?" })
+      .isVisible(),
+    "Homepage release entry reaches the direct answer",
+  );
+  await page.goto(base + "/updates", { waitUntil: "networkidle" });
+  check(
+    (await page
+      .getByRole("link", { name: /Watch the launch trailer/ })
+      .count()) === 1 &&
+      (await page
+        .getByRole("link", { name: /Watch the developer documentary/ })
+        .count()) === 1,
+    "Recent updates lead to the corresponding videos",
+  );
+  await page.goto(base + "/game-info/trailers", { waitUntil: "networkidle" });
+  check((await page.locator("iframe").count()) === 0, "Video loads on demand");
+  await page
+    .getByRole("button", { name: "Play CONTROL Resonant – Launch Trailer" })
+    .click();
+  check(
+    (await page.locator("iframe").count()) === 1,
+    "Launch trailer can play",
+  );
+  await page.goto(base + "/wiki/enemies", { waitUntil: "networkidle" });
+  await page.getByRole("link", { name: "known Boss encounters" }).click();
+  await page.waitForURL("**/bosses");
+  for (const label of [
+    "Compare Combat Abilities",
+    "Read about Zone progression",
+    "Check New Game Plus carryover",
+  ])
+    check(
+      await page.getByRole("link", { name: label }).isVisible(),
+      `Bosses link missing: ${label}`,
+    );
+  await page.goto(base + "/locations", { waitUntil: "networkidle" });
+  check(
+    await page.getByRole("link", { name: "World Wiki" }).isVisible(),
+    "Locations sends setting questions to World Wiki",
+  );
 
   await page.goto(base + "/guides", { waitUntil: "networkidle" });
   for (const name of [

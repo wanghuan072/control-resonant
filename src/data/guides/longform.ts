@@ -645,6 +645,10 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
             label: "Central Resonant encounter",
             href: "/wiki/enemies/central-resonant",
           },
+          {
+            label: "Compare other shown Boss encounters",
+            href: "/bosses",
+          },
         ],
       },
       {

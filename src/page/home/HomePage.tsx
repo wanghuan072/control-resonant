@@ -18,7 +18,7 @@ const playerQuestions = [
     title: "When and where can I play?",
     text: "Compare release dates, editions, platforms and published PC targets.",
     links: [
-      { label: "Release and editions", href: "/game-info" },
+      { label: "Release timing", href: "/game-info#release-date" },
       { label: "Check your device", href: "/game-info#device-check" },
     ],
   },
@@ -79,7 +79,7 @@ export default function HomePage() {
               <Link href="/gameplay">
                 Explore the gameplay <ArrowRight size={17} />
               </Link>
-              <Link href="/game-info">Release and platforms</Link>
+              <Link href="/game-info#release-date">Release and platforms</Link>
             </div>
           </div>
           <ReleaseInfoPanel />
@@ -248,7 +248,10 @@ export default function HomePage() {
                 )}
                 {"detailPath" in item && item.detailPath && (
                   <Link href={item.detailPath}>
-                    View the details <ArrowRight size={14} />
+                    {"detailLabel" in item
+                      ? item.detailLabel
+                      : "View the details"}{" "}
+                    <ArrowRight size={14} />
                   </Link>
                 )}
               </div>

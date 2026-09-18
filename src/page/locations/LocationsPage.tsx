@@ -15,6 +15,16 @@ const places = [
 ]
   .map((slug) => getWikiDetail("world", slug))
   .filter((entry): entry is WikiDetail => Boolean(entry));
+const placeClues: Record<string, string> = {
+  manhattan:
+    "Your objective names a Zone or a city activity, but not a building.",
+  "fbc-field-office":
+    "You are looking for the Bureau hub that connects major Zones.",
+  "west-incursion-zone":
+    "The objective names the early Zone shown with Gravity Anomalies.",
+  "oldest-house":
+    "The place name belongs to the Bureau headquarters, not a Manhattan street.",
+};
 
 export default function LocationsPage() {
   return (
@@ -30,9 +40,9 @@ export default function LocationsPage() {
         )}
       />
       <HubHero
-        eyebrow="Find your bearings in Manhattan"
-        title="CONTROL Resonant Locations — Zones, Routes and the Oldest House"
-        description="See how Manhattan's Zones, the FBC field office, the Gap and the Oldest House differ. If a route stops making sense, use the activity and movement clues below to find your next step."
+        eyebrow="Match the clue to a place"
+        title="CONTROL Resonant Locations — Find the Place Behind Your Clue"
+        description="Recognize a named Zone, a Bureau hub or a movement obstacle, then open the relevant location, mission or ability file. This is a way to orient yourself, not a turn-by-turn map."
         image="/images/map/manhattan-overlook.jpg"
         imageAlt="A view over altered Manhattan in CONTROL Resonant"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Locations" }]}
@@ -43,14 +53,13 @@ export default function LocationsPage() {
         <section className={styles.orientation} aria-labelledby="orientation">
           <div>
             <span>01 / Get oriented</span>
-            <h2 id="orientation">How is the world connected?</h2>
+            <h2 id="orientation">Start with the name in your objective</h2>
           </div>
           <p>
-            CONTROL Resonant takes place across distinct Manhattan Zones linked
-            through an FBC field office. The Oldest House is a returning story
-            location, not a substitute for the new city. Start with the place
-            name you recognize, then follow its connected mission or traversal
-            file.
+            Look for a Zone, a hub, a Fault or a movement obstacle in the
+            objective. Those clues lead to different files below. If you want
+            the history or role of a place rather than a next lead, use the{" "}
+            <Link href="/wiki/world">World Wiki</Link>.
           </p>
         </section>
 
@@ -58,7 +67,7 @@ export default function LocationsPage() {
           <div className={styles.placeGuideHeader}>
             <div>
               <span>02 / Match the clue</span>
-              <h2 id="place-guide">Which place are you looking for?</h2>
+              <h2 id="place-guide">Match your location clue</h2>
             </div>
             <p>
               A Zone, a hub, a build space and a Fault are not the same kind of
@@ -167,7 +176,7 @@ export default function LocationsPage() {
           <div className={styles.placeGuideHeader}>
             <div>
               <span>03 / Route check</span>
-              <h2 id="route-check-title">I cannot find the way forward</h2>
+              <h2 id="route-check-title">Stuck at an obstacle or activity?</h2>
             </div>
             <p>
               Start with the activity name in your objective and the kind of
@@ -280,7 +289,7 @@ export default function LocationsPage() {
           <header>
             <div>
               <span>05 / Location files</span>
-              <h2>Known places and their roles</h2>
+              <h2>Open the file that matches your clue</h2>
             </div>
             <p>
               These are named settings, a hub and an early Zone—not map pins.
@@ -295,7 +304,7 @@ export default function LocationsPage() {
                   <h3>
                     <Link href={wikiDetailPath(entry)}>{entry.title}</Link>
                   </h3>
-                  <p>{entry.summary}</p>
+                  <p>{placeClues[entry.slug]}</p>
                 </div>
                 <Link
                   href={wikiDetailPath(entry)}
@@ -321,7 +330,7 @@ export default function LocationsPage() {
               Reach traversal ability <ArrowRight size={16} />
             </Link>
             <Link href="/wiki/world">
-              Full world Wiki index <ArrowRight size={16} />
+              Place history and related topics <ArrowRight size={16} />
             </Link>
           </nav>
         </section>

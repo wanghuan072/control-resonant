@@ -184,7 +184,8 @@ export default function GameplayPage() {
               The Central Resonant
             </Link>{" "}
             is a different, named preview encounter; its final reward is not
-            inferred here.
+            inferred here. For other shown threats, browse the{" "}
+            <Link href="/bosses">known Boss encounters</Link>.
           </p>
         </section>
 

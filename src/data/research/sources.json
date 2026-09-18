@@ -1,5 +1,25 @@
 [
   {
+    "id": "launch-trailer-september",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment",
+    "title": "CONTROL Resonant Launch Trailer Arrives Ahead of September 24 Release",
+    "date": "2026-09-17",
+    "url": "https://mfn.se/ind/a/remedy-entertainment/remedy-entertainment-plc-control-resonant-launch-trailer-arrives-ahead-of-september-24-release-d8a58593.iframe",
+    "note": "Remedy's press release confirms the trailer, digital and physical dates, launch platforms, conditional PS5 Digital Deluxe early access and later Mac release. Verified September 18.",
+    "topics": ["Release", "Platforms", "Combat"]
+  },
+  {
+    "id": "pc-gaming-show-documentary",
+    "kind": "Developer interview",
+    "publisher": "PC Gaming Show / Remedy Entertainment",
+    "title": "CONTROL Resonant: Exclusive developer interview",
+    "date": "2026-09-16",
+    "url": "https://youtu.be/jXvfZyfT7Ko",
+    "note": "Full developer documentary. Commentary on the creative design of the world and bosses; not a source for retail boss mechanics, rewards or map coordinates. Verified September 18.",
+    "topics": ["World", "Enemies", "Combat"]
+  },
+  {
     "id": "xbox-hands-on-june",
     "kind": "First-party hands-on",
     "publisher": "Xbox Wire",

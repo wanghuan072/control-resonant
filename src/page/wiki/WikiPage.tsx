@@ -59,7 +59,7 @@ export default function WikiPage() {
             Which enemies and Resonants have been shown?{" "}
             <ArrowRight size={16} />
           </Link>
-          <Link href="/locations">
+          <Link href="/wiki/world">
             Which place or Zone am I looking at? <ArrowRight size={16} />
           </Link>
           <Link href="/wiki/missions">

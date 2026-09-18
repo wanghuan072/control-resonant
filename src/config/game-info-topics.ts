@@ -15,9 +15,9 @@ export const gameInfoTopics = [
   },
   {
     href: "/game-info/trailers",
-    title: "CONTROL Resonant Trailers & Preview Gameplay",
+    title: "CONTROL Resonant Trailers and Gameplay Videos",
     description:
-      "Compare official CONTROL Resonant trailers with the IGN First Metro Fault and Central Resonant previews. See what each video actually establishes.",
+      "Watch CONTROL Resonant's launch and story trailers, developer documentary and gameplay previews. See which video answers your question and what remains unshown.",
     updatedAt: "2026-09-18",
   },
 ] as const;

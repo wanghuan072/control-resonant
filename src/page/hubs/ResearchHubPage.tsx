@@ -112,13 +112,16 @@ export default function ResearchHubPage({ id }: { id: string }) {
                             : c.href
                         }
                       >
-                        Read the system guide →
+                        {"linkLabel" in c
+                          ? c.linkLabel
+                          : "Read the connected guide"}{" "}
+                        →
                       </Link>
                     </article>
                   ))}
                 </div>
               )}
-              {s.steps && (
+              {"steps" in s && s.steps && (
                 <ol className={styles.steps}>
                   {s.steps.map((step) => (
                     <li key={step.title}>

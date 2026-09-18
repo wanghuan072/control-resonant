@@ -39,13 +39,13 @@ const editorial: Record<
     indexTitle: "All named characters and relationships",
   },
   world: {
-    heroTitle: "CONTROL Resonant World — Understand Manhattan's Zones",
+    heroTitle: "CONTROL Resonant World — Places and Their Connections",
     heroDescription:
-      "Work out how the Manhattan Zones, the Oldest House, the FBC field office and the Gap fit together—and which movement tools can change your route.",
-    question: "How is the new world organized?",
+      "Learn what each named place is, why it matters to Dylan and which characters, activities or systems connect to it. Use Locations when you need to follow an objective clue.",
+    question: "What is each place in Dylan's story?",
     answer:
-      "Manhattan is made of distinct Zones. The Oldest House remains part of the story, while Gravity Anomalies, Faults and traversal powers change which routes are accessible.",
-    note: "A familiar name from CONTROL does not mean the same room or route returns in Resonant.",
+      "Manhattan's Zones are the new setting; the Oldest House is the Bureau headquarters from CONTROL. The field office serves as a hub, while the Gap is Dylan's build space. Open a place file for its role and connected activity.",
+    note: "Returning CONTROL locations are series background, not proof that an old room or route is playable here.",
     featuredTitle: "Manhattan Zones and paranatural spaces",
     indexTitle: "World locations and traversal concepts",
   },
@@ -160,12 +160,22 @@ export default function WikiGroupPage({ id }: { id: WikiGroupId }) {
         </section>
         {id === "world" && (
           <section className={styles.mapNotice}>
-            <h2>Is there an interactive map here?</h2>
+            <h2>Looking for a place from an objective?</h2>
             <p>
-              No. The images are promotional views of the setting, not navigable
-              maps. This page lists named places and what is known about them;
-              it does not offer zone boundaries, collectible pins or a route
-              through the released game.
+              This Wiki explains what each place is. If you have a Zone name,
+              Fault or obstacle in front of you, use the{" "}
+              <Link href="/locations">Locations clue finder</Link> to reach the
+              relevant mission or movement file.
+            </p>
+          </section>
+        )}
+        {id === "enemies" && (
+          <section className={styles.mapNotice}>
+            <h2>Looking for a specific Boss encounter?</h2>
+            <p>
+              This index separates factions from individual threats. Open the{" "}
+              <Link href="/bosses">known Boss encounters</Link> for the named
+              fights and hazards shown so far, without a guessed full roster.
             </p>
           </section>
         )}

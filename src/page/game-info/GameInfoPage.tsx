@@ -18,18 +18,14 @@ import styles from "@/style/page/game-info/game-info.module.css";
 
 const answerGroups = [
   {
-    title: "Release & editions",
-    text: "Digital launch, physical timing, early access and what each edition adds.",
+    title: "Edition & regional access",
+    text: "Compare what each version includes, then check the exact regional store or retailer listing before buying.",
     links: [
-      [
-        "Release date & platforms",
-        "control-resonant-release-date-and-platforms",
-      ],
       [
         "Editions & preorder",
         "control-resonant-editions-and-pre-order-bonuses",
       ],
-      ["How long is it?", "how-long-is-control-resonant"],
+      ["Physical edition details", "/game-info/physical-release-steelbook"],
     ],
   },
   {
@@ -88,9 +84,30 @@ export default function GameInfoPage() {
         image="/images/home/manhattan-key-art.jpg"
         imageAlt="CONTROL Resonant Manhattan key art"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Game Info" }]}
-        action={<Link href="#decision">Compare your options →</Link>}
+        action={<Link href="#release-date">See when you can play →</Link>}
       />
-      <section className={styles.factStrip} id="release-date">
+      <section className={styles.releaseAnswer} id="release-date">
+        <div className="container">
+          <div>
+            <span>Release timing / direct answer</span>
+            <h2>When can you play CONTROL Resonant?</h2>
+          </div>
+          <div>
+            <p>
+              The digital game launches on{" "}
+              {displayDate(buyingFacts.digitalRelease)} for PC, PS5 and Xbox
+              Series X|S. Physical console editions follow on{" "}
+              {displayDate(buyingFacts.physicalRelease)}. The PS5 Digital Deluxe
+              listing advertises up to 48 hours of early access from{" "}
+              {displayDate(buyingFacts.ps5DeluxeEarlyAccess)}; check your
+              regional listing for eligibility and the exact unlock time. Mac is
+              planned for later in 2026, not the September launch.
+            </p>
+            <a href="#decision">Compare editions and hardware →</a>
+          </div>
+        </div>
+      </section>
+      <section className={styles.factStrip}>
         <div className="container">
           <div>
             <CalendarDays />
@@ -340,7 +357,11 @@ export default function GameInfoPage() {
               <ul>
                 {group.links.map(([label, slug]) => (
                   <li key={slug}>
-                    <Link href={guideDestination(slug)}>
+                    <Link
+                      href={
+                        slug.startsWith("/") ? slug : guideDestination(slug)
+                      }
+                    >
                       {label}
                       <ArrowRight size={14} />
                     </Link>
@@ -464,7 +485,10 @@ export default function GameInfoPage() {
                 )}
                 {"detailPath" in item && item.detailPath && (
                   <Link href={item.detailPath}>
-                    View the details <ArrowRight size={14} />
+                    {"detailLabel" in item
+                      ? item.detailLabel
+                      : "View the details"}{" "}
+                    <ArrowRight size={14} />
                   </Link>
                 )}
               </div>

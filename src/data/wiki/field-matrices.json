@@ -43,37 +43,42 @@
     "verifiedAt": "2026-09-16",
     "appliesTo": "Official announcements and pre-release hands-on",
     "title": "Which place serves which purpose?",
-    "intro": "The city, hub, build space and previewed route are different locations with different player jobs.",
-    "columns": ["Place", "Known role", "Player use", "Important boundary"],
+    "intro": "The city, Bureau hub, build space and returning headquarters have distinct roles in Dylan's story.",
+    "columns": [
+      "Place",
+      "What it is",
+      "Connected activity or context",
+      "Important boundary"
+    ],
     "rows": [
       [
         "Manhattan Zones",
         "Handcrafted areas",
-        "Story, exploration, encounters and activities",
+        "Main story, World Quests and encounters",
         "Not announced as one seamless open world"
       ],
       [
         "FBC field office",
         "Evolving central hub",
-        "Connects major Zones",
+        "Bureau presence and travel between major Zones",
         "Full floor plan not published"
       ],
       [
         "The Gap",
         "Dylan's build space",
-        "Manage and test build; craft Artifacts",
+        "Aberrant upgrades, loadout testing and Artifact crafting",
         "Distinct from the field office"
       ],
       [
         "Oldest House",
         "Returning FBC headquarters",
-        "Opening and story context",
+        "Dylan's confinement and the earlier CONTROL story",
         "Old CONTROL maps do not map the new city"
       ],
       [
         "West Incursion Zone",
         "Named early Zone",
-        "Gravity and traversal preview",
+        "Early gameplay and Gravity Anomalies",
         "Not a complete zone checklist"
       ]
     ]

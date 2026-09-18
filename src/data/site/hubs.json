@@ -131,23 +131,34 @@
     },
     "sections": [
       {
+        "id": "required-bosses",
+        "title": "Do you have to defeat every Resonant?",
+        "paragraphs": [
+          "Not every Resonant is mandatory. Remedy's lead level designer says players are not forced to defeat every encounter or one particular boss. The story may require a number of victories from a larger set, but the required count and full roster have not been published.",
+          "That makes boss choice part of route planning. It does not tell you which encounter is easiest, which power a named boss grants, or whether a particular fight can be skipped in the final game without consequences."
+        ]
+      },
+      {
         "id": "rewards",
         "title": "Why Resonant fights matter",
         "cards": [
           {
             "title": "Combat Ability rewards",
             "text": "Resonant victories connect boss progression to the build system. Some rewards involve choices; a general rule is not enough to name an individual boss's exact ability.",
-            "href": "/wiki/combat"
+            "href": "/wiki/combat/combat-abilities",
+            "linkLabel": "Compare Combat Abilities"
           },
           {
             "title": "A changing world",
             "text": "The August developer interview describes harder encounters as Resonants fall. A defeated boss affects more than the immediate arena.",
-            "href": "/guides/control-resonant-talents-and-progression-guide#zone-xp"
+            "href": "/guides/control-resonant-talents-and-progression-guide#zone-xp",
+            "linkLabel": "Read about Zone progression"
           },
           {
             "title": "New Game Plus",
             "text": "Later runs broaden the combinations available from boss abilities. Compare the confirmed carryover rules before planning a second run.",
-            "href": "/guides/control-resonant-new-game-plus"
+            "href": "/wiki/combat/new-game-plus",
+            "linkLabel": "Check New Game Plus carryover"
           }
         ]
       },
@@ -165,12 +176,18 @@
         ]
       }
     ],
-    "sourceIds": ["central", "ps-combat", "ps-ngplus", "zones"],
+    "sourceIds": [
+      "central",
+      "ps-combat",
+      "ps-ngplus",
+      "zones",
+      "pc-gaming-show-documentary"
+    ],
     "note": "Only named encounters shown so far appear here. Exact phases, weaknesses and rewards need to be checked in the released game.",
     "quickLinks": [
       {
         "name": "Central Resonant preview",
-        "href": "/guides/control-resonant-central-resonant-boss"
+        "href": "/wiki/enemies/central-resonant"
       },
       {
         "name": "Combat abilities",

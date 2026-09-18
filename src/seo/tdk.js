@@ -31,9 +31,9 @@ export const pageTdk = {
     updatedAt: "2026-09-18",
   },
   "/locations": {
-    title: "CONTROL Resonant Locations - Manhattan Zones and Routes",
+    title: "CONTROL Resonant Locations - Find Places and Clues",
     description:
-      "Find CONTROL Resonant's known Manhattan Zones, the FBC field office, the Gap and the Oldest House, with route clues linked to missions and movement abilities.",
+      "Match CONTROL Resonant location names and movement obstacles to the right Zone, mission or ability file, then follow a clue without relying on an invented map.",
     updatedAt: "2026-09-18",
   },
   "/updates": {
@@ -73,9 +73,9 @@ export const pageTdk = {
     updatedAt: "2026-09-18",
   },
   "/wiki/world": {
-    title: "CONTROL Resonant World Wiki - Manhattan and the FBC",
+    title: "CONTROL Resonant World Wiki - Places and Context",
     description:
-      "Explore CONTROL Resonant's Manhattan Zones, the Oldest House, the FBC field office and the Gap, with links to travel, traversal tools and related missions.",
+      "Learn what CONTROL Resonant's Manhattan Zones, Oldest House, field office and Gap are, with links to characters, activities and systems connected to each place.",
     updatedAt: "2026-09-18",
   },
   "/wiki/missions": {
