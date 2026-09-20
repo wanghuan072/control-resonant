@@ -64,7 +64,7 @@ export default function ReleaseDatePage() {
       <HubHero
         eyebrow="Game info / launch schedule"
         title="CONTROL Resonant Release Date — Digital, Physical and Early Access"
-        description="Find the digital launch date, PS5 Deluxe early access window, physical edition date, platforms and Mac release status in one clear schedule."
+        description="Find the digital launch date, PS5 Deluxe early access window, physical edition date and later Mac timing in one clear schedule."
         image="/images/guides/editions.jpg"
         imageAlt="CONTROL Resonant edition artwork"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Release Date" }]}
@@ -320,19 +320,21 @@ export default function ReleaseDatePage() {
           </div>
         </section>
 
-        <section className={styles.section} aria-labelledby="access-title">
-          <header className={styles.sectionHeading}>
-            <div>
-              <span>06 / Platform questions</span>
-              <h2 id="access-title">Game Pass and Switch 2 status</h2>
-            </div>
+        <section className={styles.toolCta} id="platform-access">
+          <div>
+            <span>06 / Where to play</span>
+            <h2>Match the release date to the right platform</h2>
             <p>
-              Xbox Play Anywhere has been announced, but that is not the same as
-              Game Pass access. No Game Pass launch or Nintendo Switch 2 version
-              has been announced. The confirmed launch platforms remain Windows
-              PC, PS5 and Xbox Series X|S, with Mac planned later.
+              Release timing does not explain subscription access, cross-device
+              ownership or portable support. The platform guide separates Xbox
+              Play Anywhere from Game Pass and tracks Steam Deck, GeForce NOW,
+              Mac and Nintendo Switch 2 status without predicting unannounced
+              versions.
             </p>
-          </header>
+          </div>
+          <Link href="/game-info/platforms">
+            Compare every platform <ArrowRight size={16} />
+          </Link>
         </section>
 
         <section className={styles.faq} aria-labelledby="release-faq">
@@ -355,10 +357,10 @@ export default function ReleaseDatePage() {
         <nav className={styles.nextPage} aria-label="Continue in Game Info">
           <div>
             <span>Next check</span>
-            <strong>Will your PC or console meet the target?</strong>
+            <strong>Where can you play, and how does access work?</strong>
           </div>
-          <Link href="/game-info/system-requirements">
-            Open system requirements <ArrowRight size={18} />
+          <Link href="/game-info/platforms">
+            Open the platform guide <ArrowRight size={18} />
           </Link>
         </nav>
       </div>

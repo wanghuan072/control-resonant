@@ -7,15 +7,21 @@ export const pageTdk = {
     updatedAt: "2026-09-18",
   },
   "/game-info/release-date": {
-    title: "CONTROL Resonant Release Date, Platforms & Editions",
+    title: "CONTROL Resonant Release Date, Early Access & Editions",
     description:
-      "Check the CONTROL Resonant release date, early access, physical edition timing, supported platforms and Mac release status before choosing your version.",
+      "Check the CONTROL Resonant digital release date, PS5 early access, physical edition schedule, Mac timing and differences between each available edition.",
     updatedAt: "2026-09-20",
   },
   "/game-info/system-requirements": {
     title: "CONTROL Resonant System Requirements & PC Specs",
     description:
       "Compare CONTROL Resonant minimum and recommended PC specs, 120GB SSD requirement, graphics targets, rendering features and PlayStation performance modes.",
+    updatedAt: "2026-09-20",
+  },
+  "/game-info/platforms": {
+    title: "CONTROL Resonant Platforms, Game Pass & Steam Deck",
+    description:
+      "Compare CONTROL Resonant platforms, Xbox Play Anywhere, Game Pass status, Steam Deck support, GeForce NOW, Mac and Nintendo Switch 2 availability.",
     updatedAt: "2026-09-20",
   },
   "/gameplay": {

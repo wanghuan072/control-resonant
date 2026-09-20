@@ -7,7 +7,8 @@ The site is organized around the questions players actually ask: when and where 
 ## Explore the site
 
 - [Home](https://controlresonant.org/) — the quickest route to release information, gameplay, guides and the Wiki.
-- [Release Date](https://controlresonant.org/game-info/release-date) — release timing, platforms, editions and buying questions.
+- [Release Date](https://controlresonant.org/game-info/release-date) — digital, early access, physical and Mac release timing.
+- [Platforms](https://controlresonant.org/game-info/platforms) — PC, PlayStation, Xbox Play Anywhere, Game Pass, Steam Deck, cloud, Mac and Switch 2 status.
 - [System Requirements](https://controlresonant.org/game-info/system-requirements) — PC specifications, rendering features and PS5 modes.
 - [Gameplay](https://controlresonant.org/gameplay) — the melee-and-ability combat loop, Aberrant Forms, progression and movement.
 - [Guides](https://controlresonant.org/guides) — four focused paths: getting started, combat and builds, story and missions, and completion planning.

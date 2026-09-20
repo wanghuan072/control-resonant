@@ -321,16 +321,16 @@ export default function SystemRequirementsPage() {
         >
           <header className={styles.sectionHeading}>
             <div>
-              <span>07 / Compatibility status</span>
+              <span>07 / Limits of the chart</span>
               <h2 id="compatibility-title">
-                Steam Deck, DRM and what still needs testing
+                What PC requirements cannot confirm
               </h2>
             </div>
             <p>
-              Steam Deck support is announced for launch, but compatibility
-              status, battery life and measured performance need testing on the
-              final build. Denuvo has not been announced; silence before release
-              is not proof that the PC build is DRM-free.
+              Desktop component targets cannot establish handheld performance,
+              console graphics modes or final DRM. Those questions require a
+              platform announcement, store status or testing on the release
+              build.
             </p>
           </header>
           <div className={styles.featureGrid}>
@@ -356,6 +356,12 @@ export default function SystemRequirementsPage() {
               </p>
             </article>
           </div>
+          <p className={styles.tableNote}>
+            <Link href="/game-info/platforms">
+              Compare platform access and support status{" "}
+              <ArrowRight size={14} />
+            </Link>
+          </p>
         </section>
 
         <section className={styles.section} aria-labelledby="assist-title">

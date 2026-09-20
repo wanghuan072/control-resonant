@@ -1,9 +1,16 @@
 export const gameInfoTopics = [
   {
     href: "/game-info/release-date",
-    title: "CONTROL Resonant Release Date, Platforms & Editions",
+    title: "CONTROL Resonant Release Date, Early Access & Editions",
     description:
-      "Check digital, early access, physical and Mac timing, then match each date to the correct platform and edition.",
+      "Check the digital release date, PS5 early access, physical edition schedule, Mac timing and the differences between each available edition.",
+    updatedAt: "2026-09-20",
+  },
+  {
+    href: "/game-info/platforms",
+    title: "CONTROL Resonant Platforms, Game Pass & Steam Deck",
+    description:
+      "Compare launch platforms, Xbox Play Anywhere, Game Pass status, Steam Deck support, GeForce NOW, Mac and the current Nintendo Switch 2 status.",
     updatedAt: "2026-09-20",
   },
   {

@@ -1,0 +1,370 @@
+.page {
+  padding-bottom: 76px;
+}
+.answer,
+.matrix,
+.decisionSection,
+.accessSection,
+.portableSection,
+.faq {
+  padding-block: 48px;
+  border-bottom: 1px solid var(--color-line);
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+.answer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(340px, 0.88fr);
+  gap: clamp(34px, 6vw, 86px);
+  align-items: center;
+}
+.kicker,
+.sectionHeader span,
+.decisionGrid article > span,
+.factRows article > span,
+.boundarySection span,
+.continue span {
+  color: var(--color-red-dark);
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.answer h2 {
+  max-width: 760px;
+  margin: 9px 0 16px;
+  font-size: clamp(32px, 4.3vw, 56px);
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+.answer p,
+.sectionHeader p,
+.decisionGrid p,
+.accessCompare p,
+.factRows p,
+.boundarySection p,
+.faq p {
+  color: var(--color-ink-soft);
+  font-size: 13px;
+  line-height: 1.72;
+}
+.signalBoard {
+  margin: 0;
+  border-top: 2px solid var(--color-red);
+  background: #111a20;
+}
+.signalBoard div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #ffffff1c;
+}
+.signalBoard dt {
+  color: #8fa0aa;
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.signalBoard dd {
+  margin: 0;
+  color: white;
+  font: 700 13px var(--font-heading);
+}
+.sectionHeader {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
+  gap: 36px;
+  align-items: end;
+  margin-bottom: 25px;
+}
+.sectionHeader h2 {
+  margin: 8px 0 0;
+  font-size: clamp(28px, 3.3vw, 44px);
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+.sectionHeader p {
+  margin: 0;
+}
+.tableWrap {
+  overflow-x: auto;
+  border-top: 2px solid var(--color-ink);
+}
+.tableWrap table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+  text-align: left;
+}
+.tableWrap th,
+.tableWrap td {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.tableWrap thead {
+  background: #111a20;
+}
+.tableWrap thead th {
+  color: white;
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.tableWrap tbody th {
+  width: 190px;
+  font-size: 14px;
+}
+.tableWrap tbody th small {
+  display: block;
+  margin-top: 5px;
+  color: var(--color-muted);
+  font-size: 10px;
+  font-weight: 400;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #7fe0b0;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.statusMissing {
+  color: #ff7f78;
+}
+.decisionGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  border: 1px solid var(--color-line);
+  background: var(--color-line);
+}
+.decisionGrid article {
+  display: flex;
+  min-height: 290px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+  background: var(--color-surface);
+}
+.decisionGrid article > svg {
+  margin-bottom: 35px;
+  color: var(--color-red-dark);
+}
+.decisionGrid h3 {
+  margin: 8px 0 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.decisionGrid p {
+  flex: 1;
+}
+.decisionGrid a,
+.continue a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-red-dark);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.accessCompare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid var(--color-ink);
+}
+.accessCompare article {
+  padding: 29px 38px 12px 0;
+}
+.accessCompare article + article {
+  padding-left: 38px;
+  border-left: 1px solid var(--color-line);
+}
+.accessLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #7fe0b0;
+  font:
+    700 10px ui-monospace,
+    monospace;
+  text-transform: uppercase;
+}
+.unconfirmed {
+  color: #ff9b95;
+}
+.accessCompare h3 {
+  margin: 12px 0 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.accessCompare ul {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+.accessCompare li {
+  padding: 10px 0 10px 18px;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
+  font-size: 12px;
+}
+.accessCompare li::before {
+  position: absolute;
+  margin-left: -18px;
+  color: var(--color-red-dark);
+  content: "—";
+}
+.factRows {
+  border-top: 2px solid var(--color-ink);
+}
+.factRows article {
+  display: grid;
+  grid-template-columns: 150px minmax(230px, 0.75fr) minmax(0, 1.25fr);
+  gap: 30px;
+  align-items: baseline;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.factRows h3,
+.factRows p {
+  margin: 0;
+}
+.factRows h3 {
+  font-size: 19px;
+}
+.boundarySection {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: 50px;
+  margin-block: 48px;
+  padding: clamp(28px, 4vw, 48px);
+  border: 1px solid #73363a;
+  background: linear-gradient(120deg, #231418, #11191f 65%);
+}
+.boundarySection h2 {
+  margin: 9px 0 12px;
+  font-size: clamp(28px, 3vw, 42px);
+  text-transform: uppercase;
+}
+.boundarySection aside {
+  padding-left: 30px;
+  border-left: 1px solid #ffffff24;
+}
+.boundarySection aside strong {
+  text-transform: uppercase;
+}
+.boundarySection ol {
+  padding-left: 20px;
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid var(--color-ink);
+}
+.faqGrid article {
+  padding: 22px 28px 22px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.faqGrid article:nth-child(even) {
+  padding-left: 28px;
+  border-left: 1px solid var(--color-line);
+}
+.faqGrid h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+.faqGrid p {
+  margin: 0;
+}
+.continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 24px;
+  border-left: 3px solid var(--color-red);
+  background: var(--color-surface);
+}
+.continue strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+}
+.continue > div:last-child {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .answer,
+  .sectionHeader {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .decisionGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .factRows article {
+    grid-template-columns: 120px minmax(200px, 0.8fr) minmax(0, 1.2fr);
+  }
+}
+@media (max-width: 768px) {
+  .answer,
+  .decisionGrid,
+  .accessCompare,
+  .boundarySection,
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+  .decisionGrid article {
+    min-height: 0;
+  }
+  .decisionGrid article > svg {
+    margin-bottom: 24px;
+  }
+  .accessCompare article,
+  .accessCompare article + article {
+    padding: 26px 0;
+    border-left: 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .factRows article {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .boundarySection {
+    gap: 25px;
+  }
+  .boundarySection aside {
+    padding: 24px 0 0;
+    border-top: 1px solid #ffffff24;
+    border-left: 0;
+  }
+  .faqGrid article:nth-child(n) {
+    padding: 20px 0;
+    border-left: 0;
+  }
+  .continue {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .continue > div:last-child {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

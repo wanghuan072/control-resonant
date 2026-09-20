@@ -13,7 +13,12 @@ export const gameInfoNavigation = [
   {
     label: "Release Date",
     href: "/game-info/release-date",
-    description: "Dates, platforms and edition timing",
+    description: "Digital, early access and physical dates",
+  },
+  {
+    label: "Platforms",
+    href: "/game-info/platforms",
+    description: "Game Pass, Play Anywhere, Deck and Switch 2",
   },
   {
     label: "System Requirements",

@@ -19,6 +19,7 @@ const playerQuestions = [
     text: "Compare release dates, editions, platforms and published PC targets.",
     links: [
       { label: "Release timing", href: "/game-info/release-date" },
+      { label: "Platform access", href: "/game-info/platforms" },
       {
         label: "System requirements",
         href: "/game-info/system-requirements",
@@ -82,7 +83,7 @@ export default function HomePage() {
               <Link href="/gameplay">
                 Explore the gameplay <ArrowRight size={17} />
               </Link>
-              <Link href="/game-info/release-date">Release and platforms</Link>
+              <Link href="/game-info/platforms">Compare platforms</Link>
             </div>
           </div>
           <ReleaseInfoPanel />
@@ -168,9 +169,14 @@ export default function HomePage() {
           </p>
         </div>
         <div>
+          <Link href="/game-info/platforms">
+            <strong>Platform access</strong>
+            <span>Game Pass, Play Anywhere, Deck and Switch 2</span>
+            <ArrowRight size={16} />
+          </Link>
           <Link href="/game-info/release-date">
             <strong>Release timing</strong>
-            <span>Digital, physical and platform dates</span>
+            <span>Digital, physical and early-access dates</span>
             <ArrowRight size={16} />
           </Link>
           <Link href="/game-info/release-date#editions">
