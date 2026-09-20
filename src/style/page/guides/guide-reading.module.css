@@ -160,17 +160,19 @@
 }
 .figure {
   margin: 30px 0;
+  background: #0b1217;
 }
 .figure img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 470px;
-  object-fit: cover;
+  max-height: 620px;
+  object-fit: contain;
 }
 .figure figcaption {
-  padding: 9px 0;
+  padding: 9px 11px;
   border-bottom: 1px solid var(--color-line);
+  background: var(--color-paper);
   font-size: 11px;
   color: var(--color-muted);
 }

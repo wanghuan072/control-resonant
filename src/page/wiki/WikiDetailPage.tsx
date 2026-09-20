@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
@@ -38,6 +39,14 @@ const guideLinks: Record<string, { label: string; href: string }> = {
   },
 };
 
+const relationLabels = {
+  characters: "Related character",
+  world: "Related place",
+  combat: "Related system",
+  enemies: "Related threat",
+  missions: "Related mission",
+} as const;
+
 export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
   const group = getWikiGroup(entry.group)!;
   const guide = guideLinks[`${entry.group}/${entry.slug}`];
@@ -53,7 +62,7 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
       <article className={styles.article}>
         <HubHero
           eyebrow={`Wiki / ${group.title} / ${entry.type}`}
-          title={entry.title}
+          title={`CONTROL Resonant ${entry.title} — Wiki`}
           description={entry.summary}
           image={entry.image}
           imageAlt={entry.imageAlt}
@@ -75,7 +84,7 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
                   {section.heading}
                 </a>
               ))}
-              <a href="#player-takeaway">Player takeaway</a>
+              <a href="#player-takeaway">What players need to know</a>
             </nav>
             <section className={styles.factSection} id="quick-facts">
               <p className={styles.micro}>Case file / quick facts</p>
@@ -87,8 +96,31 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
                     <dd>{fact.value}</dd>
                   </div>
                 ))}
+                {related.slice(0, 4).map((item) => (
+                  <div key={`related-${item.group}-${item.slug}`}>
+                    <dt>{relationLabels[item.group]}</dt>
+                    <dd>
+                      <Link href={wikiDetailPath(item)}>{item.title}</Link>
+                    </dd>
+                  </div>
+                ))}
               </dl>
             </section>
+            {entry.image && (
+              <figure className={styles.fullFrame}>
+                <Image
+                  src={entry.image}
+                  alt={entry.imageAlt ?? ""}
+                  width={1400}
+                  height={788}
+                  sizes="(max-width:1024px) 100vw, 760px"
+                />
+                <figcaption>
+                  {entry.imageAlt ?? entry.title}. The complete frame is shown
+                  without the Hero crop.
+                </figcaption>
+              </figure>
+            )}
             {entry.comparison && (
               <section className={styles.comparison} id="comparison">
                 <p className={styles.micro}>Field comparison</p>
@@ -138,7 +170,7 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
                 ))}
                 {section.connections && (
                   <div className={styles.connections}>
-                    <h3>Follow this thread</h3>
+                    <h3>{relationLabels[entry.group]} files</h3>
                     <ul>
                       {section.connections.map((connection) => {
                         const [groupId, slug] = connection.path.split("/");
@@ -161,12 +193,12 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
             ))}
             <section className={styles.takeaway} id="player-takeaway">
               <p className={styles.micro}>What this means for your run</p>
-              <h2>Player takeaway</h2>
+              <h2>{entry.title}: what players need to know</h2>
               <p>{entry.playerTakeaway}</p>
             </section>
             {guide && (
               <section className={styles.guideLink}>
-                <h2>Need the route, not the definition?</h2>
+                <h2>Use {entry.title} in a step-by-step guide</h2>
                 <p>
                   Guides focus on how to act. This Wiki file keeps the subject
                   and its known facts in one place.
@@ -188,16 +220,6 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
               <span>Updated</span>
               <time dateTime={entry.updatedAt}>{entry.updatedAt}</time>
             </div>
-            <h2>Connected files</h2>
-            <ul>
-              {related.map((item) => (
-                <li key={item.slug}>
-                  <Link href={wikiDetailPath(item)}>
-                    {item.title} <ArrowRight size={14} />
-                  </Link>
-                </li>
-              ))}
-            </ul>
             <Link className={styles.back} href={`/wiki/${entry.group}`}>
               ← All {group.title} topics
             </Link>

@@ -36,7 +36,9 @@ export default function UpdatesPage() {
         <div className={styles.actionable}>
           <div>
             <span>What changed for players</span>
-            <h2>Recheck the decision that matters to you</h2>
+            <h2>
+              See which announcements change your platform, build or settings
+            </h2>
             <p>
               Announcements are most useful when they alter a purchase, hardware
               or playstyle decision. These are the recent changes with a
@@ -52,7 +54,9 @@ export default function UpdatesPage() {
                 Balanced mode depends on a 120Hz-compatible display; targets are
                 not an independent frame-rate test.
               </p>
-              <Link href="/game-info#ps5-modes">Compare modes →</Link>
+              <Link href="/game-info/system-requirements#console-modes">
+                Compare modes →
+              </Link>
             </article>
             <article>
               <time dateTime="2026-09-10">10 SEP</time>
@@ -73,7 +77,9 @@ export default function UpdatesPage() {
                 CPU, GPU, memory and SSD space together; the published target
                 does not predict a specific machine&apos;s measured FPS.
               </p>
-              <Link href="/game-info#device-check">Check your device →</Link>
+              <Link href="/game-info/system-requirements">
+                Check system requirements →
+              </Link>
             </article>
           </div>
         </div>

@@ -44,7 +44,7 @@ export default function GuidePillarPage({ id }: { id: GuidePillarId }) {
       <article>
         <HubHero
           eyebrow={`Field manual / ${pillar.number} / ${pillar.eyebrow}`}
-          title={pillar.title}
+          title={`CONTROL Resonant ${pillar.title} — Guide`}
           description={pillar.intro}
           image={pillar.image}
           imageAlt={`${pillar.title} guide artwork`}
@@ -71,7 +71,7 @@ export default function GuidePillarPage({ id }: { id: GuidePillarId }) {
                 <span>Start here / direct answer</span>
                 <BookOpen size={23} />
               </div>
-              <h2 id="field-answer">The field brief</h2>
+              <h2 id="field-answer">What this guide helps you accomplish</h2>
               <p>{guide.answer}</p>
               <a href="#chapter-1">
                 Start reading <ArrowDown size={16} />
@@ -196,7 +196,9 @@ export default function GuidePillarPage({ id }: { id: GuidePillarId }) {
               aria-labelledby="next-reading-heading"
             >
               <p>Continue the investigation</p>
-              <h2 id="next-reading-heading">Where to go next</h2>
+              <h2 id="next-reading-heading">
+                Continue with the guide that matches your next objective
+              </h2>
               <div>
                 {guide.related.map((item) => (
                   <Link href={item.href} key={item.href}>

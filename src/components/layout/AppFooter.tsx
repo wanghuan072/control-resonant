@@ -2,7 +2,11 @@ import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 
 import { BrandLogo } from "@/components/common/BrandLogo";
-import { legalNavigation, primaryNavigation } from "@/config/navigation";
+import {
+  gameInfoNavigation,
+  legalNavigation,
+  primaryNavigation,
+} from "@/config/navigation";
 import { siteConfig } from "@/config/site";
 import styles from "@/style/layout/app-footer.module.css";
 
@@ -18,11 +22,19 @@ export function AppFooter() {
           </p>
         </div>
         <nav aria-label="Footer navigation" className={styles.links}>
-          {primaryNavigation.map((item) => (
-            <Link key={item.href} href={item.href}>
-              {item.label}
-            </Link>
-          ))}
+          {primaryNavigation.flatMap((item) =>
+            item.href === "/game-info"
+              ? gameInfoNavigation.map((child) => (
+                  <Link key={child.href} href={child.href}>
+                    {child.label}
+                  </Link>
+                ))
+              : [
+                  <Link key={item.href} href={item.href}>
+                    {item.label}
+                  </Link>,
+                ],
+          )}
         </nav>
         <Link href="#top" className={styles.backToTop} aria-label="Back to top">
           <ArrowUp aria-hidden="true" size={19} />

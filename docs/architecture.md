@@ -39,5 +39,5 @@ When adding a guide, append a valid record to the appropriate collection in `src
 See `design-direction.md` for the altered-field-archive composition, typography and palette. Home, directory and article layouts have different content roles, sharing the same navigation and visual language.
 
 - `npm run audit:data`: collection, source-trail, detail depth, image and relationship checks.
-- `npm run audit:site -- --base http://localhost:3001`: rendered route metadata, redirects, internal links, structured data, deferred video, Tracker interactions and responsive checks. The audit uses the installed Chrome channel by default; `--chrome` can override its executable.
+- `npm run audit:site -- --base <running-url>`: rendered route metadata, retired-route responses, internal links, structured data, deferred video and responsive checks. Pass the URL of the Next.js process you started; the project does not reserve a port. The audit uses the installed Chrome channel by default; `--chrome` can override its executable.
 - `npm run lint` and `npm run build`: code and production compilation checks.

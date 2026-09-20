@@ -1,24 +1,122 @@
 .page {
   padding-block: 28px 82px;
 }
-.jump {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 18px;
-  padding: 9px 0 23px;
-  border-bottom: 1px solid var(--color-line);
+.readingLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: clamp(38px, 5vw, 76px);
+  align-items: start;
 }
-.jump a {
-  min-height: 38px;
-  display: inline-flex;
+.content {
+  min-width: 0;
+}
+.sidebar {
+  align-self: stretch;
+  padding-top: 36px;
+}
+.sidebar > div {
+  position: sticky;
+  top: calc(var(--header-height) + 22px);
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-top: 3px solid var(--color-red);
+  background: linear-gradient(145deg, #172129, #0d1419 75%);
+  box-shadow: 0 22px 45px rgb(0 0 0 / 18%);
+}
+.sidebarHeader {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px 14px;
+}
+.sidebarHeader span,
+.tocGroup > span {
+  color: var(--color-red);
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.sidebarHeader strong {
+  color: var(--color-ink);
+  font:
+    700 11px ui-monospace,
+    monospace;
+  letter-spacing: 0.08em;
+}
+.progress {
+  height: 2px;
+  margin: 0 18px 5px;
+  background: #ffffff14;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  background: var(--color-red);
+  transition: width 180ms ease;
+}
+.sidebar nav {
+  display: grid;
+  padding: 8px 18px 16px;
+}
+.tocGroup {
+  display: grid;
+  padding-top: 13px;
+}
+.tocGroup > span {
+  margin-bottom: 5px;
+  color: #78868e;
+  font-size: 8px;
+}
+.sidebar a {
+  position: relative;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  border-left: 1px solid #ffffff1a;
   color: var(--color-ink-soft);
   font-size: 12px;
 }
-.jump a:hover,
+.sidebar a::before {
+  position: absolute;
+  left: -2px;
+  width: 3px;
+  height: 0;
+  background: var(--color-red);
+  content: "";
+  transition: height 150ms ease;
+}
+.sidebar a.current {
+  color: white;
+  background: linear-gradient(90deg, #cc272f18, transparent);
+}
+.sidebar a.current::before {
+  height: 22px;
+}
+.sidebar .sidebarCta {
+  min-height: 52px;
+  justify-content: space-between;
+  padding: 10px 18px;
+  border-top: 1px solid var(--color-line);
+  border-left: 0;
+  background: #ffffff08;
+  color: var(--color-red);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sidebar .sidebarCta::before {
+  display: none;
+}
+.sidebar a:hover,
 .textLink:hover,
 .inlineLinks a:hover {
   color: var(--color-red);
+}
+.mobileContents {
+  display: none;
 }
 .intro {
   display: grid;
@@ -89,6 +187,79 @@
   padding-block: 54px;
   border-bottom: 1px solid var(--color-line);
   scroll-margin-top: calc(var(--header-height) + 22px);
+}
+.characterGrid,
+.bossGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.86fr);
+  gap: 28px;
+  align-items: start;
+}
+.characterGrid figure,
+.bossGrid figure {
+  margin: 0;
+}
+.characterGrid img,
+.bossGrid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.characterGrid figcaption,
+.bossGrid figcaption {
+  padding-top: 9px;
+  color: var(--color-muted);
+  font-size: 10px;
+  line-height: 1.55;
+}
+.characterGrid dl {
+  margin: 0;
+  border-top: 2px solid var(--color-ink);
+}
+.characterGrid dl > div {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 15px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.characterGrid dt {
+  color: var(--color-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.characterGrid dd {
+  margin: 0;
+  font-size: 13px;
+}
+.characterGrid a,
+.bossGrid a,
+.section > p a {
+  color: var(--color-red);
+}
+.characterGrid > div > p {
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.bossGrid ol {
+  margin: 0;
+  padding: 0;
+  border-top: 2px solid var(--color-ink);
+  list-style: none;
+}
+.bossGrid li {
+  display: grid;
+  gap: 5px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.bossGrid li strong {
+  color: var(--color-ink);
+  font-size: 13px;
 }
 .intro {
   scroll-margin-top: calc(var(--header-height) + 22px);
@@ -222,6 +393,41 @@
   flex-wrap: wrap;
   gap: 10px 23px;
 }
+.problemList {
+  display: grid;
+  border-top: 2px solid var(--color-ink);
+}
+.problemList article {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.2fr) minmax(
+      150px,
+      0.55fr
+    );
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.problemList h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.problemList p {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.problemList a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-red);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .next {
   display: grid;
   grid-template-columns: minmax(230px, 0.75fr) minmax(0, 1.25fr);
@@ -253,6 +459,41 @@
   color: var(--color-red);
 }
 @media (max-width: 1024px) {
+  .readingLayout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .mobileContents {
+    display: block;
+    margin: 24px 0 4px;
+    border: 1px solid var(--color-line);
+  }
+  .mobileContents summary {
+    padding: 15px;
+    color: var(--color-red);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .mobileContents nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 15px 15px;
+  }
+  .mobileContents a {
+    padding: 9px 0;
+    border-top: 1px solid var(--color-line);
+    font-size: 12px;
+  }
+  .problemList article {
+    grid-template-columns: minmax(170px, 0.7fr) minmax(0, 1.3fr);
+  }
+  .problemList a {
+    grid-column: 2;
+  }
   .intro,
   .section header,
   .next {
@@ -263,7 +504,9 @@
     grid-column: 1;
   }
   .loop,
-  .abilityGrid {
+  .abilityGrid,
+  .characterGrid,
+  .bossGrid {
     grid-template-columns: 1fr;
   }
   .loop li {
@@ -274,14 +517,18 @@
   }
 }
 @media (max-width: 768px) {
-  .layers {
+  .mobileContents nav {
     grid-template-columns: 1fr;
   }
-  .jump {
-    gap: 0 14px;
+  .problemList article {
+    grid-template-columns: 1fr;
+    gap: 9px;
   }
-  .jump a {
-    font-size: 11px;
+  .problemList a {
+    grid-column: 1;
+  }
+  .layers {
+    grid-template-columns: 1fr;
   }
   .section {
     padding-block: 42px;

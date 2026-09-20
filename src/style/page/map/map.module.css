@@ -1,0 +1,129 @@
+.page {
+  padding-block: 0 76px;
+}
+.status,
+.launchPlan {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(30px, 6vw, 90px);
+  padding-block: 46px;
+  border-bottom: 1px solid var(--color-line);
+}
+.status span,
+.placeIndex header span,
+.launchPlan span {
+  color: var(--color-red);
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+.status svg,
+.launchPlan svg {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--color-red);
+}
+.status h2,
+.placeIndex h2,
+.launchPlan h2 {
+  margin: 9px 0 0;
+  font-size: clamp(29px, 3.5vw, 46px);
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+.status p,
+.placeIndex header p {
+  margin: 0 0 13px;
+  color: var(--color-ink-soft);
+  font-size: 13px;
+  line-height: 1.72;
+}
+.placeIndex {
+  padding-block: 48px;
+  border-bottom: 1px solid var(--color-line);
+  scroll-margin-top: calc(var(--header-height) + 20px);
+}
+.placeIndex header {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: 8px 40px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+.placeIndex header > span {
+  grid-column: 1/-1;
+}
+.placeIndex header p {
+  margin: 0;
+}
+.tableWrap {
+  overflow-x: auto;
+  border-top: 2px solid var(--color-ink);
+}
+.tableWrap table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  text-align: left;
+}
+.tableWrap th,
+.tableWrap td {
+  padding: 15px 14px;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: top;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.tableWrap thead th {
+  color: var(--color-muted);
+  font:
+    700 9px ui-monospace,
+    monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.tableWrap tbody th {
+  min-width: 150px;
+  font-size: 13px;
+}
+.tableWrap a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-red);
+}
+.launchPlan {
+  border-bottom: 0;
+}
+.launchPlan ol {
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid var(--color-ink);
+  list-style: none;
+}
+.launchPlan li {
+  display: grid;
+  gap: 5px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.launchPlan strong {
+  color: var(--color-ink);
+  font-size: 13px;
+}
+@media (max-width: 1024px) {
+  .status,
+  .placeIndex header,
+  .launchPlan {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .placeIndex header > span {
+    grid-column: 1;
+  }
+}

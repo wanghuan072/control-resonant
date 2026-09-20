@@ -7,7 +7,9 @@ import { JsonLd } from "@/seo/JsonLd";
 import { siteConfig } from "@/config/site";
 import styles from "@/style/page/game-info/game-info-article.module.css";
 
-const topic = gameInfoTopics[2];
+const topic = gameInfoTopics.find(
+  (item) => item.href === "/game-info/trailers",
+)!;
 const videos = [
   {
     id: "SqvAvOAd1VA",
@@ -36,6 +38,19 @@ const videos = [
     limit: "Retail routes, exact boss mechanics or rewards",
   },
   {
+    id: "VwOJuJRCLGk",
+    title: "CONTROL Resonant – Altered State Trailer",
+    date: "2026-08-26",
+    poster: "/images/home/paranatural-manhattan.jpg",
+    summary:
+      "The Gamescom trailer cuts between Dylan's movement, Aberrant attacks and altered Manhattan, accompanied by The Prodigy's Omen.",
+    lookFor:
+      "Use this for the game's action tone; a rapid edit does not establish a boss's full move set or final combat balance.",
+    kind: "Official trailer",
+    bestFor: "Action tone and the Gamescom trailer song",
+    limit: "Full boss move sets or final balance",
+  },
+  {
     id: "RJTBoQhWaC0",
     title: "CONTROL Resonant – Official Gameplay Reveal",
     date: "2026-02-12",
@@ -60,6 +75,19 @@ const videos = [
     kind: "Official trailer",
     bestFor: "Dylan, Jesse, setting and release date",
     limit: "A complete walkthrough or combat balance",
+  },
+  {
+    id: "NvncU_SQO5Y",
+    title: "CONTROL Resonant – Paranatural Manhattan Trailer",
+    date: "2026-06-05",
+    poster: "/images/home/paranatural-manhattan.jpg",
+    summary:
+      "Emily Pope introduces a transformed Manhattan in a trailer featuring Vilma Jää's Manalan Mailla.",
+    lookFor:
+      "The video gives a sense of the setting and returning cast; it does not mark playable zone boundaries on a map.",
+    kind: "Official trailer",
+    bestFor: "Manhattan, Emily Pope and the featured song",
+    limit: "A navigable map or complete Zone list",
   },
   {
     id: "lTHTfqPTQ1k",
@@ -159,6 +187,27 @@ export default function TrailersPage() {
           </table>
         </div>
       </section>
+      <section id="trailer-music">
+        <h2>What songs play in the CONTROL Resonant trailers?</h2>
+        <p>The answer depends on which trailer you mean:</p>
+        <ul>
+          <li>
+            <a href="#SqvAvOAd1VA">Launch Trailer</a> — “My Favourite Game” by
+            The Cardigans.
+          </li>
+          <li>
+            <a href="#VwOJuJRCLGk">Altered State</a> — “Omen” by The Prodigy.
+          </li>
+          <li>
+            <a href="#NvncU_SQO5Y">Paranatural Manhattan</a> — “Manalan Mailla”
+            by Vilma Jää.
+          </li>
+        </ul>
+        <p>
+          These are trailer tracks, not a list of every song in the game or its
+          soundtrack.
+        </p>
+      </section>
       {videos.map((video) => (
         <section id={video.id} key={video.id}>
           <h2>{video.title}</h2>
@@ -182,7 +231,7 @@ export default function TrailersPage() {
           together, read the{" "}
           <Link href="/gameplay">gameplay systems overview</Link>. For platforms
           and unlock timing, use the{" "}
-          <Link href="/game-info#release-date">release guide</Link>. We will not
+          <Link href="/game-info/release-date">release guide</Link>. We will not
           turn unshown mission rewards or precise boss mechanics into trailer
           “facts.”
         </p>

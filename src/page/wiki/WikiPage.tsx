@@ -41,7 +41,9 @@ export default function WikiPage() {
       >
         <div>
           <span>Start with a question</span>
-          <h2 id="question-index-title">What are you trying to understand?</h2>
+          <h2 id="question-index-title">
+            Browse characters, combat, enemies, locations and missions
+          </h2>
           <p>
             Use a system overview when you need to learn how the game plays; use
             a Wiki file when you need a person, place, threat or named activity.
@@ -61,6 +63,10 @@ export default function WikiPage() {
           </Link>
           <Link href="/wiki/world">
             Which place or Zone am I looking at? <ArrowRight size={16} />
+          </Link>
+          <Link href="/map#confirmed-locations">
+            Which locations are confirmed before launch?{" "}
+            <ArrowRight size={16} />
           </Link>
           <Link href="/wiki/missions">
             Is this a story mission, World Quest or Fault?{" "}
@@ -122,6 +128,37 @@ export default function WikiPage() {
             </article>
           );
         })}
+      </section>
+      <section
+        className={`container ${styles.context}`}
+        aria-labelledby="use-wiki-heading"
+      >
+        <div>
+          <span>From information to a decision</span>
+          <h2 id="use-wiki-heading">
+            Use the Wiki when play stops making sense
+          </h2>
+          <p>
+            A name alone rarely solves a problem. Move from a Wiki file to the
+            page that answers the next question: which ability covers a build
+            weakness, which locations can be identified, or which arena hazard
+            defines a known boss encounter.
+          </p>
+        </div>
+        <nav aria-label="Player tools connected to the Wiki">
+          <Link href="/guides/combat-builds">
+            Diagnose a build problem <ArrowRight size={16} />
+          </Link>
+          <Link href="/wiki/combat/combat-abilities">
+            Compare Barrage, Seekers and Shield <ArrowRight size={16} />
+          </Link>
+          <Link href="/map#confirmed-locations">
+            Check confirmed locations and map status <ArrowRight size={16} />
+          </Link>
+          <Link href="/bosses">
+            Check known encounter hazards <ArrowRight size={16} />
+          </Link>
+        </nav>
       </section>
       <section
         className={`container ${styles.context}`}

@@ -15,6 +15,11 @@ export function displayDate(value: string, month: "short" | "long" = "long") {
 
 export const buyingFacts = {
   ...releaseDates,
+  priceCheckedAt: "2026-09-20",
+  preorderBonuses: {
+    shared: "Pickpocket's Tool Artifact and Hiss Corruption Outfit",
+    playStation: "Occult Outfit",
+  },
   editions: [
     {
       id: "standard-digital",
@@ -22,6 +27,8 @@ export const buyingFacts = {
       format: "Digital",
       extras: "Base game",
       timing: displayDate(releaseDates.digitalRelease),
+      channels: "Steam, Epic Games Store, PS5, Xbox Series X|S",
+      usListPrice: "$59.99",
     },
     {
       id: "deluxe-digital",
@@ -30,6 +37,8 @@ export const buyingFacts = {
       extras:
         "Digital artbook, soundtrack, AWE Mission Outfit, Wallet Untapped Artifact and starter resources",
       timing: `${displayDate(releaseDates.digitalRelease)}; PS5 listing advertises up to 48-hour early access from ${displayDate(releaseDates.ps5DeluxeEarlyAccess)}`,
+      channels: "Steam, Epic Games Store, PS5, Xbox Series X|S",
+      usListPrice: "$69.99",
     },
     {
       id: "standard-physical",
@@ -37,6 +46,8 @@ export const buyingFacts = {
       format: "Physical console",
       extras: "Base game",
       timing: displayDate(releaseDates.physicalRelease),
+      channels: "PS5 and Xbox Series X|S retailers",
+      usListPrice: "$59.99",
     },
     {
       id: "steelbook-physical",
@@ -44,11 +55,22 @@ export const buyingFacts = {
       format: "Physical console",
       extras: "SteelBook case, three prints and poster with the base game",
       timing: `${displayDate(releaseDates.physicalRelease)}; check the exact regional retail package`,
+      channels: "PS5 and Xbox Series X|S retailers",
+      usListPrice: "$69.99",
     },
   ],
   pc: {
     ramGb: 16,
     ssdGb: 120,
+    os: "Windows 10 / 11 (64-bit)",
+    technology:
+      "DLSS 4.5 and FSR 4.1 are announced; ray and path tracing have separate hardware targets. Features depend on GPU support and the selected mode.",
+    languages: {
+      fullAudio:
+        "English, French, Italian, German, Spanish (Spain), Japanese, Portuguese (Brazil), Simplified Chinese",
+      textOnly:
+        "Korean, Polish, Russian, Spanish (Latin America), Traditional Chinese, Turkish, Ukrainian",
+    },
     tiers: [
       {
         id: "minimum",

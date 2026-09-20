@@ -44,7 +44,10 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "The campaign is single-player. Zoe De Vera is Dylan's FBC field contact, not a co-op partner. Remedy's developer FAQ describes the game as playable offline, although a storefront may still require installation, an initial download or account setup. Do not confuse Resonant with FBC: Firebreak, Remedy's separate co-operative game.",
         ],
         links: [
-          { label: "Check platform and edition details", href: "/game-info" },
+          {
+            label: "Check platform and edition details",
+            href: "/game-info/release-date",
+          },
         ],
       },
       {
@@ -55,6 +58,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "No. Remedy has presented Resonant as both a sequel and a new entry point, and a developer interview says the main menu includes a recap of CONTROL. The original game is still the best way to understand why Dylan and Jesse's relationship matters, what the Hiss did to the Bureau, and why the Oldest House is more than a location.",
           "For a short spoiler-light preparation, remember four facts: Jesse became FBC Director; Dylan spent years confined by the Bureau; the Hiss crisis changed both siblings; and Jesse is missing when Dylan's new journey begins. The sequel's final explanation of her absence has not been publicly established, so do not treat a trailer cut as a solved plot point.",
         ],
+        image: {
+          src: "/images/characters/zoe-and-dylan.jpg",
+          alt: "Dylan Faden and Zoe De Vera in CONTROL Resonant",
+          caption:
+            "Dylan leads the playable story while Zoe serves as his field contact. Character files carry the deeper relationship context.",
+        },
         table: {
           headers: [
             "Person or place",
@@ -155,16 +164,16 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Choose the right version for your setup",
         paragraphs: [
           "The digital and physical console copies have different release dates, and the PS5 Deluxe listing has a separate early-access offer. Check the edition and format you actually intend to buy; a SteelBook order does not grant digital early access.",
-          "PC requirements describe published hardware targets rather than measured performance on your machine. Use the Game Info decision desk to compare your components, then verify your regional store listing before buying. Steam Deck support is a separate question from final compatibility status or benchmark results.",
+          "PC requirements describe published hardware targets rather than measured performance on your machine. Use the PC checker to compare each component, then verify your regional store listing before buying. Steam Deck support is a separate question from final compatibility status or benchmark results.",
         ],
         links: [
           {
-            label: "Choose an edition for your platform",
-            href: "/game-info#decision",
+            label: "Compare editions, dates and included extras",
+            href: "/game-info/release-date#editions",
           },
           {
             label: "Check your setup against published targets",
-            href: "/game-info#device-check",
+            href: "/tools#system-checker",
           },
           {
             label: "Read the physical-edition timing",
@@ -204,6 +213,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
               "Slot limit and effect conditions",
             ],
           ],
+        },
+        image: {
+          src: "/images/gameplay/manhattan-melee.jpg",
+          alt: "Dylan using the Aberrant during close-range combat",
+          caption:
+            "The build begins with the melee-to-power rhythm; Forms, abilities, Talents and Artifacts modify different parts of it.",
         },
         links: [
           {
@@ -249,6 +264,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
             text: "When a World Quest, Fault or Gravity Anomaly appears, note the region and required traversal instead of following an unverified 100% checklist.",
           },
         ],
+        image: {
+          src: "/images/gameplay/gap-realm.jpg",
+          alt: "The Gap build-management space in CONTROL Resonant",
+          caption:
+            "The Gap is where unlocked options become a working loadout. Change one layer, then test why it helped or failed.",
+        },
         links: [
           {
             label: "See known mission types",
@@ -267,7 +288,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         links: [
           {
             label: "Review the published Assist Mode controls",
-            href: "/game-info#assist-mode",
+            href: "/game-info/system-requirements#assist-title",
           },
         ],
       },
@@ -285,7 +306,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
       },
       {
         label: "Game Info",
-        href: "/game-info",
+        href: "/game-info/release-date",
         note: "Check the edition, platform and PC facts.",
       },
     ],
@@ -375,6 +396,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "Major Resonants are tied to Combat Ability rewards, and some first-run choices branch. In the first-party preview, Barrage launches projectiles, Seekers act as mobile summons that can be thrown or detonated, and Shield provides defense that can become an offensive dash. These are observed choices, not a full launch ability list.",
           "Choose by the problem your Aberrant Form does not solve. A close-range setup may need a way to handle distant pressure; a slower Form may need protection while closing; a crowd-focused setup may benefit from a tool that isolates a dangerous target. Do not assume every ability can be equipped at once or that a previewed choice is irreversible without checking the released game.",
         ],
+        image: {
+          src: "/images/abilities/seekers-loadout.jpg",
+          alt: "Combat Ability selection shown in CONTROL Resonant preview material",
+          caption:
+            "Ability choices cover different tactical gaps. The visible preview options are not a complete retail ability list.",
+        },
         links: [
           {
             label: "See the ability comparison",
@@ -420,6 +447,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "The Hiss and Mold are returning threats, while Resonants are major encounters linked to power progression. A summon, a faction and a named boss are different categories; a build that handles one preview arena may not answer another threat. Use a simple test: one target, a group, a ranged attacker and a hazard-heavy encounter.",
           "Watch whether the Form reaches safely, whether your chosen ability controls the most dangerous threat, and whether the setup recovers after a failed dodge. Record what happened and the platform or build version. That evidence is more useful than calling an untested preview combination 'meta.'",
         ],
+        image: {
+          src: "/images/enemies/hiss-encounter.jpg",
+          alt: "Dylan facing hostile forces in a Manhattan encounter",
+          caption:
+            "A useful field test changes target count, range and arena pressure instead of judging a build against one enemy type.",
+        },
         links: [
           { label: "Browse enemy and boss files", href: "/wiki/enemies" },
         ],
@@ -464,7 +497,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         links: [
           {
             label: "Check Assist Mode options",
-            href: "/game-info#assist-mode",
+            href: "/game-info/system-requirements#assist-title",
           },
           {
             label: "Read the Central Resonant encounter briefing",
@@ -603,7 +636,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           },
           {
             label: "Match an obstacle to a location file",
-            href: "/locations#route-check",
+            href: "/map#confirmed-locations",
           },
         ],
       },
@@ -615,6 +648,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "The first-party hands-on describes Dylan leaving confinement, receiving the Aberrant, making contact with Zoe and entering the Manhattan crisis. Early movement tutorials introduce the idea that space can be navigated in unusual directions. This is a preview sequence, not a substitute for the final game's objective text.",
           "A newcomer should focus on learning where the route teaches basic melee, dodge and movement rather than chasing supposed hidden rewards from preview footage. The exact sequence can change between a media build and the retail version.",
         ],
+        image: {
+          src: "/images/gameplay/paranatural-combat.jpg",
+          alt: "Dylan entering the paranatural conflict in CONTROL Resonant",
+          caption:
+            "Opening footage establishes the learning sequence, but final objective wording and optional paths require the released build.",
+        },
       },
       {
         id: "metro-fault",
@@ -640,6 +679,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "A published boss preview identifies the Central Resonant and shows fire or magma hazards during the encounter. That is enough to tell a player to watch the arena and telegraphs, but not enough to publish exact health, resistances, safe-spot coordinates or a guaranteed ability reward.",
           "When the final fight can be tested, a useful walkthrough should record the approach route, attack signals, recovery windows and any version-dependent changes. Until then, treat this as an encounter briefing and avoid building your entire progression plan around an assumed drop.",
         ],
+        image: {
+          src: "/images/bosses/resonant-fire.jpg",
+          alt: "Central Resonant encounter with fire and ground hazards",
+          caption:
+            "The arena and visible hazards can be described now; exact phases, weaknesses and rewards need final-game testing.",
+        },
         links: [
           {
             label: "Central Resonant encounter",
@@ -774,6 +819,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
             ],
           ],
         },
+        image: {
+          src: "/images/map/gravity-anomaly-street.jpg",
+          alt: "A gravity-altered Manhattan street in CONTROL Resonant",
+          caption:
+            "Record the Zone, activity and movement gate separately. A blocked route is not automatically a missed collectible.",
+        },
         links: [
           {
             label: "Compare quest and activity types",
@@ -781,7 +832,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           },
           {
             label: "Check the location return rules",
-            href: "/locations#return-check",
+            href: "/map#confirmed-locations",
           },
         ],
       },
@@ -793,6 +844,12 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           "Resonants are major bosses whose defeat affects Dylan's Combat Abilities. Remedy has described first-run choices and wider options in New Game Plus. A completion-minded player should note which ability was chosen and which alternative remains, without assuming a preview boss has a known final reward table.",
           "The Central Resonant and another early Resonant entity have appeared in previews, but they should not be merged into a fabricated full boss list. When the retail game is available, record encounter name, Zone, prerequisite, ability choice and whether the second run changes the outcome.",
         ],
+        image: {
+          src: "/images/bosses/resonant-many-arms.jpg",
+          alt: "A multi-limbed Resonant shown in CONTROL Resonant imagery",
+          caption:
+            "A shown encounter belongs in the verified inventory; it does not establish the complete boss order or reward table.",
+        },
         links: [{ label: "Browse named enemy files", href: "/wiki/enemies" }],
       },
       {

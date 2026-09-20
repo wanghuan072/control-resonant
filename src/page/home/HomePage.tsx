@@ -18,8 +18,11 @@ const playerQuestions = [
     title: "When and where can I play?",
     text: "Compare release dates, editions, platforms and published PC targets.",
     links: [
-      { label: "Release timing", href: "/game-info#release-date" },
-      { label: "Check your device", href: "/game-info#device-check" },
+      { label: "Release timing", href: "/game-info/release-date" },
+      {
+        label: "System requirements",
+        href: "/game-info/system-requirements",
+      },
     ],
   },
   {
@@ -30,6 +33,7 @@ const playerQuestions = [
     links: [
       { label: "Gameplay systems", href: "/gameplay" },
       { label: "Skills and equipment", href: "/wiki/combat" },
+      { label: "Combat and build guide", href: "/guides/combat-builds" },
     ],
   },
   {
@@ -48,7 +52,7 @@ const playerQuestions = [
     title: "Where do I go?",
     text: "Understand known Zones, traversal tools, quest types and previewed activities.",
     links: [
-      { label: "World and Locations", href: "/locations" },
+      { label: "Map and known locations", href: "/map#confirmed-locations" },
       { label: "Missions and Activities", href: "/wiki/missions" },
     ],
   },
@@ -64,10 +68,9 @@ export default function HomePage() {
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
             <p className={styles.eyebrow}>Your way into altered Manhattan</p>
-            <h1>
-              <small>CONTROL Resonant —</small> Know the game.
-              <br />
-              <em> Find your way.</em>
+            <h1 aria-label="CONTROL Resonant — Release Info, Guides and Wiki">
+              <span>CONTROL Resonant</span>
+              <strong>Release Info, Guides and Wiki</strong>
             </h1>
             <p className={styles.lead}>
               Check when the game launches, see whether your setup is ready,
@@ -79,7 +82,7 @@ export default function HomePage() {
               <Link href="/gameplay">
                 Explore the gameplay <ArrowRight size={17} />
               </Link>
-              <Link href="/game-info#release-date">Release and platforms</Link>
+              <Link href="/game-info/release-date">Release and platforms</Link>
             </div>
           </div>
           <ReleaseInfoPanel />
@@ -90,7 +93,7 @@ export default function HomePage() {
         <header>
           <div>
             <span>Start with your question</span>
-            <h2>What do you need to know?</h2>
+            <h2>Find release, gameplay, character and world answers</h2>
           </div>
           <p>
             Pick the question on your mind; each path leads to a specific
@@ -116,6 +119,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section
+        className={`container ${styles.sequelSection}`}
+        aria-labelledby="sequel-heading"
+      >
+        <div className={styles.sequelIntro}>
+          <span>From CONTROL to Resonant</span>
+          <h2 id="sequel-heading">
+            CONTROL returns with Dylan and melee-first combat
+          </h2>
+          <p>
+            You do not need to relearn every Bureau file before starting. These
+            are the three changes that matter most when moving from Jesse&apos;s
+            story to Dylan&apos;s.
+          </p>
+          <Link href="/guides/getting-started#story-context">
+            Get the story setup <ArrowRight size={15} />
+          </Link>
+        </div>
+        <div className={styles.sequelRows}>
+          <div>
+            <span>Who you follow</span>
+            <strong>Jesse searched for Dylan</strong>
+            <strong>Dylan searches for Jesse</strong>
+          </div>
+          <div>
+            <span>Where you go</span>
+            <strong>The Oldest House</strong>
+            <strong>Manhattan&apos;s distinct Zones</strong>
+          </div>
+          <div>
+            <span>How you fight</span>
+            <strong>Service Weapon and powers</strong>
+            <strong>Aberrant melee and Combat Abilities</strong>
+          </div>
+        </div>
+      </section>
+
       <section className={`container ${styles.fieldPreview}`}>
         <div>
           <span>Before you buy</span>
@@ -128,17 +168,17 @@ export default function HomePage() {
           </p>
         </div>
         <div>
-          <Link href="/game-info#release-date">
+          <Link href="/game-info/release-date">
             <strong>Release timing</strong>
             <span>Digital, physical and platform dates</span>
             <ArrowRight size={16} />
           </Link>
-          <Link href="/game-info#editions">
+          <Link href="/game-info/release-date#editions">
             <strong>Edition comparison</strong>
             <span>What each version includes</span>
             <ArrowRight size={16} />
           </Link>
-          <Link href="/game-info#device-check">
+          <Link href="/game-info/system-requirements">
             <strong>Device check</strong>
             <span>Compare your PC with published targets</span>
             <ArrowRight size={16} />
@@ -223,6 +263,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className={`container ${styles.fieldPreview}`}>
+        <div>
+          <span>Use your own requirements</span>
+          <h2>Check your PC and review confirmed locations</h2>
+          <p>
+            Compare your hardware with the published PC targets, review the
+            release and edition table, or see which locations have enough
+            information to identify before launch.
+          </p>
+        </div>
+        <div>
+          <Link href="/tools#system-checker">
+            <strong>System requirements checker</strong>
+            <span>Compare your hardware and capacity with a target</span>
+            <ArrowRight size={16} />
+          </Link>
+          <Link href="/game-info/release-date#editions">
+            <strong>Edition comparison</strong>
+            <span>Compare format, launch date, price and included extras</span>
+            <ArrowRight size={16} />
+          </Link>
+          <Link href="/map#confirmed-locations">
+            <strong>Pre-release map status</strong>
+            <span>See the locations and connections known before launch</span>
+            <ArrowRight size={16} />
+          </Link>
+        </div>
+      </section>
+
       <section className={`container ${styles.latest}`}>
         <header>
           <div>
@@ -273,7 +342,9 @@ export default function HomePage() {
       >
         <div>
           <span>About this site</span>
-          <h2 id="about-title">The answer you need, then the next one</h2>
+          <h2 id="about-title">
+            What this CONTROL Resonant site helps players do
+          </h2>
         </div>
         <div>
           <p>
@@ -286,13 +357,19 @@ export default function HomePage() {
             activities take place.
           </p>
           <p>
-            Start with <Link href="/game-info">Game Info</Link> if you are
-            choosing a platform or edition. Use{" "}
+            Start with the{" "}
+            <Link href="/game-info/release-date">
+              release and edition guide
+            </Link>{" "}
+            if you are choosing a platform or copy. Use{" "}
             <Link href="/guides">Guides</Link> when you need a way to approach a
             fight or activity, and the <Link href="/wiki">Wiki</Link> when you
-            want to look up a specific person, power, enemy or place. We will
-            add exact routes and results as they can be checked in the released
-            game.
+            want to look up a specific person, power, enemy or place. When the
+            question needs your own hardware or buying preferences, use the{" "}
+            <Link href="/tools">player tools</Link>. The{" "}
+            <Link href="/map">map page</Link> currently separates confirmed
+            locations from the Zone and marker data that still requires the
+            released game.
           </p>
         </div>
       </section>
@@ -306,6 +383,17 @@ export default function HomePage() {
         </div>
         <div className={styles.faqList}>
           <article>
+            <h3>Is CONTROL Resonant Control 2?</h3>
+            <p>
+              Yes. CONTROL Resonant is the sequel to CONTROL, with Dylan Faden
+              as the playable lead. Jesse remains central to the story, but this
+              is Dylan&apos;s journey.
+            </p>
+            <Link href="/guides/getting-started#story-context">
+              Get the story setup <ArrowRight size={14} />
+            </Link>
+          </article>
+          <article>
             <h3>When does CONTROL Resonant come out?</h3>
             <p>
               The digital release is {displayDate(buyingFacts.digitalRelease)}.
@@ -313,7 +401,7 @@ export default function HomePage() {
               {displayDate(buyingFacts.physicalRelease)}. Availability and early
               access depend on the platform, edition and store listing.
             </p>
-            <Link href="/game-info#release-date">
+            <Link href="/game-info/release-date">
               See the release dates <ArrowRight size={14} />
             </Link>
           </article>
@@ -345,7 +433,7 @@ export default function HomePage() {
               optional activities. There is no verified street-by-street map or
               full collectible route yet.
             </p>
-            <Link href="/locations">
+            <Link href="/map">
               Explore the known places <ArrowRight size={14} />
             </Link>
           </article>

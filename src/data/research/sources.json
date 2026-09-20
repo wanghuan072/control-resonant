@@ -20,6 +20,16 @@
     "topics": ["World", "Enemies", "Combat"]
   },
   {
+    "id": "trailer-songs-official",
+    "kind": "Official",
+    "publisher": "Remedy Entertainment / Steam Community",
+    "title": "Launch, Altered State and Paranatural Manhattan trailer announcements",
+    "date": "2026-09-17",
+    "url": "https://steamcommunity.com/app/3669870/allnews/",
+    "note": "Official posts identify The Cardigans' My Favourite Game in the launch trailer, The Prodigy's Omen in Altered State, and Vilma Jää's Manalan Mailla in Paranatural Manhattan. Verified September 18.",
+    "topics": ["Trailers", "Music"]
+  },
+  {
     "id": "xbox-hands-on-june",
     "kind": "First-party hands-on",
     "publisher": "Xbox Wire",
@@ -116,7 +126,7 @@
     "title": "CONTROL Resonant store listing",
     "date": null,
     "url": "https://store.steampowered.com/app/3669870/CONTROL_Resonant/",
-    "note": "Live listing for languages, features, editions and requirements. Checked September 15; regional prices can differ.",
+    "note": "Live listing for languages, features, editions and final requirements. Checked September 20; regional prices can differ.",
     "topics": ["PC", "Release"]
   },
   {

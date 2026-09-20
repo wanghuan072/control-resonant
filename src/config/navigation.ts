@@ -1,11 +1,25 @@
 export const primaryNavigation = [
   { label: "Home", href: "/" },
-  { label: "Game Info", href: "/game-info" },
+  { label: "Game Info", href: "/game-info", menuOnly: true },
   { label: "Gameplay", href: "/gameplay" },
   { label: "Guides", href: "/guides" },
   { label: "Wiki", href: "/wiki" },
-  { label: "Locations", href: "/locations" },
+  { label: "Map", href: "/map" },
+  { label: "Tools", href: "/tools" },
   { label: "Updates", href: "/updates" },
+] as const;
+
+export const gameInfoNavigation = [
+  {
+    label: "Release Date",
+    href: "/game-info/release-date",
+    description: "Dates, platforms and edition timing",
+  },
+  {
+    label: "System Requirements",
+    href: "/game-info/system-requirements",
+    description: "PC specs and PlayStation modes",
+  },
 ] as const;
 
 export const databaseNavigation = [

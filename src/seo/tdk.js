@@ -6,17 +6,23 @@ export const pageTdk = {
       "Find CONTROL Resonant release dates, editions, PC requirements, gameplay advice, characters, abilities, enemies, missions and Manhattan locations in one place.",
     updatedAt: "2026-09-18",
   },
-  "/game-info": {
-    title: "CONTROL Resonant Game Info - Editions and PC Specs",
+  "/game-info/release-date": {
+    title: "CONTROL Resonant Release Date, Platforms & Editions",
     description:
-      "Compare CONTROL Resonant release dates, Standard and Deluxe editions, physical copies, PC requirements and PS5 modes before choosing where and how to play.",
-    updatedAt: "2026-09-18",
+      "Check the CONTROL Resonant release date, early access, physical edition timing, supported platforms and Mac release status before choosing your version.",
+    updatedAt: "2026-09-20",
+  },
+  "/game-info/system-requirements": {
+    title: "CONTROL Resonant System Requirements & PC Specs",
+    description:
+      "Compare CONTROL Resonant minimum and recommended PC specs, 120GB SSD requirement, graphics targets, rendering features and PlayStation performance modes.",
+    updatedAt: "2026-09-20",
   },
   "/gameplay": {
     title: "CONTROL Resonant Gameplay - Combat and Abilities",
     description:
-      "Learn the CONTROL Resonant combat loop, compare Aberrant Forms and Combat Abilities, and see how Talents, Artifacts, traversal and Assist Mode affect your play.",
-    updatedAt: "2026-09-18",
+      "Meet Dylan, learn the CONTROL Resonant combat loop, compare Forms and abilities, prepare for bosses, solve common problems and understand progression.",
+    updatedAt: "2026-09-20",
   },
   "/guides": {
     title: "CONTROL Resonant Guides - Start, Build and Explore",
@@ -30,11 +36,17 @@ export const pageTdk = {
       "Explore the CONTROL Resonant Wiki for Dylan and the FBC, Aberrant Forms, Combat Abilities, enemies, bosses, Manhattan locations, missions and connected topics.",
     updatedAt: "2026-09-18",
   },
-  "/locations": {
-    title: "CONTROL Resonant Locations - Find Places and Clues",
+  "/map": {
+    title: "CONTROL Resonant Map - Confirmed Locations & Status",
     description:
-      "Match CONTROL Resonant location names and movement obstacles to the right Zone, mission or ability file, then follow a clue without relying on an invented map.",
-    updatedAt: "2026-09-18",
+      "Check the CONTROL Resonant map status before launch and browse confirmed Manhattan Zones, hubs, Faults, traversal links and details awaiting verification.",
+    updatedAt: "2026-09-20",
+  },
+  "/tools": {
+    title: "CONTROL Resonant PC System Requirements Checker",
+    description:
+      "Select a common CPU, GPU, RAM, SSD and Windows version to compare your PC with official CONTROL Resonant minimum, recommended and 4K hardware targets.",
+    updatedAt: "2026-09-20",
   },
   "/updates": {
     title: "CONTROL Resonant Updates - Release and Game News",

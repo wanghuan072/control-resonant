@@ -2,20 +2,21 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Search, X } from "lucide-react";
-import { useState } from "react";
+import { ChevronDown, Menu, Search, X } from "lucide-react";
+import { useRef, useState } from "react";
 
 import { BrandLogo } from "@/components/common/BrandLogo";
-import { primaryNavigation } from "@/config/navigation";
+import { gameInfoNavigation, primaryNavigation } from "@/config/navigation";
 import styles from "@/style/layout/app-header.module.css";
 
 export function AppHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [gameInfoOpen, setGameInfoOpen] = useState(false);
+  const gameInfoTrigger = useRef<HTMLButtonElement>(null);
 
   function isActive(href: string) {
     if (href === "/") return pathname === "/";
-    if (href === "/locations") return pathname.startsWith(href);
     if (href === "/wiki")
       return pathname.startsWith("/wiki") || pathname.startsWith("/bosses");
     return pathname.startsWith(href);
@@ -26,16 +27,59 @@ export function AppHeader() {
       <div className={`container ${styles.inner}`}>
         <BrandLogo />
         <nav className={styles.desktopNav} aria-label="Primary navigation">
-          {primaryNavigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={isActive(item.href) ? styles.active : ""}
-              aria-current={isActive(item.href) ? "page" : undefined}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {primaryNavigation.map((item) =>
+            item.href === "/game-info" ? (
+              <div
+                className={`${styles.navGroup} ${gameInfoOpen ? styles.navGroupOpen : ""}`}
+                key={item.href}
+                onMouseEnter={() => setGameInfoOpen(true)}
+                onMouseLeave={() => setGameInfoOpen(false)}
+                onFocus={() => setGameInfoOpen(true)}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget))
+                    setGameInfoOpen(false);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === "Escape") {
+                    setGameInfoOpen(false);
+                    gameInfoTrigger.current?.focus();
+                  }
+                }}
+              >
+                <button
+                  ref={gameInfoTrigger}
+                  type="button"
+                  className={`${styles.navTrigger} ${isActive(item.href) ? styles.active : ""}`}
+                  aria-haspopup="true"
+                  aria-expanded={gameInfoOpen}
+                  onClick={() => setGameInfoOpen((value) => !value)}
+                >
+                  {item.label} <ChevronDown size={14} aria-hidden="true" />
+                </button>
+                <div className={styles.dropdown} aria-label="Game Info pages">
+                  {gameInfoNavigation.map((child) => (
+                    <Link
+                      href={child.href}
+                      key={child.href}
+                      onClick={() => setGameInfoOpen(false)}
+                    >
+                      <strong>{child.label}</strong>
+                      <span>{child.description}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={isActive(item.href) ? styles.active : ""}
+                aria-current={isActive(item.href) ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            ),
+          )}
         </nav>
         <div className={styles.actions}>
           <Link
@@ -64,17 +108,38 @@ export function AppHeader() {
         aria-label="Mobile navigation"
       >
         <div className="container">
-          {primaryNavigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={isActive(item.href) ? styles.active : ""}
-              aria-current={isActive(item.href) ? "page" : undefined}
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {primaryNavigation.map((item) =>
+            item.href === "/game-info" ? (
+              <div className={styles.mobileGroup} key={item.href}>
+                <span
+                  className={`${styles.mobileGroupLabel} ${isActive(item.href) ? styles.active : ""}`}
+                >
+                  {item.label}
+                </span>
+                <div aria-label="Game Info pages">
+                  {gameInfoNavigation.map((child) => (
+                    <Link
+                      href={child.href}
+                      key={child.href}
+                      onClick={() => setOpen(false)}
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={isActive(item.href) ? styles.active : ""}
+                aria-current={isActive(item.href) ? "page" : undefined}
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ),
+          )}
         </div>
       </nav>
     </header>

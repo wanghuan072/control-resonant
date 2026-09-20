@@ -99,7 +99,7 @@
     "summary": "Six named early weapon choices divide into Primary and Secondary Forms. They change the speed, reach and target pattern of Dylan's transforming Aberrant rather than representing six separate loot drops.",
     "image": "/images/gameplay/aberrant-scythe.jpg",
     "imageAlt": "Aberrant scythe form shown in gameplay artwork",
-    "updatedAt": "2026-09-16",
+    "updatedAt": "2026-09-18",
     "facts": [
       { "label": "Primary choices shown", "value": "Flurry, Slash, Slice" },
       { "label": "Secondary choices shown", "value": "Crush, Drill, Extend" },
@@ -162,7 +162,7 @@
     "summary": "Barrage, Seekers and Shield were presented as choices after an early Resonant encounter; their known functions point to different ways to regain control of a fight.",
     "image": "/images/abilities/seekers-loadout.jpg",
     "imageAlt": "Combat Ability selection shown in preview material",
-    "updatedAt": "2026-09-16",
+    "updatedAt": "2026-09-18",
     "facts": [
       {
         "label": "Acquisition pattern",

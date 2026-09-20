@@ -26,7 +26,14 @@ export function HubHero({
   meta,
   action,
 }: HubHeroProps) {
-  const hasGameName = /^CONTROL Resonant /i.test(title);
+  const fullTitle = /^CONTROL Resonant\b/i.test(title)
+    ? title
+    : `CONTROL Resonant — ${title}`;
+  const titleWithoutBrand = fullTitle
+    .replace(/^CONTROL Resonant\s*/i, "")
+    .replace(/^[—–-]\s*/, "");
+  const [topic, ...qualifierParts] = titleWithoutBrand.split(/\s+[—–-]\s+/);
+  const qualifier = qualifierParts.join(" — ");
   return (
     <header className={styles.hero}>
       <div className={`container ${styles.shell}`}>
@@ -34,9 +41,17 @@ export function HubHero({
         <div className={`${styles.inner} ${image ? "" : styles.noImage}`}>
           <div className={styles.copy}>
             <p className={styles.eyebrow}>{eyebrow}</p>
-            <h1>
-              {hasGameName && <small>CONTROL Resonant </small>}
-              {hasGameName ? title.replace(/^CONTROL Resonant /i, "") : title}
+            <h1 aria-label={fullTitle}>
+              <span className={styles.brand}>CONTROL Resonant</span>{" "}
+              <span className={styles.topic}>{topic}</span>
+              {qualifier && (
+                <>
+                  {" "}
+                  <span className={styles.qualifier}>
+                    <b aria-hidden="true">—</b> {qualifier}
+                  </span>
+                </>
+              )}
             </h1>
             <p className={styles.description}>{description}</p>
             {(meta || action) && (

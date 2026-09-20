@@ -29,7 +29,75 @@
   font-size: 13px;
   color: var(--color-ink-soft);
 }
-.desktopNav a:after {
+.navGroup {
+  position: relative;
+}
+.navTrigger {
+  position: relative;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-ink-soft);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: -18px;
+  display: grid;
+  width: 310px;
+  padding: 10px;
+  border: 1px solid var(--color-line);
+  border-top: 2px solid var(--color-red);
+  background: #0d151b;
+  box-shadow: 0 20px 45px rgb(0 0 0 / 35%);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(7px);
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease,
+    visibility 150ms ease;
+}
+.navGroupOpen .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.desktopNav .dropdown a {
+  display: grid;
+  gap: 3px;
+  min-height: 64px;
+  padding: 11px 13px;
+  border-bottom: 1px solid #ffffff1f;
+}
+.desktopNav .dropdown a:last-child {
+  border-bottom: 0;
+}
+.desktopNav .dropdown a::after {
+  display: none;
+}
+.dropdown a:hover,
+.dropdown a:focus-visible {
+  background: #18232b;
+  color: white;
+}
+.dropdown strong {
+  color: white;
+  font-size: 13px;
+}
+.dropdown span {
+  color: #9eabb1;
+  font-size: 11px;
+}
+.desktopNav a:after,
+.navTrigger:after {
   position: absolute;
   content: "";
   height: 3px;
@@ -40,10 +108,13 @@
   transition: width 180ms ease-out;
 }
 .desktopNav a:hover:after,
-.desktopNav .active:after {
+.desktopNav .active:after,
+.navTrigger:hover:after,
+.navTrigger.active:after {
   width: 18px;
 }
-.desktopNav .active {
+.desktopNav .active,
+.navTrigger.active {
   color: var(--color-signal);
 }
 .actions {
@@ -131,6 +202,27 @@
     align-items: center;
     border-bottom: 1px solid var(--color-line);
     font-size: 17px;
+  }
+  .mobileGroup {
+    border-bottom: 1px solid var(--color-line);
+  }
+  .mobileGroupLabel {
+    display: flex;
+    min-height: 52px;
+    align-items: center;
+    border-bottom: 0;
+    font-size: 17px;
+  }
+  .mobileGroup > div {
+    display: grid;
+    padding: 0 0 10px 14px;
+    border-left: 2px solid var(--color-red);
+  }
+  .mobileGroup > div a {
+    min-height: 38px;
+    border-bottom: 0;
+    color: var(--color-muted);
+    font-size: 13px;
   }
   .mobileNav .active {
     color: var(--color-signal);

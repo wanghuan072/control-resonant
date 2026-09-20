@@ -38,19 +38,31 @@
 }
 .hero h1 {
   margin: 22px 0 30px;
-  font: 400 clamp(58px, 6.2vw, 92px)/0.88 var(--font-display);
-  letter-spacing: -0.065em;
+  max-width: 790px;
+  text-wrap: balance;
+}
+.hero h1 span {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 14px;
+  color: var(--color-red);
+  font: 700 clamp(12px, 1.1vw, 15px)/1 var(--font-heading);
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.hero h1 small {
-  display: block;
-  margin-bottom: 13px;
-  font: 600 13px var(--font-heading);
-  letter-spacing: 0.2em;
+.hero h1 span::after {
+  width: 52px;
+  height: 1px;
+  background: var(--color-red);
+  content: "";
 }
-.hero h1 em {
-  color: var(--color-red);
-  font-style: normal;
+.hero h1 strong {
+  display: block;
+  color: white;
+  font: 400 clamp(54px, 5.8vw, 86px)/0.9 var(--font-display);
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
 }
 .lead {
   max-width: 530px;
@@ -377,6 +389,70 @@
   padding-block: 42px 54px;
   border-top: 1px solid var(--color-ink);
 }
+.sequelSection {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(28px, 5vw, 72px);
+  padding-block: 35px 41px;
+  border-top: 1px solid var(--color-line);
+}
+.sequelIntro > span {
+  color: var(--color-red);
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.sequelIntro h2 {
+  max-width: 420px;
+  margin: 9px 0 12px;
+  font-size: clamp(27px, 3vw, 39px);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+.sequelIntro p {
+  max-width: 470px;
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.sequelIntro a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  color: var(--color-red);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sequelRows {
+  border-top: 2px solid var(--color-ink);
+}
+.sequelRows > div {
+  display: grid;
+  grid-template-columns: minmax(105px, 0.65fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 15px;
+  align-items: center;
+  min-height: 65px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.sequelRows span {
+  color: var(--color-muted);
+  font:
+    700 10px ui-monospace,
+    monospace;
+  text-transform: uppercase;
+}
+.sequelRows strong {
+  font-size: 13px;
+  line-height: 1.3;
+}
+.sequelRows strong:last-child {
+  color: var(--color-red);
+}
 .fieldPreview > div:first-child > span {
   color: var(--color-red-dark);
   font:
@@ -420,6 +496,17 @@
   color: var(--color-red);
 }
 @media (max-width: 768px) {
+  .sequelSection {
+    grid-template-columns: 1fr;
+    gap: 19px;
+  }
+  .sequelRows > div {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 5px 12px;
+  }
+  .sequelRows span {
+    grid-column: 1 / -1;
+  }
   .fieldPreview {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -807,8 +894,8 @@
     grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
     gap: 30px;
   }
-  .hero h1 {
-    font-size: clamp(54px, 7vw, 76px);
+  .hero h1 strong {
+    font-size: clamp(46px, 5.5vw, 64px);
   }
   .intentGrid {
     grid-template-columns: 1fr 1fr;
@@ -851,8 +938,8 @@
     min-height: 0;
     padding-block: 75px 34px;
   }
-  .hero h1 {
-    font-size: clamp(46px, 10vw, 64px);
+  .hero h1 strong {
+    font-size: clamp(38px, 9vw, 52px);
   }
   .releasePanel {
     width: 100%;

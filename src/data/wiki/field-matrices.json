@@ -97,16 +97,58 @@
     ],
     "rows": [
       [
-        "Aberrant Forms",
-        "Weapon-form choices",
-        "Attack speed, reach and target pattern",
-        "Six opening choices named; no complete retail list"
+        "Flurry",
+        "Opening Primary Form choice",
+        "Fast twin-dagger attacks for close pressure",
+        "Critical-hit values and later upgrades are not published"
       ],
       [
-        "Combat Abilities",
-        "Major Resonant encounters",
-        "Supernatural attack, defense or summons",
-        "Some first-run branches are exclusive"
+        "Slash",
+        "Opening Primary Form choice",
+        "Wide scythe sweeps built around controlling groups",
+        "Final reach and damage values are not published"
+      ],
+      [
+        "Slice",
+        "Opening Primary Form choice",
+        "Axe strikes focused on heavy single-target pressure",
+        "Exact positional bonuses are not published"
+      ],
+      [
+        "Crush",
+        "Opening Secondary Form choice",
+        "Slow mallet blows with high commitment and impact",
+        "Final stagger values are not published"
+      ],
+      [
+        "Drill",
+        "Opening Secondary Form choice",
+        "Directed pressure that can sustain damage on one target",
+        "Resource costs and upgrade values are not published"
+      ],
+      [
+        "Extend",
+        "Opening Secondary Form choice",
+        "A chain-staff form for attacking beyond immediate melee range",
+        "It does not turn Dylan into a conventional ranged shooter"
+      ],
+      [
+        "Barrage",
+        "Previewed Resonant reward choice",
+        "Telekinetic projectiles for direct ranged pressure",
+        "A first-run choice may exclude another reward until NG+"
+      ],
+      [
+        "Seekers",
+        "Previewed Resonant reward choice",
+        "Summons that provide autonomous fire and an explosive option",
+        "Summon duration and final cooldowns are not published"
+      ],
+      [
+        "Shield",
+        "Previewed Resonant reward choice",
+        "Floating debris for defense with an offensive follow-up",
+        "A first-run choice may exclude another reward until NG+"
       ],
       [
         "Talents",
@@ -118,13 +160,13 @@
         "Artifacts",
         "Craft Untapped Artifacts in the Gap",
         "Passive modifiers and trade-offs",
-        "Three equipped in first run; four in NG+"
+        "Three equipped in the first run; a fourth slot opens in NG+"
       ],
       [
         "Reach and Shift",
         "Story-linked traversal",
-        "Access gravity-altered routes",
-        "Not interchangeable with Combat Ability slots"
+        "Open gravity-altered routes and change combat positioning",
+        "Traversal powers are not Combat Ability slots"
       ]
     ]
   },

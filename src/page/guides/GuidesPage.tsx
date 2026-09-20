@@ -36,7 +36,9 @@ export default function GuidesPage() {
       >
         <div className={styles.problemHeading}>
           <span>Field triage / start from the obstacle</span>
-          <h2 id="problem-index-title">What stopped you?</h2>
+          <h2 id="problem-index-title">
+            Choose a guide for the problem blocking your progress
+          </h2>
           <p>
             Follow the problem first, then open the relevant manual. Preview
             coverage can identify a system or encounter, but it cannot supply a
@@ -51,7 +53,7 @@ export default function GuidesPage() {
               Separate a Zone, a Fault and a movement gate before looking for a
               map pin.
             </p>
-            <Link href="/locations#route-check">
+            <Link href="/map#confirmed-locations">
               Check the route clues <ArrowRight size={15} />
             </Link>
           </li>

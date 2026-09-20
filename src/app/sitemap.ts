@@ -24,13 +24,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const fixedPaths = [
     ...new Set([
       "/",
-      ...primaryNavigation.map((item) => item.href),
+      ...primaryNavigation
+        .filter((item) => item.href !== "/game-info")
+        .map((item) => item.href),
       ...databaseNavigation.map((item) => item.href),
       ...gameInfoTopics.map((topic) => topic.href),
       ...wikiDetails.map((entry) => `/wiki/${entry.group}/${entry.slug}`),
       ...legalNavigation.map((item) => item.href),
       "/bosses",
-      "/updates",
       ...getGuidePillars().map((pillar) => pillar.href),
     ]),
   ];

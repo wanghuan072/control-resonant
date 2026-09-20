@@ -99,9 +99,17 @@ const matrixLinks: Record<WikiGroupId, Record<string, string>> = {
     "West Incursion Zone": "west-incursion-zone",
   },
   combat: {
-    "Aberrant Forms": "aberrant-forms",
-    "Combat Abilities": "combat-abilities",
+    Flurry: "aberrant-forms",
+    Slash: "aberrant-forms",
+    Slice: "aberrant-forms",
+    Crush: "aberrant-forms",
+    Drill: "aberrant-forms",
+    Extend: "aberrant-forms",
+    Barrage: "combat-abilities",
+    Seekers: "combat-abilities",
+    Shield: "combat-abilities",
     Artifacts: "artifacts",
+    "Reach and Shift": "reach",
   },
   enemies: {
     Hiss: "the-hiss",
@@ -164,8 +172,9 @@ export default function WikiGroupPage({ id }: { id: WikiGroupId }) {
             <p>
               This Wiki explains what each place is. If you have a Zone name,
               Fault or obstacle in front of you, use the{" "}
-              <Link href="/locations">Locations clue finder</Link> to reach the
-              relevant mission or movement file.
+              <Link href="/map">Map status and confirmed locations</Link> to see
+              what can be placed before launch and what still needs the released
+              game.
             </p>
           </section>
         )}

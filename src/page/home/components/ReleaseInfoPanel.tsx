@@ -32,7 +32,7 @@ export function ReleaseInfoPanel() {
           <dd>{displayDate(buyingFacts.physicalRelease, "short")}</dd>
         </div>
       </dl>
-      <Link href="/game-info" className={styles.releasePanelLink}>
+      <Link href="/game-info/release-date" className={styles.releasePanelLink}>
         Compare editions and platforms{" "}
         <ArrowRight size={16} aria-hidden="true" />
       </Link>

@@ -624,6 +624,81 @@
       }
     ]
   },
+  "combat/aberrant-forms": {
+    "sections": [
+      {
+        "heading": "Match the Form to the opening",
+        "paragraphs": [
+          "If distance is the problem, compare Extend's extra reach with a Combat Ability such as Barrage before changing the whole build. If a crowd keeps interrupting a narrow attack, Slash's wide arc is the more relevant Form to inspect. These are differences in the shown roles, not a promise that either option wins every fight.",
+          "A Form also changes how you return to melee after spending a power. The Aberrant file explains that shared resource loop; the Gap file explains where the parts of a loadout are reviewed. Keep weapon role, ability choice and build management separate when comparing them."
+        ],
+        "connections": [
+          {
+            "path": "combat/combat-abilities",
+            "reason": "Compare Barrage, Seekers and Shield when a Form alone does not cover the problem."
+          },
+          {
+            "path": "combat/aberrant",
+            "reason": "See how melee attacks feed the ability resource."
+          },
+          {
+            "path": "world/the-gap",
+            "reason": "Find the space used to review and test the loadout."
+          }
+        ]
+      }
+    ]
+  },
+  "combat/combat-abilities": {
+    "sections": [
+      {
+        "heading": "Choose a role, then check its cost",
+        "paragraphs": [
+          "Barrage answers distance with a projectile, Seekers add pressure that is not tied to Dylan's next weapon swing, and Shield covers a defensive opening before a forward attack. The early preview presents these as a choice, so reading them as three simultaneous starting powers would give a false picture of the first run.",
+          "All three sit inside the same melee-fed resource loop. If a chosen power feels scarce, the next question is whether the equipped Aberrant Forms allow a safe return to weapon hits—not whether the power has an unpublished cooldown or hidden upgrade."
+        ],
+        "connections": [
+          {
+            "path": "combat/aberrant-forms",
+            "reason": "Compare the weapon roles that create safe melee openings."
+          },
+          {
+            "path": "enemies/first-resonant-entity",
+            "reason": "Place the early previewed ability choice after its encounter."
+          },
+          {
+            "path": "combat/new-game-plus",
+            "reason": "See how later runs expand boss-earned choices."
+          }
+        ]
+      }
+    ]
+  },
+  "enemies/central-resonant": {
+    "sections": [
+      {
+        "heading": "Separate arena pressure from loadout pressure",
+        "paragraphs": [
+          "The footage makes the floor hazard and projectiles useful things to watch for. If an attempt breaks before Dylan can close in, first identify whether movement through the arena or attack timing is the obstacle. The published material does not establish a safe tile, exact phase order or a required Form.",
+          "Combat Abilities and Aberrant Forms can be compared by role, but this encounter's exact reward has not been established. The connected ability file explains the general boss-reward system without assigning a specific drop to the Central Resonant."
+        ],
+        "connections": [
+          {
+            "path": "combat/combat-abilities",
+            "reason": "Understand the boss-reward system without assuming this fight's drop."
+          },
+          {
+            "path": "combat/aberrant-forms",
+            "reason": "Compare reach and attack shape before changing a melee setup."
+          },
+          {
+            "path": "world/manhattan",
+            "reason": "Place this shown encounter in the wider Zone-based setting."
+          }
+        ]
+      }
+    ]
+  },
   "enemies/the-hiss": {
     "sections": [
       {

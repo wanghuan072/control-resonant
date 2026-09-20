@@ -7,27 +7,29 @@ import type { SearchEntry } from "@/types/content";
 
 const primaryDescriptions: Record<string, string> = {
   "/": "CONTROL Resonant release details, guides, world overview, and frequently asked questions.",
-  "/game-info":
-    "Release timing, editions, platforms, PC requirements and answers before you buy.",
   "/gameplay":
     "How Aberrant Forms, Combat Abilities, Talents, Artifacts, traversal and Assist Mode fit together.",
   "/guides":
     "Four focused routes for getting started, builds, story progress and completion.",
   "/wiki":
     "Player-focused Wiki for characters, world, combat, enemies and missions.",
-  "/locations":
-    "Known Manhattan Zones, locations, traversal concepts and linked activities.",
+  "/map":
+    "Pre-release map status, confirmed Manhattan places and the location details still awaiting final-game verification.",
+  "/tools":
+    "Compare common CPUs, GPUs, memory, storage and Windows versions with published PC system targets.",
   "/updates":
     "Dated release, platform, combat and accessibility announcements.",
 };
 
 export function getSearchEntries(): SearchEntry[] {
-  const primary = primaryNavigation.map((item) => ({
-    title: `CONTROL Resonant ${item.label}`,
-    description: primaryDescriptions[item.href],
-    href: item.href,
-    type: "Hub",
-  }));
+  const primary = primaryNavigation
+    .filter((item) => item.href !== "/game-info")
+    .map((item) => ({
+      title: `CONTROL Resonant ${item.label}`,
+      description: primaryDescriptions[item.href],
+      href: item.href,
+      type: "Hub",
+    }));
 
   const database = databaseNavigation.map((item) => ({
     title: `CONTROL Resonant ${item.label}`,

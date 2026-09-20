@@ -1,6 +1,8 @@
 import fs from "node:fs";
 
-const base = process.argv[2] ?? "http://localhost:3001";
+const base = process.argv[2] ?? process.env.SITE_URL;
+if (!base)
+  throw new Error("Pass the running URL or set SITE_URL before auditing.");
 const xml = await (await fetch(`${base}/sitemap.xml`)).text();
 const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (m) => new URL(m[1]),

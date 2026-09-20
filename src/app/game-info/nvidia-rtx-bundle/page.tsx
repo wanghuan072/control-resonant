@@ -5,7 +5,9 @@ import { createMetadata } from "@/seo/metadata";
 import { buyingFacts, displayDate } from "@/config/buying";
 import styles from "@/style/page/game-info/game-info-article.module.css";
 
-const topic = gameInfoTopics[0];
+const topic = gameInfoTopics.find(
+  (item) => item.href === "/game-info/nvidia-rtx-bundle",
+)!;
 export const metadata = createMetadata({
   ...topic,
   path: topic.href,
@@ -113,9 +115,9 @@ export default function NvidiaBundlePage() {
           The bundle is useful only if you were already buying eligible
           hardware. It is not a discount on every edition and does not include
           the Digital Deluxe extras by default. Compare those extras in the
-          <Link href="/game-info#editions"> editions guide</Link>, and check
-          whether your PC meets the game&apos;s
-          <Link href="/game-info#pc-requirements">
+          <Link href="/game-info/release-date#editions"> editions guide</Link>,
+          and check whether your PC meets the game&apos;s
+          <Link href="/game-info/system-requirements">
             {" "}
             published performance tiers
           </Link>

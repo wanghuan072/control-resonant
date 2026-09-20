@@ -2,6 +2,8 @@ import fs from "node:fs";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.argv[2] ?? "playwright");
+const base = process.env.SITE_URL;
+if (!base) throw new Error("Set SITE_URL to the running development URL.");
 const browser = await chromium.launch({
   headless: true,
   ...(process.argv[3]
@@ -15,12 +17,15 @@ const page = await browser.newPage({
 fs.mkdirSync(".next/design-review", { recursive: true });
 for (const [route, name] of [
   ["/", "home"],
-  ["/guides/control-resonant-talents-and-progression-guide", "article"],
+  ["/guides/combat-builds", "article"],
   ["/guides", "guides"],
-  ["/game-info", "game-info"],
+  ["/game-info/release-date", "release-date"],
+  ["/game-info/system-requirements", "system-requirements"],
   ["/wiki", "wiki"],
+  ["/map", "map"],
+  ["/tools", "tools"],
 ]) {
-  await page.goto("http://localhost:3001" + route, {
+  await page.goto(base + route, {
     waitUntil: "networkidle",
   });
   await page.evaluate(async () => {
@@ -51,12 +56,15 @@ for (const [route, name] of [
 await page.setViewportSize({ width: 390, height: 844 });
 for (const [route, name] of [
   ["/", "home"],
-  ["/guides/control-resonant-talents-and-progression-guide", "article"],
+  ["/guides/combat-builds", "article"],
   ["/guides", "guides"],
-  ["/game-info", "game-info"],
+  ["/game-info/release-date", "release-date"],
+  ["/game-info/system-requirements", "system-requirements"],
   ["/wiki", "wiki"],
+  ["/map", "map"],
+  ["/tools", "tools"],
 ]) {
-  await page.goto("http://localhost:3001" + route, {
+  await page.goto(base + route, {
     waitUntil: "networkidle",
   });
   await page.evaluate(async () => {
@@ -91,10 +99,13 @@ for (const width of [320, 768, 1024]) {
     "/",
     "/guides",
     "/wiki",
-    "/game-info",
-    "/guides/control-resonant-talents-and-progression-guide",
+    "/game-info/release-date",
+    "/game-info/system-requirements",
+    "/guides/combat-builds",
+    "/map",
+    "/tools",
   ]) {
-    await page.goto("http://localhost:3001" + route, {
+    await page.goto(base + route, {
       waitUntil: "networkidle",
     });
     const clipped = await page.evaluate(() => ({

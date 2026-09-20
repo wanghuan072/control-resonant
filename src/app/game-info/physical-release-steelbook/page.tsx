@@ -5,7 +5,9 @@ import { createMetadata } from "@/seo/metadata";
 import { buyingFacts, displayDate } from "@/config/buying";
 import styles from "@/style/page/game-info/game-info-article.module.css";
 
-const topic = gameInfoTopics[1];
+const topic = gameInfoTopics.find(
+  (item) => item.href === "/game-info/physical-release-steelbook",
+)!;
 export const metadata = createMetadata({
   ...topic,
   path: topic.href,
@@ -102,9 +104,11 @@ export default function PhysicalReleasePage() {
         <p>
           For digital pre-order bonuses and a complete edition comparison, use
           the{" "}
-          <Link href="/game-info#editions">editions and pre-order guide</Link>.
-          For regional unlock-time caveats, see the{" "}
-          <Link href="/game-info#release-date">release schedule</Link>.
+          <Link href="/game-info/release-date#editions">
+            editions and pre-order guide
+          </Link>
+          . For regional unlock-time caveats, see the{" "}
+          <Link href="/game-info/release-date">release schedule</Link>.
         </p>
       </section>
     </GameInfoArticle>

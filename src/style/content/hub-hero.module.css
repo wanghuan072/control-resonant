@@ -1,19 +1,23 @@
 .hero {
+  position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--color-line);
-  background: #11181e;
+  background:
+    linear-gradient(90deg, #ffffff08 1px, transparent 1px) 0 0 / 84px 100%,
+    linear-gradient(180deg, #111a20 0%, #0b1116 100%);
   color: #f4f5f5;
 }
 .shell {
-  padding-top: 19px;
+  position: relative;
+  padding-top: 18px;
 }
 .inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 38%);
+  grid-template-columns: minmax(0, 1.14fr) minmax(310px, 0.86fr);
   align-items: stretch;
-  gap: clamp(28px, 4vw, 68px);
-  min-height: 350px;
-  padding-top: 22px;
+  gap: clamp(32px, 4.7vw, 76px);
+  min-height: 390px;
+  padding-top: 17px;
 }
 .copy {
   display: flex;
@@ -21,41 +25,68 @@
   align-items: flex-start;
   justify-content: center;
   min-width: 0;
-  padding: 25px 0 42px;
+  padding: 38px 0 52px;
 }
 .eyebrow {
-  margin: 0 0 17px;
-  padding-left: 12px;
-  border-left: 3px solid var(--color-red);
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #ffffff26;
   color: #e44749;
   font:
     700 10px ui-monospace,
     monospace;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 .copy h1 {
-  max-width: 880px;
+  display: block;
+  max-width: 920px;
   margin: 0;
   color: #fff;
-  font: 400 clamp(42px, 5.3vw, 76px)/0.93 var(--font-display);
-  letter-spacing: -0.055em;
-  text-transform: uppercase;
   text-wrap: balance;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
-.copy h1 small {
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 12px;
+  color: var(--color-red);
+  font: 700 clamp(12px, 1.1vw, 15px)/1 var(--font-heading);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.brand::after {
+  width: 48px;
+  height: 1px;
+  background: var(--color-red);
+  content: "";
+}
+.topic {
   display: block;
-  margin-bottom: 9px;
-  color: #aeb9be;
-  font:
-    700 11px/1.3 ui-monospace,
-    monospace;
-  letter-spacing: 0.18em;
+  font: 400 clamp(46px, 5.1vw, 76px)/0.91 var(--font-display);
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+.qualifier {
+  display: block;
+  max-width: 760px;
+  margin-top: 12px;
+  color: #bcc6ca;
+  font: 600 clamp(21px, 2.3vw, 31px)/1.08 var(--font-heading);
+  letter-spacing: -0.015em;
+  text-transform: none;
+}
+.qualifier b {
+  margin-right: 7px;
+  color: var(--color-red);
+  font: inherit;
 }
 .description {
-  max-width: 630px;
-  margin: 19px 0 0;
+  max-width: 680px;
+  margin: 23px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--color-red);
   color: #c5cfd3;
   font-size: clamp(14px, 1.3vw, 16px);
   line-height: 1.6;
@@ -66,9 +97,9 @@
   align-items: center;
   gap: 12px 24px;
   width: 100%;
-  margin-top: 24px;
-  padding-top: 13px;
-  border-top: 1px solid #ffffff36;
+  margin-top: 27px;
+  padding-top: 15px;
+  border-top: 1px solid #ffffff24;
 }
 .meta,
 .action {
@@ -97,22 +128,34 @@
 }
 .visual {
   position: relative;
-  min-height: 100%;
-  margin: 0;
+  min-height: 350px;
+  margin: 24px 0 0;
+  border-top: 2px solid var(--color-red);
+  border-inline: 1px solid #ffffff1f;
   background: #25323a;
+  clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
 }
 .visual::before {
   content: "";
   position: absolute;
   inset: 0 auto 0 -1px;
   z-index: 1;
-  width: 46px;
-  background: linear-gradient(90deg, #11181e, transparent);
+  width: 34px;
+  background: linear-gradient(90deg, #0b1116, transparent);
   pointer-events: none;
 }
 .visual img {
   object-fit: cover;
   object-position: center;
+}
+.visual::after {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  height: 35%;
+  background: linear-gradient(transparent, rgb(7 12 16 / 78%));
+  content: "";
+  pointer-events: none;
 }
 .visual figcaption {
   position: absolute;
@@ -129,10 +172,19 @@
 }
 .noImage {
   grid-template-columns: 1fr;
-  min-height: 250px;
+  min-height: 300px;
 }
 .noImage .copy {
-  max-width: 920px;
+  max-width: 1060px;
+}
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 38%);
+    min-height: 350px;
+  }
+  .topic {
+    font-size: clamp(40px, 5.6vw, 60px);
+  }
 }
 @media (max-width: 768px) {
   .shell {
@@ -147,12 +199,18 @@
   .copy {
     padding: 20px 0 29px;
   }
-  .copy h1 {
-    font-size: clamp(35px, 10vw, 56px);
+  .topic {
+    font-size: clamp(38px, 10vw, 52px);
+  }
+  .qualifier {
+    font-size: clamp(20px, 6vw, 27px);
   }
   .visual {
-    min-height: 165px;
+    min-height: 205px;
     margin-inline: calc((100vw - 100%) / -2);
+    margin-top: 0;
+    border-inline: 0;
+    clip-path: none;
   }
   .visual::before,
   .visual figcaption {

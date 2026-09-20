@@ -8,7 +8,9 @@ const arg = (name, fallback) => {
   const index = args.indexOf(name);
   return index < 0 ? fallback : args[index + 1];
 };
-const base = arg("--base", "http://localhost:3001");
+const base = arg("--base", process.env.SITE_URL);
+if (!base)
+  throw new Error("Pass --base <running-url> or set SITE_URL before auditing.");
 const playwright = require(arg("--playwright", "playwright"));
 const output = path.resolve(".next/seo-audit");
 fs.mkdirSync(output, { recursive: true });
@@ -59,10 +61,11 @@ try {
     JSON.parse(fs.readFileSync(path.resolve("src/data/guides", file), "utf8")),
   );
   const expectedOrigin = urls[0]?.origin;
-  const redirectedPaths = [
+  const retiredPaths = [
     ...legacyGuides.map((guide) => `/guides/${guide.slug}`),
+    "/game-info",
     "/database",
-    "/map",
+    "/locations",
     "/tracker",
     "/builds",
     "/walkthrough",
@@ -81,23 +84,18 @@ try {
     "/enemies",
     "/missions",
   ];
-  for (const route of redirectedPaths)
+  for (const route of retiredPaths)
     check(
       !paths.includes(route),
-      `${route}: redirect must not appear in sitemap`,
+      `${route}: retired route must not appear in sitemap`,
     );
-  for (const guide of legacyGuides) {
-    const response = await context.request.get(base + `/guides/${guide.slug}`, {
+  for (const route of retiredPaths) {
+    const response = await context.request.get(base + route, {
       maxRedirects: 0,
     });
     check(
-      response.status() === 308,
-      `${guide.slug}: expected permanent redirect`,
-    );
-    const target = response.headers().location?.split("#")[0];
-    check(
-      target === "/game-info" || publishedGuides.includes(target),
-      `${guide.slug}: redirect target must be a consolidated page`,
+      response.status() === 404,
+      `${route}: retired route must return 404, received ${response.status()}`,
     );
   }
 
@@ -262,12 +260,7 @@ try {
     for (const href of document.links) {
       if (!href?.startsWith("/") && !href?.startsWith("#")) continue;
       const url = new URL(href, base + route);
-      check(
-        url.pathname !== "/map",
-        route + ": link promises a map that is not published",
-      );
-      if (url.pathname === "/search" || redirectedPaths.includes(url.pathname))
-        continue;
+      if (url.pathname === "/search") continue;
       const target = docs.get(url.pathname);
       check(
         Boolean(target),
@@ -279,40 +272,6 @@ try {
           route + ": missing target anchor " + href,
         );
     }
-  }
-
-  for (const [source, destination] of [
-    ["/database", "/wiki"],
-    ["/map", "/locations"],
-    ["/tracker", "/wiki"],
-    ["/builds", "/guides/combat-builds"],
-    ["/walkthrough", "/guides/story-walkthrough"],
-    ["/sources", "/legal/about-us"],
-    ["/about", "/legal/about-us"],
-    ["/contact", "/legal/contact-us"],
-    ["/privacy-policy", "/legal/privacy-policy"],
-    ["/terms", "/legal/terms-of-service"],
-    ["/characters", "/wiki/characters"],
-    ["/lore", "/wiki/world"],
-    ["/abilities", "/wiki/combat"],
-    ["/aberrant-forms", "/wiki/combat"],
-    ["/talents", "/wiki/combat"],
-    ["/artifacts", "/wiki/combat"],
-    ["/items", "/wiki/combat"],
-    ["/enemies", "/wiki/enemies"],
-    ["/missions", "/wiki/missions"],
-  ]) {
-    const response = await context.request.get(base + source, {
-      maxRedirects: 0,
-    });
-    check(
-      [307, 308].includes(response.status()),
-      `${source}: expected permanent redirect`,
-    );
-    check(
-      response.headers().location?.endsWith(destination),
-      `${source}: redirect destination`,
-    );
   }
 
   const search = await context.request.get(base + "/search?q=Reach");
@@ -333,22 +292,29 @@ try {
       .isVisible(),
     "Home is in the main navigation",
   );
-  check(
-    await page
-      .getByRole("navigation", { name: "Primary navigation" })
-      .getByRole("link", { name: "Locations", exact: true })
-      .isVisible(),
-    "Locations is in the main navigation",
-  );
   await page
     .getByRole("navigation", { name: "Primary navigation" })
-    .getByRole("link", { name: "Locations", exact: true })
-    .click();
-  await page.waitForURL("**/locations");
+    .getByRole("button", { name: /Game Info/ })
+    .hover();
   check(
-    new URL(page.url()).pathname === "/locations",
-    "Locations navigation keeps its own URL",
+    (await page
+      .getByRole("navigation", { name: "Primary navigation" })
+      .locator('a[href="/game-info/release-date"]')
+      .count()) === 1 &&
+      (await page
+        .getByRole("navigation", { name: "Primary navigation" })
+        .locator('a[href="/game-info/system-requirements"]')
+        .count()) === 1,
+    "Game Info dropdown exposes release date and system requirements",
   );
+  for (const name of ["Map", "Tools"])
+    check(
+      await page
+        .getByRole("navigation", { name: "Primary navigation" })
+        .getByRole("link", { name, exact: true })
+        .isVisible(),
+      `${name} is in the main navigation`,
+    );
   await page.goto(base + "/", { waitUntil: "networkidle" });
   check(
     (await page
@@ -400,13 +366,62 @@ try {
     (await page.getByRole("timer").textContent())?.includes("--") === false,
     "Countdown hydrates into a current value",
   );
-  await page.getByRole("link", { name: "Release and platforms" }).click();
-  await page.waitForURL("**/game-info#release-date");
   check(
     await page
-      .getByRole("heading", { name: "When can you play CONTROL Resonant?" })
+      .getByRole("heading", { name: "Is CONTROL Resonant Control 2?" })
+      .isVisible(),
+    "Homepage answers whether Resonant is the sequel",
+  );
+  await page.getByRole("link", { name: "Release and platforms" }).click();
+  await page.waitForURL("**/game-info/release-date");
+  check(
+    await page
+      .getByRole("heading", {
+        name: "CONTROL Resonant Release Date",
+        exact: true,
+      })
       .isVisible(),
     "Homepage release entry reaches the direct answer",
+  );
+  check(
+    (await page
+      .getByRole("region", { name: "CONTROL Resonant platform release dates" })
+      .getByRole("row")
+      .count()) === 6 &&
+      (await page
+        .getByRole("heading", { name: "Release date FAQ" })
+        .isVisible()),
+    "Release page includes the five-platform schedule",
+  );
+  check(
+    (await page
+      .getByRole("region", { name: "CONTROL Resonant edition comparison" })
+      .getByRole("row")
+      .count()) === 5 && (await page.locator("#edition-picker").count()) === 0,
+    "Release page includes four editions without a duplicate selector",
+  );
+  await page.goto(base + "/game-info/system-requirements", {
+    waitUntil: "networkidle",
+  });
+  check(
+    (await page
+      .getByRole("region", {
+        name: "CONTROL Resonant minimum and recommended system requirements",
+      })
+      .getByRole("row")
+      .count()) === 8 &&
+      (await page.getByText("120 GB available / SSD required").count()) === 2,
+    "System requirements page includes complete minimum and recommended rows",
+  );
+  check(
+    (await page
+      .getByRole("link", { name: /Open the system checker/ })
+      .count()) === 1 &&
+      (await page
+        .getByRole("region", { name: "CONTROL Resonant Assist Mode settings" })
+        .getByRole("row")
+        .count()) === 6,
+    "System requirements links the checker and includes Assist Mode controls",
   );
   await page.goto(base + "/updates", { waitUntil: "networkidle" });
   check(
@@ -420,6 +435,12 @@ try {
   );
   await page.goto(base + "/game-info/trailers", { waitUntil: "networkidle" });
   check((await page.locator("iframe").count()) === 0, "Video loads on demand");
+  check(
+    (await page.locator("#trailer-music li").count()) === 3 &&
+      (await page.locator("#VwOJuJRCLGk").count()) === 1 &&
+      (await page.locator("#NvncU_SQO5Y").count()) === 1,
+    "Trailer music identifies three videos and their corresponding songs",
+  );
   await page
     .getByRole("button", { name: "Play CONTROL Resonant – Launch Trailer" })
     .click();
@@ -439,10 +460,19 @@ try {
       await page.getByRole("link", { name: label }).isVisible(),
       `Bosses link missing: ${label}`,
     );
-  await page.goto(base + "/locations", { waitUntil: "networkidle" });
+  await page.goto(base + "/map", { waitUntil: "networkidle" });
   check(
-    await page.getByRole("link", { name: "World Wiki" }).isVisible(),
-    "Locations sends setting questions to World Wiki",
+    (await page.locator("#confirmed-locations").count()) === 1 &&
+      (await page.getByText("There is no verified full map yet").count()) === 1,
+    "Map clearly states its pre-release boundary and lists confirmed locations",
+  );
+  await page.goto(base + "/tools", { waitUntil: "networkidle" });
+  check(
+    (await page.locator("#system-checker").count()) === 1 &&
+      (await page
+        .getByRole("region", { name: "PC component comparison" })
+        .count()) === 1,
+    "Tools exposes one complete PC hardware checker",
   );
 
   await page.goto(base + "/guides", { waitUntil: "networkidle" });
@@ -501,7 +531,7 @@ try {
   check(
     await page
       .getByRole("region", { name: "What actually changes a build?" })
-      .getByText("Aberrant Forms")
+      .getByText("Flurry")
       .isVisible(),
     "Combat list includes differentiated system comparison",
   );
@@ -525,7 +555,8 @@ try {
     ["/wiki", "wiki"],
     ["/wiki/combat", "wiki-combat"],
     ["/wiki/combat/aberrant-forms", "wiki-detail"],
-    ["/game-info", "game-info"],
+    ["/game-info/release-date", "release-date"],
+    ["/game-info/system-requirements", "system-requirements"],
     ["/guides/combat-builds", "article"],
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
@@ -553,9 +584,14 @@ try {
       route + ": broken images " + dimensions.broken.join(", "),
     );
     if (
-      ["home", "guides", "wiki-combat", "wiki-detail", "game-info"].includes(
-        name,
-      )
+      [
+        "home",
+        "guides",
+        "wiki-combat",
+        "wiki-detail",
+        "release-date",
+        "system-requirements",
+      ].includes(name)
     )
       await page.screenshot({
         path: path.join(output, name + "-desktop.png"),
@@ -570,7 +606,8 @@ try {
     ["/wiki", "wiki"],
     ["/wiki/combat", "wiki-combat"],
     ["/wiki/combat/aberrant-forms", "wiki-detail"],
-    ["/game-info", "game-info"],
+    ["/game-info/release-date", "release-date"],
+    ["/game-info/system-requirements", "system-requirements"],
     ["/guides/combat-builds", "article"],
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
@@ -595,7 +632,15 @@ try {
       route + ": mobile horizontal overflow " + dimensions.scroll,
     );
     check(!dimensions.broken, route + ": mobile image load");
-    if (["home", "wiki-combat", "wiki-detail", "game-info"].includes(name))
+    if (
+      [
+        "home",
+        "wiki-combat",
+        "wiki-detail",
+        "release-date",
+        "system-requirements",
+      ].includes(name)
+    )
       await page.screenshot({
         path: path.join(output, name + "-mobile.png"),
         fullPage: true,

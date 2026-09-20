@@ -7,6 +7,15 @@ import { siteConfig } from "@/config/site";
 import { gameInfoTopics } from "@/config/game-info-topics";
 import styles from "@/style/page/game-info/game-info-article.module.css";
 
+const heroTitles: Record<string, string> = {
+  "/game-info/nvidia-rtx-bundle":
+    "CONTROL Resonant RTX 50 Bundle — Eligibility and Redemption",
+  "/game-info/physical-release-steelbook":
+    "CONTROL Resonant Physical Release — SteelBook Edition",
+  "/game-info/trailers":
+    "CONTROL Resonant Trailers — Gameplay Videos and Music",
+};
+
 type Topic = (typeof gameInfoTopics)[number];
 
 export default function GameInfoArticle({
@@ -41,20 +50,20 @@ export default function GameInfoArticle({
           },
           breadcrumbSchema([
             { name: "Home", href: "/" },
-            { name: "Game Info", href: "/game-info" },
+            { name: "Release Date", href: "/game-info/release-date" },
             { name: topic.title, href: topic.href },
           ]),
         ]}
       />
       <HubHero
         eyebrow="Game info / useful details"
-        title={topic.title.replace(/^CONTROL Resonant /, "")}
+        title={heroTitles[topic.href] ?? topic.title}
         description={lead}
         image={image}
         imageAlt={`${topic.title} artwork`}
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Game Info", href: "/game-info" },
+          { label: "Release Date", href: "/game-info/release-date" },
           { label: topic.title },
         ]}
         meta={
@@ -68,8 +77,11 @@ export default function GameInfoArticle({
         <aside className={styles.aside} aria-label="Related game information">
           <span>Continue the briefing</span>
           <h2>Related game information</h2>
-          <Link href="/game-info">
-            Game Info overview <ArrowRight size={16} />
+          <Link href="/game-info/release-date">
+            Release dates and editions <ArrowRight size={16} />
+          </Link>
+          <Link href="/game-info/system-requirements">
+            System requirements <ArrowRight size={16} />
           </Link>
           {gameInfoTopics
             .filter((item) => item.href !== topic.href)
@@ -79,7 +91,7 @@ export default function GameInfoArticle({
                 <ArrowRight size={16} />
               </Link>
             ))}
-          <Link href="/game-info#editions">
+          <Link href="/game-info/release-date#editions">
             Compare all editions <ArrowRight size={16} />
           </Link>
         </aside>
