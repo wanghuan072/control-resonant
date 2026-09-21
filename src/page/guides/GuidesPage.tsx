@@ -90,7 +90,7 @@ export default function GuidesPage() {
               <Link
                 href={pillar.href}
                 className={styles.imageLink}
-                aria-label={`Read ${pillar.title}`}
+                aria-label={`Read ${pillar.listingTitle}`}
               >
                 <Image
                   src={pillar.image}
@@ -109,7 +109,7 @@ export default function GuidesPage() {
                   </span>
                 </div>
                 <h2>
-                  <Link href={pillar.href}>{pillar.title}</Link>
+                  <Link href={pillar.href}>{pillar.listingTitle}</Link>
                 </h2>
                 <p className={styles.description}>{pillar.description}</p>
                 <div className={styles.chapters} aria-label="Topics covered">

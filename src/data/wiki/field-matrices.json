@@ -87,7 +87,7 @@
     "sourceIds": ["ps-combat", "ps-ngplus", "xbox-hands-on-june"],
     "verifiedAt": "2026-09-16",
     "appliesTo": "Official announcements and pre-release hands-on",
-    "title": "What actually changes a build?",
+    "title": "Which choices change how a build plays?",
     "intro": "Weapon Forms, powers, Talents and Artifacts are separate systems; a term describing a slot is not an item.",
     "columns": [
       "System",

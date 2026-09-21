@@ -290,7 +290,7 @@ export default function PlatformsPage() {
           <header className={styles.sectionHeader}>
             <div>
               <span>04 / Portable and cloud play</span>
-              <h2>Support does not equal a performance result</h2>
+              <h2>Steam Deck, GeForce NOW and Mac support</h2>
             </div>
             <p>
               A platform announcement tells you that a route exists. It does not

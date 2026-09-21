@@ -53,7 +53,7 @@ const editorial: Record<
     heroTitle: "CONTROL Resonant Combat & Skills — Shape Dylan's Build",
     heroDescription:
       "Compare Aberrant Forms, Combat Abilities, Talents and Artifacts by what they do in a fight. See which choices affect traversal and which belong in a combat loadout.",
-    question: "What belongs in a build?",
+    question: "Which systems make up a combat build?",
     answer:
       "The Aberrant supplies weapon Forms; Combat Abilities are earned through Resonants; Talents alter progression; Artifacts add passive effects. Reach and Shift are traversal tools, not boss-granted attack slots.",
     note: "A row can describe a system without claiming it is a separate equippable item. Exact retail numbers are not inferred from preview screenshots.",

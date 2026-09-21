@@ -11,7 +11,7 @@ export const gameInfoTopics = [
     title: "CONTROL Resonant Platforms, Game Pass & Steam Deck",
     description:
       "Compare launch platforms, Xbox Play Anywhere, Game Pass status, Steam Deck support, GeForce NOW, Mac and the current Nintendo Switch 2 status.",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-21",
   },
   {
     href: "/game-info/system-requirements",

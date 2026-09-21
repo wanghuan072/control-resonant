@@ -65,7 +65,7 @@ export default function ResearchHubPage({ id }: { id: string }) {
               aria-label={hub.table.caption}
             >
               <table>
-                <caption>{hub.table.caption}</caption>
+                <caption className="sr-only">{hub.table.caption}</caption>
                 <thead>
                   <tr>
                     {hub.table.headers.map((h) => (

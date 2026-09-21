@@ -22,7 +22,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Platforms, Game Pass & Steam Deck",
     description:
       "Compare CONTROL Resonant platforms, Xbox Play Anywhere, Game Pass status, Steam Deck support, GeForce NOW, Mac and Nintendo Switch 2 availability.",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-21",
   },
   "/gameplay": {
     title: "CONTROL Resonant Gameplay - Combat and Abilities",
@@ -34,7 +34,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Guides - Start, Build and Explore",
     description:
       "Choose four CONTROL Resonant guides covering your first hours, combat builds, story missions and optional activities, with clear paths to the details you need.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/wiki": {
     title: "CONTROL Resonant Wiki - Characters, Skills and Bosses",
@@ -52,7 +52,7 @@ export const pageTdk = {
     title: "CONTROL Resonant PC System Requirements Checker",
     description:
       "Select a common CPU, GPU, RAM, SSD and Windows version to compare your PC with official CONTROL Resonant minimum, recommended and 4K hardware targets.",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-21",
   },
   "/updates": {
     title: "CONTROL Resonant Updates - Release and Game News",
@@ -64,7 +64,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Bosses - Encounters and Abilities",
     description:
       "See the Central Resonant encounter and other named threats in CONTROL Resonant, including shown arena hazards and the Combat Ability choices tied to bosses.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/search": {
     title: "CONTROL Resonant Search - Find Guides and Wiki Pages",
@@ -82,7 +82,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Combat Wiki - Forms and Skills",
     description:
       "Compare CONTROL Resonant Aberrant Forms, Combat Abilities, Talents, Artifacts and movement powers to see what belongs in a build and how each option works.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/wiki/enemies": {
     title: "CONTROL Resonant Enemies Wiki - Hiss, Mold and Bosses",

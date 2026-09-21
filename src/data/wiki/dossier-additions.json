@@ -127,10 +127,11 @@
   "world/manhattan": {
     "sections": [
       {
-        "heading": "How the city is organized for players",
+        "heading": "How Zones change the planning problem",
         "paragraphs": [
-          "Resonant's Manhattan is described as a set of distinct, handcrafted zones, not an endlessly repeating open-world checklist. The FBC Field Office connects those areas as a hub. Within a zone, the published structure separates Dylan's Journey, self-contained World Quests, combat encounters, environmental challenges and discoveries.",
-          "That hierarchy is more useful than treating every preview image as a named map marker. Start with a zone and the activity type you are pursuing; then use the relevant mission or world file for context. No official full map, exact collectible coordinates or final count of activities has been released for this pre-launch index."
+          "Resonant's Manhattan is described as a set of distinct, handcrafted Zones rather than a seamless open world built around clearing a giant checklist. The evolving FBC Field Office connects those areas as a hub, while the Gap is a separate space for reviewing and testing Dylan's build.",
+          "The September platform briefing describes near-instant travel between Zones and the Gap, creating a return-and-adjust rhythm. Within each Zone, the published structure separates Dylan's Journey, self-contained World Quests, combat encounters, environmental challenges and discoveries.",
+          "That hierarchy is more useful than treating every preview image as a named map marker. Start with the Zone and activity type in front of you, then open the connected mission or world file. No complete map, exact collectible coordinates or final activity count has been published for this pre-launch guide."
         ],
         "connections": [
           {

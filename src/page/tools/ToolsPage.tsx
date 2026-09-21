@@ -17,7 +17,7 @@ export default function ToolsPage() {
       />
       <HubHero
         eyebrow="PC tool / official targets and common hardware"
-        title="CONTROL Resonant PC Checker — Compare Your Hardware"
+        title="CONTROL Resonant System Requirements Checker — Compare Your PC"
         description="Select your CPU, GPU, memory, storage and Windows version to compare each component with the published CONTROL Resonant PC targets."
         image="/images/guides/pc-system-requirements.jpg"
         imageAlt="PC hardware used to check CONTROL Resonant system requirements"

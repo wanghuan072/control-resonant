@@ -6,6 +6,7 @@ export type GuidePillar = {
   updatedAt: string;
   number: string;
   title: string;
+  listingTitle: string;
   shortTitle: string;
   eyebrow: string;
   description: string;
