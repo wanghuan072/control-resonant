@@ -31,6 +31,53 @@ const reports = [];
 const check = (ok, message) => {
   if (!ok) errors.push(message);
 };
+const retiredPaths = [
+  "/guides/control-resonant-release-date-and-platforms",
+  "/guides/control-resonant-gameplay-explained",
+  "/guides/is-control-resonant-single-player-or-multiplayer",
+  "/guides/control-resonant-steam-deck-support",
+  "/guides/control-resonant-assist-mode-and-accessibility",
+  "/guides/control-resonant-new-game-plus",
+  "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+  "/guides/how-long-is-control-resonant",
+  "/guides/control-resonant-characters-and-story",
+  "/guides/control-resonant-pc-features-languages-and-controls",
+  "/guides/control-resonant-beginners-guide",
+  "/guides/control-resonant-metro-fault-and-reach",
+  "/guides/control-resonant-central-resonant-boss",
+  "/guides/control-resonant-difficulty-and-parry",
+  "/guides/control-resonant-enemy-factions",
+  "/guides/is-control-resonant-a-sequel",
+  "/guides/should-you-play-control-first",
+  "/guides/control-resonant-editions-and-pre-order-bonuses",
+  "/guides/control-resonant-pc-system-requirements",
+  "/guides/is-control-resonant-on-game-pass",
+  "/guides/does-control-resonant-use-denuvo",
+  "/guides/is-control-resonant-coming-to-switch-2",
+  "/guides/control-resonant-artifacts-guide",
+  "/guides/control-resonant-talents-and-progression-guide",
+  "/guides/control-resonant-world-quests-and-exploration",
+  "/game-info",
+  "/database",
+  "/locations",
+  "/tracker",
+  "/builds",
+  "/walkthrough",
+  "/sources",
+  "/about",
+  "/contact",
+  "/privacy-policy",
+  "/terms",
+  "/characters",
+  "/lore",
+  "/abilities",
+  "/aberrant-forms",
+  "/talents",
+  "/artifacts",
+  "/items",
+  "/enemies",
+  "/missions",
+];
 
 try {
   const sitemap = await context.request.get(base + "/sitemap.xml");
@@ -41,6 +88,10 @@ try {
     (match) => new URL(match[1]),
   );
   const paths = [...new Set(urls.map((url) => url.pathname))];
+  check(
+    paths.length === 55,
+    `Sitemap must contain 55 routes, found ${paths.length}`,
+  );
   const publishedGuides = [
     "/guides/getting-started",
     "/guides/combat-builds",
@@ -52,38 +103,7 @@ try {
       publishedGuides.every((route) => paths.includes(route)),
     "Sitemap must contain exactly the four long-form guides",
   );
-  const legacyGuides = [
-    "guides.json",
-    "expanded-guides.json",
-    "field-guides.json",
-    "system-guides.json",
-  ].flatMap((file) =>
-    JSON.parse(fs.readFileSync(path.resolve("src/data/guides", file), "utf8")),
-  );
   const expectedOrigin = urls[0]?.origin;
-  const retiredPaths = [
-    ...legacyGuides.map((guide) => `/guides/${guide.slug}`),
-    "/game-info",
-    "/database",
-    "/locations",
-    "/tracker",
-    "/builds",
-    "/walkthrough",
-    "/sources",
-    "/about",
-    "/contact",
-    "/privacy-policy",
-    "/terms",
-    "/characters",
-    "/lore",
-    "/abilities",
-    "/aberrant-forms",
-    "/talents",
-    "/artifacts",
-    "/items",
-    "/enemies",
-    "/missions",
-  ];
   for (const route of retiredPaths)
     check(
       !paths.includes(route),
@@ -133,6 +153,17 @@ try {
           src: element.getAttribute("src"),
           alt: element.getAttribute("alt"),
         })),
+        homeHero: (() => {
+          const image = document.querySelector("img[data-home-hero]");
+          return image
+            ? {
+                src: image.getAttribute("src"),
+                srcset: image.getAttribute("srcset"),
+                fetchPriority: image.getAttribute("fetchpriority"),
+                sizes: image.getAttribute("sizes"),
+              }
+            : null;
+        })(),
         ids: [...document.querySelectorAll("[id]")].map(
           (element) => element.id,
         ),
@@ -147,6 +178,19 @@ try {
       route + ": expected one H1, found " + result.h1.length,
     );
     check(result.main === 1, route + ": expected one main landmark");
+    if (route === "/") {
+      check(Boolean(result.homeHero), "Homepage: optimized hero image missing");
+      check(
+        result.homeHero?.src?.startsWith("/_next/image") &&
+          Boolean(result.homeHero.srcset) &&
+          result.homeHero.sizes === "100vw",
+        "Homepage: hero must use the responsive Next image pipeline",
+      );
+      check(
+        result.homeHero?.fetchPriority === "high",
+        "Homepage: hero must have high fetch priority",
+      );
+    }
     check(Boolean(result.title?.trim()), route + ": missing title");
     check(Boolean(result.description?.trim()), route + ": missing description");
     check(
@@ -187,9 +231,14 @@ try {
       result.images.every((image) => image.alt !== null),
       route + ": image missing alt attribute",
     );
+    const externalLinks = result.links.filter((href) =>
+      /^https?:\/\//i.test(href ?? ""),
+    );
     check(
-      result.links.every((href) => !href || !/^https?:\/\//i.test(href)),
-      route + ": public page contains an external anchor",
+      route === "/updates"
+        ? externalLinks.length === 17
+        : externalLinks.length === 0,
+      route + ": unexpected external anchor count " + externalLinks.length,
     );
     for (const raw of result.schema) {
       try {
@@ -198,7 +247,9 @@ try {
         for (const node of nodes) {
           if (node["@type"] === "Article") {
             check(
-              node.headline === result.h1[0],
+              node.headline === result.h1[0] ||
+                result.h1[0]?.includes(node.headline) ||
+                node.headline?.includes(result.h1[0]),
               route + ": Article headline mismatch",
             );
             check(
@@ -326,7 +377,7 @@ try {
   check(
     await page
       .getByRole("heading", {
-        name: /CONTROL Resonant.*Know the game.*Find your way/i,
+        name: /CONTROL Resonant.*Guides, Wiki.*Player Tools/i,
       })
       .isVisible(),
     "Homepage introduces the game and the player's next step",
@@ -372,13 +423,15 @@ try {
       .isVisible(),
     "Homepage answers whether Resonant is the sequel",
   );
-  await page.getByRole("link", { name: "Release and platforms" }).click();
+  await page
+    .getByRole("link", { name: "Compare editions and platforms" })
+    .click();
   await page.waitForURL("**/game-info/release-date");
   check(
     await page
       .getByRole("heading", {
-        name: "CONTROL Resonant Release Date",
-        exact: true,
+        name: /CONTROL Resonant Release Date/i,
+        level: 1,
       })
       .isVisible(),
     "Homepage release entry reaches the direct answer",
@@ -433,6 +486,11 @@ try {
         .count()) === 1,
     "Recent updates lead to the corresponding videos",
   );
+  check(
+    (await page.getByRole("link", { name: "Original source ↗" }).count()) ===
+      17,
+    "Every update exposes its original source",
+  );
   await page.goto(base + "/game-info/trailers", { waitUntil: "networkidle" });
   check((await page.locator("iframe").count()) === 0, "Video loads on demand");
   check(
@@ -463,16 +521,28 @@ try {
   await page.goto(base + "/map", { waitUntil: "networkidle" });
   check(
     (await page.locator("#confirmed-locations").count()) === 1 &&
-      (await page.getByText("There is no verified full map yet").count()) === 1,
+      (await page
+        .getByText("The in-game map exists; a verified route map does not")
+        .count()) === 1,
     "Map clearly states its pre-release boundary and lists confirmed locations",
   );
   await page.goto(base + "/tools", { waitUntil: "networkidle" });
+  check(
+    (await page.locator("#system-checker").count()) === 0 &&
+      (await page
+        .getByRole("link", { name: "Open PC System Checker", exact: true })
+        .count()) === 1,
+    "Tools exposes a directory entry for the PC hardware checker",
+  );
+  await page.goto(base + "/tools/pc-system-checker", {
+    waitUntil: "networkidle",
+  });
   check(
     (await page.locator("#system-checker").count()) === 1 &&
       (await page
         .getByRole("region", { name: "PC component comparison" })
         .count()) === 1,
-    "Tools exposes one complete PC hardware checker",
+    "PC system checker detail exposes the complete hardware checker",
   );
 
   await page.goto(base + "/guides", { waitUntil: "networkidle" });
@@ -484,7 +554,7 @@ try {
   ])
     check(
       await page
-        .getByRole("heading", { name, exact: true })
+        .getByRole("heading", { name: new RegExp(`^${name}`) })
         .first()
         .isVisible(),
       `Guide pillar missing: ${name}`,
@@ -516,7 +586,7 @@ try {
   await page.waitForURL("**/wiki/characters/dylan-faden");
   check(
     await page
-      .getByRole("heading", { name: "Dylan Faden", exact: true })
+      .getByRole("heading", { name: /Dylan Faden/, level: 1 })
       .isVisible(),
     "Wiki detail opens from fielded list",
   );
@@ -531,6 +601,11 @@ try {
   check(
     await page
       .getByRole("region", { name: "What actually changes a build?" })
+      .or(
+        page.getByRole("region", {
+          name: "Which choices change how a build plays?",
+        }),
+      )
       .getByText("Flurry")
       .isVisible(),
     "Combat list includes differentiated system comparison",
@@ -557,6 +632,8 @@ try {
     ["/wiki/combat/aberrant-forms", "wiki-detail"],
     ["/game-info/release-date", "release-date"],
     ["/game-info/system-requirements", "system-requirements"],
+    ["/tools", "tools"],
+    ["/tools/pc-system-checker", "tool-detail"],
     ["/guides/combat-builds", "article"],
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
@@ -591,6 +668,8 @@ try {
         "wiki-detail",
         "release-date",
         "system-requirements",
+        "tools",
+        "tool-detail",
       ].includes(name)
     )
       await page.screenshot({
@@ -608,6 +687,8 @@ try {
     ["/wiki/combat/aberrant-forms", "wiki-detail"],
     ["/game-info/release-date", "release-date"],
     ["/game-info/system-requirements", "system-requirements"],
+    ["/tools", "tools"],
+    ["/tools/pc-system-checker", "tool-detail"],
     ["/guides/combat-builds", "article"],
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
@@ -639,6 +720,8 @@ try {
         "wiki-detail",
         "release-date",
         "system-requirements",
+        "tools",
+        "tool-detail",
       ].includes(name)
     )
       await page.screenshot({

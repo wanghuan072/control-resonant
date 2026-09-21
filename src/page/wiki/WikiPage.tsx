@@ -65,11 +65,11 @@ export default function WikiPage() {
             Which place or Zone am I looking at? <ArrowRight size={16} />
           </Link>
           <Link href="/map#confirmed-locations">
-            Which locations are confirmed before launch?{" "}
+            How do Zones, vertical routes and movement gates connect?{" "}
             <ArrowRight size={16} />
           </Link>
           <Link href="/wiki/missions">
-            Is this a story mission, World Quest or Fault?{" "}
+            Is this a campaign lead, Jesse Quest, World Quest or Fault?{" "}
             <ArrowRight size={16} />
           </Link>
         </nav>

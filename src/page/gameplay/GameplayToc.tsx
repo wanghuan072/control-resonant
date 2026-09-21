@@ -3,39 +3,13 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { gameplayTocGroups, type GameplayTocItem } from "@/config/gameplay";
 import styles from "@/style/page/gameplay/gameplay.module.css";
 
-type TocItem = { id: string; label: string };
-type TocGroup = { label: string; items: readonly TocItem[] };
-
-const groups: readonly TocGroup[] = [
-  {
-    label: "Start here",
-    items: [
-      { id: "dylan", label: "Play as Dylan" },
-      { id: "combat-loop", label: "Combat loop" },
-    ],
-  },
-  {
-    label: "Build systems",
-    items: [
-      { id: "forms", label: "Aberrant Forms" },
-      { id: "abilities", label: "Combat Abilities" },
-      { id: "progression", label: "Talents & Artifacts" },
-    ],
-  },
-  {
-    label: "Fight and explore",
-    items: [
-      { id: "boss-encounters", label: "Boss encounters" },
-      { id: "combat-problems", label: "Combat problems" },
-      { id: "traversal", label: "Traversal" },
-      { id: "assist-mode", label: "Assist Mode" },
-    ],
-  },
-];
-
-const items = groups.flatMap((group) => group.items);
+const items = gameplayTocGroups.reduce<GameplayTocItem[]>(
+  (all, group) => [...all, ...group.items],
+  [],
+);
 
 export function GameplayToc() {
   const [active, setActive] = useState(items[0].id);
@@ -82,7 +56,7 @@ export function GameplayToc() {
           <span style={{ width: `${((index + 1) / items.length) * 100}%` }} />
         </div>
         <nav aria-label="Gameplay sections">
-          {groups.map((group) => (
+          {gameplayTocGroups.map((group) => (
             <div className={styles.tocGroup} key={group.label}>
               <span>{group.label}</span>
               {group.items.map((item) => (

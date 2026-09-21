@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { guideDestination } from "@/lib/data/guide-destinations";
 import { HubHero } from "@/components/content/HubHero";
 import updates from "@/data/updates/timeline.json";
 import { JsonLd } from "@/seo/JsonLd";
@@ -103,10 +102,11 @@ export default function UpdatesPage() {
                 </h3>
                 <p>{u.text}</p>
                 <div>
-                  {u.guideSlug && (
-                    <Link href={guideDestination(u.guideSlug)}>
-                      Updated guide →
-                    </Link>
+                  <a href={u.href} target="_blank" rel="noreferrer">
+                    Original source ↗
+                  </a>
+                  {u.guideHref && (
+                    <Link href={u.guideHref}>Updated guide →</Link>
                   )}
                   {"detailPath" in u && u.detailPath && (
                     <Link href={u.detailPath}>

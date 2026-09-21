@@ -1,66 +1,78 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MonitorCog } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
-import { HardwareChecker } from "@/page/tools/HardwareChecker";
+import { tools } from "@/config/tools";
 import { JsonLd } from "@/seo/JsonLd";
-import { breadcrumbSchema } from "@/seo/schema";
+import { collectionSchema } from "@/seo/schema";
 import styles from "@/style/page/tools/tools.module.css";
 
 export default function ToolsPage() {
   return (
     <>
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", href: "/" },
-          { name: "PC System Checker", href: "/tools" },
-        ])}
+        data={collectionSchema(
+          "CONTROL Resonant player tools",
+          "/tools",
+          tools.map((tool) => ({ name: tool.title, href: tool.href })),
+        )}
       />
       <HubHero
-        eyebrow="PC tool / official targets and common hardware"
-        title="CONTROL Resonant System Requirements Checker — Compare Your PC"
-        description="Select your CPU, GPU, memory, storage and Windows version to compare each component with the published CONTROL Resonant PC targets."
+        eyebrow="Player utilities / practical answers"
+        title="CONTROL Resonant Tools — Check Your Setup"
+        description="Open practical player utilities for CONTROL Resonant. Start with the PC system requirements checker, with every tool kept in its own focused workspace."
         image="/images/guides/pc-system-requirements.jpg"
-        imageAlt="PC hardware used to check CONTROL Resonant system requirements"
+        imageAlt="Published CONTROL Resonant PC requirements chart"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Tools" }]}
-        action={<a href="#system-checker">Check your PC ↓</a>}
+        action={<a href="#tool-list">Browse the tools ↓</a>}
       />
-      <div className={`container ${styles.page}`}>
-        <section className={styles.intro}>
+
+      <div className={`container ${styles.directory}`} id="tool-list">
+        <header className={styles.directoryHeader}>
           <div>
-            <span>What the result means</span>
-            <h2>Compare every component with the published PC target</h2>
+            <span>Tool directory / choose a task</span>
+            <h2>Player tools built around a specific question</h2>
           </div>
           <p>
-            The checker treats exact CPUs and GPUs from the official
-            requirements differently from unlisted models. Common hardware
-            receives a conservative comparison band, while memory, SSD space and
-            Windows support are checked directly.
+            Each utility has a dedicated page, so you can bookmark the answer
+            you need and return without working through an unrelated guide.
           </p>
-        </section>
-        <HardwareChecker />
-        <section
-          className={styles.explanation}
-          aria-labelledby="checker-boundaries"
-        >
-          <div>
-            <span>Read the result correctly</span>
-            <h2 id="checker-boundaries">
-              Official match, estimated class and unknown
-            </h2>
-          </div>
-          <div>
-            <p>
-              An exact match means the selected model appears in the published
-              requirements. An estimated class compares an unlisted mainstream
-              model conservatively. Unknown means the available data cannot
-              support a useful conclusion.
-            </p>
-            <Link href="/game-info/system-requirements">
-              Read the full PC requirements and PS5 modes{" "}
-              <ArrowRight size={15} />
-            </Link>
-          </div>
-        </section>
+        </header>
+
+        <div className={styles.toolList}>
+          {tools.map((tool, index) => (
+            <article className={styles.toolCard} key={tool.id}>
+              <Link
+                className={styles.toolImage}
+                href={tool.href}
+                aria-label={`Open ${tool.title}`}
+              >
+                <Image
+                  src={tool.image}
+                  alt={tool.imageAlt}
+                  fill
+                  priority={index === 0}
+                  sizes="(max-width: 768px) 100vw, 420px"
+                />
+              </Link>
+              <div className={styles.toolCopy}>
+                <div className={styles.toolMeta}>
+                  <span>
+                    <MonitorCog size={15} aria-hidden="true" /> PC utility
+                  </span>
+                  <span>{tool.status}</span>
+                </div>
+                <h2>
+                  <Link href={tool.href}>{tool.listingTitle}</Link>
+                </h2>
+                <p>{tool.description}</p>
+                <Link className={styles.toolAction} href={tool.href}>
+                  Open PC System Checker <ArrowRight size={16} />
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </>
   );

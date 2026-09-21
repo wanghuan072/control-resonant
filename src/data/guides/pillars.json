@@ -1,7 +1,7 @@
 [
   {
     "id": "getting-started",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "number": "01",
     "title": "Getting Started",
     "listingTitle": "Getting Started — Learn the First-Hour Priorities",
@@ -17,15 +17,6 @@
       "Accessibility",
       "First-hour priorities"
     ],
-    "slugs": [
-      "control-resonant-beginners-guide",
-      "should-you-play-control-first",
-      "is-control-resonant-a-sequel",
-      "control-resonant-characters-and-story",
-      "control-resonant-gameplay-explained",
-      "control-resonant-assist-mode-and-accessibility",
-      "is-control-resonant-single-player-or-multiplayer"
-    ],
     "seo": {
       "title": "CONTROL Resonant Getting Started Guide | Story & First Steps",
       "description": "Start CONTROL Resonant with a spoiler-aware guide to Dylan's story, earlier games, core gameplay, accessibility settings and first-hour priorities."
@@ -33,7 +24,7 @@
   },
   {
     "id": "combat-builds",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "number": "02",
     "title": "Combat & Builds",
     "listingTitle": "Combat & Builds — Fix the Fight in Front of You",
@@ -49,14 +40,6 @@
       "Talents",
       "Artifacts & NG+"
     ],
-    "slugs": [
-      "control-resonant-combat-abilities-and-aberrant-forms",
-      "control-resonant-difficulty-and-parry",
-      "control-resonant-talents-and-progression-guide",
-      "control-resonant-artifacts-guide",
-      "control-resonant-new-game-plus",
-      "control-resonant-enemy-factions"
-    ],
     "seo": {
       "title": "CONTROL Resonant Combat & Builds Guide | Forms and Abilities",
       "description": "Plan CONTROL Resonant builds with Aberrant Forms, Combat Abilities, Talents, Artifacts, parry mechanics and New Game Plus progression choices."
@@ -64,27 +47,21 @@
   },
   {
     "id": "story-walkthrough",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "number": "03",
     "title": "Story & Missions",
     "listingTitle": "Story & Missions — Follow the Right Objective",
     "shortTitle": "Follow the signal",
     "eyebrow": "Known missions / spoiler-aware",
-    "description": "Tell the main story from a World Quest or Fault, and follow the named locations and encounters shown so far.",
-    "intro": "Not sure whether an objective belongs to Dylan's Journey, a World Quest or a Fault? Start with the activity type, then use the Metro Fault and Central Resonant sections when those names appear in your game.",
+    "description": "Separate Dylan's Journey, Jesse Quests, World Quests, Faults and Zone activities, then decide what to follow now and what can wait.",
+    "intro": "Not sure whether an objective advances the campaign, unlocks movement or opens an optional story? Identify the activity type first, then use the known location and encounter files without turning review footage into a fictional mission order.",
     "image": "/images/gameplay/warped-transit.jpg",
     "href": "/guides/story-walkthrough",
     "highlights": [
       "Dylan's Journey",
-      "World Quests",
-      "Fault routes",
-      "Exploration"
-    ],
-    "slugs": [
-      "control-resonant-metro-fault-and-reach",
-      "control-resonant-world-quests-and-exploration",
-      "how-long-is-control-resonant",
-      "control-resonant-central-resonant-boss"
+      "Jesse Quests",
+      "World Quests & Faults",
+      "Zone activities"
     ],
     "seo": {
       "title": "CONTROL Resonant Story & Missions | Known Routes",
@@ -93,24 +70,17 @@
   },
   {
     "id": "completion",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "number": "04",
     "title": "Completion Planning",
     "listingTitle": "Completion Planning — Track Optional Routes and NG+",
     "shortTitle": "Close every case",
     "eyebrow": "Completion field index",
     "description": "Keep optional quests, discoveries, boss choices and New Game+ in view without losing the main story.",
-    "intro": "Want to see more than the main ending? Work out which activities are optional, which movement gates may be worth revisiting and what carries into New Game+. Exact collectible totals and missable routes need a finished-game check.",
+    "intro": "Want to see more than the main ending? Separate story progress from optional Resonants, World Quests, discoveries and New Game+. Reviews confirm that Manhattan remains explorable after the ending, but exact collectible totals and missable conditions still need a reproducible finished-game check.",
     "image": "/images/map/manhattan-overlook.jpg",
     "href": "/guides/completion",
     "highlights": ["Boss files", "Locations", "Case items", "New Game+"],
-    "slugs": [
-      "control-resonant-central-resonant-boss",
-      "control-resonant-world-quests-and-exploration",
-      "control-resonant-artifacts-guide",
-      "control-resonant-new-game-plus",
-      "control-resonant-enemy-factions"
-    ],
     "seo": {
       "title": "CONTROL Resonant Completion Planning | Bosses & NG+",
       "description": "Plan CONTROL Resonant optional quests, boss choices, Artifacts and New Game Plus while keeping track of routes and abilities you may want to revisit."

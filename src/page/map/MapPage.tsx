@@ -12,7 +12,8 @@ const places = [
     purpose:
       "Handcrafted areas for story progress, World Quests and encounters.",
     connection: "FBC field office; Zone progression",
-    boundary: "No complete Zone map or connection graph is public yet.",
+    boundary:
+      "A flat overview cannot show every vertical route, gravity change or ability gate.",
     href: "/wiki/world/manhattan",
   },
   {
@@ -71,9 +72,9 @@ export default function MapPage() {
         )}
       />
       <HubHero
-        eyebrow="Pre-release map status / confirmed locations"
-        title="CONTROL Resonant Map — What Is Known Before Launch"
-        description="The complete in-game map is not available yet. Use the confirmed location index now; interactive Zones, routes and markers will be added after the released game can be checked."
+        eyebrow="Map status / locations and navigation"
+        title="CONTROL Resonant Map — Zones, Routes and Movement Gates"
+        description="The game includes a map, but its vertical streets, interiors and gravity-shifted spaces need more than a flat image. Use the location index now; tested routes and markers will follow after public release."
         image="/images/map/manhattan-overlook.jpg"
         imageAlt="Warped Manhattan shown in CONTROL Resonant promotional imagery"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Map" }]}
@@ -83,21 +84,84 @@ export default function MapPage() {
         <section className={styles.status} aria-labelledby="map-status-title">
           <div>
             <CalendarClock aria-hidden="true" />
-            <span>Current status / September 20, 2026</span>
-            <h2 id="map-status-title">There is no verified full map yet</h2>
+            <span>Current status / September 21, 2026</span>
+            <h2 id="map-status-title">
+              The in-game map exists; a verified route map does not
+            </h2>
           </div>
           <div>
             <p>
-              CONTROL Resonant launches digitally on September 24, 2026. The
-              published material names places and demonstrates traversal, but it
-              does not expose the final Zone boundaries, entrances, fast travel
-              points, boss markers or collectible coordinates.
+              Full-game coverage confirms a top-down in-game map and large,
+              focused Manhattan Zones. Reviewers also repeatedly report that
+              elevation, gravity changes and layered interiors can make that map
+              difficult to read. A screenshot of it would not yet be a reliable
+              route guide.
             </p>
             <p>
-              A promotional street image is not a usable map. Until the release
-              build can be inspected, this page separates confirmed place names
-              from the details that still need to be mapped.
+              CONTROL Resonant launches publicly on September 24, 2026. Until a
+              public build can be reproduced, this page separates confirmed
+              place names and movement logic from entrances, fast-travel points,
+              boss markers and collectible coordinates that still need testing.
             </p>
+          </div>
+        </section>
+
+        <section
+          className={styles.placeIndex}
+          aria-labelledby="navigation-title"
+        >
+          <header>
+            <span>How to read the space</span>
+            <h2 id="navigation-title">
+              Why the map may not show the route you need
+            </h2>
+            <p>
+              Before assuming a marker is wrong, identify the layer and the
+              movement rule blocking the path.
+            </p>
+          </header>
+          <div
+            className={styles.tableWrap}
+            role="region"
+            aria-label="CONTROL Resonant navigation problem guide"
+            tabIndex={0}
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>What you see</th>
+                  <th>What may be happening</th>
+                  <th>What to check next</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>A nearby marker with no direct street</th>
+                  <td>The route may pass through a roof, tunnel or interior</td>
+                  <td>
+                    Follow the active objective and look for a different
+                    elevation
+                  </td>
+                </tr>
+                <tr>
+                  <th>A visible ledge that Dylan cannot reach</th>
+                  <td>
+                    The path may be gated by Reach, Shift or another movement
+                    unlock
+                  </td>
+                  <td>Record the Zone and return after a traversal quest</td>
+                </tr>
+                <tr>
+                  <th>Roads or rooms turned onto another plane</th>
+                  <td>
+                    Gravity orientation changes which surface is the floor
+                  </td>
+                  <td>
+                    Read the geometry before following the flat-map direction
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 

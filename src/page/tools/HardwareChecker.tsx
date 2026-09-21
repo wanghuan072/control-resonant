@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { buyingFacts } from "@/config/buying";
 import {
   cpuCatalog,
@@ -151,7 +152,13 @@ export function HardwareChecker() {
           state.os === "other"
             ? "Not in the PC requirement"
             : "Meets requirement",
-        note: "A later Mac release is separate from these Windows requirements.",
+        note: (
+          <>
+            A later{" "}
+            <Link href="/game-info/platforms#portable-play">Mac release</Link>{" "}
+            is separate from these Windows requirements.
+          </>
+        ),
       },
     ];
 

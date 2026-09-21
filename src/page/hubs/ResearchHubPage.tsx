@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { HubHero } from "@/components/content/HubHero";
-import { guideDestination } from "@/lib/data/guide-destinations";
 import { getGuidePillars } from "@/lib/data/pillars";
 import hubData from "@/data/site/hubs.json";
 import { JsonLd } from "@/seo/JsonLd";
@@ -9,11 +8,7 @@ import styles from "@/style/page/hubs/research-hub.module.css";
 
 export default function ResearchHubPage({ id }: { id: string }) {
   const hub = hubData.find((h) => h.id === id)!;
-  const guideLinks = [
-    ...new Set(
-      hub.guideSlugs.map((slug) => guideDestination(slug).split("#")[0]),
-    ),
-  ];
+  const guideLinks = [...new Set(hub.guideHrefs)];
   const guideTitle = (href: string) =>
     getGuidePillars().find((pillar) => pillar.href === href)?.title ?? "Guide";
   return (
@@ -105,13 +100,7 @@ export default function ResearchHubPage({ id }: { id: string }) {
                     <article key={c.title}>
                       <h3>{c.title}</h3>
                       <p>{c.text}</p>
-                      <Link
-                        href={
-                          c.href.startsWith("/guides/")
-                            ? guideDestination(c.href.split("/").at(-1)!)
-                            : c.href
-                        }
-                      >
+                      <Link href={c.href}>
                         {"linkLabel" in c
                           ? c.linkLabel
                           : "Read the connected guide"}{" "}
@@ -162,15 +151,7 @@ export default function ResearchHubPage({ id }: { id: string }) {
           <ul>
             {hub.quickLinks.map((l) => (
               <li key={l.href}>
-                <Link
-                  href={
-                    l.href.startsWith("/guides/")
-                      ? guideDestination(l.href.split("/").at(-1)!)
-                      : l.href
-                  }
-                >
-                  {l.name} ↗
-                </Link>
+                <Link href={l.href}>{l.name} ↗</Link>
               </li>
             ))}
           </ul>

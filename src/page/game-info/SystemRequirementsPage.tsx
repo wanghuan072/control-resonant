@@ -50,7 +50,7 @@ export default function SystemRequirementsPage() {
             "@type": "WebPage",
             name: "CONTROL Resonant System Requirements",
             url: "https://controlresonant.org/game-info/system-requirements",
-            dateModified: "2026-09-20",
+            dateModified: "2026-09-21",
             about: { "@type": "VideoGame", name: "CONTROL Resonant" },
           },
           {
@@ -201,7 +201,7 @@ export default function SystemRequirementsPage() {
               then explains which parts can be matched and which remain unknown.
             </p>
           </div>
-          <Link href="/tools#system-checker">
+          <Link href="/tools/pc-system-checker#system-checker">
             Open the system checker <ArrowRight size={16} />
           </Link>
         </section>
@@ -265,12 +265,62 @@ export default function SystemRequirementsPage() {
 
         <section
           className={styles.section}
+          aria-labelledby="review-performance-title"
+        >
+          <header className={styles.sectionHeading}>
+            <div>
+              <span>06 / Review-build reality check</span>
+              <h2 id="review-performance-title">
+                What published PC testing adds to the official chart
+              </h2>
+            </div>
+            <p>
+              Independent launch-window testing broadly supports the need for
+              upscaling at demanding settings. It does not turn one review rig
+              into a frame-rate promise for your PC.
+            </p>
+          </header>
+          <div className={styles.featureGrid}>
+            <article>
+              <strong>Official targets remain the baseline</strong>
+              <p>
+                Minimum and Recommended already assume Quality or Balanced
+                upscaling with ray tracing disabled. Compare your parts with
+                those rows before looking at Ultra or path-traced results.
+              </p>
+            </article>
+            <article>
+              <strong>High-end features carry a real cost</strong>
+              <p>
+                Review coverage reports that ray tracing, path tracing and the
+                highest presets can require aggressive upscaling or frame
+                generation even on powerful GPUs. Treat those as optional image
+                features, not the expected default.
+              </p>
+            </article>
+            <article>
+              <strong>Use matching test conditions</strong>
+              <p>
+                Resolution, preset, upscaler mode, frame generation, driver, CPU
+                and game build all affect a benchmark. A GPU name without those
+                conditions is not enough to predict performance.
+              </p>
+            </article>
+          </div>
+          <p className={styles.tableNote}>
+            The checker compares hardware classes with published targets; it
+            intentionally does not estimate FPS from third-party review charts.
+          </p>
+        </section>
+
+        <section
+          className={styles.section}
           id="console-modes"
           aria-labelledby="console-title"
         >
           <header className={styles.sectionHeading}>
             <div>
-              <span>06 / Console targets</span>
+              <span>07 / Console targets</span>
               <h2 id="console-title">PS5 and PS5 Pro graphics modes</h2>
             </div>
             <p>
@@ -321,7 +371,7 @@ export default function SystemRequirementsPage() {
         >
           <header className={styles.sectionHeading}>
             <div>
-              <span>07 / Limits of the chart</span>
+              <span>08 / Limits of the chart</span>
               <h2 id="compatibility-title">
                 What PC requirements cannot confirm
               </h2>
@@ -367,7 +417,7 @@ export default function SystemRequirementsPage() {
         <section className={styles.section} aria-labelledby="assist-title">
           <header className={styles.sectionHeading}>
             <div>
-              <span>08 / Accessibility and difficulty</span>
+              <span>09 / Accessibility and difficulty</span>
               <h2 id="assist-title">Assist Mode controls that change combat</h2>
             </div>
             <p>
@@ -429,7 +479,7 @@ export default function SystemRequirementsPage() {
         <section className={styles.section} aria-labelledby="language-title">
           <header className={styles.sectionHeading}>
             <div>
-              <span>09 / Language support</span>
+              <span>10 / Language support</span>
               <h2 id="language-title">Audio and interface languages</h2>
             </div>
           </header>

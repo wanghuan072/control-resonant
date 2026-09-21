@@ -14,7 +14,7 @@ The site is organized around the questions players actually ask: when and where 
 - [Guides](https://controlresonant.org/guides) — four focused paths: getting started, combat and builds, story and missions, and completion planning.
 - [Wiki](https://controlresonant.org/wiki) — connected entries for characters, combat systems, enemies, locations and activities.
 - [Map](https://controlresonant.org/map) — the current map status, confirmed Manhattan locations and data that still needs release-build verification.
-- [Tools](https://controlresonant.org/tools) — a PC system checker and edition selector built around player inputs and published requirements.
+- [Tools](https://controlresonant.org/tools) — a directory of focused player utilities, currently including the PC system requirements checker.
 - [Updates](https://controlresonant.org/updates) — changes to release details, features and other information relevant to players.
 
 ## What the guides cover

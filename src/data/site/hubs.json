@@ -2,31 +2,36 @@
   {
     "id": "walkthrough",
     "title": "CONTROL Resonant walkthrough",
-    "description": "Start with the published Metro Fault route preview, then explore how Dylan's Journey and World Quests fit together. Retail mission-by-mission coverage is not yet verified.",
+    "description": "Understand how Dylan's Journey, Jesse Quests, World Quests, Faults and Zone activities differ, then follow the route that matches the objective in front of you.",
     "image": "/images/gameplay/warped-transit.jpg",
     "imageAlt": "Trains suspended along impossible directions in an official CONTROL Resonant screenshot",
-    "eyebrow": "Mission archive / pre-release",
-    "introTitle": "Choose the route you need",
-    "intro": "A useful walkthrough separates demonstrated preview content from completed launch routes. The guide index below contains the published mission evidence and the systems that affect navigation.",
-    "guideSlugs": [
-      "control-resonant-metro-fault-and-reach",
-      "control-resonant-world-quests-and-exploration",
-      "control-resonant-central-resonant-boss",
-      "control-resonant-beginners-guide"
-    ],
+    "eyebrow": "Mission archive / spoiler-aware",
+    "introTitle": "Identify the objective before choosing a route",
+    "intro": "The full game mixes campaign priorities, optional stories, traversal rewards and short Zone activities. This hub explains those layers and links only to routes whose steps can be supported without inventing a complete mission order.",
+    "guideHrefs": ["/guides/story-walkthrough", "/guides/getting-started"],
     "table": {
-      "caption": "Current walkthrough coverage",
+      "caption": "Mission and activity structure",
       "headers": ["Route or quest type", "What is documented", "Coverage"],
       "rows": [
         [
           "Metro Fault",
           "Underground hazards, Mold and the Reach reward",
-          "IGN First preview"
+          "Named Fault route and traversal reward"
         ],
         [
           "Dylan's Journey",
           "The main narrative campaign",
-          "Official quest structure"
+          "Optional quest structure"
+        ],
+        [
+          "Jesse Quests",
+          "Optional routes that award traversal powers",
+          "Useful before revisiting blocked paths"
+        ],
+        [
+          "Zone activities",
+          "Bounties, challenges, puzzles and discoveries",
+          "Short-form progression and practice"
         ],
         [
           "World Quests",
@@ -35,8 +40,8 @@
         ],
         [
           "Full campaign mission order",
-          "Not yet verified from the retail game",
-          "Not published here"
+          "No reproducible full route has been completed by this site",
+          "Not presented as a complete walkthrough"
         ]
       ]
     },
@@ -47,26 +52,31 @@
         "cards": [
           {
             "title": "Dylan's Journey",
-            "text": "The central campaign follows Dylan through Manhattan's crisis. A final mission list, chapter count and recommended-level route are not established by the official quest-category name.",
-            "href": "/guides/control-resonant-world-quests-and-exploration#dylans-journey"
+            "text": "The campaign lets Dylan prioritize more than one active lead. Follow the objective that advances the system or Zone you need instead of assuming every visible marker is mandatory.",
+            "href": "/guides/story-walkthrough#quest-types"
           },
           {
             "title": "World Quests",
             "text": "Optional stories give Manhattan's inhabitants and strange events their own context. They should not be confused with every collectible or combat activity on the map.",
-            "href": "/guides/control-resonant-world-quests-and-exploration#world-quests"
+            "href": "/guides/story-walkthrough#quest-types"
+          },
+          {
+            "title": "Jesse Quests",
+            "text": "These optional quests award traversal powers such as the double jump and air dash described in full-game coverage, making them especially useful before returning to blocked routes.",
+            "href": "/wiki/missions"
           },
           {
             "title": "Faults",
             "text": "IGN presents Metro Fault as one of the dungeon-like Faults, associated with a traversal reward. The preview is indexed separately from a retail step-by-step completion.",
-            "href": "/guides/control-resonant-metro-fault-and-reach"
+            "href": "/guides/story-walkthrough#metro-fault"
           }
         ]
       },
       {
         "id": "route-reading",
-        "title": "How to use a preview route",
+        "title": "How to use a route without losing the main objective",
         "paragraphs": [
-          "Check the evidence label before following a guide. Preview demonstrations may start with upgrades that a new save does not have. Reward names and route observations can be useful without proving every prerequisite or collectible location."
+          "Read the activity name, Zone and reward type before following a route. Full-game coverage confirms that side missions can unlock movement or build options, while short arcade-style challenges are better treated as practice and progression than campaign chapters."
         ],
         "bullets": [
           "Use named landmarks instead of invented map coordinates.",
@@ -76,8 +86,15 @@
         ]
       }
     ],
-    "sourceIds": ["metro", "ps-combat", "hands-on"],
-    "note": "This site has not independently completed the retail campaign. Exact mission triggers, collectible routes and final reward screens require launch verification.",
+    "sourceIds": [
+      "metro",
+      "ps-combat",
+      "hands-on",
+      "ps-full-game-hands-on",
+      "pcgamer-review",
+      "techradar-review"
+    ],
+    "note": "The game is available to reviewers, but this site has not independently reproduced a complete campaign route. Exact triggers, coordinates and missable conditions remain excluded until they can be checked directly.",
     "quickLinks": [
       {
         "name": "Manhattan location index",
@@ -85,7 +102,7 @@
       },
       {
         "name": "Reach preview",
-        "href": "/guides/control-resonant-metro-fault-and-reach"
+        "href": "/guides/story-walkthrough#metro-fault"
       },
       {
         "name": "Boss encounters",
@@ -101,12 +118,11 @@
     "imageAlt": "Dylan facing a fiery Resonant in official CONTROL Resonant promotional media",
     "eyebrow": "Boss fights and ability choices",
     "introTitle": "Boss previews and preparation",
-    "intro": "The Central Resonant is already named in IGN's exclusive coverage. Other official images show major entities without providing a complete canonical roster.",
-    "guideSlugs": [
-      "control-resonant-central-resonant-boss",
-      "control-resonant-enemy-factions",
-      "control-resonant-difficulty-and-parry",
-      "control-resonant-assist-mode-and-accessibility"
+    "intro": "Resonants are optional major encounters as well as sources of Combat Ability choices. Full-game coverage supports a prepare, attempt, explore and return approach; this page does not pretend every shown entity already has a verified name or drop table.",
+    "guideHrefs": [
+      "/guides/story-walkthrough",
+      "/guides/combat-builds",
+      "/guides/getting-started"
     ],
     "table": {
       "caption": "Published encounter evidence",
@@ -151,7 +167,7 @@
           {
             "title": "A changing world",
             "text": "The August developer interview describes harder encounters as Resonants fall. A defeated boss affects more than the immediate arena.",
-            "href": "/guides/control-resonant-talents-and-progression-guide#zone-xp",
+            "href": "/guides/combat-builds#talents",
             "linkLabel": "Read about Zone progression"
           },
           {
@@ -164,13 +180,14 @@
       },
       {
         "id": "strategy",
-        "title": "Read an encounter, not an invented tier list",
+        "title": "Prepare for the arena, the Falter window and the next attempt",
         "paragraphs": [
-          "A useful strategy needs to state the game version, loadout, settings, telegraphs and reward evidence. An elemental-looking boss does not prove a particular elemental weakness."
+          "A useful strategy needs to state the game version, loadout, settings, telegraphs and reward evidence. Reviews consistently recommend leaving an optional Resonant, improving the build and returning when a fight becomes a damage or survival wall."
         ],
         "bullets": [
           "Learn what changes the safe area of the arena.",
           "Distinguish a ranged attack from a persistent ground hazard.",
+          "Use Falter and executions to create health-recovery windows instead of trading indefinitely.",
           "Test one setup change at a time.",
           "Treat phase counts, timings and damage values as unverified until reproduced."
         ]
@@ -181,7 +198,10 @@
       "ps-combat",
       "ps-ngplus",
       "zones",
-      "pc-gaming-show-documentary"
+      "pc-gaming-show-documentary",
+      "ps-full-game-hands-on",
+      "pcgamer-review",
+      "techradar-review"
     ],
     "note": "Only named encounters shown so far appear here. Exact phases, weaknesses and rewards need to be checked in the released game.",
     "quickLinks": [
@@ -207,13 +227,8 @@
     "imageAlt": "Dylan wielding a large Aberrant weapon against fungal enemies",
     "eyebrow": "Build laboratory / systems guide",
     "introTitle": "Build guides by system",
-    "intro": "Start with the combat loop, then refine the pieces that support it. These guides explain confirmed systems and clearly identify preview-only details.",
-    "guideSlugs": [
-      "control-resonant-combat-abilities-and-aberrant-forms",
-      "control-resonant-talents-and-progression-guide",
-      "control-resonant-artifacts-guide",
-      "control-resonant-new-game-plus"
-    ],
+    "intro": "Start with the melee-to-Power loop, then diagnose the actual failure: closing distance, breaking Falter, recovering health, controlling a crowd or surviving a boss phase. Change the layer that answers that problem.",
+    "guideHrefs": ["/guides/combat-builds"],
     "table": {
       "caption": "The four connected build systems",
       "headers": ["System", "Role in a setup", "Example or distinction"],
@@ -247,11 +262,11 @@
           },
           {
             "title": "Abilities create openings",
-            "text": "Abilities can interrupt enemies and help set up executions."
+            "text": "Abilities can interrupt enemies, expose Falter windows and control threats the current Form cannot safely reach."
           },
           {
-            "title": "Executions reinforce melee",
-            "text": "An execution gives a temporary boost to melee damage, feeding the next attack sequence."
+            "title": "Executions restore the fight",
+            "text": "Breaking Falter enables an execution that restores health and grants a temporary melee boost; Dominance can turn a vulnerable enemy into a temporary ally."
           }
         ]
       },
@@ -272,7 +287,7 @@
           {
             "title": "Talent and respec decisions",
             "text": "Use the zone XP and Talent guide to understand progression. Respec All is visible in preview UI; final refund and cost rules remain distinct questions.",
-            "href": "/guides/control-resonant-talents-and-progression-guide"
+            "href": "/guides/combat-builds#talents"
           }
         ]
       },
@@ -289,7 +304,14 @@
         ]
       }
     ],
-    "sourceIds": ["ps-combat", "ps-ngplus", "zones"],
+    "sourceIds": [
+      "ps-combat",
+      "ps-ngplus",
+      "zones",
+      "ps-full-game-hands-on",
+      "pcgamer-review",
+      "techradar-review"
+    ],
     "note": "There is no tested best-build tier list here yet. No DPS figures, boss clear times or final numerical rankings are invented.",
     "quickLinks": [
       {

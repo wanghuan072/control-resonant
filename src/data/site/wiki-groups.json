@@ -25,7 +25,7 @@
     "id": "enemies",
     "number": "03",
     "title": "Enemies & Bosses",
-    "description": "Known hostile factions and previewed Resonant encounters, not a complete bestiary.",
+    "description": "Known hostile factions, enemy roles and Resonant encounters, without pretending the current index is a complete bestiary.",
     "image": "/images/enemies/hiss-encounter.jpg",
     "categoryIds": ["enemies"]
   },
@@ -33,7 +33,7 @@
     "id": "world",
     "number": "04",
     "title": "World & Locations",
-    "description": "Known Manhattan Zones, traversal spaces and places shown so far.",
+    "description": "Manhattan Zones, traversal spaces, hubs and the movement gates that connect player routes.",
     "image": "/images/map/manhattan-overlook.jpg",
     "categoryIds": ["locations", "lore"]
   },
@@ -41,7 +41,7 @@
     "id": "missions",
     "number": "05",
     "title": "Missions & Activities",
-    "description": "The main campaign, World Quests, Faults and the few named activities shown so far.",
+    "description": "Dylan's Journey, Jesse Quests, World Quests, Faults and shorter Zone activities, separated by what each one gives the player.",
     "image": "/images/gameplay/warped-transit.jpg",
     "categoryIds": ["missions"]
   }

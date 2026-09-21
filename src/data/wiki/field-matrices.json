@@ -1,10 +1,15 @@
 {
   "characters": {
-    "sourceIds": ["ps-combat", "xbox-hands-on-june", "cast"],
-    "verifiedAt": "2026-09-16",
-    "appliesTo": "Official announcements and pre-release hands-on",
+    "sourceIds": [
+      "ps-combat",
+      "xbox-hands-on-june",
+      "cast",
+      "ps-full-game-hands-on"
+    ],
+    "verifiedAt": "2026-09-21",
+    "appliesTo": "Official announcements and full-game coverage",
     "title": "Who connects Dylan to the crisis?",
-    "intro": "A relationship map is more useful before launch than an unverified cast-to-mission list.",
+    "intro": "Start with each character's role in Dylan's journey, then follow the relationship file when the story introduces them.",
     "columns": [
       "Person",
       "Known position",
@@ -34,14 +39,20 @@
         "Dr. Casper Darling",
         "Returning FBC scientist",
         "Part of Dylan's Bureau history",
-        "Seen in a previewed live-action segment"
+        "Appears through Remedy's live-action presentation"
       ]
     ]
   },
   "world": {
-    "sourceIds": ["ps-combat", "ps5-features", "xbox-hands-on-june"],
-    "verifiedAt": "2026-09-16",
-    "appliesTo": "Official announcements and pre-release hands-on",
+    "sourceIds": [
+      "ps-combat",
+      "ps5-features",
+      "xbox-hands-on-june",
+      "ps-full-game-hands-on",
+      "techradar-review"
+    ],
+    "verifiedAt": "2026-09-21",
+    "appliesTo": "Official announcements and full-game coverage",
     "title": "Which place serves which purpose?",
     "intro": "The city, Bureau hub, build space and returning headquarters have distinct roles in Dylan's story.",
     "columns": [
@@ -61,7 +72,7 @@
         "FBC field office",
         "Evolving central hub",
         "Bureau presence and travel between major Zones",
-        "Full floor plan not published"
+        "Use it as a hub, not as a substitute for each Zone's local map"
       ],
       [
         "The Gap",
@@ -84,9 +95,16 @@
     ]
   },
   "combat": {
-    "sourceIds": ["ps-combat", "ps-ngplus", "xbox-hands-on-june"],
-    "verifiedAt": "2026-09-16",
-    "appliesTo": "Official announcements and pre-release hands-on",
+    "sourceIds": [
+      "ps-combat",
+      "ps-ngplus",
+      "xbox-hands-on-june",
+      "ps-full-game-hands-on",
+      "pcgamer-review",
+      "techradar-review"
+    ],
+    "verifiedAt": "2026-09-21",
+    "appliesTo": "Official system descriptions and full-game coverage",
     "title": "Which choices change how a build plays?",
     "intro": "Weapon Forms, powers, Talents and Artifacts are separate systems; a term describing a slot is not an item.",
     "columns": [
@@ -151,6 +169,18 @@
         "A first-run choice may exclude another reward until NG+"
       ],
       [
+        "Falter and Execution",
+        "Pressure vulnerable enemies until an execution opens",
+        "Restore health and gain a temporary melee boost",
+        "Boss health checkpoints change how repeated attempts are paced"
+      ],
+      [
+        "Dominance",
+        "Use a vulnerable normal enemy instead of executing it",
+        "Convert the target into a temporary ally",
+        "Not every enemy or boss can be treated as a summon"
+      ],
+      [
         "Talents",
         "Progression trees",
         "Modify synergies and combat behavior",
@@ -171,9 +201,16 @@
     ]
   },
   "enemies": {
-    "sourceIds": ["ps-combat", "xbox-hands-on-june", "central"],
-    "verifiedAt": "2026-09-16",
-    "appliesTo": "Official announcements and pre-release hands-on",
+    "sourceIds": [
+      "ps-combat",
+      "xbox-hands-on-june",
+      "central",
+      "ps-full-game-hands-on",
+      "pcgamer-review",
+      "techradar-review"
+    ],
+    "verifiedAt": "2026-09-21",
+    "appliesTo": "Official descriptions and full-game coverage",
     "title": "Faction, summon or individual encounter?",
     "intro": "A hostile faction, a summoned ally and a named boss are not the same thing. Check the role before planning a fight.",
     "columns": ["Name", "Class", "Shown behavior or role", "Do not infer"],
@@ -198,24 +235,31 @@
       ],
       [
         "First Resonant Entity",
-        "Previewed individual encounter",
-        "Partial head and telekinetic debris",
+        "Early individual encounter",
+        "Porcelain-like face that weaponizes taxis and girders",
         "A confirmed final boss name"
       ],
       [
         "Central Resonant",
-        "Named preview encounter",
+        "Named encounter",
         "Fire and magma hazards",
         "Final damage values or drop table"
       ]
     ]
   },
   "missions": {
-    "sourceIds": ["ps-combat", "ps-ngplus", "metro"],
-    "verifiedAt": "2026-09-16",
-    "appliesTo": "Official announcements and pre-release preview",
+    "sourceIds": [
+      "ps-combat",
+      "ps-ngplus",
+      "metro",
+      "ps-full-game-hands-on",
+      "pcgamer-review",
+      "techradar-review"
+    ],
+    "verifiedAt": "2026-09-21",
+    "appliesTo": "Official mission structure and full-game coverage",
     "title": "Quest line or optional activity?",
-    "intro": "A mission category is not an individual quest. Only one specific Fault route has enough preview material for a file.",
+    "intro": "Campaign priorities, traversal quests, optional stories and short Zone activities solve different player needs. Identify the type before following a route.",
     "columns": ["Label", "Type", "Known player role", "Current coverage"],
     "rows": [
       [
@@ -223,6 +267,12 @@
         "Main narrative",
         "Follow the central story",
         "No verified chapter-by-chapter route"
+      ],
+      [
+        "Jesse Quests",
+        "Optional traversal progression",
+        "Unlock movement tools such as double jump and air dash",
+        "Useful before revisiting blocked routes"
       ],
       [
         "World Quests",
@@ -238,9 +288,15 @@
       ],
       [
         "Metro Fault",
-        "Named preview route",
+        "Named Fault route",
         "Transit hazards and Reach traversal",
-        "Previewed route, not a final collectible map"
+        "Known route, not a complete collectible map"
+      ],
+      [
+        "Arcade challenges",
+        "Short Zone activity",
+        "Practice combat and earn progression rewards",
+        "Not a story chapter or boss route"
       ]
     ]
   }

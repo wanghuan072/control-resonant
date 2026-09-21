@@ -112,8 +112,7 @@ function topicFromRecord(
   const detail = wikiDetails.find(
     (entry) =>
       entry.group === categoryGroup(categoryId) &&
-      (entry.slug === record.id ||
-        entry.title.toLowerCase() === record.name.toLowerCase()),
+      entry.slug === (record.detailSlug ?? record.id),
   );
   return {
     id: record.id,
@@ -137,26 +136,21 @@ export function categoryGroup(categoryId: string): WikiGroupId {
 export function getWikiTopics(groupId: WikiGroupId): WikiTopic[] {
   const group = getWikiGroup(groupId);
   if (!group) return [];
-  const topicsByName = new Map<string, WikiTopic>();
+  const topicsById = new Map<string, WikiTopic>();
   const records = getDatabaseCategories()
     .filter((category) => group.categoryIds.includes(category.id))
     .flatMap((category) =>
       category.items.map((record) => topicFromRecord(category.id, record)),
     );
   for (const topic of records) {
-    const key = topic.name.toLowerCase();
-    const previous = topicsByName.get(key);
-    const score = (value: WikiTopic) =>
-      value.facts.length * 10 +
-      (value.playerNote ? 5 : 0) +
-      value.description.length / 100;
-    if (!previous || score(topic) > score(previous))
-      topicsByName.set(key, topic);
+    topicsById.set(`${topic.category}/${topic.id}`, topic);
   }
   for (const detail of wikiDetails.filter((entry) => entry.group === groupId)) {
-    const key = detail.title.toLowerCase();
-    if (topicsByName.has(key)) continue;
-    topicsByName.set(key, {
+    const existing = records.some(
+      (topic) => topic.href === wikiDetailPath(detail),
+    );
+    if (existing) continue;
+    topicsById.set(`${detail.group}/${detail.slug}`, {
       id: detail.slug,
       name: detail.title,
       type: detail.type,
@@ -167,11 +161,5 @@ export function getWikiTopics(groupId: WikiGroupId): WikiTopic[] {
       href: wikiDetailPath(detail),
     });
   }
-  return [...topicsByName.values()];
+  return [...topicsById.values()];
 }
-
-export const legacyWikiGroup: Record<string, WikiGroupId> = Object.fromEntries(
-  groups.flatMap((group) =>
-    group.categoryIds.map((categoryId) => [categoryId, group.id]),
-  ),
-) as Record<string, WikiGroupId>;

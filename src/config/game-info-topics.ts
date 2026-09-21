@@ -18,7 +18,7 @@ export const gameInfoTopics = [
     title: "CONTROL Resonant System Requirements & PC Specs",
     description:
       "Compare final Minimum and Recommended PC specifications, rendering targets, storage, languages and PlayStation modes.",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-21",
   },
   {
     href: "/game-info/nvidia-rtx-bundle",

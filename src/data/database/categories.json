@@ -7,13 +7,13 @@
     "heroImage": "/images/abilities/elemental-power.jpg",
     "heroAlt": "Dylan using paranatural power during combat in Manhattan",
     "sectionTitle": "Ability records",
-    "sectionDescription": "Remedy and first-party hands-on material name multiple Combat Abilities and explain the Falter-to-execution loop. Preview values are not treated as final balance.",
+    "sectionDescription": "Remedy's system descriptions and full-game coverage explain Combat Abilities, Falter, executions and Dominance. Numerical balance still varies by build and difficulty.",
     "items": [
       {
         "name": "Barrage",
         "label": "Combat Ability · first-party hands-on",
         "description": "Pulls rocks from the ground and launches them at range. Xbox Wire saw it offered among three ability choices after an early Resonant Entity fight.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "barrage",
         "playerNote": "Use its ranged role as a contrast to close-quarters Aberrant attacks; the preview does not establish final damage or cooldown values.",
         "sourceIds": ["xbox-hands-on-june", "ps5-features"]
@@ -22,7 +22,7 @@
         "name": "Shield",
         "label": "Combat Ability · first-party hands-on",
         "description": "Raises floating rocks defensively and can turn them into an offensive ram during a dash. It appeared alongside Barrage and Seekers in an early boss-reward choice.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "shield",
         "playerNote": "This is an offensive-defensive option, not proof that every incoming attack can be blocked; test its limits in the final build.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -31,7 +31,7 @@
         "name": "Seekers (Summon)",
         "label": "Named Combat Ability",
         "description": "Summons a telekinetic entity. Remedy's loadout screenshot shows that a Seeker can be thrown or detonated and exposes its duration, health, power cost, and damage statistics.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "seekers-summon",
         "playerNote": "The preview names a summoned entity with throw and detonate actions. Learn what each action does before reading the on-screen preview values as permanent balance rules."
       },
@@ -39,29 +39,41 @@
         "name": "Mold Turrets",
         "label": "Named ability example",
         "description": "Deployable friendly Mold growths independently attack hostile targets and apply status effects while Dylan continues fighting elsewhere.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "mold-turrets",
         "playerNote": "A summon-oriented setup still needs space to operate. Compare this role with close-range abilities; no numerical best-build ranking has been tested here."
       },
       {
         "name": "Falter",
         "label": "Combat state",
-        "description": "Combat Abilities can build Falter and leave applicable enemies open to executions. Assist Mode includes a separate Outgoing Falter adjustment.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
-        "id": "falter"
+        "description": "Pressure lowers an enemy's Falter state and leaves applicable targets open to an execution or Dominance. Assist Mode includes a separate Outgoing Falter adjustment.",
+        "href": "/guides/combat-builds#aberrant-forms",
+        "id": "falter",
+        "playerNote": "Treat Falter as the setup for a decision: execute for health and momentum, or use Dominance when a temporary ally would reduce crowd pressure.",
+        "sourceIds": ["ps-full-game-hands-on"]
       },
       {
-        "name": "Execution boost",
+        "name": "Execution",
         "label": "Combat loop reward",
-        "description": "Executing a vulnerable enemy temporarily increases melee damage, feeding power back into the Aberrant-centered rhythm.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
-        "id": "execution-boost"
+        "description": "Executing a vulnerable enemy restores health and temporarily increases melee damage, feeding the next Aberrant-centered attack sequence.",
+        "href": "/guides/combat-builds#aberrant-forms",
+        "id": "execution",
+        "sourceIds": ["ps-full-game-hands-on"]
+      },
+      {
+        "name": "Dominance",
+        "label": "Vulnerable-enemy follow-up",
+        "description": "Turns an applicable vulnerable enemy into a temporary ally instead of immediately executing it.",
+        "href": "/gameplay#combat-loop",
+        "id": "dominance",
+        "playerNote": "Dominance is a crowd-control decision rather than a universal replacement for execution; bosses and special enemies may not be convertible.",
+        "sourceIds": ["ps-full-game-hands-on"]
       },
       {
         "name": "Elemental and status effects",
         "label": "Ability behavior",
         "description": "Official footage shows abilities with elemental and status-driven effects. Individual names are withheld where the interface has not identified them.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "elemental-and-status-effects"
       },
       {
@@ -75,7 +87,7 @@
         "name": "Reach",
         "label": "Traversal ability · IGN preview",
         "description": "A grappling-style movement unlock identified as the Metro Fault reward. It belongs to traversal progression, not the Combat Ability reward category.",
-        "href": "/guides/control-resonant-metro-fault-and-reach",
+        "href": "/guides/story-walkthrough#metro-fault",
         "id": "reach",
         "playerNote": "If your route involves a grappling-style traversal unlock, look for Reach rather than searching the Combat Ability loadout. The two systems solve different problems."
       }
@@ -84,12 +96,20 @@
       "A Resonant encounter rewards Dylan with that boss’s unique Combat Ability.",
       "Melee hits restore the resource spent on Combat Abilities.",
       "Abilities can build Falter and set up execution attacks.",
+      "Executions restore health and temporarily strengthen melee attacks.",
+      "Dominance can turn an applicable vulnerable enemy into a temporary ally.",
       "Some boss rewards present branching choices that support different builds.",
       "New Game Plus allows more than one ability from the same Resonant to be equipped."
     ],
-    "note": "Pre-release UI can still be balanced. Names are included only when visible in official material; exact launch values and unlock locations require final-game verification.",
-    "guideSlug": "control-resonant-combat-abilities-and-aberrant-forms",
-    "sourceIds": ["ps-combat", "metro", "xbox-hands-on-june", "ps5-features"],
+    "note": "Names are included only when identified in official material. Exact values, upgrade ranks and encounter-specific limits still need version-aware testing.",
+    "guideHref": "/guides/combat-builds#aberrant-forms",
+    "sourceIds": [
+      "ps-combat",
+      "metro",
+      "xbox-hands-on-june",
+      "ps5-features",
+      "ps-full-game-hands-on"
+    ],
     "seo": {
       "title": "CONTROL Resonant Abilities Wiki: Names & Roles",
       "description": "A player-focused record of the supernatural Combat Abilities Dylan earns from Resonants and how they connect to buildcrafting."
@@ -99,17 +119,17 @@
     "id": "aberrant-forms",
     "eyebrow": "Wiki / shapeshifting weapon",
     "title": "CONTROL Resonant Aberrant Forms",
-    "description": "The Aberrant is Dylan Faden’s shape-changing melee weapon. This index separates six named preview Forms, weapon-slot roles and final-game unknowns.",
+    "description": "The Aberrant is Dylan Faden’s shape-changing melee weapon. This index compares six named early Forms, weapon-slot roles and the combat problems each role can solve.",
     "heroImage": "/images/home/control-resonant-hero.jpg",
     "heroAlt": "Dylan Faden carrying a large transformed Aberrant weapon",
-    "sectionTitle": "Forms shown so far",
-    "sectionDescription": "Xbox Wire's first-party hands-on named three opening Primary and three Secondary choices. Roles reflect that preview, not tested retail balance.",
+    "sectionTitle": "Six named early Forms",
+    "sectionDescription": "Three opening Primary and three Secondary choices cover speed, reach, crowd pressure and heavy commitment. Their usefulness depends on the encounter rather than one universal tier list.",
     "items": [
       {
         "name": "Flurry",
         "label": "Primary Form · first-party hands-on",
         "description": "Twin daggers with fast, close-range attacks and a previewed critical-chance boost; one of three opening Primary choices described by Xbox Wire.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "flurry",
         "playerNote": "Consider it when you prefer quick contact and frequent repositioning; the preview does not establish a final best-in-slot ranking.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -118,7 +138,7 @@
         "name": "Slash",
         "label": "Primary Form · first-party hands-on",
         "description": "A scythe-like Primary Form whose broad swings were described as useful against groups in the Xbox hands-on.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "slash",
         "playerNote": "Its previewed value is coverage of multiple enemies, not a proven single-target damage number.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -127,7 +147,7 @@
         "name": "Slice",
         "label": "Primary Form · first-party hands-on",
         "description": "An axe Primary Form described as high single-target damage with a bonus for attacking from behind in the preview build.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "slice",
         "playerNote": "Positioning is part of its reported advantage; do not transfer preview damage values to launch guides.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -136,7 +156,7 @@
         "name": "Crush",
         "label": "Secondary Form · first-party hands-on",
         "description": "A huge, slow mallet used for heavy smashing attacks; one of the three Secondary choices in the first-party hands-on.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "crush",
         "playerNote": "Its slower commitment suggests testing attack windows against mobile enemies instead of assuming every heavy hit will land.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -145,7 +165,7 @@
         "name": "Drill",
         "label": "Secondary Form · first-party hands-on",
         "description": "A directed, sustained-damage Secondary Form named in the Xbox Wire preview.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "drill",
         "playerNote": "Treat sustained contact as its shown role, not as a verified final damage-per-second figure.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -154,7 +174,7 @@
         "name": "Extend",
         "label": "Secondary Form · first-party hands-on",
         "description": "A whip-like chain staff used for extra reach, shown as a Secondary complement to a close-range Primary setup.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "extend",
         "playerNote": "Use the range distinction when comparing Form pairs; exact hitboxes and final upgrade ranks require retail testing.",
         "sourceIds": ["xbox-hands-on-june"]
@@ -163,21 +183,21 @@
         "name": "Primary Forms",
         "label": "Loadout role",
         "description": "The core moveset branch. An official Talent screen gives Primary its own progression tab alongside Secondary and Combo Enders.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "primary-forms"
       },
       {
         "name": "Secondary Forms",
         "label": "Loadout role",
         "description": "A second Form category used to vary range, speed, and function inside one setup. Preview descriptions include whip-like and hammer options.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "secondary-forms"
       },
       {
         "name": "Combo Enders",
         "label": "Finisher role",
         "description": "Powerful attacks placed at the end of strings. A hands-on preview observed rapid gauntlet strikes and a thrown glaive-like attack.",
-        "href": "/guides/control-resonant-combat-abilities-and-aberrant-forms",
+        "href": "/guides/combat-builds#aberrant-forms",
         "id": "combo-enders"
       }
     ],
@@ -188,7 +208,7 @@
       "Combo enders and supernatural abilities deepen the weapon’s build synergy."
     ],
     "note": "Flurry, Slash, Slice, Crush, Drill and Extend are named in Xbox Wire's first-party June 11 hands-on. Their preview roles should not be converted into final balance statistics.",
-    "guideSlug": "control-resonant-combat-abilities-and-aberrant-forms",
+    "guideHref": "/guides/combat-builds#aberrant-forms",
     "sourceIds": ["ps-combat", "hands-on", "xbox-hands-on-june"],
     "seo": {
       "title": "CONTROL Resonant Aberrant Forms Wiki: Names & Roles",
@@ -209,56 +229,56 @@
         "name": "Primary branch",
         "label": "Talent tab",
         "description": "A dedicated branch for the selected Primary Form and its attack behavior. The official screenshot shows a branching node network rather than a linear upgrade rail.",
-        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "href": "/guides/combat-builds#talents",
         "id": "primary-branch"
       },
       {
         "name": "Secondary branch",
         "label": "Talent tab",
         "description": "Talents attached to the Secondary Form role, supporting a second set of reach, speed, or utility choices in the same loadout.",
-        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "href": "/guides/combat-builds#talents",
         "id": "secondary-branch"
       },
       {
         "name": "Combo Enders branch",
         "label": "Talent tab",
         "description": "A separate progression tab for the powerful attacks that finish connected melee strings.",
-        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "href": "/guides/combat-builds#talents",
         "id": "combo-enders-branch"
       },
       {
         "name": "Dodge Attack",
         "label": "Named node",
         "description": "The official preview node adds a post-dodge attack that launches enemies and deals extra damage. Exact launch values are not published in the screenshot.",
-        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "href": "/guides/combat-builds#talents",
         "id": "dodge-attack"
       },
       {
         "name": "Aberrant Strength",
         "label": "Preview interface label",
         "description": "Aberrant Strength is displayed beside the selected Talent. The screenshot does not establish that the displayed number is its purchase price or final prerequisite.",
-        "href": "/guides/control-resonant-talents-and-progression-guide",
+        "href": "/guides/combat-builds#talents",
         "id": "aberrant-strength"
       },
       {
         "name": "New Game+ nodes",
         "label": "Expanded progression",
         "description": "Additional Talent nodes become available in New Game Plus alongside broader ability combinations and more dangerous encounters.",
-        "href": "/guides/control-resonant-new-game-plus",
+        "href": "/guides/combat-builds#new-game-plus",
         "id": "new-game-nodes"
       },
       {
         "name": "Zone XP and Talent points",
         "label": "Developer interview",
         "description": "Activities grant zone XP. Each zone level provides a local improvement and a Talent point; see the progression guide for the developer's examples.",
-        "href": "/guides/control-resonant-talents-and-progression-guide#zone-xp",
+        "href": "/guides/combat-builds#talents",
         "id": "zone-xp-and-talent-points"
       },
       {
         "name": "Respec All",
         "label": "Visible preview control",
         "description": "The official Talent screen includes Respec All. Final resource costs and refund rules are not established by its icon or counter.",
-        "href": "/guides/control-resonant-talents-and-progression-guide#respec",
+        "href": "/guides/combat-builds#talents",
         "id": "respec-all"
       }
     ],
@@ -269,7 +289,7 @@
       "New Game Plus adds Talent nodes."
     ],
     "note": "The screenshot is a pre-release interface and can change. The launch database will record exact wording, prerequisites, ranks, and practical use from the final build.",
-    "guideSlug": "control-resonant-talents-and-progression-guide",
+    "guideHref": "/guides/combat-builds#talents",
     "sourceIds": ["ps-combat", "zones", "ps-ngplus"],
     "seo": {
       "title": "CONTROL Resonant Talents Wiki: Names & Roles",
@@ -290,44 +310,21 @@
         "name": "Equipped Artifacts",
         "label": "Passive modifier",
         "description": "Artifacts can change survivability, combat, exploration, or resource economy. Some include activation conditions or meaningful tradeoffs.",
-        "href": "/guides/control-resonant-artifacts-guide",
+        "href": "/guides/combat-builds#artifacts",
         "id": "equipped-artifacts"
-      },
-      {
-        "name": "Untapped Artifacts",
-        "label": "Crafting input",
-        "description": "Untapped finds can be taken into The Gap and shaped into usable Artifacts, connecting optional exploration with build progression.",
-        "href": "/guides/control-resonant-artifacts-guide",
-        "id": "untapped-artifacts"
-      },
-      {
-        "name": "Pickpocket's Tool",
-        "label": "Preorder Artifact",
-        "description": "A named preorder bonus on Steam and PlayStation. Its final in-game effect should be read from the launch inventory rather than inferred from the name.",
-        "href": "/guides/control-resonant-artifacts-guide",
-        "id": "pickpocket-s-tool",
-        "playerNote": "Check your store's eligible preorder package. The name alone does not prove a money, theft or loot-rate bonus."
-      },
-      {
-        "name": "Wallet",
-        "label": "Digital Deluxe Untapped Artifact",
-        "description": "The Digital Deluxe package includes an Untapped Artifact named Wallet. Store pages do not publish a complete final effect description.",
-        "href": "/guides/control-resonant-artifacts-guide",
-        "id": "wallet",
-        "playerNote": "Do not confuse an Untapped Artifact with a finished passive effect. Compare edition inclusions separately from build advice."
       },
       {
         "name": "Three first-run slots",
         "label": "Initial limit",
         "description": "The first playthrough supports three equipped Artifacts, requiring players to choose which passive effects belong in a focused setup.",
-        "href": "/guides/control-resonant-artifacts-guide",
+        "href": "/guides/combat-builds#artifacts",
         "id": "three-first-run-slots"
       },
       {
         "name": "Fourth Artifact slot",
         "label": "New Game+",
         "description": "New Game Plus adds a fourth slot for combinations that are not possible during the initial campaign.",
-        "href": "/guides/control-resonant-new-game-plus",
+        "href": "/guides/combat-builds#new-game-plus",
         "id": "fourth-artifact-slot"
       }
     ],
@@ -338,7 +335,7 @@
       "New Game Plus unlocks a fourth Artifact slot."
     ],
     "note": "Named preorder items are not assigned effects the storefront does not disclose. Rarity, numerical ranges, world locations, and pairings require repeatable final-game evidence.",
-    "guideSlug": "control-resonant-artifacts-guide",
+    "guideHref": "/guides/combat-builds#artifacts",
     "sourceIds": ["ps-ngplus", "store"],
     "seo": {
       "title": "CONTROL Resonant Artifacts Wiki: Names & Roles",
@@ -359,7 +356,7 @@
         "name": "Dylan Faden",
         "label": "Playable protagonist",
         "description": "Dylan is the character you control in Resonant. He enters Manhattan with the Aberrant while searching for Jesse, his older sister. His long confinement by the FBC makes working alongside the Bureau a complicated part of his story.",
-        "href": "/guides/control-resonant-characters-and-story",
+        "href": "/guides/getting-started#story-context",
         "id": "dylan-faden",
         "scope": "Resonant character / CONTROL background",
         "details": [
@@ -390,7 +387,7 @@
         "name": "Jesse Faden",
         "label": "Missing FBC Director",
         "description": "Jesse is Dylan's older sister and the FBC Director. She is missing in the public Resonant setup, turning the original game's sibling search around: this time you follow Dylan as he looks for her.",
-        "href": "/guides/control-resonant-characters-and-story",
+        "href": "/guides/getting-started#story-context",
         "id": "jesse-faden",
         "scope": "Resonant character / CONTROL background",
         "details": [
@@ -421,7 +418,7 @@
         "name": "Zoe De Vera",
         "label": "FBC field agent and handler",
         "description": "Zoe is the Bureau agent assigned to work with Dylan. Remedy describes conversations continuing while you explore, making her a recurring narrative presence rather than simply a name in a mission briefing.",
-        "href": "/guides/control-resonant-characters-and-story",
+        "href": "/guides/getting-started#story-context",
         "id": "zoe-de-vera",
         "scope": "Resonant character",
         "details": [
@@ -452,8 +449,9 @@
         "name": "Dr. Casper Darling",
         "label": "Official cast reveal · returning-character spoiler",
         "description": "Darling is the scientist behind many of CONTROL's research recordings, and the published cast diary confirms his return. He matters to Dylan's story because he helped shape the Bureau's treatment of him.",
-        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "href": "/guides/getting-started#story-context",
         "id": "dr-casper-darling",
+        "detailSlug": "casper-darling",
         "scope": "Resonant character / CONTROL background",
         "details": [
           {
@@ -483,7 +481,7 @@
         "name": "Emily Pope",
         "label": "Official cast reveal · returning-character spoiler",
         "description": "Emily brings the Bureau's scientific perspective to the returning cast. Her connection to both Darling and Jesse makes her a useful name to recognize when research, leadership and the paranatural overlap.",
-        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "href": "/guides/getting-started#story-context",
         "id": "emily-pope",
         "scope": "Resonant character / CONTROL background",
         "details": [
@@ -514,7 +512,7 @@
         "name": "Simon Arish",
         "label": "Official cast reveal · returning-character spoiler",
         "description": "Arish is the returning Bureau security specialist. Where Darling and Emily are associated with research, his background centers on protecting people and keeping a dangerous workplace functioning.",
-        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "href": "/guides/getting-started#story-context",
         "id": "simon-arish",
         "scope": "Resonant character / CONTROL background",
         "details": [
@@ -545,7 +543,7 @@
         "name": "Frederick Langston",
         "label": "Official cast reveal · returning-character spoiler",
         "description": "Langston supervises the Panopticon in CONTROL and is named in Resonant's returning cast. His background is the day-to-day care and containment of objects that do not behave like ordinary possessions.",
-        "href": "/guides/control-resonant-characters-and-story#returning-cast",
+        "href": "/guides/getting-started#story-context",
         "id": "frederick-langston",
         "scope": "Resonant character / CONTROL background",
         "details": [
@@ -580,7 +578,7 @@
       "Portrait captions distinguish Resonant imagery from pictures of the original game."
     ],
     "note": "Background includes mild CONTROL (2019) story context. Returning-cast information comes from the published diary; detailed sequel outcomes are not supplied.",
-    "guideSlug": "control-resonant-characters-and-story",
+    "guideHref": "/guides/getting-started#story-context",
     "sourceIds": [
       "ps-combat",
       "cast",
@@ -613,14 +611,14 @@
         "name": "The Hiss",
         "label": "Returning corrupting influence",
         "description": "The hostile resonance from CONTROL has spread beyond the Oldest House and remains part of the conflict in Manhattan.",
-        "href": "/guides/control-resonant-enemy-factions",
+        "href": "/guides/combat-builds#enemy-reading",
         "id": "the-hiss"
       },
       {
         "name": "The Mold",
         "label": "Returning invasive organism",
         "description": "The extradimensional Mold returns in new contexts. Remedy also uses friendly Mold Turrets as an example of a Combat Ability.",
-        "href": "/guides/control-resonant-enemy-factions",
+        "href": "/guides/combat-builds#enemy-reading",
         "id": "the-mold"
       },
       {
@@ -634,14 +632,14 @@
         "name": "Mysterious cosmic entity",
         "label": "Central threat",
         "description": "Official store copy says Dylan is charged with combating a reality-bending cosmic entity. Its identity and relationship to the new resonance remain undisclosed.",
-        "href": "/guides/control-resonant-enemy-factions",
+        "href": "/guides/combat-builds#enemy-reading",
         "id": "mysterious-cosmic-entity"
       },
       {
         "name": "The Patterning",
         "label": "Named in IGN developer feature",
         "description": "The August 19 developer feature identifies the Patterning as a new environmental threat. A complete variant list and launch weakness table are not established.",
-        "href": "/guides/control-resonant-enemy-factions",
+        "href": "/guides/combat-builds#enemy-reading",
         "id": "the-patterning"
       }
     ],
@@ -652,7 +650,7 @@
       "Broad factions are not a complete variant catalog."
     ],
     "note": "Preview silhouettes are not treated as formal enemy names. Variant pages require an in-game label and reproducible combat observations.",
-    "guideSlug": "control-resonant-enemy-factions",
+    "guideHref": "/guides/combat-builds#enemy-reading",
     "sourceIds": ["remedy-reveal", "zones", "metro"],
     "seo": {
       "title": "CONTROL Resonant Enemies Wiki: Names & Roles",

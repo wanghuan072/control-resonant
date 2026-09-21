@@ -7,7 +7,7 @@ import { getGuidePillar, getGuidePillars } from "@/lib/data/pillars";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
 import { siteConfig } from "@/config/site";
-import type { GuidePillarId } from "@/types/guide";
+import type { GuidePillarId } from "@/types/guide-pillar";
 import styles from "@/style/page/guides/guide-reading.module.css";
 
 export default function GuidePillarPage({ id }: { id: GuidePillarId }) {

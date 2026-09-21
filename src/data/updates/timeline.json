@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-09-18",
+    "type": "Full-game coverage",
+    "title": "Reviews clarify the full combat, mission and exploration loop",
+    "text": "Completed reviews and PlayStation's full-game hands-on confirm a roughly 25–35-hour main story, optional Resonants, traversal-focused Jesse Quests, post-story free roam and a combat loop built around Falter, executions and Dominance. Opinions differ sharply on combat balance and late-game enemy durability, so exact builds and routes still require versioned testing.",
+    "href": "https://blog.playstation.com/2026/09/18/control-resonant-how-remedy-is-going-bigger-and-weirder-with-its-paranatural-horror-sequel-on-september-24/",
+    "detailPath": "/gameplay#combat-loop",
+    "detailLabel": "Understand the full combat loop"
+  },
+  {
     "date": "2026-09-17",
     "type": "Official trailer",
     "title": "Launch trailer shows Dylan and the Aberrant ahead of release",
@@ -31,17 +40,17 @@
     "title": "Meet the Cast reveals more returning Bureau characters",
     "text": "The diary confirms actors for Dylan, Jesse and Zoe, alongside Darling, Emily Pope, Simon Arish and Frederick Langston. The character guide labels these returning-cast spoilers.",
     "href": "https://www.youtube.com/watch?v=N8wJs9Q9PVI",
-    "guideSlug": "control-resonant-characters-and-story"
+    "guideHref": "/guides/getting-started#story-context"
   },
   {
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "type": "Accessibility",
     "title": "Expanded Assist Mode detailed",
     "text": "Individual controls include enemy aggression, dodge timing, projectile speed, damage, falter, power recovery, melee magnetizing, immortality, and one-hit options. Assist Mode does not gate trophies or achievements.",
     "href": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/"
   },
   {
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "type": "PC",
     "title": "Final PC requirements published",
     "text": "Remedy confirmed six performance tiers, 16 GB RAM across the board, Windows 10/11 64-bit, 120 GB SSD storage, DLSS 4.5, FSR 4.1, ray tracing, path tracing, HDR, and ultra-wide support.",
@@ -60,7 +69,7 @@
     "title": "Zone XP and changing world encounters explained",
     "text": "IGN's developer feature connects zone activities, local improvements, Talent points and the consequences of defeating Resonants.",
     "href": "https://tech.yahoo.com/gaming/articles/don-t-xp-zones-control-160000728.html",
-    "guideSlug": "control-resonant-talents-and-progression-guide"
+    "guideHref": "/guides/combat-builds#talents"
   },
   {
     "date": "2026-08-17",
@@ -75,7 +84,7 @@
     "title": "Central Resonant boss fight shown",
     "text": "The publisher identifies the Central Resonant and its lava and magma hazards. Exact launch rewards and damage resistances are not established by the preview description.",
     "href": "https://open.video/%40ign/v/control-resonant-exclusive-boss-fight-gameplay-ign-first",
-    "guideSlug": "control-resonant-central-resonant-boss"
+    "guideHref": "/guides/story-walkthrough#central-resonant"
   },
   {
     "date": "2026-08-07",
@@ -83,31 +92,31 @@
     "title": "Metro Fault and the Reach traversal reward",
     "text": "The published mission preview introduces a dungeon-like Fault with train hazards, Mold enemies and a grappling-style movement unlock.",
     "href": "https://www.youtube.com/watch?v=JfuY-NhK_tQ",
-    "guideSlug": "control-resonant-metro-fault-and-reach"
+    "guideHref": "/guides/story-walkthrough#metro-fault"
   },
   {
-    "date": "2026-06-01",
+    "date": "2026-06-02",
     "type": "Release",
     "title": "Worldwide digital release set for September 24",
     "text": "Remedy confirmed the date for PS5, Xbox Series X|S, Steam, and Epic Games Store, with GeForce NOW at launch and Mac following later in 2026.",
     "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24"
   },
   {
-    "date": "2026-04-29",
+    "date": "2026-04-30",
     "type": "Systems",
     "title": "New Game+ systems explained",
     "text": "Remedy detailed carry-over progression, additional talent nodes, expanded ability combinations, a fourth Artifact slot, and a more dangerous returning world.",
     "href": "https://blog.playstation.com/2026/04/30/control-resonant-remedy-shares-first-details-on-new-game-plus/"
   },
   {
-    "date": "2026-03-03",
+    "date": "2026-03-04",
     "type": "Systems",
     "title": "Combat and buildcrafting deep dive",
     "text": "Remedy explained the melee-to-ability resource loop, executions, The Gap, Weapon Forms, Combat Abilities, Talents, Artifacts, World Quests, Zoe De Vera, and branching Resonant rewards.",
     "href": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/"
   },
   {
-    "date": "2026-02-12",
+    "date": "2026-02-13",
     "type": "Gameplay",
     "title": "First full gameplay details published",
     "text": "The PS5 Pro footage introduced the West Incursion Zone, large handcrafted Manhattan zones, optional discoveries, hidden encounters, and Gravity Anomalies.",

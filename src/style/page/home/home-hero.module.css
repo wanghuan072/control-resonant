@@ -1,0 +1,152 @@
+.eyebrow {
+  color: var(--color-red);
+  font:
+    700 10px ui-monospace,
+    monospace;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #3a454d;
+  background: #10171c;
+}
+.heroImage {
+  object-fit: cover;
+  object-position: center 42%;
+}
+.hero::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #070c10f7 0%, #071016ca 34%, #07101624 70%),
+    linear-gradient(0deg, #071016f0 0%, transparent 38%);
+  content: "";
+  pointer-events: none;
+}
+.hero::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 49.9%,
+    #ffffff12 50%,
+    transparent 50.1%
+  );
+  content: "";
+  pointer-events: none;
+}
+.heroGrid {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 610px;
+  align-items: end;
+  gap: 30px;
+  padding-block: 92px 28px;
+}
+.heroCopy {
+  max-width: 680px;
+  padding-bottom: 0;
+}
+.hero h1 {
+  max-width: 690px;
+  margin: 17px 0 22px;
+}
+.hero h1 span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 11px;
+  color: var(--color-signal);
+  font: 700 clamp(11px, 1vw, 14px) / 1 var(--font-heading);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.hero h1 span::after {
+  width: 44px;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}
+.hero h1 strong {
+  display: block;
+  max-width: 650px;
+  color: #f4f6f5;
+  font: 400 clamp(44px, 4.6vw, 64px) / 0.92 var(--font-display);
+  letter-spacing: -0.052em;
+  text-transform: uppercase;
+}
+.lead {
+  max-width: 500px;
+  padding-left: 16px;
+  border-left: 2px solid var(--color-red);
+  color: #cbd4d7;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+.heroActions a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+  border: 1px solid #d7dcdd;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.heroActions a:first-child {
+  border-color: var(--color-red);
+  background: var(--color-red);
+}
+
+@media (max-width: 1024px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    min-height: 580px;
+    gap: 26px;
+  }
+  .hero h1 strong {
+    font-size: clamp(42px, 5.2vw, 58px);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroImage {
+    object-position: 58% top;
+  }
+  .hero::before {
+    background: linear-gradient(
+      180deg,
+      #08101554 0%,
+      #081015d5 47%,
+      #081015 78%
+    );
+  }
+  .heroGrid {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 26px;
+    padding-block: 62px 28px;
+  }
+  .heroCopy {
+    padding-top: 150px;
+    padding-bottom: 0;
+  }
+  .hero h1 strong {
+    font-size: clamp(38px, 11vw, 49px);
+  }
+}

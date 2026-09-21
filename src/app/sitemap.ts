@@ -7,6 +7,7 @@ import {
   primaryNavigation,
 } from "@/config/navigation";
 import { siteConfig } from "@/config/site";
+import { tools } from "@/config/tools";
 import { getGuidePillars } from "@/lib/data/pillars";
 import { wikiDetails } from "@/lib/data/wiki";
 import { pageTdk } from "@/seo/tdk";
@@ -21,6 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entry.updatedAt,
     ]),
   );
+  const toolDates = new Map<string, string>(
+    tools.map((tool) => [tool.href, tool.updatedAt]),
+  );
   const fixedPaths = [
     ...new Set([
       "/",
@@ -32,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...wikiDetails.map((entry) => `/wiki/${entry.group}/${entry.slug}`),
       ...legalNavigation.map((item) => item.href),
       "/bosses",
+      ...tools.map((tool) => tool.href),
       ...getGuidePillars().map((pillar) => pillar.href),
     ]),
   ];
@@ -44,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const lastModified =
         topicDates.get(path) ??
         wikiDates.get(path) ??
+        toolDates.get(path) ??
         guideDates.get(path) ??
         pageTdk[path as keyof typeof pageTdk]?.updatedAt;
       return {

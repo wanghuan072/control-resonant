@@ -1,5 +1,6 @@
 import { databaseNavigation, primaryNavigation } from "@/config/navigation";
 import { gameInfoTopics } from "@/config/game-info-topics";
+import { tools } from "@/config/tools";
 import { getGuidePillars } from "@/lib/data/pillars";
 import { getWikiTopics, wikiDetails, wikiDetailPath } from "@/lib/data/wiki";
 import type { WikiGroupId } from "@/types/wiki";
@@ -16,7 +17,7 @@ const primaryDescriptions: Record<string, string> = {
   "/map":
     "Pre-release map status, confirmed Manhattan places and the location details still awaiting final-game verification.",
   "/tools":
-    "Compare common CPUs, GPUs, memory, storage and Windows versions with published PC system targets.",
+    "Open focused CONTROL Resonant player utilities, including the PC system requirements checker.",
   "/updates":
     "Dated release, platform, combat and accessibility announcements.",
 };
@@ -61,6 +62,12 @@ export function getSearchEntries(): SearchEntry[] {
     href: pillar.href,
     type: "Guide",
   }));
+  const toolEntries = tools.map((tool) => ({
+    title: `CONTROL Resonant ${tool.title}`,
+    description: tool.description,
+    href: tool.href,
+    type: "Tool",
+  }));
   return [
     {
       title: "CONTROL Resonant Guide",
@@ -75,6 +82,7 @@ export function getSearchEntries(): SearchEntry[] {
       type: "Game info",
     })),
     ...pillars,
+    ...toolEntries,
     ...primary,
     ...database,
     ...detailEntries,

@@ -1,5 +1,4 @@
 import { siteConfig } from "@/config/site";
-import type { Guide } from "@/types/guide";
 import type { WikiDetail } from "@/types/wiki";
 
 const organization = {
@@ -70,38 +69,6 @@ export function collectionSchema(
     ]),
   ];
 }
-export function guideSchema(guide: Guide) {
-  const url = `${siteConfig.url}/guides/${guide.slug}`;
-  return [
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "@id": `${url}#article`,
-      headline: guide.title,
-      description: guide.excerpt,
-      image: `${siteConfig.url}${guide.image}`,
-      url,
-      mainEntityOfPage: { "@type": "WebPage", "@id": url },
-      dateModified: guide.updatedAt,
-      datePublished: guide.publishedAt ?? guide.updatedAt,
-      author: organization,
-      publisher: organization,
-      inLanguage: "en",
-      articleSection: guide.category,
-      about: {
-        "@type": "VideoGame",
-        name: "CONTROL Resonant",
-      },
-      isAccessibleForFree: true,
-    },
-    breadcrumbSchema([
-      { name: "Home", href: "/" },
-      { name: "Guides", href: "/guides" },
-      { name: guide.title, href: `/guides/${guide.slug}` },
-    ]),
-  ];
-}
-
 export function wikiDetailSchema(entry: WikiDetail, groupTitle: string) {
   const path = `/wiki/${entry.group}/${entry.slug}`;
   const url = `${siteConfig.url}${path}`;

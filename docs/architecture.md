@@ -16,11 +16,11 @@ The project follows the repository-wide Next.js structure rules:
 
 ## Rendering and routes
 
-Hub pages are statically rendered. The 25 answer-focused articles are assembled from four JSON collections in `src/data/guides` through `/guides/[slug]` and `generateStaticParams`; `/guides` exposes exactly four player routes instead of presenting every article at the same level. `/wiki` is a five-field directory, `/wiki/[group]` supplies searchable, fielded index tables, and `/wiki/[group]/[slug]` renders only records with enough facts and player context for a useful independent article. Named entities, system concepts, quest types and older-game background are classified rather than counted as interchangeable equipment. Search is client-filtered against the guide, hub, Wiki group and detail index.
+Hub pages and four long-form field manuals are statically rendered. The published guide routes are `/guides/getting-started`, `/guides/combat-builds`, `/guides/story-walkthrough` and `/guides/completion`; there is no generic `/guides/[slug]` route or archived short-form guide collection. `/wiki` is a five-field directory, `/wiki/[group]` supplies searchable index tables, and `/wiki/[group]/[slug]` renders fact-rich detail records. Search is the only request-time rendered page and filters a server-built index in the client.
 
-The public top-level architecture is `/`, `/game-info`, `/guides`, `/wiki` and `/tracker` (shown as My Case). Legacy `/database`, `/builds`, `/walkthrough`, `/sources` and the ten former Wiki-category routes are permanent redirects and are omitted from the sitemap. Bosses, map and updates remain indexable secondary destinations without competing for primary navigation space.
+The sitemap currently contains 55 public content routes. `/game-info` is a navigation group rather than a page. `/tools` is a directory whose utilities live at dedicated detail routes, beginning with `/tools/pc-system-checker`. Retired guide URLs and the former `/database`, `/builds`, `/walkthrough`, `/sources`, `/tracker` and category aliases deliberately return 404 and never appear in navigation, search or the sitemap. `scripts/audit/site.mjs` owns the explicit retirement contract.
 
-The My Case route keeps its indexable introduction server-rendered and isolates interactivity in client components. `TrackerStateV2` is sanitized in `src/lib/tracker/state.ts`, then persisted under `control-resonant:case-board:v2`. V1 profile, bookmarks and build selections migrate; V1 checkboxes are visible only as archived selections and never count as game completion. Personal goal counts refer only to user-created goals. Artifact slots are constrained to three on the first run and four in New Game+.
+The site has no account, tracker, CMS, database or runtime content API. Interactive JavaScript is limited to navigation, search and directory filters, the release countdown, deferred video playback, the gameplay table of contents and the hardware checker.
 
 ## SEO model
 
@@ -30,14 +30,14 @@ Set `NEXT_PUBLIC_SITE_URL` for preview or production environments so canonical U
 
 ## Content rules
 
-Pre-launch content must distinguish an explicit announcement from an unknown. A missing announcement is not evidence that a feature will never exist. Internal research records should retain primary references and a checked date, while public articles avoid source-status furniture, outbound research links, fictional walkthrough steps and invented Wiki records.
+Pre-launch content must distinguish an explicit announcement from an unknown. A missing announcement is not evidence that a feature will never exist. Internal research records should retain primary references and a checked date. Public articles avoid source-status furniture, fictional walkthrough steps and invented Wiki records; the Updates timeline is the single exception for outbound research links, exposing one original source for every dated item.
 
-When adding a guide, append a valid record to the appropriate collection in `src/data/guides`, use a relevant local promotional image, include sources and section references, and connect related slugs. Add the slug to the relevant topic or hub collection where appropriate. The route, sitemap entry, search result and structured data are generated automatically. Reading time is calculated from content, not a fixed editorial claim.
+When expanding a guide, update the corresponding entry in `src/data/guides/longform.ts` and its presentation record in `src/data/guides/pillars.json`. Preserve the four published routes unless the information architecture is intentionally changed. New Wiki records use stable category IDs plus an optional explicit `detailSlug`; title matching is not used to establish relationships.
 
 ## Visual system and verification
 
 See `design-direction.md` for the altered-field-archive composition, typography and palette. Home, directory and article layouts have different content roles, sharing the same navigation and visual language.
 
-- `npm run audit:data`: collection, source-trail, detail depth, image and relationship checks.
+- `npm run audit:data`: source-trail, detail depth, image, stable relationship and duplicate checks.
 - `npm run audit:site -- --base <running-url>`: rendered route metadata, retired-route responses, internal links, structured data, deferred video and responsive checks. Pass the URL of the Next.js process you started; the project does not reserve a port. The audit uses the installed Chrome channel by default; `--chrome` can override its executable.
-- `npm run lint` and `npm run build`: code and production compilation checks.
+- `npm run lint`, `npm run format:check` and `npm run build`: code, formatting and production compilation checks. `.github/workflows/quality.yml` runs the complete sequence for pull requests and pushes to `main`.

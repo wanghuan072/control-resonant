@@ -102,10 +102,12 @@ export default function PlatformsPage() {
               PC, PS5 and Xbox launch first; Mac follows later
             </h2>
             <p>
-              The digital launch is September 24, 2026. Steam Deck and GeForce
-              NOW support are announced for launch, while Nintendo Switch 2 and
-              Game Pass are not announced. Those last two are status answers,
-              not predictions about what Remedy may do later.
+              The digital launch is{" "}
+              <Link href="/game-info/release-date">September 24, 2026</Link>.
+              Steam Deck and GeForce NOW support are announced for launch, while
+              Nintendo Switch 2 and Game Pass are not announced. Those last two
+              are status answers, not predictions about what Remedy may do
+              later.
             </p>
           </div>
           <dl className={styles.signalBoard}>
@@ -123,7 +125,9 @@ export default function PlatformsPage() {
             </div>
             <div>
               <dt>Last checked</dt>
-              <dd>20 SEP 2026</dd>
+              <dd>
+                <Link href="/updates">20 SEP 2026</Link>
+              </dd>
             </div>
           </dl>
         </section>
@@ -376,7 +380,7 @@ export default function PlatformsPage() {
             <Link href="/game-info/release-date">
               Release schedule <ArrowRight size={16} />
             </Link>
-            <Link href="/tools">
+            <Link href="/tools/pc-system-checker">
               Check your PC <ArrowRight size={16} />
             </Link>
           </div>

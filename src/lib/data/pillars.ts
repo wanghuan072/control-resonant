@@ -1,5 +1,5 @@
 import data from "@/data/guides/pillars.json";
-import type { GuidePillarId } from "@/types/guide";
+import type { GuidePillarId } from "@/types/guide-pillar";
 
 export type GuidePillar = {
   id: GuidePillarId;
@@ -14,7 +14,6 @@ export type GuidePillar = {
   image: string;
   href: string;
   highlights: string[];
-  slugs: string[];
   seo: { title: string; description: string };
 };
 
@@ -23,7 +22,4 @@ export function getGuidePillars() {
 }
 export function getGuidePillar(id: GuidePillarId) {
   return getGuidePillars().find((pillar) => pillar.id === id)!;
-}
-export function getPillarForGuide(slug: string) {
-  return getGuidePillars().find((pillar) => pillar.slugs.includes(slug));
 }

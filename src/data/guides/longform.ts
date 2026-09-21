@@ -1,4 +1,4 @@
-import type { GuidePillarId } from "@/types/guide";
+import type { GuidePillarId } from "@/types/guide-pillar";
 
 export type LongformChapter = {
   id: string;
@@ -23,10 +23,10 @@ export type LongformGuide = {
 
 export const longformGuides: Record<GuidePillarId, LongformGuide> = {
   "getting-started": {
-    updatedAt: "2026-09-17",
+    updatedAt: "2026-09-21",
     readTime: "14 min read",
     answer:
-      "CONTROL Resonant is a single-player, melee-led action RPG starring Dylan Faden. You can begin here without finishing CONTROL first, but a recap of Jesse, Dylan and the Federal Bureau makes the opening clearer. Start by learning how the Aberrant, Combat Abilities, Talents and Artifacts differ; then use Assist Mode to tune the particular part of combat you find difficult.",
+      "CONTROL Resonant is a single-player, melee-led action RPG starring Dylan Faden. You can begin without finishing CONTROL because the main menu includes a recap, but knowing Jesse, Dylan and the Federal Bureau makes the opening clearer. Learn the Aberrant, Combat Abilities, Talents and Artifacts as separate systems, then use side activities and Assist Mode to solve the part of combat or traversal that is blocking you.",
     route: [
       "Understand the sequel",
       "See what changed",
@@ -173,7 +173,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           },
           {
             label: "Check your setup against published targets",
-            href: "/tools#system-checker",
+            href: "/tools/pc-system-checker#system-checker",
           },
           {
             label: "Read the physical-edition timing",
@@ -187,7 +187,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Learn the four parts of a build",
         paragraphs: [
           "The Aberrant changes between melee Forms. Combat Abilities are supernatural actions connected to Resonant encounters. Talents alter Dylan's progression, and Artifacts provide passive effects. Treating all four as interchangeable 'weapons' makes an early build harder to understand.",
-          "The demonstrated combat rhythm is to close distance with the Aberrant, restore power through melee pressure, use an ability to control or stagger a threat, then return to offense. Exact retail damage and optimal rotations are not established by preview footage. Learn what each tool does before copying a supposed best build.",
+          "The combat rhythm is to close distance with the Aberrant, restore Power through melee pressure, use an ability to control a threat, then attack Falter until an execution becomes available. Executions restore health and briefly strengthen melee; Dominance offers a different use for vulnerable enemies by turning them into temporary allies. Learn what each tool does before copying a supposed best build.",
         ],
         table: {
           headers: ["System", "Decision it answers", "First check"],
@@ -240,7 +240,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "06 / Practical route",
         title: "A sensible first-session checklist",
         paragraphs: [
-          "This is a learning order, not an invented mission-by-mission walkthrough. The published previews establish an opening escape and early Manhattan exploration, but not every final objective or collectible location.",
+          "This is a learning order, not an invented mission-by-mission walkthrough. Full-game coverage confirms that the opening teaches movement and melee in stages, while optional Jesse Quests add traversal tools and other side activities provide useful practice or progression.",
         ],
         steps: [
           {
@@ -249,7 +249,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
           },
           {
             title: "Test movement before optimizing",
-            text: "Practise the dodge and available traversal moves in a safe space. Later abilities change which routes are reachable.",
+            text: "Practise dodge, double jump and air dash as they become available. Jesse Quests award traversal powers that can reopen routes you could not reach earlier.",
           },
           {
             title: "Compare Forms by role",
@@ -312,10 +312,10 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
     ],
   },
   "combat-builds": {
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
     readTime: "15 min read",
     answer:
-      "Build around a combat problem, not an unexplained tier list. Pick an Aberrant Form for your preferred range and target pattern, add a Combat Ability for control or defense, then use Talents and Artifacts to reinforce that loop. The named preview Forms are Flurry, Slash, Slice, Crush, Drill and Extend; their final balance and unlock routes still require retail testing.",
+      "Build around a combat problem, not an unexplained tier list. Pick an Aberrant Form for range and target pattern, add a Combat Ability for control or defense, then use Talents and Artifacts to reinforce the melee-to-Power loop. Flurry, Slash, Slice, Crush, Drill and Extend are the six named early Form choices; reviews agree that different combinations work, but not on a universal best-build order.",
     route: [
       "Choose a Form",
       "Add an ability",
@@ -330,7 +330,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "How does the melee-to-power loop work?",
         paragraphs: [
           "Remedy's combat demonstrations place the Aberrant at the center: melee attacks create pressure and help restore the resource for supernatural actions. Abilities can interrupt, defend or strike at range, and Falter creates opportunities to keep momentum. A build that only names high-damage moves but cannot sustain this loop is incomplete.",
-          "When testing a loadout, watch three things: can you reach the target, can you recover power without taking unsafe hits, and can you control the next threat after a stagger? These are player-use questions. Published previews do not provide reliable final damage-per-second rankings.",
+          "When testing a loadout, watch four things: can you reach the target, can you recover Power without taking unsafe hits, can you break Falter before the enemy recovers, and can you create an execution window when health is low? These are player-use questions. Review-build impressions do not provide a universal damage-per-second ranking.",
         ],
       },
       {
@@ -410,8 +410,34 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         ],
       },
       {
+        id: "falter-execution-dominance",
+        eyebrow: "04 / Vulnerable enemies",
+        title:
+          "Execution or Dominance: what should you do after Falter breaks?",
+        paragraphs: [
+          "Falter is the opening, not the reward by itself. An execution restores health and briefly boosts melee damage, making it the practical choice when Dylan needs to stabilize or keep pressure on a boss. Dominance converts a vulnerable normal enemy into a temporary ally, which can reduce crowd pressure and redirect attention.",
+          "Choose from the state of the arena: execute when health and immediate damage matter; use Dominance when an extra body can interrupt or distract the remaining group. Bosses and special enemies may not offer the same choice, so do not build a survival plan around a conversion that the encounter does not permit.",
+        ],
+        table: {
+          headers: ["Falter follow-up", "Immediate value", "Best used when"],
+          rows: [
+            [
+              "Execution",
+              "Health recovery and temporary melee boost",
+              "You need to stabilize or extend a damage window",
+            ],
+            [
+              "Dominance",
+              "Temporary allied enemy",
+              "Crowd pressure is the larger problem",
+            ],
+          ],
+        },
+        links: [{ label: "Compare combat systems", href: "/wiki/combat" }],
+      },
+      {
         id: "talents",
-        eyebrow: "04 / Progression",
+        eyebrow: "05 / Progression",
         title: "Spend Talents against a real bottleneck",
         paragraphs: [
           "Zone activities award progression that can be spent on Talents. Previews show Primary, Secondary and Combo Ender branches and a Respec All control, but do not establish every launch cost or whether every point is easily recoverable. Record the reason for a purchase rather than treating a preview tree as a solved final build.",
@@ -426,7 +452,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
       },
       {
         id: "artifacts",
-        eyebrow: "05 / Passive layer",
+        eyebrow: "06 / Passive layer",
         title: "Fit Artifacts to the build, not the other way around",
         paragraphs: [
           "Artifacts are passive modifiers made from Untapped Artifacts in the Gap. The published first-run loadout has three equipped slots, with a fourth in New Game Plus. A named pre-order or Deluxe Artifact is not proof that a particular effect is essential to beat the campaign.",
@@ -535,23 +561,23 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
     ],
   },
   "story-walkthrough": {
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
     readTime: "12 min read",
     answer:
-      "Before the retail release, there is no verified complete mission-by-mission walkthrough. The useful route is to distinguish Dylan's Journey from optional World Quests and Faults, then use the published Metro Fault and Central Resonant previews as landmarks—not as a fabricated final quest order. This guide will expand only when the released game can be checked.",
+      "Start by distinguishing Dylan's Journey from Jesse Quests, World Quests, Faults and short Zone activities. Jesse Quests can unlock movement, World Quests carry optional stories, and arcade-style activities are useful for practice and progression. This guide does not convert review footage into a fabricated full mission order.",
     route: [
       "Read the quest structure",
       "Understand the Zones",
-      "Check previewed routes",
+      "Match objectives to routes",
       "Keep spoilers controlled",
     ],
     chapters: [
       {
         id: "coverage",
         eyebrow: "01 / Coverage boundary",
-        title: "What can a pre-release walkthrough actually confirm?",
+        title: "What can this walkthrough confirm before direct route testing?",
         paragraphs: [
-          "Remedy has named the main campaign Dylan's Journey and described optional World Quests, Faults, bounties, puzzles and hidden encounters across Manhattan Zones. Public footage has shown parts of the opening, Metro Fault and a Central Resonant encounter. None of those clips establishes the complete retail objective sequence, every entrance or the final reward table.",
+          "Remedy names the campaign Dylan's Journey and separates it from Jesse Quests, World Quests, Faults, bounties, puzzles, challenges and discoveries across Manhattan Zones. Full-game coverage clarifies what several categories do, but it still does not provide a reproducible objective sequence, every entrance or a complete reward table.",
           "Use this page as a route map of known activity types and demonstrated landmarks. It deliberately does not invent numbered chapters, exact coordinates, dialogue solutions or guaranteed drops. After launch, a walkthrough should record platform, patch, entry condition and a reproducible step before calling it complete.",
         ],
       },
@@ -560,7 +586,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "02 / Mission structure",
         title: "Dylan's Journey, World Quests and Faults",
         paragraphs: [
-          "The name Dylan's Journey refers to the central narrative campaign. World Quests are optional, self-contained stories. Faults are distinct spaces or activity routes; Metro Fault is the named example shown in a preview. Bounties and discoveries are further exploration activities, not evidence that every entry is a main mission.",
+          "Dylan's Journey is the narrative campaign. Jesse Quests are optional routes tied to traversal powers. World Quests are self-contained stories, while Faults are distinct spaces or activity routes; Metro Fault is the named example shown publicly. Bounties, arcade challenges and discoveries are shorter Zone activities, not campaign chapters.",
           "This distinction matters when a player is stuck: a story gate, an optional narrative lead and a traversal challenge may each need a different next step. Check the activity label and the Zone before assuming a detour is required for the main campaign.",
         ],
         table: {
@@ -570,6 +596,11 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
               "Dylan's Journey",
               "Main narrative through Manhattan",
               "Full chapter order and objectives",
+            ],
+            [
+              "Jesse Quests",
+              "Optional traversal-power routes",
+              "Complete quest list and prerequisites",
             ],
             [
               "World Quests",
@@ -582,8 +613,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
               "Complete list, entrances and solutions",
             ],
             [
-              "Bounties and discoveries",
-              "Zone activities and exploration",
+              "Bounties, challenges and discoveries",
+              "Short Zone activities, practice and exploration",
               "Retail counts and exact coordinates",
             ],
           ],
@@ -710,8 +741,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "08 / Reading method",
         title: "Keep a spoiler-aware route as you play",
         paragraphs: [
-          "Follow the current main objective until a Zone naturally exposes a side lead. Write down the activity name and the obstacle, then return when a relevant traversal tool or story condition changes. This keeps optional content visible without opening a list of unverified later-game mission names.",
-          "Use the in-game objective log for your current step and this site's mission files for the named activities that have been verified. After launch, chapter steps should be added only when checked in the released game, with late-story outcomes separated from early-route advice.",
+          "The campaign can offer more than one priority lead. Follow the objective that advances the system or Zone you need, and use Jesse Quests when a missing traversal power is the obstacle. Write down optional story leads rather than treating every icon as urgent.",
+          "Use the in-game objective log for your current step and this site's mission files for the activity type. Reviews confirm that Manhattan remains explorable after the ending, so optional cleanup does not have to interrupt every campaign beat; exact missable exceptions still need direct testing.",
         ],
         links: [{ label: "Compare mission types", href: "/wiki/missions" }],
       },
@@ -735,10 +766,10 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
     ],
   },
   completion: {
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
     readTime: "11 min read",
     answer:
-      "A trustworthy CONTROL Resonant completion route cannot claim a 100% total before the retail game is verified. Start with the known categories—World Quests, Faults, Zone activities, Resonant encounters, Artifacts and New Game Plus—and track your own goals. Replace this planning structure with tested counts, rewards and routes only after launch.",
+      "A trustworthy CONTROL Resonant completion route cannot claim a verified 100% total without direct testing. Start with World Quests, Jesse Quests, Faults, Zone activities, optional Resonants, Artifacts and New Game Plus. Reviews confirm post-ending exploration, but exact counts, rewards and missable conditions still need reproducible routes.",
     route: [
       "Define the scope",
       "Log optional activities",
@@ -749,9 +780,9 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
       {
         id: "scope",
         eyebrow: "01 / Honest baseline",
-        title: "What does completion mean before launch?",
+        title: "What does completion mean before a verified 100% route exists?",
         paragraphs: [
-          "No authoritative retail collectible total, complete mission list or tested trophy route is available from the published previews used here. A large-looking checklist built from screenshots would create a false percentage. This guide therefore distinguishes known activity families from unknown final totals.",
+          "Reviews establish the main activity families and confirm that exploration can continue after the ending, but they do not provide an authoritative collectible total, complete mission list or reproducible trophy route. A large-looking checklist built from review footage would create a false percentage, so this guide separates known activity families from unknown final totals.",
           "Decide which personal goal you mean: finish Dylan's Journey, see optional narratives, clear discoverable Zones, test every known combat system, or prepare a second run. Those can be useful goals even before a verified 100% definition exists.",
         ],
         table: {
@@ -887,8 +918,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "06 / Your own record",
         title: "Separate known activities from a complete checklist",
         paragraphs: [
-          "The current Wiki separates named missions and places from broader activity types. It cannot yet establish a complete game-wide count. Treat any pre-launch checklist claiming every quest, collectible or trophy as unverified until the retail build can be checked.",
-          "For now, use the in-game objective log as your personal record and the mission and location indexes to understand the activities already shown. After release, a useful checklist will need exact prerequisites, locations, rewards and missable conditions.",
+          "The current Wiki separates named missions and places from broader activity types. It cannot yet establish a complete game-wide count. Treat any checklist claiming every quest, collectible or trophy as provisional unless its route, game version and completion evidence can be reproduced.",
+          "Use the in-game objective log as your personal record and the mission and location indexes to understand each activity type. A useful checklist still needs exact prerequisites, locations, rewards and missable conditions rather than a copied list of names.",
         ],
         links: [
           { label: "Browse missions", href: "/wiki/missions" },
@@ -900,8 +931,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "07 / What comes next",
         title: "What a verified 100% route must prove",
         paragraphs: [
-          "After release, every completion entry needs a reproducible route: game version, prerequisite, area, exact interaction, reward and whether an earlier choice can prevent it. Counts should come from a finished retail run or a verified in-game counter, not from guesses based on leaked achievements.",
-          "Until that evidence exists, this page remains completion planning. It will not label a partial preview list 'all collectibles' or calculate a game-wide total from player-created goals. The first valuable post-launch update will be a tested activity inventory, followed by route order and missable checks.",
+          "Every completion entry needs a reproducible route: game version, prerequisite, area, exact interaction, reward and whether an earlier choice can prevent it. Counts should come from a finished run or a verified in-game counter, not from guesses based on leaked achievements or review footage.",
+          "Until that evidence exists, this page remains completion planning. It will not label a partial list 'all collectibles' or calculate a game-wide total from player-created goals. The next valuable update is a tested activity inventory, followed by route order and missable checks.",
         ],
       },
     ],

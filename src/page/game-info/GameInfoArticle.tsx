@@ -37,7 +37,7 @@ export default function GameInfoArticle({
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: topic.title.replace(/^CONTROL Resonant /, ""),
+            headline: heroTitles[topic.href] ?? topic.title,
             description: topic.description,
             url,
             mainEntityOfPage: { "@type": "WebPage", "@id": url },

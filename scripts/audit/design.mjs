@@ -24,6 +24,7 @@ for (const [route, name] of [
   ["/wiki", "wiki"],
   ["/map", "map"],
   ["/tools", "tools"],
+  ["/tools/pc-system-checker", "tool-detail"],
 ]) {
   await page.goto(base + route, {
     waitUntil: "networkidle",
@@ -63,6 +64,7 @@ for (const [route, name] of [
   ["/wiki", "wiki"],
   ["/map", "map"],
   ["/tools", "tools"],
+  ["/tools/pc-system-checker", "tool-detail"],
 ]) {
   await page.goto(base + route, {
     waitUntil: "networkidle",
@@ -104,6 +106,7 @@ for (const width of [320, 768, 1024]) {
     "/guides/combat-builds",
     "/map",
     "/tools",
+    "/tools/pc-system-checker",
   ]) {
     await page.goto(base + route, {
       waitUntil: "networkidle",

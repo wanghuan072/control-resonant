@@ -4,7 +4,7 @@ export const pageTdk = {
     title: "CONTROL Resonant - Game Guide, Wiki and Release Info",
     description:
       "Find CONTROL Resonant release dates, editions, PC requirements, gameplay advice, characters, abilities, enemies, missions and Manhattan locations in one place.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/game-info/release-date": {
     title: "CONTROL Resonant Release Date, Early Access & Editions",
@@ -16,7 +16,7 @@ export const pageTdk = {
     title: "CONTROL Resonant System Requirements & PC Specs",
     description:
       "Compare CONTROL Resonant minimum and recommended PC specs, 120GB SSD requirement, graphics targets, rendering features and PlayStation performance modes.",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-21",
   },
   "/game-info/platforms": {
     title: "CONTROL Resonant Platforms, Game Pass & Steam Deck",
@@ -28,7 +28,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Gameplay - Combat and Abilities",
     description:
       "Meet Dylan, learn the CONTROL Resonant combat loop, compare Forms and abilities, prepare for bosses, solve common problems and understand progression.",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-21",
   },
   "/guides": {
     title: "CONTROL Resonant Guides - Start, Build and Explore",
@@ -40,15 +40,21 @@ export const pageTdk = {
     title: "CONTROL Resonant Wiki - Characters, Skills and Bosses",
     description:
       "Explore the CONTROL Resonant Wiki for Dylan and the FBC, Aberrant Forms, Combat Abilities, enemies, bosses, Manhattan locations, missions and connected topics.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/map": {
-    title: "CONTROL Resonant Map - Confirmed Locations & Status",
+    title: "CONTROL Resonant Map - Zones, Routes and Movement Gates",
     description:
-      "Check the CONTROL Resonant map status before launch and browse confirmed Manhattan Zones, hubs, Faults, traversal links and details awaiting verification.",
-    updatedAt: "2026-09-20",
+      "Understand CONTROL Resonant Zones, hubs, Faults, vertical routes and movement gates, plus which location paths still need direct version-aware testing.",
+    updatedAt: "2026-09-21",
   },
   "/tools": {
+    title: "CONTROL Resonant Player Tools and PC System Checker",
+    description:
+      "Open practical CONTROL Resonant player tools, starting with a PC system requirements checker for CPUs, GPUs, memory, storage and Windows support.",
+    updatedAt: "2026-09-21",
+  },
+  "/tools/pc-system-checker": {
     title: "CONTROL Resonant PC System Requirements Checker",
     description:
       "Select a common CPU, GPU, RAM, SSD and Windows version to compare your PC with official CONTROL Resonant minimum, recommended and 4K hardware targets.",
@@ -58,7 +64,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Updates - Release and Game News",
     description:
       "Follow CONTROL Resonant release changes, PC specifications, PlayStation modes, Assist Mode and gameplay news, with links to the details that affect your plans.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/bosses": {
     title: "CONTROL Resonant Bosses - Encounters and Abilities",
@@ -76,7 +82,7 @@ export const pageTdk = {
     title: "CONTROL Resonant Characters - Dylan, Jesse and Zoe",
     description:
       "Meet CONTROL Resonant's Dylan Faden, Jesse Faden, Zoe De Vera and Bureau figures. Follow their roles and relationships without losing the story thread.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/wiki/combat": {
     title: "CONTROL Resonant Combat Wiki - Forms and Skills",
@@ -88,19 +94,19 @@ export const pageTdk = {
     title: "CONTROL Resonant Enemies Wiki - Hiss, Mold and Bosses",
     description:
       "Identify CONTROL Resonant enemy factions and named Resonant bosses. Compare their roles and the hazards shown in encounters before choosing your next approach.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/wiki/world": {
     title: "CONTROL Resonant World Wiki - Places and Context",
     description:
       "Learn what CONTROL Resonant's Manhattan Zones, Oldest House, field office and Gap are, with links to characters, activities and systems connected to each place.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-21",
   },
   "/wiki/missions": {
     title: "CONTROL Resonant Missions Wiki - Quests and Faults",
     description:
-      "Learn how CONTROL Resonant's main story, World Quests and Faults differ, then find the named Metro Fault route, its Reach ability and connected activities.",
-    updatedAt: "2026-09-18",
+      "Learn how CONTROL Resonant's campaign, Jesse Quests, World Quests, Faults and Zone activities differ, then choose the route that solves your current objective.",
+    updatedAt: "2026-09-21",
   },
   "/legal/privacy-policy": {
     title: "Privacy Policy - CONTROL Resonant Guide Fan Site",

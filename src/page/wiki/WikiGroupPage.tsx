@@ -41,7 +41,7 @@ const editorial: Record<
   world: {
     heroTitle: "CONTROL Resonant World — Places and Their Connections",
     heroDescription:
-      "Learn what each named place is, why it matters to Dylan and which characters, activities or systems connect to it. Use Locations when you need to follow an objective clue.",
+      "Learn what each named place is, why it matters to Dylan and which characters, activities or systems connect to it. Use the Map page when an objective clue becomes a route problem.",
     question: "What is each place in Dylan's story?",
     answer:
       "Manhattan's Zones are the new setting; the Oldest House is the Bureau headquarters from CONTROL. The field office serves as a hub, while the Gap is Dylan's build space. Open a place file for its role and connected activity.",
@@ -56,7 +56,7 @@ const editorial: Record<
     question: "Which systems make up a combat build?",
     answer:
       "The Aberrant supplies weapon Forms; Combat Abilities are earned through Resonants; Talents alter progression; Artifacts add passive effects. Reach and Shift are traversal tools, not boss-granted attack slots.",
-    note: "A row can describe a system without claiming it is a separate equippable item. Exact retail numbers are not inferred from preview screenshots.",
+    note: "A row can describe a system without claiming it is a separate equippable item. Review impressions explain practical friction, but exact values still require version-aware testing.",
     featuredTitle: "Aberrant Forms, Abilities and progression",
     indexTitle: "Combat systems and named equipment",
   },
@@ -66,20 +66,20 @@ const editorial: Record<
       "Tell the Hiss and Mold apart from Resonants, then examine the named encounters and the hazards that have been shown so far.",
     question: "Which threats are actually distinct?",
     answer:
-      "The Hiss and Mold return, while Resonants form the major boss class. The Central Resonant is one named preview encounter with fire and magma hazards.",
-    note: "Faction names, summons and individual bosses are classified separately. A preview sighting is not a complete bestiary.",
+      "The Hiss and Mold return, while Resonants form the major boss class. Some Resonants are optional and can be left until Dylan has a stronger build; the Central Resonant is one named encounter with fire and magma hazards.",
+    note: "Faction names, summons and individual bosses are classified separately. A shown encounter is not a complete bestiary or verified drop table.",
     featuredTitle: "Hiss, Mold and Resonant threat files",
     indexTitle: "Enemy factions and named encounters",
   },
   missions: {
     heroTitle: "CONTROL Resonant Missions — Choose Your Next Lead",
     heroDescription:
-      "Separate Dylan's main story from World Quests, Faults and Zone activities. Start with a named mission when you need to know where an ability or encounter fits.",
+      "Separate Dylan's main story from Jesse Quests, World Quests, Faults and Zone activities. Start with the activity type when you need movement, story context or a short combat challenge.",
     question: "What is a mission and what is a category?",
     answer:
-      "Dylan's Journey names the central campaign, World Quests are optional stories, and Faults are a distinct activity type. Metro Fault is a named route shown in a preview.",
-    note: "A category is not published as a fictional chapter-by-chapter quest list. Full steps wait for the retail build.",
-    featuredTitle: "Dylan's Journey, World Quests and Faults",
+      "Dylan's Journey is the campaign, Jesse Quests award traversal powers, World Quests tell optional stories, and Faults are distinct activity routes. Short challenges and discoveries belong to Zones rather than the chapter list.",
+    note: "A category is not a fictional chapter-by-chapter quest list. Route steps appear only when their prerequisites and results can be reproduced.",
+    featuredTitle: "Campaign, traversal quests and Zone activities",
     indexTitle: "Named missions and activity types",
   },
 };
@@ -173,8 +173,8 @@ export default function WikiGroupPage({ id }: { id: WikiGroupId }) {
               This Wiki explains what each place is. If you have a Zone name,
               Fault or obstacle in front of you, use the{" "}
               <Link href="/map">Map status and confirmed locations</Link> to see
-              what can be placed before launch and what still needs the released
-              game.
+              what can be placed now and which routes still need direct,
+              version-aware testing.
             </p>
           </section>
         )}

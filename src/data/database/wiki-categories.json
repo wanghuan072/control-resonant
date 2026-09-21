@@ -94,7 +94,7 @@
         "name": "Communications Department Headset",
         "label": "Resonant · announced newsletter cosmetic",
         "description": "The announcement-era Wiki records this headset as a newsletter signup item. Treat it as an appearance bonus, not a confirmed Combat Ability or an Artifact with passive stats.",
-        "href": "/guides/control-resonant-editions-and-pre-order-bonuses",
+        "href": "/game-info/release-date#editions",
         "details": [
           {
             "label": "Offer recorded by",
@@ -113,7 +113,7 @@
         "name": "Optical Filtering Goggles",
         "label": "Resonant · announced newsletter cosmetic",
         "description": "These goggles are the other signup item named in the Wiki overview. There is no basis in that listing for assigning them enhanced vision, hidden-object detection or a damage bonus.",
-        "href": "/guides/control-resonant-editions-and-pre-order-bonuses",
+        "href": "/game-info/release-date#editions",
         "details": [
           {
             "label": "Category",
@@ -174,7 +174,7 @@
       "The two CONTROL (2019) entries are background references, not promised sequel equipment."
     ],
     "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
-    "guideSlug": "control-resonant-artifacts-guide",
+    "guideHref": "/guides/combat-builds#artifacts",
     "sourceIds": [
       "wiki-aberrant",
       "wiki-resonant",
@@ -224,7 +224,7 @@
         "name": "World Quests",
         "label": "Resonant · self-contained story category",
         "description": "These are stories outside the main campaign route. Remedy distinguishes them from the broader mix of encounters, environmental challenges and hidden discoveries.",
-        "href": "/guides/control-resonant-world-quests-and-exploration",
+        "href": "/guides/story-walkthrough#quest-types",
         "details": [
           {
             "label": "Role",
@@ -243,7 +243,7 @@
         "name": "Faults",
         "label": "Resonant · previewed activity type",
         "description": "Published coverage uses Fault terminology, with Metro Fault as a named example. One showcased Fault does not establish how every Fault works, its duration, or its reward.",
-        "href": "/guides/control-resonant-metro-fault-and-reach",
+        "href": "/guides/story-walkthrough#metro-fault",
         "details": [
           {
             "label": "Named example",
@@ -262,7 +262,7 @@
         "name": "Metro Fault",
         "label": "Resonant · named IGN preview",
         "description": "IGN's mission preview identifies a warped metro encounter with train hazards, Mold and the Reach traversal reward. The linked guide describes that published preview, not an independently tested launch route.",
-        "href": "/guides/control-resonant-metro-fault-and-reach",
+        "href": "/guides/story-walkthrough#metro-fault",
         "details": [
           {
             "label": "Environment",
@@ -287,7 +287,7 @@
       "The older Wiki mission directory is explicitly for CONTROL and its expansions."
     ],
     "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
-    "guideSlug": "control-resonant-world-quests-and-exploration",
+    "guideHref": "/guides/story-walkthrough#quest-types",
     "sourceIds": ["ps-combat", "metro", "wiki-missions"],
     "checkedAt": "2026-09-16",
     "seo": {
@@ -324,6 +324,7 @@
     "items": [
       {
         "id": "fbc",
+        "detailSlug": "federal-bureau-of-control",
         "name": "Federal Bureau of Control",
         "label": "Series background · organization",
         "description": "The FBC is the secret agency that investigates, studies and contains paranatural phenomena. Its headquarters is the Oldest House. Dylan's complicated relationship with the Bureau is easier to follow if you remember that its personnel, research aims and containment decisions are not the same thing.",
@@ -445,7 +446,7 @@
       "New players can use the definitions without reading complete character biographies."
     ],
     "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
-    "guideSlug": "control-resonant-characters-and-story",
+    "guideHref": "/guides/getting-started#story-context",
     "sourceIds": [
       "wiki-fbc",
       "wiki-altered",
@@ -546,7 +547,7 @@
       "No unverified collectible pins or percentage-complete maps are supplied."
     ],
     "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
-    "guideSlug": "control-resonant-world-quests-and-exploration",
+    "guideHref": "/guides/story-walkthrough#quest-types",
     "sourceIds": [
       "remedy-gameplay",
       "ps-combat",

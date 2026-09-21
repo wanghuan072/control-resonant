@@ -15,11 +15,15 @@
   --color-night-2: #122027;
   --color-on-night: #f2f4f1;
   --color-signal: #ff645d;
+  --color-paper-light: #e7e9e6;
+  --color-light-ink: #12181c;
+  --color-light-muted: #536069;
+  --color-light-line: #aeb7b9;
   --shadow-card: 0 24px 60px rgba(0, 0, 0, 0.28);
   --radius-sm: 2px;
   --radius-md: 0px;
-  --container: 1240px;
-  --header-height: 76px;
+  --container: 1280px;
+  --header-height: 66px;
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -135,7 +139,7 @@ textarea {
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 68px;
+    --header-height: 62px;
   }
 
   .container {

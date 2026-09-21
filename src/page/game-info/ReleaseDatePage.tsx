@@ -16,7 +16,7 @@ import styles from "@/style/page/game-info/game-info-detail.module.css";
 const faq = [
   {
     question: "When is the CONTROL Resonant release date?",
-    answer: `The worldwide digital release date is ${displayDate(buyingFacts.digitalRelease)} for Windows PC, PlayStation 5 and Xbox Series X|S.`,
+    answer: `The announced worldwide digital release is ${displayDate(buyingFacts.digitalRelease)} for Windows PC, PlayStation 5 and Xbox Series X|S. The official FAQ lists September 25 in New Zealand, so check your regional storefront for the local calendar date and unlock time.`,
   },
   {
     question: "Does CONTROL Resonant have early access?",
@@ -79,7 +79,9 @@ export default function ReleaseDatePage() {
             <p>
               The date covers Windows PC through Steam and Epic Games Store,
               PlayStation 5 and Xbox Series X|S. GeForce NOW support is planned
-              for launch. A Mac version follows later in 2026.
+              for launch. The official FAQ lists September 25 in New Zealand;
+              regional storefront dates and unlock hours can differ. A Mac
+              version follows later in 2026.
             </p>
           </div>
           <aside className={styles.countdownCard}>
@@ -118,7 +120,10 @@ export default function ReleaseDatePage() {
               <time dateTime={buyingFacts.digitalRelease}>Sep 24</time>
               <div>
                 <strong>Worldwide digital release</strong>
-                <p>Windows PC, PS5, Xbox Series X|S and GeForce NOW support.</p>
+                <p>
+                  Windows PC, PS5, Xbox Series X|S and GeForce NOW support. New
+                  Zealand is listed as September 25.
+                </p>
               </div>
             </li>
             <li>
@@ -159,7 +164,8 @@ export default function ReleaseDatePage() {
             </div>
             <p>
               “Worldwide” is the announced calendar date, not a promise that
-              every storefront unlocks at the same hour in every time zone.
+              every storefront uses the same local date or unlock hour. The
+              official FAQ lists September 25 in New Zealand.
             </p>
           </header>
           <div
@@ -182,19 +188,19 @@ export default function ReleaseDatePage() {
                   <th>Windows PC</th>
                   <td>September 24, 2026</td>
                   <td>Steam / Epic digital</td>
-                  <td>Store unlock time and PC requirements</td>
+                  <td>Regional date, store unlock time and PC requirements</td>
                 </tr>
                 <tr>
                   <th>PlayStation 5</th>
                   <td>September 24, 2026</td>
                   <td>Digital; physical October 15</td>
-                  <td>Deluxe early access and regional listing</td>
+                  <td>September 25 in New Zealand; check regional listing</td>
                 </tr>
                 <tr>
                   <th>Xbox Series X|S</th>
                   <td>September 24, 2026</td>
                   <td>Digital; physical October 15</td>
-                  <td>Console generation and retailer package</td>
+                  <td>September 25 in New Zealand; check regional listing</td>
                 </tr>
                 <tr>
                   <th>GeForce NOW</th>

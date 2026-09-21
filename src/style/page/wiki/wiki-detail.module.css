@@ -11,7 +11,7 @@
   grid-template-columns: minmax(0, 1fr) 42%;
   gap: 40px;
   align-items: center;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 .heroGridNoImage {
   max-width: 850px;
@@ -28,14 +28,14 @@
 }
 .hero h1 {
   margin: 10px 0 18px;
-  font: 400 clamp(48px, 6vw, 80px)/0.88 var(--font-display);
+  font: 400 clamp(38px, 4.8vw, 60px)/0.92 var(--font-display);
   letter-spacing: -0.06em;
   text-transform: uppercase;
 }
 .lead {
   max-width: 650px;
   color: var(--color-ink-soft);
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.6;
 }
 .hero figure {

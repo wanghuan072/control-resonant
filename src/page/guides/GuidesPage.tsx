@@ -40,9 +40,9 @@ export default function GuidesPage() {
             Choose a guide for the problem blocking your progress
           </h2>
           <p>
-            Follow the problem first, then open the relevant manual. Preview
-            coverage can identify a system or encounter, but it cannot supply a
-            tested retail route before launch.
+            Follow the problem first, then open the relevant manual. Full-game
+            coverage can explain a system or activity type; exact routes, drops
+            and missable conditions appear only after direct testing.
           </p>
         </div>
         <ol>
@@ -61,8 +61,8 @@ export default function GuidesPage() {
             <span>02 / Combat</span>
             <strong>I keep losing an encounter</strong>
             <p>
-              Identify whether the problem is spacing, power recovery, dodge
-              timing or an arena hazard.
+              Identify whether the problem is spacing, Power recovery, Falter,
+              health recovery, targeting or an arena hazard.
             </p>
             <Link href="/guides/combat-builds#dodge-and-assist">
               Diagnose the fight <ArrowRight size={15} />

@@ -1,5 +1,6 @@
 export type DatabaseRecord = {
   id: string;
+  detailSlug?: string;
   name: string;
   label: string;
   description: string;
@@ -29,7 +30,7 @@ export type DatabaseCategory = {
   items: DatabaseRecord[];
   facts: string[];
   note: string;
-  guideSlug: string;
+  guideHref: string;
   sourceIds: string[];
   checkedAt?: string;
   backgroundList?: {

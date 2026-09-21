@@ -2,19 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 
 const read = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
-const guides = fs
-  .readdirSync("src/data/guides")
-  .filter((file) => file.endsWith(".json") && file !== "pillars.json")
-  .flatMap((file) => read(path.join("src/data/guides", file)));
 const categories = [
   ...read("src/data/database/categories.json"),
   ...read("src/data/database/wiki-categories.json"),
 ];
 const sources = read("src/data/research/sources.json");
 const gameInfoClaims = read("src/data/research/game-info-claims.json");
+const updates = read("src/data/updates/timeline.json");
 const hubs = read("src/data/site/hubs.json");
-const topics = read("src/data/site/topics.json");
-const home = read("src/data/site/home.json");
 const pillars = read("src/data/guides/pillars.json");
 const wikiGroups = read("src/data/site/wiki-groups.json");
 const wikiDetails = [
@@ -32,16 +27,6 @@ const check = (ok, message) => {
 };
 const unique = (values, label) =>
   check(new Set(values).size === values.length, `${label}: duplicates`);
-const slugs = new Set(guides.map((g) => g.slug));
-const destinationSource = fs.readFileSync(
-  "src/lib/data/guide-destinations.ts",
-  "utf8",
-);
-const redirectedGuideSlugs = new Set(
-  [
-    ...destinationSource.matchAll(/^\s*"([^"]+)":\s*"\/(?:guides|game-info)/gm),
-  ].map((match) => match[1]),
-);
 const sourceIds = new Set(sources.map((s) => s.id));
 const pillarHrefs = new Set(pillars.map((pillar) => pillar.href));
 const image = (file) =>
@@ -49,6 +34,49 @@ const image = (file) =>
     file?.startsWith("/") && fs.existsSync(path.join("public", file)),
     `Missing local image: ${file}`,
   );
+
+unique(
+  updates.map((update) => update.title),
+  "Update titles",
+);
+for (const update of updates) {
+  check(/^\d{4}-\d{2}-\d{2}$/.test(update.date), `${update.title}: date`);
+  check(
+    /^https:\/\//.test(update.href),
+    `${update.title}: missing original source URL`,
+  );
+}
+check(
+  updates.every(
+    (update, index) => index === 0 || updates[index - 1].date >= update.date,
+  ),
+  "Updates are not in reverse chronological order",
+);
+
+if (Date.now() >= Date.parse("2026-09-24T00:00:00Z")) {
+  const releaseRolloverMarkers = [
+    ["README.md", "Before release, information"],
+    ["README.md", "still needs release-build verification"],
+    ["src/lib/data/search.ts", "Pre-release map status"],
+    ["src/data/wiki/dossier-additions.json", "this pre-launch guide"],
+    ["src/data/wiki/legacy-context-details.json", "before release testing"],
+    [
+      "src/page/gameplay/components/GameplayBuildSections.tsx",
+      "a tested Guide after release",
+    ],
+    ["src/data/database/categories.json", "The launch database will"],
+    ["src/data/guides/longform.ts", "After launch, a walkthrough should"],
+    [
+      "src/page/game-info/SystemRequirementsPage.tsx",
+      "absence of a pre-release storefront notice",
+    ],
+  ];
+  for (const [file, marker] of releaseRolloverMarkers)
+    check(
+      !fs.readFileSync(file, "utf8").includes(marker),
+      `${file}: release-day content review required for “${marker}”`,
+    );
+}
 
 check(/^\d{4}-\d{2}-\d{2}$/.test(gameplay.reviewedAt), "Gameplay: review date");
 check(gameplay.sourceIds?.length >= 3, "Gameplay: internal source trail");
@@ -82,21 +110,7 @@ for (const ability of gameplay.abilities)
     `Gameplay: incomplete ability ${ability.name}`,
   );
 
-unique([...guides.map((g) => g.slug)], "Guide slugs");
 check(pillars.length === 4, "Exactly four published guides required");
-check(
-  guides.every((guide) => redirectedGuideSlugs.has(guide.slug)) &&
-    redirectedGuideSlugs.size === guides.length,
-  "Every archived guide needs one permanent destination",
-);
-unique(
-  guides.map((g) => g.seo.title),
-  "Guide titles",
-);
-unique(
-  guides.map((g) => g.seo.description),
-  "Guide descriptions",
-);
 unique(
   sources.map((s) => s.id),
   "Source IDs",
@@ -119,32 +133,6 @@ for (const claim of gameInfoClaims) {
   for (const id of claim.sourceIds ?? [])
     check(sourceIds.has(id), `${claim.id}: unknown source ${id}`);
 }
-for (const guide of guides) {
-  image(guide.image);
-  check(Boolean(guide.imageAlt), `${guide.slug}: missing image description`);
-  check(guide.sources.length > 0, `${guide.slug}: no sources`);
-  unique(
-    guide.sections.map((s) => s.id),
-    guide.slug,
-  );
-  check(Boolean(guide.quickAnswer?.trim()), `${guide.slug}: no quick answer`);
-  for (const slug of guide.relatedSlugs)
-    check(slugs.has(slug), `${guide.slug}: missing related guide ${slug}`);
-  for (const section of guide.sections) {
-    for (const ref of section.sourceRefs ?? [])
-      check(
-        Number.isInteger(ref) && ref >= 1 && ref <= guide.sources.length,
-        `${guide.slug}#${section.id}: invalid source reference ${ref}`,
-      );
-    if (section.image) image(section.image.src);
-    if (section.table)
-      for (const row of section.table.rows)
-        check(
-          row.length === section.table.headers.length,
-          `${guide.slug}#${section.id}: table dimensions`,
-        );
-  }
-}
 for (const category of categories) {
   image(category.heroImage);
   unique(
@@ -166,12 +154,24 @@ for (const category of categories) {
         sourceIds.has(id),
         `${category.id}#${item.id}: missing source ${id}`,
       );
-    if (item.href?.startsWith("/guides/"))
+    if (item.href?.startsWith("/guides/")) {
+      const guidePath = item.href.split("#")[0];
       check(
-        slugs.has(item.href.split("/")[2].split("#")[0]) ||
-          pillarHrefs.has(item.href),
+        pillarHrefs.has(guidePath),
         `${category.id}: missing record guide ${item.href}`,
       );
+    }
+    if (item.detailSlug) {
+      const group = wikiGroups.find((entry) =>
+        entry.categoryIds.includes(category.id),
+      )?.id;
+      check(
+        wikiDetails.some(
+          (entry) => entry.group === group && entry.slug === item.detailSlug,
+        ),
+        `${category.id}#${item.id}: missing detail ${item.detailSlug}`,
+      );
+    }
     const [route, anchor] = item.href.split("#");
     const target = categories.find((c) => `/${c.id}` === route);
     if (target && anchor)
@@ -180,20 +180,17 @@ for (const category of categories) {
         `${category.id}#${item.id}: missing target ${item.href}`,
       );
   }
+  check(
+    pillarHrefs.has(category.guideHref.split("#")[0]),
+    `${category.id}: invalid guide destination ${category.guideHref}`,
+  );
 }
-for (const group of [...hubs, ...topics]) {
-  for (const slug of group.guideSlugs ?? group.slugs ?? [])
-    check(slugs.has(slug), `${group.id}: missing guide ${slug}`);
+for (const group of hubs) {
+  for (const href of group.guideHrefs ?? [])
+    check(pillarHrefs.has(href), `${group.id}: missing guide ${href}`);
   for (const id of group.sourceIds ?? [])
     check(sourceIds.has(id), `${group.id}: missing source ${id}`);
 }
-const assignedGuides = topics.flatMap((t) => t.slugs);
-unique(assignedGuides, "Primary topic assignment");
-for (const slug of slugs)
-  check(assignedGuides.includes(slug), `Guide without player topic: ${slug}`);
-for (const entry of home.featuredGuides)
-  check(slugs.has(entry.slug), `Missing home guide: ${entry.slug}`);
-for (const entry of home.categories) image(entry.image);
 check(
   pillars.length === 4,
   `Expected four guide pillars, found ${pillars.length}`,
@@ -208,8 +205,6 @@ unique(
 );
 for (const pillar of pillars) {
   image(pillar.image);
-  for (const slug of pillar.slugs)
-    check(slugs.has(slug), `${pillar.id}: missing guide ${slug}`);
 }
 check(
   wikiGroups.length === 5,
@@ -256,8 +251,7 @@ for (const category of categories)
     const group = categoryGroup.get(category.id);
     check(Boolean(group), `${category.id}: unassigned Wiki category`);
     const key = `${group}:${item.name.toLowerCase()}`;
-    if (seenNames.has(key))
-      console.warn(`Wiki duplicate merged in listing: ${item.name} (${group})`);
+    check(!seenNames.has(key), `Wiki topic duplicate: ${item.name} (${group})`);
     seenNames.set(key, true);
   }
 unique(
@@ -371,7 +365,6 @@ console.log(
   JSON.stringify(
     {
       publishedGuides: pillars.length,
-      archivedGuides: guides.length,
       records: categories.reduce((n, c) => n + c.items.length, 0),
       sources: sources.length,
       pillars: pillars.length,

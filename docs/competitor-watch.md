@@ -1,6 +1,6 @@
 # CONTROL Resonant competitor watch
 
-Internal editorial reference. Last reviewed: 2026-09-17. These sites are topic-discovery inputs, not authorities for game facts. Do not surface this list, research links, or verification labels in site body copy.
+Internal editorial reference. Last reviewed: 2026-09-21. These sites are topic-discovery inputs, not authorities for game facts. Do not surface this list, research links, or verification labels in site body copy.
 
 | Site                                    | Watch for                                                                    | Current caution                                                                                                                                                                                                                                           |
 | --------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -15,9 +15,18 @@ Internal editorial reference. Last reviewed: 2026-09-17. These sites are topic-d
 1. Compare each site's navigation, recently updated pages, and one representative detail page. Record the player's underlying question, not just the competitor's headline.
 2. Search internal content for an existing answer before proposing a new URL. Prefer improving a relevant guide, Wiki detail, or Game Info section over creating a thin page.
 3. Verify every proposed game fact with Remedy, platform-holder documentation, storefront listings, or a clearly identified first-hand playable preview. Record the source and verification date in the internal research data. Forum and competitor claims are leads only.
-4. Separate pre-launch observations from launch-build instructions. Do not add boss rewards, build rankings, coordinates, patch behavior, or performance measurements without versioned hands-on evidence.
+4. Separate official system descriptions, review-build observations and directly reproduced launch-build instructions. A review can establish that a problem exists, but not a universal route, tier list, frame rate or numerical rule.
 5. Prioritize changes by player problem solved, evidence quality, existing-page fit, maintenance cost, and whether the result is genuinely different from competitor coverage.
-6. Keep the public site in English and preserve the current Home / Game Info / Guides / Wiki / My Case navigation unless a separate product decision changes it. Keep research URLs and source-state labels off public page bodies.
+6. Keep the public site in English and preserve the current Home / Game Info / Gameplay / Guides / Wiki / Map / Tools navigation unless a separate product decision changes it. Keep research URLs and source-state labels off public page bodies.
+
+## September 2026 review wave
+
+The first full-game reviews agree most strongly on world design, traversal and art direction. They also surface recurring player friction: the slow opening, map readability in vertical or gravity-shifted interiors, durable enemies, the Falter/Execution health loop, targeting in crowded fights and late-game difficulty spikes. These are useful problem definitions, not permission to copy scores or publish universal fixes.
+
+- Use Remedy or platform-holder full-game coverage for named systems: the recap, Jesse Quests, double jump, air dash, Dominance, execution health recovery, optional Resonants, mission priorities and post-story structure.
+- Use several independent reviews to decide which player questions deserve clearer explanations.
+- Require direct testing before publishing exact routes, boss phases, missables, damage rankings or hardware FPS claims.
+- Keep the PC checker tied to official target classes. Independent benchmarks belong in methodology notes until the same settings and build can be reproduced.
 
 ## Current opportunity register
 
@@ -26,5 +35,7 @@ Internal editorial reference. Last reviewed: 2026-09-17. These sites are topic-d
 | Now          | I never played CONTROL. What must I understand first?           | Homepage reading route + Getting Started guide + linked Wiki files    | Published story premise and prior-game history, clearly separated    |
 | Now          | What actually changed from CONTROL?                             | Getting Started comparison; link to character, world and combat files | Remedy's combat/world explanations and first-hand Xbox preview       |
 | Now          | Which edition and hardware target fit me?                       | Existing Game Info decision module                                    | Current store terms and official specifications, conditional results |
-| After launch | Which Form/Ability/Artifact combination works for my playstyle? | Combat & Builds guide and Wiki; only then consider a Build Lab        | Personally checked build, platform, game version and encounter       |
-| After launch | Where am I stuck in a mission or Zone?                          | Story Walkthrough and mission/world Wiki                              | Reproducible route, screenshots, patch version and spoiler boundary  |
+| Now          | Why am I losing health or failing to finish a staggered enemy?  | Gameplay, Combat & Builds and Combat Wiki                             | Official Falter, Execution and Dominance rules; no invented values   |
+| Now          | Which side activity should I follow?                            | Story & Missions guide and Missions Wiki                              | Official mission taxonomy and full-game coverage                     |
+| Direct test  | Which Form/Ability/Artifact combination works for my playstyle? | Combat & Builds guide and Wiki; only then consider a Build Lab        | Checked build, platform, game version and encounter                  |
+| Direct test  | Where am I stuck in a mission or Zone?                          | Story Walkthrough, Map and mission/world Wiki                         | Reproducible route, screenshots, patch version and spoiler boundary  |
