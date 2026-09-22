@@ -143,7 +143,7 @@ export default function TrailersPage() {
     <GameInfoArticle
       topic={topic}
       image="/images/home/control-resonant-hero.jpg"
-      lead="Choose a video by the question you have: the launch trailer for a quick look at the game, the developer documentary for design context, or longer previews for one named activity or boss. Playback loads only after you press play."
+      lead="We sorted the videos by what they actually help you answer: use the launch trailer for a quick look, the developer documentary for design context, and the longer previews for a named activity or boss. Playback loads only after you press play."
     >
       <JsonLd
         data={videos.map((video) => ({
@@ -225,10 +225,10 @@ export default function TrailersPage() {
       <section id="after-watching">
         <h2>What can you learn beyond the footage?</h2>
         <p>
-          Edited trailers show direction, the documentary explains design
-          intent, and the IGN footage shows specific preview encounters—not the
-          whole game. For how the published weapon Forms and abilities fit
-          together, read the{" "}
+          After reviewing the videos, we use the edited trailers for direction,
+          the documentary for design intent, and the IGN footage for specific
+          preview encounters—not the whole game. For how the published weapon
+          Forms and abilities fit together, read the{" "}
           <Link href="/gameplay">gameplay systems overview</Link>. For platforms
           and unlock timing, use the{" "}
           <Link href="/game-info/release-date">release guide</Link>. We will not

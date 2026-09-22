@@ -180,7 +180,7 @@
       {
         "heading": "Using a preview zone without inventing a map",
         "paragraphs": [
-          "The West Incursion Zone is useful because it is a concrete example of the city's altered architecture and combat spaces. It shows what a named Manhattan area can look like, but it should not be read as a complete region guide. Preview cuts can rearrange encounters and leave out paths, transitions or objective text.",
+          "We use the West Incursion Zone as a concrete example of Manhattan's altered architecture and combat spaces. It shows what a named area can look like, but the preview edit may rearrange encounters or omit paths, transitions and objective text, so we are not calling it a complete region guide.",
           "When looking for a route, first ask whether the activity is part of Dylan's Journey, a World Quest, or an environmental challenge. Then look for a published mission preview such as Metro Fault rather than deriving directions from a cinematic montage. This entry deliberately contains no unverified collectible pins or completion checklist."
         ],
         "connections": [
@@ -205,8 +205,8 @@
       {
         "heading": "What the preview route actually establishes",
         "paragraphs": [
-          "Metro Fault is one named underground preview route, with transit hazards, Mold opposition and the Reach movement reward. Those elements make it a useful example of how traversal and combat can meet in a Fault. They are not evidence for a universal Fault template, a guaranteed reward table or a complete launch walkthrough.",
-          "The key reading distinction is between observed sequence and inferred route. The footage establishes the encounter ingredients and Reach association; it does not supply every turn, checkpoint or optional pickup. For a practical run, treat Reach as the significant unlock and return to a step-by-step guide only when its route can be checked against the shipped game."
+          "Metro Fault is one named underground route with transit hazards, Mold and the Reach movement reward. We use it to show how traversal and combat can meet inside a Fault, not as a universal template or complete launch walkthrough.",
+          "We separate what the footage shows from the route we might infer. It gives us the encounter ingredients and the Reach connection, but not every turn, checkpoint or optional pickup. For now, we treat Reach as the important unlock and will only publish step-by-step directions once we can check them against the shipped game."
         ],
         "connections": [
           {
@@ -230,8 +230,8 @@
       {
         "heading": "Read the arena before choosing a build",
         "paragraphs": [
-          "The Central Resonant preview distinguishes this fight through lava-like floor danger and magma attacks. That gives players a question to ask of a build: can it maintain pressure while moving out of unsafe ground? It does not give a verified final health value, resistance chart or guaranteed damage window.",
-          "A Resonant encounter also matters to progression because an early hands-on describes a post-fight Combat Ability choice. Do not assume every Resonant battle has identical rewards or that the unnamed first entity is the same enemy as the Central Resonant. The two preview files are kept separate for that reason."
+          "The Central Resonant preview defines the fight through lava-like floor danger and magma attacks. Our first build question would be simple: can it keep pressure up while moving out of unsafe ground? We still need the final health, resistance and damage-window data.",
+          "An early hands-on also describes a Combat Ability choice after a Resonant. We are not assuming every boss gives the same reward, or that the unnamed first entity is the Central Resonant, so we keep those two encounters separate."
         ],
         "connections": [
           {
@@ -281,7 +281,7 @@
         "heading": "The hub's place in the route",
         "paragraphs": [
           "The Field Office is the central Manhattan hub linking handcrafted zones. That tells players something about the game's geography: traveling between named areas is not the same as walking across one continuous open-world street grid. It also distinguishes the present field operation from the FBC's older headquarters inside the Oldest House.",
-          "A hub can organize a route without proving which services, NPCs or quest boards it contains at launch. Zoe is confirmed as Dylan's field handler, but her exact office location and a complete hub feature list should not be inferred from the role. Use the hub as the relationship between zones, not as a fabricated map with marked collectibles."
+          "We know the Field Office organizes travel between Zones, but we do not yet know every service, NPC or quest board it contains. Zoe is Dylan's field handler; that does not tell us her exact office position. For now, we use the hub to explain how the Zones connect rather than drawing a made-up collectible map."
         ],
         "connections": [
           {
@@ -306,7 +306,7 @@
         "heading": "What the Form comparison can and cannot tell you",
         "paragraphs": [
           "A Form's useful first distinction is role: fast pressure, reach, broad coverage or a heavier commitment. The published early pool identifies Primary and Secondary choices, while Combo Enders provide another part of the weapon setup. Selecting a pair is therefore more informative than asking for a single best Form in isolation.",
-          "Official previews explain that close-range hits replenish Combat Ability resource. That means a Form's attack pattern affects how a player maintains the melee–ability–execution loop. The available footage does not justify a final numerical tier list, exact upgrade cost or universal boss recommendation. Treat the comparison table as a starting role map and test combinations in the Gap."
+          "The previews say close-range hits replenish Combat Ability resource, so a Form's attack pattern changes how we maintain the melee–ability–execution loop. The footage is not enough for a numerical tier list, exact upgrade costs or a universal boss setup. We use the comparison table as a starting role map, then test combinations in the Gap."
         ],
         "connections": [
           {
@@ -680,7 +680,7 @@
       {
         "heading": "Separate arena pressure from loadout pressure",
         "paragraphs": [
-          "The footage makes the floor hazard and projectiles useful things to watch for. If an attempt breaks before Dylan can close in, first identify whether movement through the arena or attack timing is the obstacle. The published material does not establish a safe tile, exact phase order or a required Form.",
+          "The footage tells us to watch the floor hazard and projectiles. If Dylan cannot close in, we would first decide whether the arena route or the attack timing is the real problem. We have not seen a reliable safe tile, exact phase order or required Form yet.",
           "Combat Abilities and Aberrant Forms can be compared by role, but this encounter's exact reward has not been established. The connected ability file explains the general boss-reward system without assigning a specific drop to the Central Resonant."
         ],
         "connections": [
@@ -705,7 +705,7 @@
       {
         "heading": "An old threat in a new setting",
         "paragraphs": [
-          "The Hiss defined the emergency inside the Oldest House in CONTROL. Resonant material names it among the threats affecting Manhattan, but the exact roster and behavior of its new-game enemy variants cannot be copied from the 2019 bestiary. The city introduces a different setting, movement system and melee-focused combat loop.",
+          "The Hiss defined the Oldest House emergency in CONTROL and returns among the threats affecting Manhattan. We are not copying its 2019 roster straight into the new bestiary, because Resonant changes the setting, movement and melee-focused combat loop.",
           "When a preview shows an enemy, distinguish its visible attack from its presumed faction. Metro Fault also features Mold opposition; Resonants form another encounter category. Grouping all three under 'Hiss' would make an enemy index easier to fill but less useful in play. This file preserves the continuity context while leaving new-game combat claims to observed encounters."
         ],
         "connections": [

@@ -45,7 +45,7 @@ export function createMetadata({
       type,
       locale: "en_US",
       images: [
-        { url: socialImage, alt: socialImageAlt, width: 1730, height: 925 },
+        { url: socialImage, alt: socialImageAlt, width: 1731, height: 909 },
       ],
       ...(type === "article"
         ? {

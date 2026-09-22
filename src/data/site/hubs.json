@@ -7,7 +7,7 @@
     "imageAlt": "Trains suspended along impossible directions in an official CONTROL Resonant screenshot",
     "eyebrow": "Mission archive / spoiler-aware",
     "introTitle": "Identify the objective before choosing a route",
-    "intro": "The full game mixes campaign priorities, optional stories, traversal rewards and short Zone activities. This hub explains those layers and links only to routes whose steps can be supported without inventing a complete mission order.",
+    "intro": "The full game mixes campaign priorities, optional stories, traversal rewards and short Zone activities. We separate those layers and only link routes whose steps we can support, rather than inventing a complete mission order.",
     "guideHrefs": ["/guides/story-walkthrough", "/guides/getting-started"],
     "table": {
       "caption": "Mission and activity structure",
@@ -94,7 +94,7 @@
       "pcgamer-review",
       "techradar-review"
     ],
-    "note": "The game is available to reviewers, but this site has not independently reproduced a complete campaign route. Exact triggers, coordinates and missable conditions remain excluded until they can be checked directly.",
+    "note": "Reviewers have access to the game, but we have not independently reproduced a complete campaign route. We are leaving out exact triggers, coordinates and missable conditions until we can check them directly.",
     "quickLinks": [
       {
         "name": "Manhattan location index",
@@ -118,7 +118,7 @@
     "imageAlt": "Dylan facing a fiery Resonant in official CONTROL Resonant promotional media",
     "eyebrow": "Boss fights and ability choices",
     "introTitle": "Boss previews and preparation",
-    "intro": "Resonants are optional major encounters as well as sources of Combat Ability choices. Full-game coverage supports a prepare, attempt, explore and return approach; this page does not pretend every shown entity already has a verified name or drop table.",
+    "intro": "Resonants are optional major encounters as well as sources of Combat Ability choices. From the full-game coverage, we think the sensible rhythm is to prepare, attempt the fight, explore elsewhere and return stronger. We are not giving every silhouette a name or invented drop table.",
     "guideHrefs": [
       "/guides/story-walkthrough",
       "/guides/combat-builds",
@@ -152,6 +152,14 @@
         "paragraphs": [
           "Not every Resonant is mandatory. Remedy's lead level designer says players are not forced to defeat every encounter or one particular boss. The story may require a number of victories from a larger set, but the required count and full roster have not been published.",
           "That makes boss choice part of route planning. It does not tell you which encounter is easiest, which power a named boss grants, or whether a particular fight can be skipped in the final game without consequences."
+        ],
+        "inlineLinks": [
+          {
+            "prefix": "For threats beyond named encounters, ",
+            "label": "browse enemy factions and bosses",
+            "href": "/wiki/enemies",
+            "suffix": " in the Wiki index."
+          }
         ]
       },
       {
@@ -203,7 +211,7 @@
       "pcgamer-review",
       "techradar-review"
     ],
-    "note": "Only named encounters shown so far appear here. Exact phases, weaknesses and rewards need to be checked in the released game.",
+    "note": "We only include encounters that have been named or clearly documented. We will add exact phases, weaknesses and rewards when we can check the released game.",
     "quickLinks": [
       {
         "name": "Central Resonant preview",
@@ -227,7 +235,7 @@
     "imageAlt": "Dylan wielding a large Aberrant weapon against fungal enemies",
     "eyebrow": "Build laboratory / systems guide",
     "introTitle": "Build guides by system",
-    "intro": "Start with the melee-to-Power loop, then diagnose the actual failure: closing distance, breaking Falter, recovering health, controlling a crowd or surviving a boss phase. Change the layer that answers that problem.",
+    "intro": "We start with the melee-to-Power loop, then diagnose the actual failure: closing distance, breaking Falter, recovering health, controlling a crowd or surviving a boss phase. Change the layer that answers that problem.",
     "guideHrefs": ["/guides/combat-builds"],
     "table": {
       "caption": "The four connected build systems",
@@ -266,7 +274,7 @@
           },
           {
             "title": "Executions restore the fight",
-            "text": "Breaking Falter enables an execution that restores health and grants a temporary melee boost; Dominance can turn a vulnerable enemy into a temporary ally."
+            "text": "Breaking Falter can enable an execution that starts Dominance. The short state strengthens melee attacks and makes enemies defeated during the window a dependable source of health; Command and summon abilities handle temporary allies."
           }
         ]
       },
@@ -312,7 +320,7 @@
       "pcgamer-review",
       "techradar-review"
     ],
-    "note": "There is no tested best-build tier list here yet. No DPS figures, boss clear times or final numerical rankings are invented.",
+    "note": "We do not have enough direct testing for a best-build tier list yet, so we are not inventing DPS figures, boss clear times or final rankings.",
     "quickLinks": [
       {
         "name": "Ability records",

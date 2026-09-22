@@ -39,9 +39,9 @@ export default function UpdatesPage() {
               See which announcements change your platform, build or settings
             </h2>
             <p>
-              Announcements are most useful when they alter a purchase, hardware
-              or playstyle decision. These are the recent changes with a
-              practical next step.
+              We follow the announcements that can change what you buy, how you
+              set up the game, or how you plan a build. These are the updates we
+              think deserve a practical next step.
             </p>
           </div>
           <div className={styles.actionGrid}>
@@ -51,7 +51,8 @@ export default function UpdatesPage() {
               <p>
                 Remedy published separate PS5 and PS5 Pro targets. The Pro
                 Balanced mode depends on a 120Hz-compatible display; targets are
-                not an independent frame-rate test.
+                not the same as an independent frame-rate test, so we&apos;d
+                check your display before choosing it.
               </p>
               <Link href="/game-info/system-requirements#console-modes">
                 Compare modes →
@@ -74,7 +75,8 @@ export default function UpdatesPage() {
               <p>
                 The final requirement tiers supersede earlier previews. Check
                 CPU, GPU, memory and SSD space together; the published target
-                does not predict a specific machine&apos;s measured FPS.
+                gives us a baseline, not a measured FPS result for your exact
+                machine.
               </p>
               <Link href="/game-info/system-requirements">
                 Check system requirements →
@@ -106,13 +108,21 @@ export default function UpdatesPage() {
                     Original source ↗
                   </a>
                   {u.guideHref && (
-                    <Link href={u.guideHref}>Updated guide →</Link>
+                    <Link href={u.guideHref}>
+                      {u.guideLabel} <span aria-hidden="true">→</span>
+                    </Link>
                   )}
                   {"detailPath" in u && u.detailPath && (
                     <Link href={u.detailPath}>
-                      {"detailLabel" in u ? u.detailLabel : "Read more"} →
+                      {u.detailLabel} <span aria-hidden="true">→</span>
                     </Link>
                   )}
+                  {"internalLinks" in u &&
+                    u.internalLinks?.map((link) => (
+                      <Link href={link.href} key={link.href}>
+                        {link.label} <span aria-hidden="true">→</span>
+                      </Link>
+                    ))}
                 </div>
               </article>
             </li>

@@ -21,6 +21,13 @@ export type WikiDetail = {
   sections: {
     heading: string;
     paragraphs: string[];
+    inlineLinks?: {
+      afterParagraph: number;
+      prefix: string;
+      label: string;
+      href: string;
+      suffix: string;
+    }[];
     connections?: { path: string; reason: string }[];
   }[];
   playerTakeaway: string;

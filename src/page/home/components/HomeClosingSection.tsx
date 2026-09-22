@@ -27,9 +27,9 @@ export function HomeClosingSection() {
               CONTROL Resonant sends Dylan Faden out of the Oldest House and
               into a Manhattan broken into distinct Zones. He fights with the
               shape-shifting Aberrant, earns supernatural Combat Abilities and
-              follows both the main story and optional World Quests. This site
-              brings the practical questions together: what version to buy, how
-              the combat systems fit, who the characters are and where the named
+              follows both the main story and optional World Quests. We bring
+              the practical questions together: which version to buy, how the
+              combat systems fit, who the characters are, and where the named
               activities take place.
             </p>
             <p>
@@ -41,11 +41,10 @@ export function HomeClosingSection() {
               <Link href="/guides">Guides</Link> when you need a way to approach
               a fight or activity, and the <Link href="/wiki">Wiki</Link> when
               you want to look up a specific person, power, enemy or place. When
-              the question needs your own hardware or buying preferences, use
-              the <Link href="/tools">player tools</Link>. The{" "}
-              <Link href="/map">map page</Link> currently separates confirmed
-              locations from the Zone and marker data that still requires the
-              released game.
+              the answer depends on your hardware or buying preferences, use the{" "}
+              <Link href="/tools">player tools</Link>. On the{" "}
+              <Link href="/map">map page</Link>, we only mark locations we can
+              support and leave exact routes for the released game.
             </p>
           </div>
         </section>

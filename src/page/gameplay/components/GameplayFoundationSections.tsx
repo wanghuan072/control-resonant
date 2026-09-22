@@ -59,10 +59,9 @@ export function GameplayFoundationSections() {
               </div>
             </dl>
             <p>
-              This page only explains what Dylan changes mechanically. His
-              history, Bureau captivity and relationship with Jesse belong in
-              the character files rather than being repeated in every combat
-              section.
+              We&apos;re focusing on what Dylan changes mechanically here. For
+              his history, Bureau captivity, and relationship with Jesse, we
+              keep the deeper context in the character files.
             </p>
           </div>
         </div>
@@ -151,9 +150,9 @@ export function GameplayFoundationSections() {
             </table>
           </div>
           <p className={styles.caveat}>
-            Full-game coverage confirms this relationship, but it does not
-            establish one optimal rotation for every Form, difficulty setting or
-            encounter.
+            The full-game coverage supports this loop. We have not seen one
+            rotation that works best for every Form, difficulty, and encounter,
+            so we would learn the rhythm before copying a fixed combo.
           </p>
         </div>
       </section>
@@ -200,10 +199,10 @@ export function GameplayFoundationSections() {
           </table>
         </div>
         <p className={styles.caveat}>
-          Completed reviews disagree sharply about which combinations stay
-          interesting over a full run. Choose by reach, speed and Falter
-          pressure instead of treating one reviewer&apos;s preference as a
-          universal tier list.
+          The completed reviews disagree about which combinations stay fun over
+          a full run. We would choose by reach, speed, and Falter pressure
+          instead of treating one reviewer&apos;s preference as a universal tier
+          list.
         </p>
         <Link className={styles.textLink} href="/wiki/combat/aberrant-forms">
           Read the Aberrant Forms file <ArrowRight size={16} />

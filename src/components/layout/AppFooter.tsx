@@ -21,26 +21,32 @@ export function AppFooter() {
             what you need for your next step in Manhattan.
           </p>
         </div>
-        <nav aria-label="Footer navigation" className={styles.links}>
-          {primaryNavigation.flatMap((item) =>
-            item.href === "/game-info"
-              ? gameInfoNavigation.map((child) => (
-                  <Link key={child.href} href={child.href}>
-                    {child.label}
-                  </Link>
-                ))
-              : [
+        <div className={styles.navColumns}>
+          <nav aria-label="Explore" className={styles.navGroup}>
+            <strong>Explore</strong>
+            <div>
+              {primaryNavigation
+                .filter((item) => item.href !== "/game-info")
+                .map((item) => (
                   <Link key={item.href} href={item.href}>
                     {item.label}
-                  </Link>,
-                ],
-          )}
-        </nav>
-        <Link href="#top" className={styles.backToTop} aria-label="Back to top">
-          <ArrowUp aria-hidden="true" size={19} />
-        </Link>
+                  </Link>
+                ))}
+            </div>
+          </nav>
+          <nav aria-label="Game information" className={styles.navGroup}>
+            <strong>Game info</strong>
+            <div>
+              {gameInfoNavigation.map((item) => (
+                <Link key={item.href} href={item.href}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </nav>
+        </div>
       </div>
-      <div className={`container ${styles.bottom}`}>
+      <div className={`container ${styles.utility}`}>
         <div className={styles.legalLinks}>
           <strong>Legal</strong>
           <nav aria-label="Legal navigation">
@@ -55,6 +61,10 @@ export function AppFooter() {
             ))}
           </nav>
         </div>
+        <Link href="#top" className={styles.backToTop} aria-label="Back to top">
+          <span>Back to top</span>
+          <ArrowUp aria-hidden="true" size={17} />
+        </Link>
       </div>
       <div className={`container ${styles.copyright}`}>
         <p>

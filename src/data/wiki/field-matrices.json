@@ -171,14 +171,14 @@
       [
         "Falter and Execution",
         "Pressure vulnerable enemies until an execution opens",
-        "Restore health and gain a temporary melee boost",
+        "Execute an eligible normal enemy to start the next offensive state",
         "Boss health checkpoints change how repeated attempts are paced"
       ],
       [
         "Dominance",
-        "Use a vulnerable normal enemy instead of executing it",
-        "Convert the target into a temporary ally",
-        "Not every enemy or boss can be treated as a summon"
+        "Triggered after an execution",
+        "Temporarily strengthen melee and make defeated enemies a dependable source of health",
+        "Command and summon abilities—not Dominance—add temporary allies"
       ],
       [
         "Talents",

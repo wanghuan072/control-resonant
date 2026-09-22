@@ -23,10 +23,10 @@ export type LongformGuide = {
 
 export const longformGuides: Record<GuidePillarId, LongformGuide> = {
   "getting-started": {
-    updatedAt: "2026-09-21",
+    updatedAt: "2026-09-22",
     readTime: "14 min read",
     answer:
-      "CONTROL Resonant is a single-player, melee-led action RPG starring Dylan Faden. You can begin without finishing CONTROL because the main menu includes a recap, but knowing Jesse, Dylan and the Federal Bureau makes the opening clearer. Learn the Aberrant, Combat Abilities, Talents and Artifacts as separate systems, then use side activities and Assist Mode to solve the part of combat or traversal that is blocking you.",
+      "CONTROL Resonant is a single-player, melee-led action RPG starring Dylan Faden. We think you can start here without finishing CONTROL because the main menu includes a recap, though knowing Jesse, Dylan and the Federal Bureau makes the opening clearer. We break the Aberrant, Combat Abilities, Talents and Artifacts into separate systems, then show you which side activities or Assist Mode settings can solve the problem blocking you.",
     route: [
       "Understand the sequel",
       "See what changed",
@@ -56,7 +56,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Do you need to play CONTROL first?",
         paragraphs: [
           "No. Remedy has presented Resonant as both a sequel and a new entry point, and a developer interview says the main menu includes a recap of CONTROL. The original game is still the best way to understand why Dylan and Jesse's relationship matters, what the Hiss did to the Bureau, and why the Oldest House is more than a location.",
-          "For a short spoiler-light preparation, remember four facts: Jesse became FBC Director; Dylan spent years confined by the Bureau; the Hiss crisis changed both siblings; and Jesse is missing when Dylan's new journey begins. The sequel's final explanation of her absence has not been publicly established, so do not treat a trailer cut as a solved plot point.",
+          "For a short, spoiler-light preparation, we would keep four facts in mind: Jesse became FBC Director; Dylan spent years confined by the Bureau; the Hiss crisis changed both siblings; and Jesse is missing when Dylan's new journey begins. We have not seen a reliable explanation for her absence yet, so we are treating trailer cuts as clues rather than answers.",
         ],
         image: {
           src: "/images/characters/zoe-and-dylan.jpg",
@@ -114,8 +114,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "What changed from CONTROL to Resonant?",
         paragraphs: [
           "The most useful preparation is not a complete retelling of CONTROL. It is knowing which old assumptions to put aside. Jesse's investigation took players through the Oldest House with the Service Weapon and paranatural powers. Resonant follows Dylan into Manhattan, emphasizes the transforming melee Aberrant, and organizes exploration around distinct handcrafted Zones.",
-          "These are confirmed changes in direction, not a claim that every familiar character, power or location has disappeared. Remedy describes Dylan's Journey as the main campaign and World Quests as self-contained stories. Combat Abilities, Aberrant Forms and Talents shape his build; the Gap is the space where that build is managed, not a name for an enemy stagger meter.",
-          "If you are returning from CONTROL, begin with the protagonist and combat rows below. If you are new to the series, read the sibling and Bureau files first, then learn the new systems. Either route leads into the same first-session checklist without requiring a fictional launch-day walkthrough.",
+          "From everything Remedy has shown, the direction has changed without throwing away every familiar character, power or location. Dylan's Journey is the main campaign, World Quests are self-contained stories, and Combat Abilities, Aberrant Forms and Talents shape his build. We use the Gap for that build space; it is not an enemy stagger meter.",
+          "If you are returning from CONTROL, we would begin with the protagonist and combat rows below. If you are new to the series, start with the sibling and Bureau files, then learn the new systems. Both routes lead to the same first-session checklist without pretending we already have a finished launch-day walkthrough.",
         ],
         table: {
           headers: ["Question", "CONTROL (2019)", "CONTROL Resonant"],
@@ -187,7 +187,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Learn the four parts of a build",
         paragraphs: [
           "The Aberrant changes between melee Forms. Combat Abilities are supernatural actions connected to Resonant encounters. Talents alter Dylan's progression, and Artifacts provide passive effects. Treating all four as interchangeable 'weapons' makes an early build harder to understand.",
-          "The combat rhythm is to close distance with the Aberrant, restore Power through melee pressure, use an ability to control a threat, then attack Falter until an execution becomes available. Executions restore health and briefly strengthen melee; Dominance offers a different use for vulnerable enemies by turning them into temporary allies. Learn what each tool does before copying a supposed best build.",
+          "The combat rhythm is to close distance with the Aberrant, restore Power through melee pressure, use an ability to control a threat, then build Falter until an execution becomes available. Executing an eligible normal enemy starts Dominance, briefly strengthening melee and making enemies defeated during that window a dependable source of health. Command and summon abilities—not Dominance—are the tools that add temporary allies. Learn what each system does before copying a supposed best build.",
         ],
         table: {
           headers: ["System", "Decision it answers", "First check"],
@@ -312,10 +312,10 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
     ],
   },
   "combat-builds": {
-    updatedAt: "2026-09-21",
+    updatedAt: "2026-09-22",
     readTime: "15 min read",
     answer:
-      "Build around a combat problem, not an unexplained tier list. Pick an Aberrant Form for range and target pattern, add a Combat Ability for control or defense, then use Talents and Artifacts to reinforce the melee-to-Power loop. Flurry, Slash, Slice, Crush, Drill and Extend are the six named early Form choices; reviews agree that different combinations work, but not on a universal best-build order.",
+      "We build around the problem in front of us, not an unexplained tier list. Pick an Aberrant Form for its range and target pattern, add a Combat Ability for control or defense, then use Talents and Artifacts to reinforce the melee-to-Power loop. Flurry, Slash, Slice, Crush, Drill and Extend are the six named early choices; the reviews we compared support several combinations, not one universal best build.",
     route: [
       "Choose a Form",
       "Add an ability",
@@ -329,8 +329,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "01 / The rule",
         title: "How does the melee-to-power loop work?",
         paragraphs: [
-          "Remedy's combat demonstrations place the Aberrant at the center: melee attacks create pressure and help restore the resource for supernatural actions. Abilities can interrupt, defend or strike at range, and Falter creates opportunities to keep momentum. A build that only names high-damage moves but cannot sustain this loop is incomplete.",
-          "When testing a loadout, watch four things: can you reach the target, can you recover Power without taking unsafe hits, can you break Falter before the enemy recovers, and can you create an execution window when health is low? These are player-use questions. Review-build impressions do not provide a universal damage-per-second ranking.",
+          "The combat footage puts the Aberrant at the center: melee pressure restores the resource for supernatural actions, abilities interrupt or protect at range, and Falter creates the next opening. In our view, a build is incomplete if it names high-damage moves but cannot keep that loop moving.",
+          "We judge a loadout with four questions: can it reach the target, recover Power without unsafe hits, break Falter in time, and create an execution window when health is low? Those questions are more useful than pretending the available review builds give us a universal DPS ranking.",
         ],
       },
       {
@@ -338,7 +338,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "02 / Weapon",
         title: "Which Aberrant Form fits your fight?",
         paragraphs: [
-          "The first-party Xbox hands-on names three early Primary Forms and three Secondary Forms. Primary and Secondary refer to loadout roles, not six separate weapons to collect. Combo Enders form another part of the moveset. The table below captures the previewed tactical distinctions; it does not claim a final tier order.",
+          "We found three early Primary Forms and three Secondary Forms in the Xbox hands-on. Those labels describe loadout roles, not six separate weapons to collect, and Combo Enders add another layer. The table below is our read of the shown tactical roles, not a final tier list.",
         ],
         table: {
           headers: ["Form", "Preview role", "Use it when"],
@@ -394,7 +394,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Add a Combat Ability that solves a gap",
         paragraphs: [
           "Major Resonants are tied to Combat Ability rewards, and some first-run choices branch. In the first-party preview, Barrage launches projectiles, Seekers act as mobile summons that can be thrown or detonated, and Shield provides defense that can become an offensive dash. These are observed choices, not a full launch ability list.",
-          "Choose by the problem your Aberrant Form does not solve. A close-range setup may need a way to handle distant pressure; a slower Form may need protection while closing; a crowd-focused setup may benefit from a tool that isolates a dangerous target. Do not assume every ability can be equipped at once or that a previewed choice is irreversible without checking the released game.",
+          "We would choose the ability that covers what the Aberrant Form cannot. A close-range setup may need an answer to distant pressure, a slower Form may need protection while closing, and a crowd-focused setup may need to isolate one dangerous target. We are not assuming every ability fits at once, or that a previewed choice stays irreversible in the released game.",
         ],
         image: {
           src: "/images/abilities/seekers-loadout.jpg",
@@ -412,24 +412,28 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
       {
         id: "falter-execution-dominance",
         eyebrow: "04 / Vulnerable enemies",
-        title:
-          "Execution or Dominance: what should you do after Falter breaks?",
+        title: "How do Execution and Dominance work after Falter breaks?",
         paragraphs: [
-          "Falter is the opening, not the reward by itself. An execution restores health and briefly boosts melee damage, making it the practical choice when Dylan needs to stabilize or keep pressure on a boss. Dominance converts a vulnerable normal enemy into a temporary ally, which can reduce crowd pressure and redirect attention.",
-          "Choose from the state of the arena: execute when health and immediate damage matter; use Dominance when an extra body can interrupt or distract the remaining group. Bosses and special enemies may not offer the same choice, so do not build a survival plan around a conversion that the encounter does not permit.",
+          "Falter is the opening, not the reward by itself. Against an eligible normal enemy, an execution starts Dominance. That short state raises Dylan's melee damage and makes enemies defeated during the window a dependable source of health, so the next target matters as much as the execution itself.",
+          "Bosses use Falter differently: breaking it creates a staggered damage window instead of the normal execution sequence. If crowd pressure is the larger problem, use a Command or summon ability to add an ally; Dominance itself does not convert an enemy.",
         ],
         table: {
-          headers: ["Falter follow-up", "Immediate value", "Best used when"],
+          headers: ["Combat state", "Immediate value", "Player check"],
           rows: [
             [
               "Execution",
-              "Health recovery and temporary melee boost",
-              "You need to stabilize or extend a damage window",
+              "Removes an eligible normal enemy and starts Dominance",
+              "Choose the next target before committing to the animation",
             ],
             [
               "Dominance",
-              "Temporary allied enemy",
-              "Crowd pressure is the larger problem",
+              "Temporary melee boost and dependable health drops",
+              "Spend the short window on a dangerous target without losing access to weaker enemies",
+            ],
+            [
+              "Boss Falter",
+              "Staggered damage window",
+              "Use the safe opening; do not expect a normal-enemy execution",
             ],
           ],
         },
@@ -440,7 +444,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "05 / Progression",
         title: "Spend Talents against a real bottleneck",
         paragraphs: [
-          "Zone activities award progression that can be spent on Talents. Previews show Primary, Secondary and Combo Ender branches and a Respec All control, but do not establish every launch cost or whether every point is easily recoverable. Record the reason for a purchase rather than treating a preview tree as a solved final build.",
+          "Zone activities feed progression into Talents. We can see Primary, Secondary and Combo Ender branches plus a Respec All control, but the previews do not give us every launch cost or recovery rule. We would record why we bought a node instead of treating a preview tree as a solved final build.",
           "If you struggle to reach enemies, test movement or a longer Form before spending only on damage. If fights stall after power runs out, examine the melee loop. If one boss move ends every attempt, survivability and Assist Mode may matter more than another attack node.",
         ],
         links: [
@@ -456,7 +460,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Fit Artifacts to the build, not the other way around",
         paragraphs: [
           "Artifacts are passive modifiers made from Untapped Artifacts in the Gap. The published first-run loadout has three equipped slots, with a fourth in New Game Plus. A named pre-order or Deluxe Artifact is not proof that a particular effect is essential to beat the campaign.",
-          "Read the condition on each effect: a bonus that triggers in a situation you rarely create is weaker for your route than a modest effect that supports your regular rhythm. Because final rolls, crafting material rates and best-in-slot values have not been verified, this guide compares decision logic rather than publishing a fictitious item ranking.",
+          "Read the condition on each effect. A large bonus you rarely trigger can be worse than a modest effect that supports your normal rhythm. We do not have reliable final rolls, crafting rates, or best-in-slot values yet, so we are comparing decisions rather than inventing an item ranking.",
         ],
         links: [
           {
@@ -564,7 +568,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
     updatedAt: "2026-09-21",
     readTime: "12 min read",
     answer:
-      "Start by distinguishing Dylan's Journey from Jesse Quests, World Quests, Faults and short Zone activities. Jesse Quests can unlock movement, World Quests carry optional stories, and arcade-style activities are useful for practice and progression. This guide does not convert review footage into a fabricated full mission order.",
+      "We start by separating Dylan's Journey from Jesse Quests, World Quests, Faults and short Zone activities. Jesse Quests can unlock movement, World Quests carry optional stories, and arcade-style activities help with practice and progression. We use review footage to explain those categories without turning it into a made-up mission order.",
     route: [
       "Read the quest structure",
       "Understand the Zones",
@@ -577,8 +581,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "01 / Coverage boundary",
         title: "What can this walkthrough confirm before direct route testing?",
         paragraphs: [
-          "Remedy names the campaign Dylan's Journey and separates it from Jesse Quests, World Quests, Faults, bounties, puzzles, challenges and discoveries across Manhattan Zones. Full-game coverage clarifies what several categories do, but it still does not provide a reproducible objective sequence, every entrance or a complete reward table.",
-          "Use this page as a route map of known activity types and demonstrated landmarks. It deliberately does not invent numbered chapters, exact coordinates, dialogue solutions or guaranteed drops. After launch, a walkthrough should record platform, patch, entry condition and a reproducible step before calling it complete.",
+          "Remedy calls the campaign Dylan's Journey and separates it from Jesse Quests, World Quests, Faults, bounties, puzzles, challenges and discoveries. The full-game coverage helped us understand those categories, but it still does not give us a reproducible objective order, every entrance, or a complete reward table.",
+          "For now, we use this page as a route map for known activity types and demonstrated landmarks. We are leaving out numbered chapters, exact coordinates, dialogue solutions and guaranteed drops until we can record the platform, patch, entry condition and repeatable steps.",
         ],
       },
       {
@@ -632,7 +636,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "How should you move through Manhattan Zones?",
         paragraphs: [
           "Remedy describes large, visually distinct handcrafted Zones rather than one flat open-world checklist. The FBC field office serves as a connecting hub. Gravity Anomalies and abilities such as Reach and Shift change traversal, so an inaccessible path may be a later return point rather than a missed jump.",
-          "When you reach a new Zone, record the hub exit, the current story marker, optional quest leads and any traversal obstacle you cannot yet solve. Revisit the obstacle after receiving a movement unlock. This method works without claiming that every alley, secret or fast-travel point has already been mapped.",
+          "When we enter a new Zone, we would note the hub exit, current story marker, optional leads, and any traversal obstacle we cannot solve yet. Come back after a movement unlock. It is a simple way to stay oriented without pretending every alley, secret, and fast-travel point is already mapped.",
         ],
         table: {
           headers: ["If your clue is…", "First identify…", "Then open…"],
@@ -692,7 +696,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Metro Fault and the Reach traversal unlock",
         paragraphs: [
           "An IGN First mission preview shows a Metro Fault route with distorted transit spaces, train hazards and Mold threats. Reach appears as a traversal reward that changes how Dylan moves between separated points. It should not be filed as a normal Combat Ability slot or a generic collectible.",
-          "The player-facing lesson is to read the environment before committing to movement: identify the safe platform, the hazard cycle and what the newly granted traversal tool can reach. The preview does not publish a complete retail entrance, every puzzle solution or a reliable time-to-clear, so this page does not turn a montage into step-by-step directions.",
+          "Our takeaway is to read the environment before committing to movement: find the safe platform, watch the hazard cycle, and check what the new traversal tool can reach. The preview does not show a complete entrance, every puzzle, or a reliable clear time, so we are not turning a montage into step-by-step directions.",
         ],
         links: [
           {
@@ -707,8 +711,8 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "06 / Previewed encounter",
         title: "What is known about the Central Resonant fight?",
         paragraphs: [
-          "A published boss preview identifies the Central Resonant and shows fire or magma hazards during the encounter. That is enough to tell a player to watch the arena and telegraphs, but not enough to publish exact health, resistances, safe-spot coordinates or a guaranteed ability reward.",
-          "When the final fight can be tested, a useful walkthrough should record the approach route, attack signals, recovery windows and any version-dependent changes. Until then, treat this as an encounter briefing and avoid building your entire progression plan around an assumed drop.",
+          "From the boss preview, the Central Resonant clearly turns the arena itself into a problem with fire and magma hazards. We would watch the floor and attack cues first, but we do not yet have reliable health, resistance, safe-spot, or reward data.",
+          "Once the final fight can be checked directly, we will want the approach route, attack cues, recovery windows, and version changes. Until then, we are treating this as an encounter briefing and would not build an entire progression plan around an assumed drop.",
         ],
         image: {
           src: "/images/bosses/resonant-fire.jpg",
@@ -766,10 +770,10 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
     ],
   },
   completion: {
-    updatedAt: "2026-09-21",
+    updatedAt: "2026-09-22",
     readTime: "11 min read",
     answer:
-      "A trustworthy CONTROL Resonant completion route cannot claim a verified 100% total without direct testing. Start with World Quests, Jesse Quests, Faults, Zone activities, optional Resonants, Artifacts and New Game Plus. Reviews confirm post-ending exploration, but exact counts, rewards and missable conditions still need reproducible routes.",
+      "We cannot honestly call any route 100% complete without checking the finished game directly. For now, we track World Quests, Jesse Quests, Faults, Zone activities, optional Resonants, Artifacts and New Game Plus. The reviews we checked support post-ending exploration, but exact counts, rewards and missable conditions still need repeatable routes.",
     route: [
       "Define the scope",
       "Log optional activities",
@@ -782,7 +786,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "01 / Honest baseline",
         title: "What does completion mean before a verified 100% route exists?",
         paragraphs: [
-          "Reviews establish the main activity families and confirm that exploration can continue after the ending, but they do not provide an authoritative collectible total, complete mission list or reproducible trophy route. A large-looking checklist built from review footage would create a false percentage, so this guide separates known activity families from unknown final totals.",
+          "The reviews give us the main activity families and say exploration continues after the ending, but they do not give us an authoritative collectible total, complete mission list, or repeatable trophy route. We would rather separate the activities we know from the totals we do not than publish an impressive-looking fake percentage.",
           "Decide which personal goal you mean: finish Dylan's Journey, see optional narratives, clear discoverable Zones, test every known combat system, or prepare a second run. Those can be useful goals even before a verified 100% definition exists.",
         ],
         table: {
@@ -822,7 +826,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "Track World Quests, Faults and Zone activities",
         paragraphs: [
           "World Quests are optional narrative threads; Faults are distinct activity spaces. Manhattan also contains encounters, puzzles, Gravity Anomalies and discoveries. The first practical task is classification: record where you found an activity, what condition stopped you and whether it appears story-gated or traversal-gated.",
-          "Do not mark an unexplored area as permanently missed just because it could not be reached on first contact. Reach, Shift and other movement changes can turn an earlier obstacle into a later route. A completion log should distinguish 'seen', 'blocked', 'ready to revisit' and 'cleared' instead of only checked or unchecked.",
+          "We would not mark an area as permanently missed just because it was unreachable the first time. Reach, Shift and other movement changes can turn an old obstacle into a new route. In a completion log, we recommend 'seen', 'blocked', 'ready to revisit' and 'cleared' instead of one simple checkbox.",
           "Near-instant Zone travel and the Gap are confirmed, but Remedy has not published first-run access rules for every side activity. NG+ explicitly resets story-linked traversal abilities. A blocked first-run path is therefore a reason to check your current movement and objective, not proof that the path is permanently missable—or guaranteed to remain open.",
         ],
         table: {
@@ -872,8 +876,9 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "03 / Encounters",
         title: "Treat Resonant choices as route decisions",
         paragraphs: [
-          "Resonants are major bosses whose defeat affects Dylan's Combat Abilities. Remedy has described first-run choices and wider options in New Game Plus. A completion-minded player should note which ability was chosen and which alternative remains, without assuming a preview boss has a known final reward table.",
-          "The Central Resonant and another early Resonant entity have appeared in previews, but they should not be merged into a fabricated full boss list. When the retail game is available, record encounter name, Zone, prerequisite, ability choice and whether the second run changes the outcome.",
+          "Resonants are major bosses whose defeat affects Dylan's Combat Abilities. Remedy has described first-run choices and wider options in New Game Plus, so we would note the ability we chose and the alternative left behind without assuming every preview boss already has a known reward table.",
+          "Completed-review coverage reports that defeating Resonants can advance the world's escalation and strengthen later enemies. We would check whether Aberrant upgrades, health, Power and Talents are keeping pace before clearing every optional fight; exact escalation values still need direct testing on a known game version.",
+          "We have seen the Central Resonant and another early entity, but we are keeping them separate instead of padding out a full boss list. When the retail game is available, we will record the encounter name, Zone, prerequisite, ability choice, and whether the second run changes the outcome.",
         ],
         image: {
           src: "/images/bosses/resonant-many-arms.jpg",
@@ -918,7 +923,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         eyebrow: "06 / Your own record",
         title: "Separate known activities from a complete checklist",
         paragraphs: [
-          "The current Wiki separates named missions and places from broader activity types. It cannot yet establish a complete game-wide count. Treat any checklist claiming every quest, collectible or trophy as provisional unless its route, game version and completion evidence can be reproduced.",
+          "We separate named missions and places from broader activity types in the Wiki, but we do not have a complete game-wide count yet. We would treat any 'everything' checklist as provisional unless its route, game version, and completion evidence can be reproduced.",
           "Use the in-game objective log as your personal record and the mission and location indexes to understand each activity type. A useful checklist still needs exact prerequisites, locations, rewards and missable conditions rather than a copied list of names.",
         ],
         links: [
@@ -932,7 +937,7 @@ export const longformGuides: Record<GuidePillarId, LongformGuide> = {
         title: "What a verified 100% route must prove",
         paragraphs: [
           "Every completion entry needs a reproducible route: game version, prerequisite, area, exact interaction, reward and whether an earlier choice can prevent it. Counts should come from a finished run or a verified in-game counter, not from guesses based on leaked achievements or review footage.",
-          "Until that evidence exists, this page remains completion planning. It will not label a partial list 'all collectibles' or calculate a game-wide total from player-created goals. The next valuable update is a tested activity inventory, followed by route order and missable checks.",
+          "Until that evidence exists, we are keeping this page focused on completion planning. We will not label a partial list 'all collectibles' or calculate a game-wide total from personal goals. The next useful update is a checked activity inventory, followed by route order and missable checks.",
         ],
       },
     ],

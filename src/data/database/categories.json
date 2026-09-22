@@ -15,7 +15,7 @@
         "description": "Pulls rocks from the ground and launches them at range. Xbox Wire saw it offered among three ability choices after an early Resonant Entity fight.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "barrage",
-        "playerNote": "Use its ranged role as a contrast to close-quarters Aberrant attacks; the preview does not establish final damage or cooldown values.",
+        "playerNote": "We would use its ranged role to cover what the close-quarters Aberrant cannot. The preview does not give us final damage or cooldown values.",
         "sourceIds": ["xbox-hands-on-june", "ps5-features"]
       },
       {
@@ -24,7 +24,7 @@
         "description": "Raises floating rocks defensively and can turn them into an offensive ram during a dash. It appeared alongside Barrage and Seekers in an early boss-reward choice.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "shield",
-        "playerNote": "This is an offensive-defensive option, not proof that every incoming attack can be blocked; test its limits in the final build.",
+        "playerNote": "We see this as an offensive-defensive option, not proof that it blocks every attack. Its limits still need a check in the final build.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -33,7 +33,7 @@
         "description": "Summons a telekinetic entity. Remedy's loadout screenshot shows that a Seeker can be thrown or detonated and exposes its duration, health, power cost, and damage statistics.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "seekers-summon",
-        "playerNote": "The preview names a summoned entity with throw and detonate actions. Learn what each action does before reading the on-screen preview values as permanent balance rules."
+        "playerNote": "The preview gives the summon throw and detonate actions. We would learn what each one does before treating the on-screen values as permanent balance rules."
       },
       {
         "name": "Mold Turrets",
@@ -41,33 +41,37 @@
         "description": "Deployable friendly Mold growths independently attack hostile targets and apply status effects while Dylan continues fighting elsewhere.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "mold-turrets",
-        "playerNote": "A summon-oriented setup still needs space to operate. Compare this role with close-range abilities; no numerical best-build ranking has been tested here."
+        "playerNote": "A summon-oriented setup still needs room to work. We compare that role with close-range abilities, but we do not have enough direct testing for a numerical best-build ranking."
       },
       {
         "name": "Falter",
         "label": "Combat state",
-        "description": "Pressure lowers an enemy's Falter state and leaves applicable targets open to an execution or Dominance. Assist Mode includes a separate Outgoing Falter adjustment.",
+        "description": "Pressure fills an enemy's Falter state. Normal enemies become eligible for an execution, while bosses enter a staggered damage window. Assist Mode includes a separate Outgoing Falter adjustment.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "falter",
-        "playerNote": "Treat Falter as the setup for a decision: execute for health and momentum, or use Dominance when a temporary ally would reduce crowd pressure.",
+        "playerNote": "We use Falter to create the next opening: execute an eligible normal enemy to start Dominance, or spend a boss stagger window on safe damage.",
         "sourceIds": ["ps-full-game-hands-on"]
       },
       {
         "name": "Execution",
         "label": "Combat loop reward",
-        "description": "Executing a vulnerable enemy restores health and temporarily increases melee damage, feeding the next Aberrant-centered attack sequence.",
+        "description": "Executing an eligible faltered enemy starts Dominance, feeding the next Aberrant-centered attack sequence with a temporary melee boost and more reliable health drops.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "execution",
-        "sourceIds": ["ps-full-game-hands-on"]
+        "sourceIds": [
+          "ps-full-game-hands-on",
+          "techradar-review",
+          "rpgamer-review"
+        ]
       },
       {
         "name": "Dominance",
-        "label": "Vulnerable-enemy follow-up",
-        "description": "Turns an applicable vulnerable enemy into a temporary ally instead of immediately executing it.",
+        "label": "Post-execution combat state",
+        "description": "A short state triggered by an execution. It temporarily increases Dylan's melee damage and makes enemies defeated during the window a dependable source of health.",
         "href": "/gameplay#combat-loop",
         "id": "dominance",
-        "playerNote": "Dominance is a crowd-control decision rather than a universal replacement for execution; bosses and special enemies may not be convertible.",
-        "sourceIds": ["ps-full-game-hands-on"]
+        "playerNote": "We spend Dominance on the next dangerous target while keeping weaker enemies available to extend the health-recovery rhythm. Command and summon abilities are the tools that add temporary allies.",
+        "sourceIds": ["ps-combat", "techradar-review", "rpgamer-review"]
       },
       {
         "name": "Elemental and status effects",
@@ -89,19 +93,19 @@
         "description": "A grappling-style movement unlock identified as the Metro Fault reward. It belongs to traversal progression, not the Combat Ability reward category.",
         "href": "/guides/story-walkthrough#metro-fault",
         "id": "reach",
-        "playerNote": "If your route involves a grappling-style traversal unlock, look for Reach rather than searching the Combat Ability loadout. The two systems solve different problems."
+        "playerNote": "If the route needs a grappling-style movement unlock, we would look for Reach rather than search the Combat Ability loadout. The two systems solve different problems."
       }
     ],
     "facts": [
       "A Resonant encounter rewards Dylan with that boss’s unique Combat Ability.",
       "Melee hits restore the resource spent on Combat Abilities.",
       "Abilities can build Falter and set up execution attacks.",
-      "Executions restore health and temporarily strengthen melee attacks.",
-      "Dominance can turn an applicable vulnerable enemy into a temporary ally.",
+      "Executing an eligible normal enemy starts Dominance and temporarily strengthens melee attacks.",
+      "Enemies defeated during Dominance become a dependable source of health.",
       "Some boss rewards present branching choices that support different builds.",
       "New Game Plus allows more than one ability from the same Resonant to be equipped."
     ],
-    "note": "Names are included only when identified in official material. Exact values, upgrade ranks and encounter-specific limits still need version-aware testing.",
+    "note": "We only use names identified in official material. Exact values, upgrade ranks and encounter-specific limits still need to be checked against a known game version.",
     "guideHref": "/guides/combat-builds#aberrant-forms",
     "sourceIds": [
       "ps-combat",
@@ -131,7 +135,7 @@
         "description": "Twin daggers with fast, close-range attacks and a previewed critical-chance boost; one of three opening Primary choices described by Xbox Wire.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "flurry",
-        "playerNote": "Consider it when you prefer quick contact and frequent repositioning; the preview does not establish a final best-in-slot ranking.",
+        "playerNote": "We would consider it for quick contact and frequent repositioning. The preview is not enough for us to give it a final best-in-slot rank.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -140,7 +144,7 @@
         "description": "A scythe-like Primary Form whose broad swings were described as useful against groups in the Xbox hands-on.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "slash",
-        "playerNote": "Its previewed value is coverage of multiple enemies, not a proven single-target damage number.",
+        "playerNote": "We read its previewed strength as multi-enemy coverage, not a proven single-target damage number.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -149,7 +153,7 @@
         "description": "An axe Primary Form described as high single-target damage with a bonus for attacking from behind in the preview build.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "slice",
-        "playerNote": "Positioning is part of its reported advantage; do not transfer preview damage values to launch guides.",
+        "playerNote": "Positioning is part of its reported advantage. We would not carry preview damage values into a launch guide.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -158,7 +162,7 @@
         "description": "A huge, slow mallet used for heavy smashing attacks; one of the three Secondary choices in the first-party hands-on.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "crush",
-        "playerNote": "Its slower commitment suggests testing attack windows against mobile enemies instead of assuming every heavy hit will land.",
+        "playerNote": "Because it commits more slowly, we would test its attack windows against mobile enemies instead of assuming every heavy hit will land.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -167,7 +171,7 @@
         "description": "A directed, sustained-damage Secondary Form named in the Xbox Wire preview.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "drill",
-        "playerNote": "Treat sustained contact as its shown role, not as a verified final damage-per-second figure.",
+        "playerNote": "We read sustained contact as its shown role, not as a verified final damage-per-second figure.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -176,7 +180,7 @@
         "description": "A whip-like chain staff used for extra reach, shown as a Secondary complement to a close-range Primary setup.",
         "href": "/guides/combat-builds#aberrant-forms",
         "id": "extend",
-        "playerNote": "Use the range distinction when comparing Form pairs; exact hitboxes and final upgrade ranks require retail testing.",
+        "playerNote": "We use its extra range when comparing Form pairs. Exact hitboxes and final upgrade ranks still need retail testing.",
         "sourceIds": ["xbox-hands-on-june"]
       },
       {
@@ -207,7 +211,7 @@
       "Forms can flow into connected attack strings and special enders.",
       "Combo enders and supernatural abilities deepen the weapon’s build synergy."
     ],
-    "note": "Flurry, Slash, Slice, Crush, Drill and Extend are named in Xbox Wire's first-party June 11 hands-on. Their preview roles should not be converted into final balance statistics.",
+    "note": "Xbox Wire's June 11 hands-on names Flurry, Slash, Slice, Crush, Drill and Extend. We use the shown roles for comparison, but we do not turn preview impressions into final balance statistics.",
     "guideHref": "/guides/combat-builds#aberrant-forms",
     "sourceIds": ["ps-combat", "hands-on", "xbox-hands-on-june"],
     "seo": {
@@ -288,7 +292,7 @@
       "Respec All is visible in the official preview UI.",
       "New Game Plus adds Talent nodes."
     ],
-    "note": "The screenshot is a pre-release interface and can change. The launch database will record exact wording, prerequisites, ranks, and practical use from the final build.",
+    "note": "This is a pre-release interface and it can change. Once we can check the launch build, we will record the exact wording, prerequisites, ranks and practical use.",
     "guideHref": "/guides/combat-builds#talents",
     "sourceIds": ["ps-combat", "zones", "ps-ngplus"],
     "seo": {
@@ -334,7 +338,7 @@
       "Three Artifact slots are available in an initial playthrough.",
       "New Game Plus unlocks a fourth Artifact slot."
     ],
-    "note": "Named preorder items are not assigned effects the storefront does not disclose. Rarity, numerical ranges, world locations, and pairings require repeatable final-game evidence.",
+    "note": "We do not assign effects to preorder items when the storefront does not disclose them. Rarity, numerical ranges, world locations and pairings need repeatable evidence from the final game.",
     "guideHref": "/guides/combat-builds#artifacts",
     "sourceIds": ["ps-ngplus", "store"],
     "seo": {
@@ -577,7 +581,7 @@
       "Character appearance announcements do not confirm quest roles, map locations or ending outcomes.",
       "Portrait captions distinguish Resonant imagery from pictures of the original game."
     ],
-    "note": "Background includes mild CONTROL (2019) story context. Returning-cast information comes from the published diary; detailed sequel outcomes are not supplied.",
+    "note": "We include mild CONTROL (2019) context here. The returning cast comes from the published diary, but we are not filling in sequel outcomes that have not been shown.",
     "guideHref": "/guides/getting-started#story-context",
     "sourceIds": [
       "ps-combat",
@@ -649,7 +653,7 @@
       "Resonants are indexed separately as bosses.",
       "Broad factions are not a complete variant catalog."
     ],
-    "note": "Preview silhouettes are not treated as formal enemy names. Variant pages require an in-game label and reproducible combat observations.",
+    "note": "We do not turn preview silhouettes into formal enemy names. Before we add a variant page, we want an in-game label and combat observations that can be reproduced.",
     "guideHref": "/guides/combat-builds#enemy-reading",
     "sourceIds": ["remedy-reveal", "zones", "metro"],
     "seo": {

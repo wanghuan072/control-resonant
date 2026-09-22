@@ -600,6 +600,16 @@
     "topics": ["Combat", "Bosses", "World"]
   },
   {
+    "id": "gamesradar-review",
+    "kind": "Media review",
+    "publisher": "GamesRadar+",
+    "title": "CONTROL Resonant review",
+    "date": "2026-09-18",
+    "url": "https://www.gamesradar.com/games/action-rpg/control-resonant-review/",
+    "note": "Checked September 22, 2026. Completed review describing armored health layers, Mold-poison and fire synergy, enemy pressure and map readability. Treat balance judgments as one reviewer's experience and do not infer numerical damage values.",
+    "topics": ["Combat", "Enemies", "World"]
+  },
+  {
     "id": "tomshardware-benchmark",
     "kind": "Independent benchmark",
     "publisher": "Tom's Hardware",

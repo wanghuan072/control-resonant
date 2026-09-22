@@ -105,9 +105,9 @@ export default function PlatformsPage() {
               The digital launch is{" "}
               <Link href="/game-info/release-date">September 24, 2026</Link>.
               Steam Deck and GeForce NOW support are announced for launch, while
-              Nintendo Switch 2 and Game Pass are not announced. Those last two
-              are status answers, not predictions about what Remedy may do
-              later.
+              Nintendo Switch 2 and Game Pass are not announced. We are
+              reporting their current status rather than guessing what Remedy
+              may do later.
             </p>
           </div>
           <dl className={styles.signalBoard}>
@@ -191,8 +191,8 @@ export default function PlatformsPage() {
               <h2>Start with the way you want to play</h2>
             </div>
             <p>
-              These are practical routes through the confirmed information, not
-              universal rankings of one platform over another.
+              We use the available information to match each platform with a
+              type of player. This is a decision guide, not a universal ranking.
             </p>
           </header>
           <div className={styles.decisionGrid}>
@@ -297,9 +297,9 @@ export default function PlatformsPage() {
               <h2>Steam Deck, GeForce NOW and Mac support</h2>
             </div>
             <p>
-              A platform announcement tells you that a route exists. It does not
-              establish frame rate, battery life, queue time or regional
-              availability.
+              A platform announcement tells us the option exists. We still need
+              measured frame rate, battery life, queue time, and regional
+              availability before judging how well it works for you.
             </p>
           </header>
           <div className={styles.factRows}>
@@ -307,7 +307,7 @@ export default function PlatformsPage() {
               <span>Steam Deck</span>
               <h3>Launch support is announced</h3>
               <p>
-                {platformFacts.steamDeck} Do not convert desktop GPU targets
+                {platformFacts.steamDeck} We would not turn desktop GPU targets
                 into an expected Deck frame rate.
               </p>
             </article>
@@ -337,8 +337,8 @@ export default function PlatformsPage() {
             <h2>Nintendo Switch 2 has no confirmed release</h2>
             <p>
               {platformFacts.switch2} Retail placeholders, hardware comparisons
-              and another Remedy game appearing on Nintendo hardware would not
-              confirm this version.
+              and another Remedy game on Nintendo hardware are not enough for us
+              to call this version real.
             </p>
           </div>
           <aside>

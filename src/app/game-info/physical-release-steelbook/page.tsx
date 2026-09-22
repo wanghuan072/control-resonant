@@ -21,7 +21,7 @@ export default function PhysicalReleasePage() {
     <GameInfoArticle
       topic={topic}
       image="/images/guides/editions.jpg"
-      lead="The disc and SteelBook editions do not arrive with the September digital launch. Here is the timing and package distinction that matters if you want a physical copy."
+      lead="We checked the physical schedule and package listings: the disc and SteelBook editions do not arrive with the September digital launch. Here is what matters if you want a physical copy."
     >
       <section id="dates">
         <h2>When does the physical edition release?</h2>
@@ -70,9 +70,9 @@ export default function PhysicalReleasePage() {
       <section id="contents">
         <h2>What is inside the SteelBook Edition?</h2>
         <p>
-          Participating physical distributors list the game copy, an illustrated
-          SteelBook case, three art prints, a key-art poster and an outer
-          collector-style package. Check the exact regional retail listing
+          The physical distributor listings we checked include the game, an
+          illustrated SteelBook case, three art prints, a key-art poster and an
+          outer collector-style package. Check the exact regional retail listing
           before ordering: packaging descriptions and stock can differ.
         </p>
         <p>
@@ -102,8 +102,9 @@ export default function PhysicalReleasePage() {
           </li>
         </ul>
         <p>
-          For digital pre-order bonuses and a complete edition comparison, use
-          the{" "}
+          If we were choosing between them, we would first decide whether launch
+          access or the physical package matters more. For digital pre-order
+          bonuses and a complete edition comparison, use the{" "}
           <Link href="/game-info/release-date#editions">
             editions and pre-order guide
           </Link>

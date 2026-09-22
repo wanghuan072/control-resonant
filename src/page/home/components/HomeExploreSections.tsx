@@ -55,9 +55,9 @@ export function HomeExploreSections() {
             <span>Read the fight</span>
             <h2>The CONTROL Resonant combat flow</h2>
             <p>
-              Pressure an enemy at close range, spend the energy you create,
-              break their balance, then use the opening. Builds change the route
-              through that loop, not its basic logic.
+              We read the combat loop like this: pressure an enemy up close,
+              spend the energy you create, break their balance, and use the
+              opening. Your build changes how you move through that loop.
             </p>
           </header>
           <ol>
@@ -88,8 +88,8 @@ export function HomeExploreSections() {
               <h2>Explore the CONTROL Resonant Wiki</h2>
             </div>
             <p>
-              Meet the people driving Dylan&apos;s story, compare his combat
-              options, and see how enemies, locations and missions connect.
+              We&apos;ve connected the people driving Dylan&apos;s story with
+              the combat options, enemies, locations, and missions around them.
             </p>
             <Link href="/wiki">
               Open Wiki <ArrowRight size={16} />

@@ -34,8 +34,8 @@ export default function ToolsPage() {
             <h2>Player tools built around a specific question</h2>
           </div>
           <p>
-            Each utility has a dedicated page, so you can bookmark the answer
-            you need and return without working through an unrelated guide.
+            We give each utility its own page so you can bookmark the answer and
+            come back without digging through an unrelated guide.
           </p>
         </header>
 

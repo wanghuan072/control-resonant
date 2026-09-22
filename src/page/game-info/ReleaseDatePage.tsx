@@ -98,9 +98,9 @@ export default function ReleaseDatePage() {
               </h2>
             </div>
             <p>
-              These dates do not all apply to the same product. Match the date
-              to your platform and edition before planning time off or placing
-              an order.
+              These dates apply to different products. We recommend matching the
+              date to your exact platform and edition before planning time off
+              or placing an order.
             </p>
           </header>
           <ol>
@@ -163,8 +163,8 @@ export default function ReleaseDatePage() {
               </h2>
             </div>
             <p>
-              “Worldwide” is the announced calendar date, not a promise that
-              every storefront uses the same local date or unlock hour. The
+              We treat “worldwide” as the announced calendar date, not a promise
+              that every storefront uses the same local date or unlock hour. The
               official FAQ lists September 25 in New Zealand.
             </p>
           </header>
@@ -234,10 +234,10 @@ export default function ReleaseDatePage() {
               </h2>
             </div>
             <p>
-              Prices below are published US list prices checked on September 20,
-              2026. Regional pricing, retailer stock and the exact physical
-              package can differ, so use the row as a comparison—not a purchase
-              guarantee.
+              We checked these published US list prices on September 20, 2026.
+              Regional pricing, retailer stock, and physical contents can
+              differ, so use the table to compare editions and confirm the final
+              details with your store.
             </p>
           </header>
           <div
@@ -316,9 +316,9 @@ export default function ReleaseDatePage() {
             <span>05 / Timing still unknown</span>
             <h2>Preload and regional unlock times are not announced</h2>
             <p>
-              There is no single verified preload schedule or universal unlock
-              hour here. Do not convert the calendar date into a local launch
-              time unless your platform displays one for your region.
+              We have not found one verified preload schedule or universal
+              unlock hour. We would trust the local time shown by your platform
+              rather than converting the calendar date ourselves.
             </p>
             <Link href="/updates">
               Check the latest updates <ArrowRight size={16} />
@@ -331,11 +331,10 @@ export default function ReleaseDatePage() {
             <span>06 / Where to play</span>
             <h2>Match the release date to the right platform</h2>
             <p>
-              Release timing does not explain subscription access, cross-device
-              ownership or portable support. The platform guide separates Xbox
-              Play Anywhere from Game Pass and tracks Steam Deck, GeForce NOW,
-              Mac and Nintendo Switch 2 status without predicting unannounced
-              versions.
+              A release date does not answer every access question. In the
+              platform guide, we separate Xbox Play Anywhere from Game Pass and
+              track Steam Deck, GeForce NOW, Mac, and Nintendo Switch 2 without
+              guessing at unannounced versions.
             </p>
           </div>
           <Link href="/game-info/platforms">

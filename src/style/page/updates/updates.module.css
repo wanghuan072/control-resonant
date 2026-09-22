@@ -13,7 +13,7 @@
 .actionable > div:first-child > span {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -25,7 +25,7 @@
 }
 .actionable p {
   color: var(--color-ink-soft);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.7;
 }
 .actionGrid {
@@ -41,7 +41,7 @@
 .actionGrid time {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
 }
 .actionGrid h3 {
@@ -53,7 +53,7 @@
 }
 .actionGrid a {
   color: var(--color-red);
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
@@ -98,7 +98,7 @@
 .meta span {
   display: block;
   font:
-    10px ui-monospace,
+    12px ui-monospace,
     monospace;
   text-transform: uppercase;
   line-height: 1.7;

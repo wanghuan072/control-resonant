@@ -18,9 +18,10 @@ export function HomeWorldSection() {
           <span>World report / Manhattan</span>
           <h2>A city built around vertical routes and altered rules</h2>
           <p>
-            CONTROL Resonant is not a seamless open-world checklist. Manhattan
-            is divided into focused Zones where gravity, interiors and traversal
-            abilities change how a route must be read.
+            From everything we&apos;ve reviewed, Manhattan is built as a set of
+            focused Zones rather than one seamless checklist. Gravity,
+            interiors, and traversal abilities can all change the route in front
+            of you.
           </p>
           <Link href="/map#confirmed-locations">
             Read the map and location guide <ArrowRight size={16} />

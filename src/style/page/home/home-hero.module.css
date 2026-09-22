@@ -1,7 +1,7 @@
 .eyebrow {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -63,7 +63,7 @@
   gap: 12px;
   margin-bottom: 11px;
   color: var(--color-signal);
-  font: 700 clamp(11px, 1vw, 14px) / 1 var(--font-heading);
+  font: 700 clamp(12px, 1vw, 14px) / 1 var(--font-heading);
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -103,7 +103,7 @@
   padding: 0 15px;
   border: 1px solid #d7dcdd;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;

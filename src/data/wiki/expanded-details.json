@@ -39,7 +39,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Use the Gap as a comparison and testing stop between encounters. Track the distinction between an unlocked option, a crafted Artifact and an equipped slot.",
+    "playerTakeaway": "We use the Gap as a comparison and testing stop between encounters. Keep an unlocked option, a crafted Artifact and an equipped slot separate when you read a build.",
     "related": [
       "combat/aberrant",
       "combat/artifacts",
@@ -77,12 +77,12 @@
       {
         "heading": "What is not mapped yet?",
         "paragraphs": [
-          "Official material has not supplied a complete office floor plan, every Zone entrance or a confirmed order for all routes. This page therefore explains the hub's role rather than inventing corridors, vendors or fast-travel markers.",
+          "We have not found a complete office floor plan, every Zone entrance or a fixed order for all routes. For now, we explain what the hub does instead of inventing corridors, vendors or fast-travel markers.",
           "For navigation, follow the currently available Zone and story objective. For equipment choices, use the Gap; for a specific previewed traversal challenge, see the Metro Fault file."
         ]
       }
     ],
-    "playerTakeaway": "Think of the field office as the Zone hub, the Gap as the build space and the Oldest House as a distinct story location.",
+    "playerTakeaway": "Our simplest map is: the field office connects Zones, the Gap handles the build, and the Oldest House remains its own story location.",
     "related": [
       "world/manhattan",
       "world/the-gap",
@@ -140,12 +140,12 @@
       {
         "heading": "How should you choose an opening pair?",
         "paragraphs": [
-          "A close-range Primary Form and a reach-oriented Secondary Form cover different situations; a wide Primary Form and a heavy Secondary Form emphasize crowd pressure and impact. Those are editorial comparisons based on the shown roles, not tested best-in-slot recommendations.",
+          "A close-range Primary Form and a reach-oriented Secondary Form cover different problems; a wide Primary Form and a heavy Secondary Form lean toward crowd pressure and impact. That is how we read the roles shown so far, not a tested best-in-slot ranking.",
           "Watch what a fight asks of you—single target, group control, reach or sustained pressure—before treating one weapon animation as universally strongest. Talents, abilities and Artifacts may alter that judgment in the finished game."
         ]
       }
     ],
-    "playerTakeaway": "Compare Forms by role first. No verified retail damage values, upgrade trees or complete Combo Ender list are available yet.",
+    "playerTakeaway": "We compare Forms by role first. We do not have reliable retail damage values, full upgrade trees or a complete Combo Ender list yet.",
     "related": [
       "combat/aberrant",
       "combat/combat-abilities",
@@ -224,7 +224,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Choose by the problem you want an ability to solve—distance, independent pressure or protection—and keep the Aberrant resource loop in mind.",
+    "playerTakeaway": "We would choose by the problem the ability solves—distance, independent pressure or protection—while keeping the Aberrant resource loop in mind.",
     "related": [
       "combat/aberrant",
       "combat/aberrant-forms",
@@ -287,7 +287,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Record an Artifact's effect and condition before ranking it. The three-versus-four figure is an equip limit, not a collectible count.",
+    "playerTakeaway": "Before we rank an Artifact, we want its effect and trigger condition. The three-versus-four figure tells us the equip limit, not the collectible count.",
     "related": [
       "world/the-gap",
       "combat/new-game-plus",
@@ -350,7 +350,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Preserve build notes for NG+, but do not assume old traversal shortcuts remain open at the start of the new story.",
+    "playerTakeaway": "We would keep build notes for NG+, but we would not expect old traversal shortcuts to stay open at the start of the new story.",
     "related": [
       "combat/artifacts",
       "combat/combat-abilities",
@@ -396,7 +396,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Expect a boss-linked ability decision, but do not rely on an unconfirmed boss name or pre-release damage strategy.",
+    "playerTakeaway": "We expect a boss-linked ability decision here, but we are not building a strategy around an unconfirmed name or pre-release damage values.",
     "related": [
       "enemies/central-resonant",
       "combat/combat-abilities",
@@ -465,7 +465,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Use this taxonomy to decide what to follow next; reserve exact routes and reward checklists for verified retail play.",
+    "playerTakeaway": "We use these activity types to decide what to follow next. Exact routes and reward checklists can wait until we can verify the retail game.",
     "related": [
       "missions/metro-fault",
       "world/manhattan",

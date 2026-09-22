@@ -21,7 +21,7 @@ export default function NvidiaBundlePage() {
     <GameInfoArticle
       topic={topic}
       image="/images/guides/pc-system-requirements.jpg"
-      lead="The RTX 50 Series promotion is a hardware-purchase offer for a Steam copy of the game—not a bonus attached to every PC pre-order. The dates and eligibility rules matter more than the bundle headline."
+      lead="We checked the RTX 50 Series promotion terms: this is a hardware-purchase offer for a Steam copy, not a bonus on every PC pre-order. The dates, seller and exact model matter more than the bundle headline."
     >
       <section id="answer">
         <h2>Does an RTX 50 purchase include CONTROL Resonant?</h2>
@@ -78,10 +78,10 @@ export default function NvidiaBundlePage() {
           </table>
         </div>
         <p>
-          GPU family alone is not a guarantee: partner product lists and local
-          availability determine whether a specific purchase is included. This
-          is a hardware promotion, separate from the game&apos;s Digital Deluxe
-          and pre-order bonuses.
+          We would not rely on the GPU family alone. The partner product list
+          and local availability decide whether the exact purchase qualifies.
+          This hardware promotion is separate from the game&apos;s Digital
+          Deluxe and pre-order bonuses.
         </p>
       </section>
       <section id="redeem">
@@ -112,9 +112,10 @@ export default function NvidiaBundlePage() {
       <section id="decision">
         <h2>Bundle or regular PC edition: what changes?</h2>
         <p>
-          The bundle is useful only if you were already buying eligible
-          hardware. It is not a discount on every edition and does not include
-          the Digital Deluxe extras by default. Compare those extras in the
+          We think the bundle makes sense only if you were already buying
+          eligible hardware. It is not a discount on every edition and does not
+          include the Digital Deluxe extras by default. Compare those extras in
+          the
           <Link href="/game-info/release-date#editions"> editions guide</Link>,
           and check whether your PC meets the game&apos;s
           <Link href="/game-info/system-requirements">

@@ -91,17 +91,18 @@ export default function MapPage() {
           </div>
           <div>
             <p>
-              Full-game coverage confirms a top-down in-game map and large,
-              focused Manhattan Zones. Reviewers also repeatedly report that
-              elevation, gravity changes and layered interiors can make that map
-              difficult to read. A screenshot of it would not yet be a reliable
-              route guide.
+              We checked the full-game coverage: there is a top-down map and
+              Manhattan is divided into large, focused Zones. Reviewers also
+              agree that elevation, gravity changes, and layered interiors can
+              make it hard to read. That&apos;s why we don&apos;t think a single
+              screenshot is a trustworthy route guide yet.
             </p>
             <p>
               CONTROL Resonant launches publicly on September 24, 2026. Until a
-              public build can be reproduced, this page separates confirmed
-              place names and movement logic from entrances, fast-travel points,
-              boss markers and collectible coordinates that still need testing.
+              public build can be checked directly, we&apos;re separating the
+              place names and movement rules we can verify from entrances,
+              fast-travel points, boss markers, and collectible coordinates we
+              can&apos;t verify yet.
             </p>
           </div>
         </section>
@@ -116,8 +117,13 @@ export default function MapPage() {
               Why the map may not show the route you need
             </h2>
             <p>
-              Before assuming a marker is wrong, identify the layer and the
-              movement rule blocking the path.
+              If a marker looks wrong, we&apos;d check the elevation and the
+              movement ability blocking the path before blaming the map.
+            </p>
+            <p>
+              Before interpreting a route,{" "}
+              <Link href="/wiki/world">explore the world location index</Link>{" "}
+              for the place&apos;s role and connections.
             </p>
           </header>
           <div
@@ -170,9 +176,16 @@ export default function MapPage() {
             <span>Confirmed location data</span>
             <h2>What each known place is used for</h2>
             <p>
-              Open a place name for its characters, activities, movement gates
-              and story context. These rows describe function, not fabricated
-              coordinates.
+              Open a place name for its characters, activities, movement gates,
+              and story context. We&apos;re listing what each place is for
+              without guessing at coordinates.
+            </p>
+            <p>
+              When a place belongs to an objective,{" "}
+              <Link href="/wiki/missions">
+                compare mission and activity types
+              </Link>{" "}
+              before choosing a route.
             </p>
           </header>
           <div

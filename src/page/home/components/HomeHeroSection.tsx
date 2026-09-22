@@ -24,8 +24,9 @@ export function HomeHeroSection() {
             <strong>Guides, Wiki &amp; Player Tools</strong>
           </h1>
           <p className={styles.lead}>
-            Release details, combat guidance and connected Wiki files for Dylan
-            Faden&apos;s journey beyond the Oldest House.
+            We track the release details, break down the combat, and connect the
+            people, places, and missions behind Dylan Faden&apos;s journey
+            beyond the Oldest House.
           </p>
           <div className={styles.heroActions}>
             <Link href="/gameplay">

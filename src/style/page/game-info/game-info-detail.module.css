@@ -15,7 +15,7 @@
 .nextPage span {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -53,7 +53,7 @@
 }
 .specCard span {
   color: #aeb9be;
-  font-size: 11px;
+  font-size: 12px;
 }
 .specCard strong {
   font-size: 13px;
@@ -116,7 +116,7 @@
 }
 .timeline p {
   color: var(--color-muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .tableWrap {
@@ -134,7 +134,7 @@
   padding: 15px 16px;
   border-bottom: 1px solid var(--color-line);
   vertical-align: top;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 .tableWrap thead {
@@ -143,7 +143,7 @@
 }
 .tableWrap thead th {
   font:
-    700 10px ui-monospace,
+    700 14px ui-monospace,
     monospace;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -154,13 +154,13 @@
 }
 .tableWrap small {
   color: var(--color-muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
 }
 .tableNote {
   margin: 16px 0 0;
   color: var(--color-muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .tableNote a {
@@ -195,7 +195,7 @@
   align-items: center;
   gap: 8px;
   color: var(--color-red);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -216,7 +216,7 @@
 }
 .featureGrid p {
   color: var(--color-muted);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .languageList {
@@ -235,7 +235,7 @@
 .languageList dd {
   margin: 0;
   color: var(--color-ink-soft);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .faq > div:last-child {
@@ -258,7 +258,7 @@
 .faq p {
   margin: 0;
   color: var(--color-ink-soft);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .nextPage {
@@ -284,7 +284,7 @@
 .toolCta span {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -299,7 +299,7 @@
   max-width: 720px;
   margin: 0;
   color: var(--color-ink-soft);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .toolCta > a {
@@ -310,7 +310,7 @@
   padding: 0 15px;
   background: var(--color-red);
   color: white;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;

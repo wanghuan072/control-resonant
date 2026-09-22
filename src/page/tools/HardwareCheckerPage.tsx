@@ -39,10 +39,10 @@ export default function HardwareCheckerPage() {
             <h2>Compare every component with the published PC target</h2>
           </div>
           <p>
-            The checker treats exact CPUs and GPUs from the official
-            requirements differently from unlisted models. Common hardware
-            receives a conservative comparison band, while memory, SSD space and
-            Windows support are checked directly.
+            We treat CPUs and GPUs named in the official requirements
+            differently from models Remedy did not list. For common hardware, we
+            use a conservative comparison band; memory, SSD space, and Windows
+            support can be checked directly.
           </p>
         </section>
         <HardwareChecker />
@@ -59,9 +59,9 @@ export default function HardwareCheckerPage() {
           <div>
             <p>
               An exact match means the selected model appears in the published
-              requirements. An estimated class compares an unlisted mainstream
-              model conservatively. Unknown means the available data cannot
-              support a useful conclusion.
+              requirements. For an unlisted mainstream model, we give you a
+              conservative estimated class. If the available data is too thin,
+              we&apos;d rather say Unknown than pretend the result is reliable.
             </p>
             <Link href="/game-info/system-requirements">
               Read the full PC requirements and PS5 modes{" "}

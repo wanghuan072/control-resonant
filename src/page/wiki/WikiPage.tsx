@@ -45,8 +45,8 @@ export default function WikiPage() {
             Browse characters, combat, enemies, locations and missions
           </h2>
           <p>
-            Use a system overview when you need to learn how the game plays; use
-            a Wiki file when you need a person, place, threat or named activity.
+            We use system overviews for the way the game plays and Wiki files
+            for a specific person, place, threat, or named activity.
           </p>
         </div>
         <nav aria-label="Wiki questions">

@@ -5,7 +5,7 @@
 .combatFlow header > span {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
   gap: 10px;
   color: #93a1a8;
   font:
-    700 8px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
 }
 .releasePanelDate > span {
   color: #bbc5c9;
-  font: 700 9px var(--font-heading);
+  font: 700 12px var(--font-heading);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -100,14 +100,14 @@
 .countdownDigits span {
   color: #8e9ba2;
   font:
-    700 7px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
 .countdown p {
   margin: 7px 0 0;
   color: #8f9da4;
-  font-size: 9px;
+  font-size: 14px;
   line-height: 1.4;
 }
 .releasePanelFacts {
@@ -119,7 +119,7 @@
   gap: 12px;
   padding: 5px 0;
   border-bottom: 1px solid #ffffff18;
-  font-size: 10px;
+  font-size: 12px;
 }
 .releasePanelFacts dt {
   color: #8f9da4;
@@ -135,7 +135,7 @@
   align-items: center;
   gap: 6px;
   color: var(--color-signal);
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -174,7 +174,7 @@
 .worldInner > div > span {
   color: var(--color-signal);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -190,7 +190,7 @@
 .worldInner p {
   max-width: 550px;
   color: #bcc7cb;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.7;
 }
 .worldInner > div > a {
@@ -202,7 +202,7 @@
   padding: 0 13px;
   background: var(--color-red);
   color: white;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -231,7 +231,7 @@
 }
 .worldInner li small {
   color: #aeb9be;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .intentSection,
@@ -257,7 +257,7 @@
   max-width: 500px;
   margin: 0 0 23px;
   color: #536069;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .intentGrid {
@@ -279,7 +279,7 @@
   margin-bottom: 3px;
   color: #6d777d;
   font:
-    700 8px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -292,7 +292,7 @@
 .intentGrid p {
   margin: 5px 0 0;
   color: #59656b;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .intentGrid nav {
@@ -307,7 +307,7 @@
   gap: 4px;
   min-height: 25px;
   color: #a82229;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
 }
 .intentVisual {
@@ -343,7 +343,7 @@
 .intentVisual figcaption span {
   color: #ff625c;
   font:
-    700 9px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -367,7 +367,7 @@
 }
 .fieldPreview > div:first-child > span {
   font:
-    700 9px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -379,7 +379,7 @@
 .fieldPreview p {
   max-width: 430px;
   color: var(--color-ink-soft);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .fieldPreview > div:last-child {
@@ -399,7 +399,7 @@
 }
 .fieldPreview a span {
   color: var(--color-muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .guides {
@@ -429,7 +429,7 @@
   justify-self: end;
   gap: 7px;
   min-height: 38px;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .guideLayout {
@@ -490,7 +490,7 @@
   margin: 11px 0 3px;
   color: var(--color-red-dark);
   font:
-    700 8px ui-monospace,
+    700 14px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -508,7 +508,7 @@
 .guides article > p:not(:first-of-type) {
   margin-bottom: 4px;
   color: var(--color-muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .guides article > a:last-child {
@@ -517,7 +517,7 @@
   gap: 7px;
   min-height: 30px;
   color: var(--color-red-dark);
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -544,7 +544,7 @@
 .combatFlow header p {
   margin: 0;
   color: #526068;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.7;
 }
 .combatFlow ol {
@@ -577,7 +577,7 @@
   display: block;
   color: var(--color-red);
   font:
-    700 12px ui-monospace,
+    700 14px ui-monospace,
     monospace;
 }
 .combatFlow li strong {
@@ -590,7 +590,7 @@
 .combatFlow li p {
   margin: 0;
   color: #56636a;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .combatFlow > div > a {
@@ -598,7 +598,7 @@
   align-items: center;
   gap: 7px;
   color: #a51f26;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -613,7 +613,7 @@
 .wiki header > p {
   margin: 0;
   color: #9ba8ae;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 .wikiGrid {
@@ -671,7 +671,7 @@
   display: block;
   color: #a7b2b7;
   font:
-    700 8px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -686,7 +686,7 @@
   display: block;
   max-width: 430px;
   color: #b8c2c6;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -720,7 +720,7 @@
 .latest time,
 .latest li > span {
   font:
-    700 8px ui-monospace,
+    700 14px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -735,7 +735,7 @@
 .latest li p {
   margin: 0;
   color: #5a666c;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .latest li a {
@@ -744,7 +744,7 @@
   gap: 5px;
   margin: 5px 12px 0 0;
   color: #9e2026;
-  font-size: 9px;
+  font-size: 14px;
 }
 .latest aside {
   align-self: start;
@@ -764,7 +764,7 @@
 .latest aside span {
   display: block;
   color: #aeb9be;
-  font-size: 11px;
+  font-size: 12px;
 }
 .latest aside a {
   display: inline-flex;
@@ -774,7 +774,7 @@
   margin-top: 16px;
   padding: 0 11px;
   background: var(--color-red);
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -813,7 +813,7 @@
   left: 18px;
   color: var(--color-signal);
   font:
-    700 9px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -825,18 +825,22 @@
 }
 .faq {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 46px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
   margin-top: 56px;
   padding: 42px 46px 48px;
   background: #e7e9e6;
   color: #12181c;
 }
+.faq > div:first-child {
+  display: grid;
+  gap: 8px;
+}
 .about > div:first-child > span,
 .faq > div:first-child > span {
   color: var(--color-red);
   font:
-    700 9px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -850,7 +854,7 @@
 .about p {
   margin: 0 0 14px;
   color: #aeb9be;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.75;
 }
 .about a,
@@ -858,6 +862,8 @@
   color: var(--color-signal);
 }
 .faq h2 {
+  max-width: none;
+  margin-top: 0;
   color: #12181c;
 }
 .faqList {
@@ -883,7 +889,7 @@
 .faq p {
   margin: 0;
   color: #4f5c63;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .faq article a {
@@ -891,7 +897,7 @@
   align-items: center;
   gap: 5px;
   margin-top: 8px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 @media (max-width: 1024px) {

@@ -33,7 +33,7 @@
 .tocGroup > span {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
 .sidebarHeader strong {
   color: var(--color-ink);
   font:
-    700 11px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.08em;
 }
@@ -67,7 +67,7 @@
 .tocGroup > span {
   margin-bottom: 5px;
   color: #78868e;
-  font-size: 8px;
+  font-size: 12px;
 }
 .sidebar a {
   position: relative;
@@ -103,7 +103,7 @@
   border-left: 0;
   background: #ffffff08;
   color: var(--color-red);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -120,17 +120,20 @@
 }
 .intro {
   display: grid;
-  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
-  gap: clamp(24px, 5vw, 90px);
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
   padding-block: 55px;
   border-bottom: 1px solid var(--color-line);
+}
+.intro > div {
+  min-width: 0;
 }
 .intro span,
 .section header span,
 .next > div:first-child span {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -209,7 +212,7 @@
 .bossGrid figcaption {
   padding-top: 9px;
   color: var(--color-muted);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.55;
 }
 .characterGrid dl {
@@ -225,12 +228,12 @@
 }
 .characterGrid dt {
   color: var(--color-muted);
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .characterGrid dd {
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 .characterGrid a,
 .bossGrid a,
@@ -239,7 +242,7 @@
 }
 .characterGrid > div > p {
   color: var(--color-ink-soft);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.65;
 }
 .bossGrid ol {
@@ -254,21 +257,21 @@
   padding: 14px 0;
   border-bottom: 1px solid var(--color-line);
   color: var(--color-ink-soft);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 .bossGrid li strong {
   color: var(--color-ink);
-  font-size: 13px;
+  font-size: 14px;
 }
 .intro {
   scroll-margin-top: calc(var(--header-height) + 22px);
 }
 .section header {
   display: grid;
-  grid-template-columns: minmax(270px, 0.9fr) minmax(0, 1.1fr);
-  gap: 30px;
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
   margin-bottom: 24px;
 }
 .section header > span {
@@ -276,7 +279,7 @@
 }
 .section header p {
   margin: 0;
-  max-width: 640px;
+  max-width: 760px;
 }
 .tableWrap {
   overflow-x: auto;
@@ -294,13 +297,13 @@
   padding: 16px 15px;
   border-bottom: 1px solid var(--color-line);
   vertical-align: top;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 .tableWrap thead th {
   color: var(--color-muted);
   font:
-    700 10px ui-monospace,
+    700 14px ui-monospace,
     monospace;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -312,13 +315,13 @@
 .tableWrap td small {
   display: block;
   color: var(--color-muted);
-  font-size: 11px;
+  font-size: 14px;
 }
 .section .caveat,
 .intro .caveat {
   margin-top: 16px;
   color: var(--color-muted);
-  font-size: 12px;
+  font-size: 14px;
 }
 .textLink,
 .inlineLinks a {
@@ -343,7 +346,7 @@
 .abilityGrid small {
   color: var(--color-red);
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }
@@ -354,7 +357,7 @@
 }
 .abilityGrid p,
 .abilityGrid strong {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .abilityGrid p {
@@ -385,7 +388,7 @@
 .layers p {
   max-width: 510px;
   color: var(--color-ink-soft);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.7;
 }
 .inlineLinks {
@@ -416,7 +419,7 @@
 .problemList p {
   margin: 0;
   color: var(--color-ink-soft);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .problemList a {
@@ -424,7 +427,7 @@
   align-items: center;
   gap: 7px;
   color: var(--color-red);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -451,7 +454,7 @@
 .next a span {
   grid-column: 1;
   color: var(--color-muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 .next a svg {
   grid-column: 2;

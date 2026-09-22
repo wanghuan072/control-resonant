@@ -1,34 +1,57 @@
 .logo {
   display: inline-flex;
   min-height: 48px;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   justify-content: center;
   color: var(--color-ink);
-  line-height: 0.8;
-  font-family: var(--font-display), sans-serif;
-  letter-spacing: -0.07em;
 }
 .logo img {
   display: block;
-  width: min(175px, 100%);
-  height: auto;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  object-fit: cover;
+  border: 1px solid rgb(255 255 255 / 18%);
+}
+.wordmark {
+  display: grid;
+  line-height: 0.8;
 }
 .control {
-  font-size: 23px;
+  font-family: var(--font-display), sans-serif;
+  font-size: 17px;
   font-weight: 400;
+  letter-spacing: -0.055em;
 }
 .resonant {
-  margin-top: 8px;
+  margin-top: 7px;
   padding-left: 1px;
   color: var(--color-red);
   font-family: var(--font-body), sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.37em;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
 }
 .onDark {
   color: var(--color-on-night);
 }
 .onDark .resonant {
   color: var(--color-signal);
+}
+@media (max-width: 420px) {
+  .logo {
+    gap: 8px;
+  }
+  .logo img {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+  .control {
+    font-size: 15px;
+  }
+  .resonant {
+    font-size: 12px;
+  }
 }

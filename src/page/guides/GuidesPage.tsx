@@ -40,9 +40,10 @@ export default function GuidesPage() {
             Choose a guide for the problem blocking your progress
           </h2>
           <p>
-            Follow the problem first, then open the relevant manual. Full-game
-            coverage can explain a system or activity type; exact routes, drops
-            and missable conditions appear only after direct testing.
+            Start with what is going wrong and we&apos;ll point you to the right
+            manual. We use full-game coverage for systems and activity types,
+            but we&apos;ll only publish exact routes, drops, and missable
+            conditions after they can be checked directly.
           </p>
         </div>
         <ol>
@@ -125,9 +126,9 @@ export default function GuidesPage() {
           );
         })}
         <p className={styles.scope}>
-          These guides cover published information. Complete retail routes,
-          exact loot, and collectible totals will be added only after they can
-          be verified in the released game.
+          We&apos;ve built these guides from the information available now.
+          We&apos;ll add complete routes, exact loot, and collectible totals
+          when we can verify them in the released game.
         </p>
       </div>
     </>

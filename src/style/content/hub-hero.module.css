@@ -33,7 +33,7 @@
   border-bottom: 1px solid #ffffff26;
   color: #e44749;
   font:
-    700 10px ui-monospace,
+    700 12px ui-monospace,
     monospace;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -88,7 +88,7 @@
   padding-left: 18px;
   border-left: 2px solid var(--color-red);
   color: #c5cfd3;
-  font-size: clamp(13px, 1.15vw, 15px);
+  font-size: clamp(14px, 1.15vw, 15px);
   line-height: 1.6;
 }
 .footer {
@@ -109,7 +109,7 @@
   gap: 10px 20px;
   color: #bac4c9;
   font:
-    600 11px ui-monospace,
+    600 12px ui-monospace,
     monospace;
 }
 .action a,
@@ -123,7 +123,7 @@
   min-height: 40px;
   padding: 0 15px;
   background: var(--color-red);
-  font: 700 11px var(--font-heading);
+  font: 700 12px var(--font-heading);
   text-transform: uppercase;
 }
 .visual {
@@ -166,7 +166,7 @@
   background: #10181dd9;
   color: #d6dde0;
   font:
-    9px ui-monospace,
+    12px ui-monospace,
     monospace;
   text-transform: uppercase;
 }

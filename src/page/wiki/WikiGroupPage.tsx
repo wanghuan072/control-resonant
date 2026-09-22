@@ -33,8 +33,8 @@ const editorial: Record<
       "Meet Dylan, Jesse, Zoe and the Bureau figures connected to their story. Check each person's role and relationship before following the next character link.",
     question: "Who matters to Dylan's search?",
     answer:
-      "Dylan is the playable lead, Jesse is the missing FBC Director he is looking for, and Zoe is his field contact. Returning Bureau names bring context from CONTROL, but their full Resonant roles are still story material.",
-    note: "Character roles and relationships are more useful than treating every actor reveal as a separate quest spoiler.",
+      "We start with the three people who frame the story: Dylan is the playable lead, Jesse is the missing FBC Director he is looking for, and Zoe is his field contact. The returning Bureau names add context, but we are not treating every casting reveal as a quest spoiler.",
+    note: "We focus on roles and relationships first, because they tell you more than a list of returning actors.",
     featuredTitle: "Dylan, Jesse and FBC character files",
     indexTitle: "All named characters and relationships",
   },
@@ -44,8 +44,8 @@ const editorial: Record<
       "Learn what each named place is, why it matters to Dylan and which characters, activities or systems connect to it. Use the Map page when an objective clue becomes a route problem.",
     question: "What is each place in Dylan's story?",
     answer:
-      "Manhattan's Zones are the new setting; the Oldest House is the Bureau headquarters from CONTROL. The field office serves as a hub, while the Gap is Dylan's build space. Open a place file for its role and connected activity.",
-    note: "Returning CONTROL locations are series background, not proof that an old room or route is playable here.",
+      "We separate the new spaces from the old ones: Manhattan's Zones are the main setting, while the Oldest House is the Bureau headquarters from CONTROL. The field office is a hub and the Gap is Dylan's build space. Open a place file when you need its role or connected activity.",
+    note: "When an older CONTROL location appears, we treat it as background until the new game shows that the route is playable.",
     featuredTitle: "Manhattan Zones and paranatural spaces",
     indexTitle: "World locations and traversal concepts",
   },
@@ -55,8 +55,8 @@ const editorial: Record<
       "Compare Aberrant Forms, Combat Abilities, Talents and Artifacts by what they do in a fight. See which choices affect traversal and which belong in a combat loadout.",
     question: "Which systems make up a combat build?",
     answer:
-      "The Aberrant supplies weapon Forms; Combat Abilities are earned through Resonants; Talents alter progression; Artifacts add passive effects. Reach and Shift are traversal tools, not boss-granted attack slots.",
-    note: "A row can describe a system without claiming it is a separate equippable item. Review impressions explain practical friction, but exact values still require version-aware testing.",
+      "We break a build into four parts: the Aberrant supplies weapon Forms, Resonants grant Combat Abilities, Talents shape progression, and Artifacts add passive effects. Reach and Shift solve movement problems rather than filling boss-granted attack slots.",
+    note: "We use review impressions to explain how a system feels in practice, but we leave exact values open until they can be checked on a known game version.",
     featuredTitle: "Aberrant Forms, Abilities and progression",
     indexTitle: "Combat systems and named equipment",
   },
@@ -66,8 +66,8 @@ const editorial: Record<
       "Tell the Hiss and Mold apart from Resonants, then examine the named encounters and the hazards that have been shown so far.",
     question: "Which threats are actually distinct?",
     answer:
-      "The Hiss and Mold return, while Resonants form the major boss class. Some Resonants are optional and can be left until Dylan has a stronger build; the Central Resonant is one named encounter with fire and magma hazards.",
-    note: "Faction names, summons and individual bosses are classified separately. A shown encounter is not a complete bestiary or verified drop table.",
+      "The Hiss and Mold return, while Resonants form the major boss class. From the encounters we reviewed, some Resonants can be left until Dylan has a stronger build. The Central Resonant is the clearest named example, with fire and magma shaping the arena.",
+    note: "We keep factions, summons, and individual bosses separate, and we won't turn a few shown encounters into a made-up bestiary or drop table.",
     featuredTitle: "Hiss, Mold and Resonant threat files",
     indexTitle: "Enemy factions and named encounters",
   },
@@ -77,8 +77,8 @@ const editorial: Record<
       "Separate Dylan's main story from Jesse Quests, World Quests, Faults and Zone activities. Start with the activity type when you need movement, story context or a short combat challenge.",
     question: "What is a mission and what is a category?",
     answer:
-      "Dylan's Journey is the campaign, Jesse Quests award traversal powers, World Quests tell optional stories, and Faults are distinct activity routes. Short challenges and discoveries belong to Zones rather than the chapter list.",
-    note: "A category is not a fictional chapter-by-chapter quest list. Route steps appear only when their prerequisites and results can be reproduced.",
+      "We read Dylan's Journey as the campaign, Jesse Quests as routes to traversal powers, World Quests as optional stories, and Faults as distinct activities. Short challenges and discoveries belong to their Zones rather than a chapter list.",
+    note: "We only publish route steps when we can support the prerequisite and result, instead of turning activity categories into imaginary chapters.",
     featuredTitle: "Campaign, traversal quests and Zone activities",
     indexTitle: "Named missions and activity types",
   },
@@ -170,11 +170,10 @@ export default function WikiGroupPage({ id }: { id: WikiGroupId }) {
           <section className={styles.mapNotice}>
             <h2>Looking for a place from an objective?</h2>
             <p>
-              This Wiki explains what each place is. If you have a Zone name,
-              Fault or obstacle in front of you, use the{" "}
+              We use the Wiki to explain what each place is. If you have a Zone
+              name, Fault, or obstacle in front of you, use the{" "}
               <Link href="/map">Map status and confirmed locations</Link> to see
-              what can be placed now and which routes still need direct,
-              version-aware testing.
+              what we can place now and which routes still need a direct check.
             </p>
           </section>
         )}
@@ -182,9 +181,10 @@ export default function WikiGroupPage({ id }: { id: WikiGroupId }) {
           <section className={styles.mapNotice}>
             <h2>Looking for a specific Boss encounter?</h2>
             <p>
-              This index separates factions from individual threats. Open the{" "}
+              We separate factions from individual threats here. Open the{" "}
               <Link href="/bosses">known Boss encounters</Link> for the named
-              fights and hazards shown so far, without a guessed full roster.
+              fights and hazards we&apos;ve seen so far; we won&apos;t guess the
+              rest of the roster.
             </p>
           </section>
         )}

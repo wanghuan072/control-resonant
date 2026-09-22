@@ -8,7 +8,7 @@
     "shortTitle": "Start your case",
     "eyebrow": "New player field guide",
     "description": "Meet Dylan, catch up on the story you need, and learn which combat and movement tools matter in your first hours.",
-    "intro": "New to CONTROL, or returning for Dylan's story? Start with the people and events that matter, then learn the combat rhythm, movement basics and settings that can make the first hours easier.",
+    "intro": "New to CONTROL, or coming back for Dylan's story? We start with the people and events worth knowing, then walk through the combat rhythm, movement basics and settings we would check in the first few hours.",
     "image": "/images/characters/zoe-and-dylan.jpg",
     "href": "/guides/getting-started",
     "highlights": [
@@ -31,7 +31,7 @@
     "shortTitle": "Shape your loadout",
     "eyebrow": "Aberrant build manual",
     "description": "Choose Aberrant Forms, Combat Abilities, Talents and Artifacts for the fights that give you trouble.",
-    "intro": "If your build feels weak, first find out why: are you missing openings, running out of power or struggling to close the distance? Work through the combat loop, then change the Form, ability or passive effect that addresses that problem.",
+    "intro": "If your build feels weak, we would first ask why: are you missing openings, running out of power or struggling to close the distance? Once you know the problem, we can help you change the Form, ability or passive effect that actually addresses it.",
     "image": "/images/gameplay/aberrant-scythe.jpg",
     "href": "/guides/combat-builds",
     "highlights": [
@@ -54,7 +54,7 @@
     "shortTitle": "Follow the signal",
     "eyebrow": "Known missions / spoiler-aware",
     "description": "Separate Dylan's Journey, Jesse Quests, World Quests, Faults and Zone activities, then decide what to follow now and what can wait.",
-    "intro": "Not sure whether an objective advances the campaign, unlocks movement or opens an optional story? Identify the activity type first, then use the known location and encounter files without turning review footage into a fictional mission order.",
+    "intro": "Not sure whether an objective advances the campaign, unlocks movement or opens an optional story? We identify the activity type first, then connect it to the location and encounter files we can support without inventing a mission order from review footage.",
     "image": "/images/gameplay/warped-transit.jpg",
     "href": "/guides/story-walkthrough",
     "highlights": [
@@ -77,7 +77,7 @@
     "shortTitle": "Close every case",
     "eyebrow": "Completion field index",
     "description": "Keep optional quests, discoveries, boss choices and New Game+ in view without losing the main story.",
-    "intro": "Want to see more than the main ending? Separate story progress from optional Resonants, World Quests, discoveries and New Game+. Reviews confirm that Manhattan remains explorable after the ending, but exact collectible totals and missable conditions still need a reproducible finished-game check.",
+    "intro": "Want to see more than the main ending? We separate story progress from optional Resonants, World Quests, discoveries and New Game+. The reviews we checked say Manhattan remains explorable after the ending; we are leaving exact totals and missable conditions open until they can be reproduced in the finished game.",
     "image": "/images/map/manhattan-overlook.jpg",
     "href": "/guides/completion",
     "highlights": ["Boss files", "Locations", "Case items", "New Game+"],

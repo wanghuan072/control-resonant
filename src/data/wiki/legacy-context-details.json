@@ -31,12 +31,12 @@
       {
         "heading": "What should a Resonant player expect?",
         "paragraphs": [
-          "The published cast material identifies Darling among returning faces. It does not confirm a mission chain, a permanent hub position, or an upgrade service provided by him. Older files about his work describe CONTROL (2019), not an unlock guide for Resonant.",
+          "The cast material confirms that Darling returns, but we have not seen a mission chain, permanent hub position or upgrade service for him. We use the older files to explain his role in CONTROL (2019), not as an unlock guide for Resonant.",
           "When a Bureau explanation appears in the new game, distinguish what Darling recorded years earlier from what Dylan and Zoe can verify in Manhattan. That distinction matters because the new crisis extends outside the building where much of Darling's research took place."
         ]
       }
     ],
-    "playerTakeaway": "Recognize Darling as the researcher who oversaw P6, then judge any new claims against Dylan's experience rather than assuming a familiar FBC voice is neutral.",
+    "playerTakeaway": "We remember Darling as the researcher who oversaw P6, then judge anything new against Dylan's experience instead of assuming a familiar FBC voice is neutral.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",
@@ -82,7 +82,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Emily works with Jesse in CONTROL. No specific upgrade or quest service has been announced for her in Resonant.",
+    "playerTakeaway": "We know Emily as Jesse's scientific ally in CONTROL. We have not found an announced upgrade or quest service for her in Resonant.",
     "related": [
       "characters/jesse-faden",
       "characters/casper-darling",
@@ -122,12 +122,12 @@
       {
         "heading": "What is known for Resonant?",
         "paragraphs": [
-          "Published cast material names Arish among returning characters. No public mission order, combat role or reward list follows from that reveal. A player should wait for the new game before assigning him to a specific zone.",
+          "The cast material names Arish among the returning characters. We have not found a public mission order, combat role or reward list for him, so we are not assigning him to a specific Zone yet.",
           "For newcomers, he is one of the FBC's people who dealt with containment at ground level. That is enough background to understand why he may react differently to a crisis than the Bureau's researchers do."
         ]
       }
     ],
-    "playerTakeaway": "Read Arish as experienced FBC security. Do not mistake his original-game sector assignments for Resonant mission directions.",
+    "playerTakeaway": "We read Arish as experienced FBC security, but we would not use his original-game sector assignments as Resonant mission directions.",
     "related": [
       "characters/jesse-faden",
       "characters/emily-pope",
@@ -165,12 +165,12 @@
       {
         "heading": "How much of that history carries forward?",
         "paragraphs": [
-          "The returning-cast reveal establishes Langston as a name to recognize. It does not establish that players revisit every Panopticon cell or collect the original game's object files again.",
+          "The returning-cast reveal tells us to recognize Langston. It does not give us a reason to expect every Panopticon cell or original object file to return.",
           "Use his old role to understand FBC vocabulary, then read any new item on its own terms. The sequel's Artifact system is about Dylan's build, not a reprint of the first game's containment inventory."
         ]
       }
     ],
-    "playerTakeaway": "Connect Langston with containment procedures, but keep CONTROL's Altered Items separate from Resonant's build Artifacts.",
+    "playerTakeaway": "We connect Langston with containment procedures while keeping CONTROL's Altered Items separate from Resonant's build Artifacts.",
     "related": [
       "world/oldest-house",
       "world/federal-bureau-of-control",
@@ -241,7 +241,7 @@
         ]
       }
     ],
-    "playerTakeaway": "When an objective says FBC, identify whether it comes from command, research, containment or field staff before assuming those voices share one agenda.",
+    "playerTakeaway": "When an objective says FBC, we first ask whether it comes from command, research, containment or field staff. We would not assume all four voices share one agenda.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",
@@ -307,7 +307,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Know the sequence—Ordinary, separation, P6, Jesse's search—without mistaking the first game's reports for Resonant missions or collectibles.",
+    "playerTakeaway": "We keep the sequence simple—Ordinary, separation, P6, Jesse's search—and do not turn reports from the first game into Resonant missions or collectibles.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",
@@ -349,7 +349,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Translate P6 to Dylan and P7 to Jesse while reading Bureau material; the labels explain a relationship, not a gameplay objective.",
+    "playerTakeaway": "When we read Bureau material, P6 means Dylan and P7 means Jesse. Those labels explain their relationship, not a gameplay objective.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",
@@ -403,11 +403,11 @@
         "heading": "What is known in Resonant?",
         "paragraphs": [
           "Remedy's published description says the Hiss is among the influences overtaking Manhattan after threats spilled beyond the Oldest House. The Mold and new paranatural forces also appear, so calling every red-lit opponent a Hiss variant would blur distinct threats.",
-          "Bosses called Resonants are indexed separately. An official trailer or preview can identify a faction, but it cannot establish final enemy health, drops, weaknesses or the full roster before release testing."
+          "We index bosses called Resonants separately. A trailer can help us identify a faction, but final health, drops, weaknesses and the full roster need a check against the released game."
         ]
       }
     ],
-    "playerTakeaway": "Use the Hiss label for a returning hostile influence, not as a catch-all for every Manhattan enemy or a substitute for a tested weakness guide.",
+    "playerTakeaway": "We use Hiss for the returning hostile influence, not as a catch-all for every Manhattan enemy. The old bestiary cannot replace a weakness guide checked against the new game.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",

@@ -27,11 +27,11 @@
         "heading": "How Dylan plays",
         "paragraphs": [
           "Dylan fights at close range with the shape-shifting Aberrant and uses paranatural powers rather than Jesse's Service Weapon gunplay. Melee strikes feed the resource used by Combat Abilities, so the player is pushed to move between direct attacks and supernatural tools.",
-          "The Gap is his build space for weapon upgrades, abilities, Talents and crafted Artifacts. It is a planning space, not evidence that every previewed power can be equipped at once."
+          "We use the Gap as Dylan's build space for weapon upgrades, abilities, Talents and crafted Artifacts. It helps us plan a loadout, but we are not assuming every previewed power can be equipped at once."
         ]
       }
     ],
-    "playerTakeaway": "Read P6 as Dylan when revisiting older files. In Resonant, follow his relationship with Jesse and the Bureau before trying to memorize every term from the first game.",
+    "playerTakeaway": "When we see P6 in an older file, we read it as Dylan. For Resonant, we would follow his relationship with Jesse and the Bureau before trying to memorize every term from the first game.",
     "related": [
       "characters/jesse-faden",
       "characters/zoe-de-vera",
@@ -71,7 +71,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Treat Jesse as a story objective and a returning character, not as an announced second playable character.",
+    "playerTakeaway": "We treat Jesse as the person driving Dylan's search and as a returning character. Nothing we checked announces her as a second playable lead.",
     "related": [
       "characters/dylan-faden",
       "world/oldest-house",
@@ -99,18 +99,18 @@
         "heading": "Her place in Dylan's story",
         "paragraphs": [
           "Zoe works with Dylan as the Bureau responds to Manhattan's paranatural emergency. Unlike Dylan, she has direct experience of the outside crisis, making their conversations a way to understand what happened while he was confined.",
-          "Remedy has described dialogue that continues during exploration. That makes Zoe more than a name on a static briefing screen, but it does not establish her as a playable companion."
+          "Remedy says Zoe continues talking with Dylan during exploration, so we expect her to feel like a field contact rather than a name on a briefing screen. We have not seen anything that makes her a playable companion."
         ]
       },
       {
         "heading": "What to listen for",
         "paragraphs": [
           "Pay attention to how Zoe describes an objective versus how Dylan reacts to it. Her FBC role and his history with the Bureau create a useful tension when interpreting orders or claims in field reports.",
-          "Her confirmed role is handler and field contact. Quest outcomes, upgrade rewards and her full story arc should not be inferred from preview footage."
+          "We can support her role as handler and field contact. We are leaving quest outcomes, upgrade rewards and her full story arc to the finished game instead of filling the gaps from preview footage."
         ]
       }
     ],
-    "playerTakeaway": "Use Zoe's exploration dialogue as orientation for the city and for Dylan's relationship with the FBC; do not mistake it for a confirmed co-op system.",
+    "playerTakeaway": "We use Zoe's exploration dialogue to understand the city and Dylan's relationship with the FBC. We have not seen anything that turns her into a co-op character.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",
@@ -157,7 +157,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Use the six named preview choices to compare speed, crowd reach, sustained contact and heavy impact. Do not follow a pre-launch best-in-slot ranking based only on a trailer.",
+    "playerTakeaway": "We compare the six named choices by speed, crowd reach, sustained contact and heavy impact. A trailer is not enough for us to call any one of them best in slot.",
     "related": [
       "characters/dylan-faden",
       "combat/reach",
@@ -187,7 +187,7 @@
       {
         "heading": "Where Reach enters the route",
         "paragraphs": [
-          "A published Metro Fault mission preview associates Reach with an underground route containing train hazards and Mold. The preview establishes the reward and the kind of environment where it is useful, not a final step-by-step retail walkthrough.",
+          "In the Metro Fault preview, Reach is tied to an underground route with train hazards and Mold. That tells us what the reward is and where it matters, but it is not enough for us to publish a final step-by-step walkthrough.",
           "Reach gives Dylan a way to bridge or traverse spaces that ordinary jumping cannot explain. It belongs beside Shift and other movement tools when reading a zone guide."
         ]
       },
@@ -199,7 +199,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Follow the Metro Fault guide for the demonstrated route, then use Reach as a navigation capability rather than searching for it among offensive powers.",
+    "playerTakeaway": "We connect Reach to the demonstrated Metro Fault route and use it as a navigation tool, not something to look for among offensive powers.",
     "related": [
       "missions/metro-fault",
       "world/west-incursion-zone",
@@ -236,12 +236,12 @@
       {
         "heading": "What the player can do",
         "paragraphs": [
-          "The main campaign is called Dylan's Journey. Separate World Quests, Faults, puzzles and other activities can pull you away from that route. Those labels describe activity types; they are not a published complete mission list.",
+          "The main campaign is called Dylan's Journey. World Quests, Faults, puzzles and other activities can pull you away from it. We use those labels to tell the activities apart, not as a complete mission list.",
           "Fast travel between Zones and The Gap is described in Remedy's PS5 feature breakdown. The exact retail map, collectibles and Zone completion totals remain unknown before launch."
         ]
       }
     ],
-    "playerTakeaway": "Start with the Zone or mission name you can see in-game. Do not trust a guessed map pin or citywide collectible total.",
+    "playerTakeaway": "We would start with the Zone or mission name shown in-game. Until routes can be checked directly, we would not trust a guessed map pin or citywide collectible total.",
     "related": [
       "world/west-incursion-zone",
       "world/oldest-house",
@@ -281,7 +281,7 @@
         "heading": "Why it matters to Dylan",
         "paragraphs": [
           "The Oldest House is where the FBC held and studied Dylan after the Ordinary incident. It is therefore both the Bureau's headquarters and a personal part of his history.",
-          "The new game moves much of the action into Manhattan while revisiting the Bureau's building. Published previews mention previously unseen spaces, but do not establish a complete sector map for Resonant."
+          "The new game moves much of the action into Manhattan while returning to the Bureau's building. The previews show unfamiliar spaces, but we still do not have a complete sector map for Resonant."
         ]
       },
       {
@@ -292,7 +292,7 @@
         ]
       }
     ],
-    "playerTakeaway": "Read Oldest House files as series context; use Resonant-specific routes when tracking Dylan's objectives.",
+    "playerTakeaway": "We read Oldest House files as series context, then switch to Resonant-specific routes when tracking Dylan's objectives.",
     "related": [
       "characters/dylan-faden",
       "characters/jesse-faden",
@@ -330,11 +330,11 @@
         "heading": "How to use this entry",
         "paragraphs": [
           "Use this name to match trailer footage, preview descriptions and early-game guide sections. The Zone has been shown; its full activity list, boundaries and collectible positions have not.",
-          "When the retail game arrives, this page can gain verified routes, landmarks and pickups without changing the Wiki hierarchy."
+          "When we can check the retail game, we will add routes, landmarks and pickups here without changing the Wiki hierarchy."
         ]
       }
     ],
-    "playerTakeaway": "Treat preview footage as a view into the Zone, not as a finished interactive map.",
+    "playerTakeaway": "We use the preview footage to understand the Zone's look and hazards, but we do not treat the edit as a finished interactive map.",
     "related": ["world/manhattan", "combat/reach", "missions/metro-fault"],
     "sourceIds": ["remedy-gameplay", "wiki-resonant"]
   },
@@ -384,19 +384,28 @@
       {
         "heading": "Route at a glance",
         "paragraphs": [
-          "The published preview follows Dylan through a metro space where moving trains and warped architecture shape the encounter. Mold appears along the route. That establishes the activity's identity, but not every room, checkpoint or objective in a retail build.",
+          "The preview follows Dylan through moving trains, warped architecture and Mold in an underground route. That is enough for us to identify the activity, but not every room, checkpoint or objective in the retail build.",
           "The important progression result is Reach, a grappling-style movement unlock. Its role is traversal rather than a slotted Combat Ability."
+        ],
+        "inlineLinks": [
+          {
+            "afterParagraph": 0,
+            "prefix": "To place the demonstrated route, ",
+            "label": "check the confirmed map index",
+            "href": "/map",
+            "suffix": " before relying on preview geography."
+          }
         ]
       },
       {
         "heading": "What to prepare for",
         "paragraphs": [
-          "Watch the moving environment and use the route's visual cues instead of assuming straight-line travel. The preview supports that general approach; it does not support a precise input sequence or a claim about guaranteed drops.",
+          "We would watch the moving environment and follow its visual cues instead of assuming a straight path. The preview supports that approach, but we cannot turn it into a precise input sequence or promise a specific reward.",
           "For now, Metro Fault tells you what kind of challenge to expect and why Reach matters. Exact turns and puzzle steps need to be checked in the released game."
         ]
       }
     ],
-    "playerTakeaway": "If you are looking for Reach, this is the named route to recognize. Use the connected guide for the preview sequence.",
+    "playerTakeaway": "If you are looking for Reach, this is the named route we would recognize first. The connected guide follows the sequence we can support from the preview.",
     "related": ["combat/reach", "world/manhattan", "world/west-incursion-zone"],
     "sourceIds": ["metro"]
   },
@@ -457,18 +466,18 @@
         "heading": "What makes the encounter distinct",
         "paragraphs": [
           "The published boss footage names the Central Resonant and shows fire and magma defining the fight space. The ground hazard matters because staying aggressive for ability resource must be balanced against keeping a safe route through the arena.",
-          "Those observations identify a threat pattern, not final health values, resistances or a guaranteed winning build. A preview edit cannot establish every phase."
+          "From what we can see, the floor hazards and projectiles are the main pattern to respect. We still do not have final health, resistance or phase data, so we would not call any setup a guaranteed win."
         ]
       },
       {
         "heading": "Progression and strategy",
         "paragraphs": [
           "Remedy's broader combat explanation says major Resonants grant new Combat Abilities, sometimes with a branching choice. The exact ability granted by this particular fight has not been established by its public preview.",
-          "For now, learn to read the hazardous floor and projectile windows. A frame-by-frame retail strategy will belong in a dedicated Guide after the game can be tested."
+          "For now, we would learn the hazardous floor and projectile windows. Once we can test the retail fight, we will move the frame-by-frame strategy into a dedicated Guide."
         ]
       }
     ],
-    "playerTakeaway": "Use the arena hazard and attack telegraphs as planning information; ignore pre-release claims of exact drops or damage weaknesses.",
+    "playerTakeaway": "From the footage, we would plan around the arena hazard and attack cues first. We are not relying on pre-release claims about exact drops or damage weaknesses.",
     "related": ["combat/aberrant", "world/manhattan", "missions/metro-fault"],
     "sourceIds": ["central", "ps-combat"]
   }

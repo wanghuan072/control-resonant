@@ -27,9 +27,9 @@ export function GameplayBuildSections() {
           ))}
         </div>
         <p>
-          The hands-on build allowed three Combat Abilities to be equipped at a
-          time. That capacity should not be confused with the number of
-          abilities in the complete game.{" "}
+          The hands-on build equipped three Combat Abilities at a time. We read
+          that as the loadout capacity in that build, not the total number of
+          abilities in the game.{" "}
           <Link href="/wiki/enemies/central-resonant">
             The Central Resonant
           </Link>{" "}
@@ -81,11 +81,11 @@ export function GameplayBuildSections() {
           </article>
         </div>
         <p className={styles.caveat}>
-          Ask “which gap in my current setup should the next choice cover?”
-          Full-game reviews report that early Form choice and limited reset
-          opportunities can materially change the opening hours, so test speed
-          and reach before spending deeply. Exact material costs and optimal
-          damage still require versioned testing.
+          We start with one question: “Which gap in my setup should the next
+          choice cover?” Full-game reviews say early Form choices and limited
+          resets can shape the opening hours, so we would test speed and reach
+          before spending deeply. Exact material costs and optimal damage still
+          need a check against a known game version.
         </p>
       </section>
 
@@ -110,8 +110,9 @@ export function GameplayBuildSections() {
               sizes="(max-width:1024px) 100vw, 44vw"
             />
             <figcaption>
-              The Central Resonant footage shows fire, projectiles and unsafe
-              ground; it does not establish final health or a guaranteed reward.
+              From the Central Resonant footage, we can already see that fire,
+              projectiles, and unsafe ground shape the fight. Final health and
+              rewards still need direct verification.
             </figcaption>
           </figure>
           <ol>
@@ -141,7 +142,14 @@ export function GameplayBuildSections() {
             Central Resonant file
           </Link>{" "}
           for its documented hazards. Exact phases and winning routes belong in
-          a tested Guide after release.
+          a Guide we can test after release.
+        </p>
+        <p className={styles.caveat}>
+          Completed-review coverage also reports that defeating Resonants can
+          advance the world&apos;s escalation and strengthen later enemies. We
+          would check that Forms, health, Power and Talents are keeping pace
+          before clearing every optional fight; the exact escalation values
+          still need direct versioned testing.
         </p>
       </section>
     </>

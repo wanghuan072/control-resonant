@@ -29,7 +29,7 @@
           "label": "Wiki classification",
           "text": "Control Wiki identifies the Aberrant as an Object of Power. That lore category is not a rarity tier, equipment slot or confirmed explanation of every upgrade rule."
         },
-        "playerNote": "Compare reach, recovery and attack flow when trying Forms. A dramatic silhouette alone does not establish damage or a best build.",
+        "playerNote": "We compare reach, recovery and attack flow when trying Forms. A dramatic silhouette alone is not enough for us to call the damage or a best build.",
         "sourceIds": ["wiki-aberrant", "ps-combat"]
       },
       {
@@ -67,7 +67,7 @@
             "value": "Not documented in the sources used here"
           }
         ],
-        "playerNote": "Check the edition and platform listing before buying. Do not plan an economy build around an effect that has not been verified.",
+        "playerNote": "We would check the exact edition and platform listing before buying. Until the effect is verified, we would not plan an economy build around it.",
         "sourceIds": ["store", "ps-store"]
       },
       {
@@ -105,7 +105,7 @@
             "value": "Check Remedy's current signup offer"
           }
         ],
-        "playerNote": "Newsletter rewards and store preorder bonuses are different offers. Do not assume that buying an edition automatically satisfies newsletter eligibility.",
+        "playerNote": "We keep newsletter rewards separate from store preorder bonuses. Buying an edition does not automatically prove newsletter eligibility.",
         "sourceIds": ["wiki-resonant"]
       },
       {
@@ -124,7 +124,7 @@
             "value": "Announcement-era listing; current terms must be checked"
           }
         ],
-        "playerNote": "Use the official reward instructions for your platform. This reference does not promise that an earlier promotional offer is still redeemable.",
+        "playerNote": "We would follow the official reward instructions for your platform. This reference cannot promise that an earlier promotion is still redeemable.",
         "sourceIds": ["wiki-resonant"]
       },
       {
@@ -173,7 +173,7 @@
       "A preorder item name is not a verified stat description.",
       "The two CONTROL (2019) entries are background references, not promised sequel equipment."
     ],
-    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "note": "We label Resonant announcements, preview observations and CONTROL (2019) background separately. We have not completed a retail playthrough.",
     "guideHref": "/guides/combat-builds#artifacts",
     "sourceIds": [
       "wiki-aberrant",
@@ -216,7 +216,7 @@
             "value": "Not established by the sources used here"
           }
         ],
-        "playerNote": "Use the main-story route when you want to follow Dylan's central objective. Do not treat initial previews as a complete mission order.",
+        "playerNote": "We use the main-story route for Dylan's central objective, but we do not turn the early previews into a complete mission order.",
         "sourceIds": ["ps-combat"]
       },
       {
@@ -277,7 +277,7 @@
             "value": "Reach"
           }
         ],
-        "playerNote": "The useful takeaway is the traversal unlock. Do not mistake a preview reward for a verified collectible count, difficulty rating or final mission completion time.",
+        "playerNote": "For us, the useful takeaway is the traversal unlock. A preview reward is not enough to give a collectible count, difficulty rating or final clear time.",
         "sourceIds": ["metro"]
       }
     ],
@@ -286,7 +286,7 @@
       "Dylan's Journey and World Quests are categories; Metro Fault is a named preview.",
       "The older Wiki mission directory is explicitly for CONTROL and its expansions."
     ],
-    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "note": "We label Resonant announcements, preview observations and CONTROL (2019) background separately. We have not completed a retail playthrough.",
     "guideHref": "/guides/story-walkthrough#quest-types",
     "sourceIds": ["ps-combat", "metro", "wiki-missions"],
     "checkedAt": "2026-09-16",
@@ -340,7 +340,7 @@
             "value": "Oldest House"
           }
         ],
-        "playerNote": "A Bureau file is an in-world institutional account. Pay attention to who wrote it, what is redacted and what the characters dispute; do not read every document as an omniscient explanation.",
+        "playerNote": "We read a Bureau file as an in-world institutional account. Who wrote it, what is redacted and what the characters dispute matter more than treating it as an all-knowing explanation.",
         "sourceIds": ["wiki-fbc"]
       },
       {
@@ -360,7 +360,7 @@
             "value": "An Artifact slot or ordinary inventory pickup"
           }
         ],
-        "playerNote": "Look for the object's behavior and containment instructions before thinking about loot. Do not merge a named story object, a passive Artifact and a collectible document into one item category.",
+        "playerNote": "We look at the object's behavior and containment instructions before thinking about loot. A story object, passive Artifact and collectible document belong in different categories.",
         "sourceIds": ["wiki-altered"]
       },
       {
@@ -380,7 +380,7 @@
             "value": "Altered Items"
           }
         ],
-        "playerNote": "Separate an object's story classification from its actual gameplay system. Calling the Aberrant an Object of Power does not tell you its damage, rarity or unlock cost.",
+        "playerNote": "We separate an object's story classification from its gameplay system. Calling the Aberrant an Object of Power does not tell us its damage, rarity or unlock cost.",
         "sourceIds": ["wiki-oop", "wiki-aberrant"]
       },
       {
@@ -445,7 +445,7 @@
       "A collectible file about an object and the object itself are different entries.",
       "New players can use the definitions without reading complete character biographies."
     ],
-    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "note": "We label Resonant announcements, preview observations and CONTROL (2019) background separately. We have not completed a retail playthrough.",
     "guideHref": "/guides/getting-started#story-context",
     "sourceIds": [
       "wiki-fbc",
@@ -483,7 +483,7 @@
             "value": "Distinct designed zones, not a conventional open-world checklist"
           }
         ],
-        "playerNote": "When using a location guide, check the zone and the named activity. A city-wide screenshot cannot establish a precise pickup location.",
+        "playerNote": "When we use a location guide, we check the Zone and named activity first. A city-wide screenshot is not enough for a precise pickup location.",
         "sourceIds": ["wiki-resonant", "ps-combat"]
       },
       {
@@ -517,7 +517,7 @@
             "value": "Untapped Artifact crafting"
           }
         ],
-        "playerNote": "Use the build guides when you want to change your setup; use the map and mission indexes when you want to travel. These are different kinds of destinations.",
+        "playerNote": "We use the build guides to change a setup and the map or mission indexes to travel. The Gap and a physical destination solve different problems.",
         "sourceIds": ["ps-combat", "ps-ngplus"]
       },
       {
@@ -546,7 +546,7 @@
       "The Oldest House entry supplies background, not a claimed complete Resonant interior map.",
       "No unverified collectible pins or percentage-complete maps are supplied."
     ],
-    "note": "Resonant announcements, preview observations and CONTROL (2019) background are labeled separately. This is not a claim of a completed retail playthrough.",
+    "note": "We label Resonant announcements, preview observations and CONTROL (2019) background separately. We have not completed a retail playthrough.",
     "guideHref": "/guides/story-walkthrough#quest-types",
     "sourceIds": [
       "remedy-gameplay",

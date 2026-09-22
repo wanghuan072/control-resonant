@@ -94,6 +94,14 @@ export default function ResearchHubPage({ id }: { id: string }) {
               {s.paragraphs?.map((p) => (
                 <p key={p}>{p}</p>
               ))}
+              {"inlineLinks" in s &&
+                s.inlineLinks?.map((link) => (
+                  <p key={link.href}>
+                    {link.prefix}
+                    <Link href={link.href}>{link.label}</Link>
+                    {link.suffix}
+                  </p>
+                ))}
               {s.cards && (
                 <div className={styles.cards}>
                   {s.cards.map((c) => (

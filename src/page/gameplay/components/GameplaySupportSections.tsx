@@ -12,10 +12,10 @@ export function GameplaySupportSections() {
           <span>07 / Put the systems to work</span>
           <h2>Fix common combat problems before changing your whole build</h2>
           <p>
-            Start with the problem you can see, then compare a tool with the
-            right role. Completed reviews repeatedly identify slow Falter,
-            crowded arenas, targeting and late-game durability as common
-            pressure points, but their preferred solutions differ.
+            We start with the problem we can see, then look for a tool with the
+            right role. Across the completed reviews, slow Falter, crowded
+            arenas, targeting, and late-game durability keep coming up, even
+            though the reviewers prefer different solutions.
           </p>
         </header>
         <div className={styles.problemList}>
@@ -55,14 +55,28 @@ export function GameplaySupportSections() {
           <article>
             <h3>Enemies feel too durable and I rarely recover health</h3>
             <p>
-              Check Falter generation before judging raw damage. Use a
-              vulnerable normal enemy to trigger an execution and enter
-              Dominance, then spend that window on the heavier target. If the
-              rhythm is still exhausting, adjust Outgoing Falter or Outgoing
-              Damage separately instead of changing every setting.
+              Check the health bar before judging raw damage: later armored
+              layers can prevent Falter from building normally until the armor
+              breaks. Execute an eligible normal enemy to enter Dominance, then
+              use its melee boost and dependable health drops against the
+              heavier target. If the rhythm is still exhausting, adjust Outgoing
+              Falter or Outgoing Damage separately.
             </p>
             <Link href="/guides/combat-builds#combat-loop">
               Diagnose Falter and Dominance <ArrowRight size={15} />
+            </Link>
+          </article>
+          <article>
+            <h3>A status build is not finishing durable enemies</h3>
+            <p>
+              Completed-review coverage identifies one practical interaction:
+              applying Mold poison and then fire can trigger an explosion. We
+              would use that combination against a durable target or a packed
+              group, while leaving exact damage and best-in-slot claims open
+              until they can be tested on a known game version.
+            </p>
+            <Link href="/wiki/combat/combat-abilities">
+              Compare ability roles <ArrowRight size={15} />
             </Link>
           </article>
         </div>
@@ -76,12 +90,11 @@ export function GameplaySupportSections() {
         <div>
           <p>
             Reach and Shift are movement tools used to navigate distorted spaces
-            and gravity anomalies. The previewed Metro Fault connects a
-            traversal challenge with Reach; that does not make Reach a
-            substitute for a Resonant-earned Combat Ability. Manhattan is
-            organized into distinct handcrafted Zones with story quests, World
-            Quests and optional activities, not one uninterrupted map to clear
-            marker by marker.
+            and gravity anomalies. We saw Reach tied to a traversal challenge in
+            the Metro Fault preview, so we keep it separate from a
+            Resonant-earned Combat Ability. Manhattan is organized into distinct
+            handcrafted Zones with story quests, World Quests, and optional
+            activities rather than one uninterrupted map of markers.
           </p>
           <nav className={styles.inlineLinks}>
             <Link href="/map">
@@ -135,8 +148,8 @@ export function GameplaySupportSections() {
           Remedy also describes independent incoming/outgoing damage and falter
           controls, presets, Immortality and one-hit options. Settings can make
           the game harder as well as easier, and using Assist Mode does not gate
-          trophies or achievements. These are announced controls, not advice
-          that every player should enable them.
+          trophies or achievements. We would change the setting that targets
+          your specific problem instead of enabling everything at once.
         </p>
         <Link className={styles.textLink} href="/guides/getting-started">
           Accessibility and first-hour guide <ArrowRight size={16} />

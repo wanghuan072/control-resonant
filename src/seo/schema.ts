@@ -6,7 +6,7 @@ const organization = {
   "@id": `${siteConfig.url}/#organization`,
   name: siteConfig.name,
   url: `${siteConfig.url}/legal/about-us`,
-  logo: `${siteConfig.url}/images/logo.svg`,
+  logo: `${siteConfig.url}/images/logo.png`,
 };
 export function homeSchema() {
   return [

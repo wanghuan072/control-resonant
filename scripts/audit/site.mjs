@@ -491,6 +491,61 @@ try {
       17,
     "Every update exposes its original source",
   );
+  const expectedUpdateLinks = [
+    [
+      "Inspect PS5 and PS5 Pro modes",
+      "/game-info/system-requirements#console-modes",
+    ],
+    ["Review returning cast context", "/guides/getting-started#story-context"],
+    ["Browse CONTROL Resonant characters", "/wiki/characters"],
+    ["Plan Talent progression", "/guides/combat-builds#talents"],
+    [
+      "Compare physical release timing",
+      "/game-info/physical-release-steelbook",
+    ],
+    [
+      "Prepare for Central Resonant",
+      "/guides/story-walkthrough#central-resonant",
+    ],
+    ["Open named Boss encounters", "/bosses"],
+    ["Follow the Metro Fault route", "/guides/story-walkthrough#metro-fault"],
+    ["Study the Metro Fault mission", "/wiki/missions/metro-fault"],
+    ["Understand the Reach ability", "/wiki/combat/reach"],
+    ["Confirm digital release timing", "/game-info/release-date"],
+    ["Check New Game Plus rules", "/wiki/combat/new-game-plus"],
+    ["Build around combat systems", "/guides/combat-builds"],
+    ["Review launch platforms and dates", "/game-info/release-date"],
+  ];
+  for (const [name, href] of expectedUpdateLinks) {
+    const link = page.getByRole("link", { name, exact: true });
+    check(
+      (await link.count()) === 1 && (await link.getAttribute("href")) === href,
+      `Updates includes descriptive link "${name}" to ${href}`,
+    );
+  }
+  for (const name of ["Updated guide →", "Read more →", "See more →"]) {
+    check(
+      (await page.getByRole("link", { name, exact: true }).count()) === 0,
+      `Updates does not use generic anchor "${name}"`,
+    );
+  }
+
+  const expectedBodyLinks = [
+    ["/map", "explore the world location index", "/wiki/world"],
+    ["/map", "compare mission and activity types", "/wiki/missions"],
+    ["/bosses", "browse enemy factions and bosses", "/wiki/enemies"],
+    ["/wiki/missions/metro-fault", "check the confirmed map index", "/map"],
+  ];
+  for (const [route, name, href] of expectedBodyLinks) {
+    await page.goto(base + route, { waitUntil: "networkidle" });
+    const link = page
+      .getByRole("main")
+      .getByRole("link", { name, exact: true });
+    check(
+      (await link.count()) === 1 && (await link.getAttribute("href")) === href,
+      `${route} includes body link "${name}" to ${href}`,
+    );
+  }
   await page.goto(base + "/game-info/trailers", { waitUntil: "networkidle" });
   check((await page.locator("iframe").count()) === 0, "Video loads on demand");
   check(

@@ -173,19 +173,19 @@ export function HardwareChecker() {
     if (cpu && gpu && hasBelow) {
       status = "Below the selected target";
       summary =
-        "At least one selected component or capacity falls below this comparison target.";
+        "We found at least one selected component or capacity below this comparison target.";
     } else if (cpu && gpu && hasUnknown) {
       status = "Only part of this target can be checked";
       summary =
-        "One part of the selected target has no published comparison, so a complete pass cannot be claimed.";
+        "We do not have a published comparison for one part of this target, so we cannot call it a complete pass.";
     } else if (cpu && gpu && exactCpu && exactGpu) {
       status = "Exact official component match";
       summary =
-        "The CPU and GPU are the exact examples named for this published target; this is still not a frame-rate guarantee.";
+        "Your CPU and GPU match the exact examples in this published target. We would still treat that as a baseline, not a frame-rate guarantee.";
     } else if (cpu && gpu) {
       status = "Estimated to meet this hardware class";
       summary =
-        "The selected parts are in a conservative comparison band, but they are not an official tested CONTROL Resonant configuration.";
+        "We place these parts in a conservative comparison band. Remedy did not list this exact CONTROL Resonant configuration.";
     }
 
     return { tier, rows, status, summary };
@@ -205,8 +205,8 @@ export function HardwareChecker() {
           </h2>
         </div>
         <p>
-          Select a common desktop or laptop configuration. Exact official models
-          are identified separately from conservative hardware-class estimates.
+          Select a common desktop or laptop configuration. We separate exact
+          official models from our conservative hardware-class estimates.
         </p>
       </header>
 

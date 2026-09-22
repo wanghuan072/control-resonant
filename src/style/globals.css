@@ -89,6 +89,10 @@ img {
   max-width: 100%;
 }
 
+small {
+  font-size: 12px;
+}
+
 ::selection {
   background: var(--color-red);
   color: white;

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Fragment } from "react";
 import { ArrowRight } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { getWikiDetail, getWikiGroup, wikiDetailPath } from "@/lib/data/wiki";
@@ -165,8 +166,19 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
                   {String(index + 2).padStart(2, "0")} / Field notes
                 </p>
                 <h2>{section.heading}</h2>
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
+                {section.paragraphs.map((paragraph, paragraphIndex) => (
+                  <Fragment key={paragraph}>
+                    <p>{paragraph}</p>
+                    {section.inlineLinks
+                      ?.filter((link) => link.afterParagraph === paragraphIndex)
+                      .map((link) => (
+                        <p key={link.href}>
+                          {link.prefix}
+                          <Link href={link.href}>{link.label}</Link>
+                          {link.suffix}
+                        </p>
+                      ))}
+                  </Fragment>
                 ))}
                 {section.connections && (
                   <div className={styles.connections}>
@@ -200,8 +212,9 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
               <section className={styles.guideLink}>
                 <h2>Use {entry.title} in a step-by-step guide</h2>
                 <p>
-                  Guides focus on how to act. This Wiki file keeps the subject
-                  and its known facts in one place.
+                  We keep the facts and context in this Wiki file. When you need
+                  to turn them into a decision or route, continue with the
+                  connected guide.
                 </p>
                 <Link href={guide.href}>
                   {guide.label} <ArrowRight size={16} />

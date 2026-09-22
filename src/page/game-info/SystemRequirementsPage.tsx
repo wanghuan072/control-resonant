@@ -115,8 +115,8 @@ export default function SystemRequirementsPage() {
               </h2>
             </div>
             <p>
-              These are target configurations using upscaling. They are not
-              independent benchmarks or promises for every CPU, GPU and driver
+              We read these as target configurations built around upscaling, not
+              independent benchmarks or promises for every CPU, GPU, and driver
               combination.
             </p>
           </header>
@@ -185,7 +185,7 @@ export default function SystemRequirementsPage() {
               The separate Enthusiast example targets {enthusiast.target} on{" "}
               {enthusiast.graphics.toLowerCase()}. It lists an{" "}
               {enthusiast.gpus.join(" or ")}, but does not provide a matching
-              CPU example. Treat it as a GPU target rather than a complete PC
+              CPU example. We would use it as a GPU target, not a complete PC
               build recommendation.
             </p>
           </header>
@@ -196,9 +196,10 @@ export default function SystemRequirementsPage() {
             <span>Interactive check</span>
             <h2>Compare your own setup with a published target</h2>
             <p>
-              The requirements table is the permanent reference. The checker
-              asks for your CPU, GPU, memory, storage and performance target,
-              then explains which parts can be matched and which remain unknown.
+              We keep the requirements table as the permanent reference. The
+              checker compares your CPU, GPU, memory, storage, and performance
+              target, then tells you which parts we can match and which remain
+              unknown.
             </p>
           </div>
           <Link href="/tools/pc-system-checker#system-checker">
@@ -275,9 +276,10 @@ export default function SystemRequirementsPage() {
               </h2>
             </div>
             <p>
-              Independent launch-window testing broadly supports the need for
-              upscaling at demanding settings. It does not turn one review rig
-              into a frame-rate promise for your PC.
+              We compared the launch-window PC tests with Remedy&apos;s chart,
+              and the pattern is clear: demanding settings lean heavily on
+              upscaling. One review rig still cannot promise a frame rate for
+              your PC.
             </p>
           </header>
           <div className={styles.featureGrid}>
@@ -308,8 +310,8 @@ export default function SystemRequirementsPage() {
             </article>
           </div>
           <p className={styles.tableNote}>
-            The checker compares hardware classes with published targets; it
-            intentionally does not estimate FPS from third-party review charts.
+            We compare hardware classes with the published targets. We do not
+            turn third-party review charts into a guessed FPS result.
           </p>
         </section>
 
@@ -377,25 +379,27 @@ export default function SystemRequirementsPage() {
               </h2>
             </div>
             <p>
-              Desktop component targets cannot establish handheld performance,
-              console graphics modes or final DRM. Those questions require a
-              platform announcement, store status or testing on the release
-              build.
+              We cannot use desktop component targets to predict handheld
+              performance, console modes, or final DRM. For those answers, we
+              need the platform announcement, storefront status, or a check of
+              the release build.
             </p>
           </header>
           <div className={styles.featureGrid}>
             <article>
               <strong>Steam Deck</strong>
               <p>
-                Launch support is stated. Wait for final-build testing before
-                assuming a preset, frame rate or verification badge.
+                Launch support is stated, but we would wait for final-build
+                testing before assuming a preset, frame rate, or verification
+                badge.
               </p>
             </article>
             <article>
               <strong>Xbox Series</strong>
               <p>
                 The game is confirmed for Series X|S, but no matching mode chart
-                is available here. Do not reuse PS5 targets as Xbox claims.
+                is available here. We would not reuse PS5 targets as Xbox
+                claims.
               </p>
             </article>
             <article>

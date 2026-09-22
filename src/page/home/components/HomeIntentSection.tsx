@@ -60,8 +60,9 @@ export function HomeIntentSection() {
             <span>Start with your question</span>
             <h2>Find the answer that moves your game forward</h2>
             <p>
-              Choose what you need now. Each route opens a focused guide,
-              comparison or Wiki field instead of another generic index.
+              We built the site around the questions we had as players. Pick
+              what you need now and we&apos;ll take you straight to the useful
+              guide, comparison, or Wiki entry.
             </p>
           </header>
           <div className={styles.intentGrid}>
@@ -93,7 +94,7 @@ export function HomeIntentSection() {
           />
           <figcaption>
             <span>Field file / Manhattan</span>
-            <strong>Follow the question, not the menu.</strong>
+            <strong>We start with the question, not the menu.</strong>
           </figcaption>
         </figure>
       </div>

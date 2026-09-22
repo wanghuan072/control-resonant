@@ -2,35 +2,35 @@
   "characters/dylan-faden": {
     "heading": "The opening changes his position",
     "paragraphs": [
-      "A first-party hands-on begins with Dylan leaving confinement in the Oldest House, receiving the Aberrant and reaching the Manhattan streets. That is a concrete change from the first game's premise: the person Jesse sought is now the person the player controls.",
+      "In the first-party hands-on we reviewed, Dylan leaves confinement in the Oldest House, receives the Aberrant and reaches Manhattan. The reversal is immediate: the person Jesse once searched for is now the one we control.",
       "The same preview has Zoe respond to Dylan over the radio after he answers a distress call. Their contact gives the isolated protagonist a link to the FBC's field response without making his past with the Bureau disappear."
     ]
   },
   "characters/jesse-faden": {
     "heading": "What is known about playability",
     "paragraphs": [
-      "Remedy's story announcement identifies Dylan as the sole playable character. Jesse is integral to his search and appears in the opening context described by hands-on coverage, but an important narrative role is not the same as a selectable campaign character.",
-      "If you are arriving from the 2019 game, carry forward the sibling relationship and Jesse's Bureau role. Do not transfer her Service Weapon build, powers or mission progression to Dylan's new combat systems."
+      "Remedy identifies Dylan as the sole playable character. Jesse is central to his search and appears in the opening context, but nothing we checked turns that story role into a selectable campaign.",
+      "If you are arriving from the 2019 game, we would carry forward the sibling relationship and Jesse's Bureau role, not her Service Weapon build, powers or mission progression. Dylan has his own combat systems."
     ]
   },
   "characters/zoe-de-vera": {
     "heading": "Why the radio contact matters",
     "paragraphs": [
       "The official combat deep dive calls Zoe Dylan's FBC handler and places their developing trust near the emotional center of the story. In the opening hands-on, their first contact happens as Dylan responds to a radio call in Manhattan.",
-      "Remedy also describes a seamless dialogue system that can continue while the player explores. Listen to Zoe during movement rather than assuming every conversation pauses the game or marks a separate quest objective."
+      "Remedy also describes dialogue that continues during exploration. We would listen to Zoe while moving instead of assuming every conversation pauses the game or marks a separate quest."
     ]
   },
   "combat/aberrant": {
     "heading": "What the preview choices reveal",
     "paragraphs": [
-      "The opening Xbox hands-on names three Primary choices—Flurry, Slash and Slice—and three later Secondary choices—Crush, Drill and Extend. Those descriptions establish different attack roles, not a complete retail Form catalog.",
+      "The Xbox hands-on names three Primary choices—Flurry, Slash and Slice—and three later Secondary choices—Crush, Drill and Extend. We use those descriptions to compare attack roles, not to claim a complete retail catalog.",
       "A separate Combo Ender pool completes the shown structure. The Form comparison file puts the six named choices side by side, while this page explains the Aberrant as Dylan's single transforming weapon."
     ]
   },
   "combat/reach": {
     "heading": "Traversal is not the combat reward pool",
     "paragraphs": [
-      "The Metro Fault preview connects Reach to movement through an altered environment. By contrast, Remedy describes supernatural Combat Abilities as rewards from major Resonant encounters. Keeping these progression tracks separate prevents a misleading build checklist.",
+      "The Metro Fault preview connects Reach to movement through an altered environment, while Remedy describes Combat Abilities as rewards from major Resonants. We keep those progression tracks separate so the build checklist stays useful.",
       "Remedy's New Game Plus explanation says story-linked traversal abilities reset even while combat upgrades and powers persist. Reach is therefore useful to understand as a route key as well as a move, not as a permanent combat slot."
     ]
   },
@@ -38,28 +38,28 @@
     "heading": "The opening is a bridge, not a reused map",
     "paragraphs": [
       "The June hands-on starts with Dylan escaping the Oldest House as the Hiss crisis spills into Manhattan. This gives returning players a recognizable origin point before the larger Zone structure takes over.",
-      "The new game also revisits previously unseen areas of the building according to platform coverage. That does not mean a 2019 CONTROL room-by-room collectible guide can be reused as a Resonant route."
+      "Platform coverage says the new game revisits unseen areas of the building. We would not reuse a room-by-room CONTROL (2019) collectible guide as a Resonant route."
     ]
   },
   "world/west-incursion-zone": {
     "heading": "Read the Zone as a systems preview",
     "paragraphs": [
       "The West Incursion Zone is one of the named early areas used to demonstrate the city's warped architecture and Gravity Anomalies. It is useful evidence that traversal and combat can share the same space, rather than a published full district map.",
-      "A player-facing route should identify what movement tool a section demonstrates and what remains inaccessible, but precise collectible pins and a required order of every activity cannot be derived from reveal footage alone."
+      "For a useful route, we want to know which movement tool a section demonstrates and what remains blocked. Reveal footage alone is not enough for us to add precise collectible pins or a required activity order."
     ]
   },
   "missions/metro-fault": {
     "heading": "What the preview does and does not establish",
     "paragraphs": [
       "Metro Fault is a named, transit-themed preview route with Mold-related threats and a Reach traversal reward. Its footage provides a concrete example of a Fault, unlike a generic category label.",
-      "The published preview is not a verified final-build walkthrough. It does not establish every puzzle state, collectible location, checkpoint or reward for other Faults; those details need retail play before they become instructions."
+      "We are treating the published preview as a demonstration, not a final-build walkthrough. Puzzle states, collectible locations, checkpoints and rewards need retail play before we turn them into instructions."
     ]
   },
   "enemies/central-resonant": {
     "heading": "Separate the named fight from the boss class",
     "paragraphs": [
-      "The Central Resonant preview identifies a specific encounter with fire and magma hazards. Remedy's broader combat explanation says major Resonants grant supernatural abilities, but the preview does not identify this fight's exact reward choice.",
-      "An earlier hands-on describes a different, unnamed partial-head Resonant using telekinetic debris. Treat them as separate documented encounters, not two names for one boss or evidence of a complete boss order."
+      "The Central Resonant preview shows a specific fight built around fire and magma hazards. Remedy says major Resonants grant supernatural abilities, but we have not found this fight's exact reward choice.",
+      "An earlier hands-on describes a different, unnamed partial-head Resonant using telekinetic debris. We keep the two encounters separate rather than treating them as two names for one boss or a complete boss order."
     ]
   }
 }

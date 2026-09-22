@@ -3,7 +3,7 @@
     "date": "2026-09-18",
     "type": "Full-game coverage",
     "title": "Reviews clarify the full combat, mission and exploration loop",
-    "text": "Completed reviews and PlayStation's full-game hands-on confirm a roughly 25–35-hour main story, optional Resonants, traversal-focused Jesse Quests, post-story free roam and a combat loop built around Falter, executions and Dominance. Opinions differ sharply on combat balance and late-game enemy durability, so exact builds and routes still require versioned testing.",
+    "text": "We compared the completed reviews with PlayStation's full-game hands-on. Together they point to a roughly 25–35-hour main story, optional Resonants, traversal-focused Jesse Quests, post-story free roam and a combat loop built around Falter, executions and Dominance. Reviewers disagree sharply on combat balance and late-game durability, so we are not treating one build or route as universal.",
     "href": "https://blog.playstation.com/2026/09/18/control-resonant-how-remedy-is-going-bigger-and-weirder-with-its-paranatural-horror-sequel-on-september-24/",
     "detailPath": "/gameplay#combat-loop",
     "detailLabel": "Understand the full combat loop"
@@ -32,7 +32,8 @@
     "title": "PS5 and PS5 Pro performance modes detailed",
     "text": "Remedy outlined 60fps and 30fps modes on PS5, three modes on PS5 Pro, DualSense feedback, 3D Audio and an estimated 25–35-hour main story.",
     "href": "https://blog.playstation.com/2026/09/15/control-resonant-ps5-features-detailed/",
-    "detailPath": "/game-info/system-requirements#console-modes"
+    "detailPath": "/game-info/system-requirements#console-modes",
+    "detailLabel": "Inspect PS5 and PS5 Pro modes"
   },
   {
     "date": "2026-09-10",
@@ -40,7 +41,14 @@
     "title": "Meet the Cast reveals more returning Bureau characters",
     "text": "The diary confirms actors for Dylan, Jesse and Zoe, alongside Darling, Emily Pope, Simon Arish and Frederick Langston. The character guide labels these returning-cast spoilers.",
     "href": "https://www.youtube.com/watch?v=N8wJs9Q9PVI",
-    "guideHref": "/guides/getting-started#story-context"
+    "guideHref": "/guides/getting-started#story-context",
+    "guideLabel": "Review returning cast context",
+    "internalLinks": [
+      {
+        "href": "/wiki/characters",
+        "label": "Browse CONTROL Resonant characters"
+      }
+    ]
   },
   {
     "date": "2026-09-10",
@@ -69,14 +77,21 @@
     "title": "Zone XP and changing world encounters explained",
     "text": "IGN's developer feature connects zone activities, local improvements, Talent points and the consequences of defeating Resonants.",
     "href": "https://tech.yahoo.com/gaming/articles/don-t-xp-zones-control-160000728.html",
-    "guideHref": "/guides/combat-builds#talents"
+    "guideHref": "/guides/combat-builds#talents",
+    "guideLabel": "Plan Talent progression"
   },
   {
     "date": "2026-08-17",
     "type": "Release",
     "title": "Game goes gold; physical date moves",
     "text": "The digital release remains September 24. Physical PS5 and Xbox Series X|S editions now release October 15.",
-    "href": "https://www.trueachievements.com/news/control-resonant-physical-copy-delay"
+    "href": "https://www.trueachievements.com/news/control-resonant-physical-copy-delay",
+    "internalLinks": [
+      {
+        "href": "/game-info/physical-release-steelbook",
+        "label": "Compare physical release timing"
+      }
+    ]
   },
   {
     "date": "2026-08-14",
@@ -84,7 +99,14 @@
     "title": "Central Resonant boss fight shown",
     "text": "The publisher identifies the Central Resonant and its lava and magma hazards. Exact launch rewards and damage resistances are not established by the preview description.",
     "href": "https://open.video/%40ign/v/control-resonant-exclusive-boss-fight-gameplay-ign-first",
-    "guideHref": "/guides/story-walkthrough#central-resonant"
+    "guideHref": "/guides/story-walkthrough#central-resonant",
+    "guideLabel": "Prepare for Central Resonant",
+    "internalLinks": [
+      {
+        "href": "/bosses",
+        "label": "Open named Boss encounters"
+      }
+    ]
   },
   {
     "date": "2026-08-07",
@@ -92,28 +114,57 @@
     "title": "Metro Fault and the Reach traversal reward",
     "text": "The published mission preview introduces a dungeon-like Fault with train hazards, Mold enemies and a grappling-style movement unlock.",
     "href": "https://www.youtube.com/watch?v=JfuY-NhK_tQ",
-    "guideHref": "/guides/story-walkthrough#metro-fault"
+    "guideHref": "/guides/story-walkthrough#metro-fault",
+    "guideLabel": "Follow the Metro Fault route",
+    "internalLinks": [
+      {
+        "href": "/wiki/missions/metro-fault",
+        "label": "Study the Metro Fault mission"
+      },
+      {
+        "href": "/wiki/combat/reach",
+        "label": "Understand the Reach ability"
+      }
+    ]
   },
   {
     "date": "2026-06-02",
     "type": "Release",
     "title": "Worldwide digital release set for September 24",
     "text": "Remedy confirmed the date for PS5, Xbox Series X|S, Steam, and Epic Games Store, with GeForce NOW at launch and Mac following later in 2026.",
-    "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24"
+    "href": "https://www.remedygames.com/article/control-resonant-launches-worldwide-on-september-24",
+    "internalLinks": [
+      {
+        "href": "/game-info/release-date",
+        "label": "Confirm digital release timing"
+      }
+    ]
   },
   {
     "date": "2026-04-30",
     "type": "Systems",
     "title": "New Game+ systems explained",
     "text": "Remedy detailed carry-over progression, additional talent nodes, expanded ability combinations, a fourth Artifact slot, and a more dangerous returning world.",
-    "href": "https://blog.playstation.com/2026/04/30/control-resonant-remedy-shares-first-details-on-new-game-plus/"
+    "href": "https://blog.playstation.com/2026/04/30/control-resonant-remedy-shares-first-details-on-new-game-plus/",
+    "internalLinks": [
+      {
+        "href": "/wiki/combat/new-game-plus",
+        "label": "Check New Game Plus rules"
+      }
+    ]
   },
   {
     "date": "2026-03-04",
     "type": "Systems",
     "title": "Combat and buildcrafting deep dive",
     "text": "Remedy explained the melee-to-ability resource loop, executions, The Gap, Weapon Forms, Combat Abilities, Talents, Artifacts, World Quests, Zoe De Vera, and branching Resonant rewards.",
-    "href": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/"
+    "href": "https://blog.playstation.com/2026/03/04/control-resonant-a-deep-dive-into-combat-buildcrafting-and-player-choice/",
+    "internalLinks": [
+      {
+        "href": "/guides/combat-builds",
+        "label": "Build around combat systems"
+      }
+    ]
   },
   {
     "date": "2026-02-13",
@@ -127,6 +178,12 @@
     "type": "Reveal",
     "title": "CONTROL Resonant officially revealed",
     "text": "Remedy announced Dylan Faden as protagonist, the Aberrant as his shapeshifting melee weapon, the Manhattan setting, and the game's open-ended action-RPG direction.",
-    "href": "https://www.remedygames.com/article/remedy-entertainment-reveals-control-resonant-launching-in-2026"
+    "href": "https://www.remedygames.com/article/remedy-entertainment-reveals-control-resonant-launching-in-2026",
+    "internalLinks": [
+      {
+        "href": "/game-info/release-date",
+        "label": "Review launch platforms and dates"
+      }
+    ]
   }
 ]
