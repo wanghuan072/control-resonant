@@ -6,16 +6,18 @@ import styles from "@/style/common/brand-logo.module.css";
 type BrandLogoProps = {
   onDark?: boolean;
   priority?: boolean;
+  compact?: boolean;
 };
 
 export function BrandLogo({
   onDark = false,
   priority = false,
+  compact = false,
 }: BrandLogoProps) {
   return (
     <Link
       href="/"
-      className={`${styles.logo} ${onDark ? styles.onDark : ""}`}
+      className={`${styles.logo} ${onDark ? styles.onDark : ""} ${compact ? styles.compact : ""}`}
       aria-label="CONTROL Resonant Guide home"
     >
       <Image

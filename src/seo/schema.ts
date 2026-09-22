@@ -7,6 +7,7 @@ const organization = {
   name: siteConfig.name,
   url: `${siteConfig.url}/legal/about-us`,
   logo: `${siteConfig.url}/images/logo.png`,
+  email: siteConfig.email,
 };
 export function homeSchema() {
   return [

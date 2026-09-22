@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { buyingFacts, displayDate } from "@/config/buying";
+import { siteConfig } from "@/config/site";
 import { ReleaseCountdown } from "@/page/home/components/ReleaseCountdown";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
@@ -42,7 +43,7 @@ export default function ReleaseDatePage() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             name: "CONTROL Resonant Release Date",
-            url: "https://controlresonant.org/game-info/release-date",
+            url: `${siteConfig.url}/game-info/release-date`,
             dateModified: "2026-09-20",
             about: { "@type": "VideoGame", name: "CONTROL Resonant" },
           },

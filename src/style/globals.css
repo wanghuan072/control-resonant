@@ -23,7 +23,7 @@
   --radius-sm: 2px;
   --radius-md: 0px;
   --container: 1280px;
-  --header-height: 66px;
+  --header-height: 72px;
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -143,7 +143,7 @@ textarea {
 
 @media (max-width: 768px) {
   :root {
-    --header-height: 62px;
+    --header-height: 64px;
   }
 
   .container {

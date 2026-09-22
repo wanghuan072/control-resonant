@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { buyingFacts } from "@/config/buying";
+import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
 import styles from "@/style/page/game-info/game-info-detail.module.css";
@@ -49,7 +50,7 @@ export default function SystemRequirementsPage() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             name: "CONTROL Resonant System Requirements",
-            url: "https://controlresonant.org/game-info/system-requirements",
+            url: `${siteConfig.url}/game-info/system-requirements`,
             dateModified: "2026-09-21",
             about: { "@type": "VideoGame", name: "CONTROL Resonant" },
           },

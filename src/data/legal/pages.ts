@@ -1,3 +1,7 @@
+import { siteConfig } from "@/config/site";
+
+const contactEmail = siteConfig.email;
+
 export const legalPages = {
   "privacy-policy": {
     title: "Privacy Policy",
@@ -36,7 +40,7 @@ export const legalPages = {
         title: "Changes and contact",
         paragraphs: [
           "We may revise this policy as site features or service providers change. The version shown here applies when you visit this page; material changes should be reflected in the text before new practices begin.",
-          "For privacy questions or requests, email wyong@controlresonant.org and identify the page or correspondence involved.",
+          `For privacy questions or requests, email ${contactEmail} and identify the page or correspondence involved.`,
         ],
       },
     ],
@@ -77,7 +81,7 @@ export const legalPages = {
       {
         title: "Questions",
         paragraphs: [
-          "For questions about these terms, contact wyong@controlresonant.org. We may update this page as the site changes; continuing to use the site after an update means you should review the current terms.",
+          `For questions about these terms, contact ${contactEmail}. We may update this page as the site changes; continuing to use the site after an update means you should review the current terms.`,
         ],
       },
     ],
@@ -103,7 +107,7 @@ export const legalPages = {
       {
         title: "Reporting a concern",
         paragraphs: [
-          "If you believe a page uses your protected work improperly, email wyong@controlresonant.org. Include the URL of the page, a description of the work, the material at issue, your relationship to the rights holder, and a way to contact you. We may ask for information needed to identify the material and will review specific, good-faith reports.",
+          `If you believe a page uses your protected work improperly, email ${contactEmail}. Include the URL of the page, a description of the work, the material at issue, your relationship to the rights holder, and a way to contact you. We may ask for information needed to identify the material and will review specific, good-faith reports.`,
           "This mailbox is a general rights-contact address, not a representation that the site has registered a statutory copyright agent in any jurisdiction. Legal notice requirements differ by location; consult the applicable process if you need to submit a formal legal notice.",
         ],
       },
@@ -131,7 +135,7 @@ export const legalPages = {
       {
         title: "Contact",
         paragraphs: [
-          "Reach the site editor at wyong@controlresonant.org. We do not offer account support, game-key support, or customer service for the game itself.",
+          `Reach the site editor at ${contactEmail}. We do not offer account support, game-key support, or customer service for the game itself.`,
         ],
       },
     ],
@@ -144,7 +148,7 @@ export const legalPages = {
       {
         title: "Email the site",
         paragraphs: [
-          "Send your message to wyong@controlresonant.org. To help us respond, include the URL of the page, a short description of the issue, and the detail you believe should be corrected. For a broken link or layout problem, include your browser and device if you are comfortable sharing them.",
+          `Send your message to ${contactEmail}. To help us respond, include the URL of the page, a short description of the issue, and the detail you believe should be corrected. For a broken link or layout problem, include your browser and device if you are comfortable sharing them.`,
           "For an accessibility issue, describe what you were trying to do and where the barrier occurred. For a rights concern, identify the work and the material on this site; the Copyright page explains what information is useful. Please avoid sending passwords, payment information, or unnecessary personal data.",
         ],
       },

@@ -81,6 +81,12 @@
   color: var(--color-ink-soft);
 }
 
+.content p a {
+  color: var(--color-red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .content > a {
   display: inline-flex;
   min-height: 48px;

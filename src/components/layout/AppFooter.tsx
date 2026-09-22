@@ -20,6 +20,9 @@ export function AppFooter() {
             Release details, practical guides, people, powers and places—find
             what you need for your next step in Manhattan.
           </p>
+          <a className={styles.email} href={`mailto:${siteConfig.email}`}>
+            {siteConfig.email}
+          </a>
         </div>
         <div className={styles.navColumns}>
           <nav aria-label="Explore" className={styles.navGroup}>

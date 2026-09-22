@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
-import { useRef, useState } from "react";
+import { type FormEvent, useEffect, useRef, useState } from "react";
 
 import { BrandLogo } from "@/components/common/BrandLogo";
 import { gameInfoNavigation, primaryNavigation } from "@/config/navigation";
@@ -11,9 +11,27 @@ import styles from "@/style/layout/app-header.module.css";
 
 export function AppHeader() {
   const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [gameInfoOpen, setGameInfoOpen] = useState(false);
+  const [query, setQuery] = useState("");
   const gameInfoTrigger = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    setOpen(false);
+    setGameInfoOpen(false);
+  }, [pathname]);
+
+  function submitSearch(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const value = String(
+      new FormData(event.currentTarget).get("q") ?? "",
+    ).trim();
+    if (!value) return;
+    setQuery(value);
+    setOpen(false);
+    router.push(`/search?q=${encodeURIComponent(value)}`);
+  }
 
   function isActive(href: string) {
     if (href === "/") return pathname === "/";
@@ -22,12 +40,14 @@ export function AppHeader() {
     return pathname.startsWith(href);
   }
 
+  const desktopNav = primaryNavigation.filter((item) => item.href !== "/");
+
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
-        <BrandLogo priority />
+        <BrandLogo priority compact />
         <nav className={styles.desktopNav} aria-label="Primary navigation">
-          {primaryNavigation.map((item) =>
+          {desktopNav.map((item) =>
             item.href === "/game-info" ? (
               <div
                 className={`${styles.navGroup} ${gameInfoOpen ? styles.navGroupOpen : ""}`}
@@ -49,12 +69,15 @@ export function AppHeader() {
                 <button
                   ref={gameInfoTrigger}
                   type="button"
-                  className={`${styles.navTrigger} ${isActive(item.href) ? styles.active : ""}`}
+                  className={`${styles.navItem} ${isActive(item.href) ? styles.active : ""}`}
                   aria-haspopup="true"
                   aria-expanded={gameInfoOpen}
                   onClick={() => setGameInfoOpen((value) => !value)}
                 >
-                  {item.label} <ChevronDown size={14} aria-hidden="true" />
+                  <span className={styles.navLabel}>
+                    {item.label}
+                    <ChevronDown size={11} aria-hidden="true" />
+                  </span>
                 </button>
                 <div className={styles.dropdown} aria-label="Game Info pages">
                   {gameInfoNavigation.map((child) => (
@@ -64,7 +87,7 @@ export function AppHeader() {
                       onClick={() => setGameInfoOpen(false)}
                     >
                       <strong>{child.label}</strong>
-                      <span>{child.description}</span>
+                      <small>{child.description}</small>
                     </Link>
                   ))}
                 </div>
@@ -73,22 +96,38 @@ export function AppHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={isActive(item.href) ? styles.active : ""}
+                className={`${styles.navItem} ${isActive(item.href) ? styles.active : ""}`}
                 aria-current={isActive(item.href) ? "page" : undefined}
               >
-                {item.label}
+                <span className={styles.navLabel}>{item.label}</span>
               </Link>
             ),
           )}
         </nav>
         <div className={styles.actions}>
-          <Link
-            href="/search"
-            className={styles.iconButton}
-            aria-label="Search CONTROL Resonant guides"
+          <form
+            className={styles.searchForm}
+            role="search"
+            action="/search"
+            method="get"
+            onSubmit={submitSearch}
           >
-            <Search aria-hidden="true" size={20} />
-          </Link>
+            <div className={styles.searchField}>
+              <Search aria-hidden="true" size={15} />
+              <input
+                type="search"
+                name="q"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Search"
+                autoComplete="off"
+                aria-label="Search CONTROL Resonant guides"
+              />
+              <button type="submit" className={styles.searchSubmit}>
+                Search
+              </button>
+            </div>
+          </form>
           <button
             type="button"
             className={styles.menuButton}
@@ -97,7 +136,11 @@ export function AppHeader() {
             aria-controls="mobile-navigation"
             aria-label={open ? "Close navigation menu" : "Open navigation menu"}
           >
-            {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+            {open ? (
+              <X aria-hidden="true" size={20} />
+            ) : (
+              <Menu aria-hidden="true" size={20} />
+            )}
           </button>
         </div>
       </div>

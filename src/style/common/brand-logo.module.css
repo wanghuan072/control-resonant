@@ -39,6 +39,23 @@
 .onDark .resonant {
   color: var(--color-signal);
 }
+.compact {
+  min-height: 40px;
+  gap: 10px;
+}
+.compact img {
+  width: 38px;
+  height: 38px;
+  flex-basis: 38px;
+}
+.compact .control {
+  font-size: 15px;
+}
+.compact .resonant {
+  margin-top: 5px;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+}
 @media (max-width: 420px) {
   .logo {
     gap: 8px;

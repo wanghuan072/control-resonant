@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { platformEntries, platformFacts } from "@/config/platforms";
+import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
 import styles from "@/style/page/game-info/platforms.module.css";
@@ -64,7 +65,7 @@ export default function PlatformsPage() {
             "@context": "https://schema.org",
             "@type": "WebPage",
             name: "CONTROL Resonant Platforms",
-            url: "https://controlresonant.org/game-info/platforms",
+            url: `${siteConfig.url}/game-info/platforms`,
             dateModified: platformFacts.checkedAt,
             about: { "@type": "VideoGame", name: "CONTROL Resonant" },
           },

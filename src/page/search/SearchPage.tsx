@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight, Search, X } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { HubHero } from "@/components/content/HubHero";
 import styles from "@/style/page/search/search.module.css";
@@ -16,6 +16,9 @@ export default function SearchPage({
   initialQuery?: string;
 }) {
   const [query, setQuery] = useState(initialQuery);
+  useEffect(() => {
+    setQuery(initialQuery);
+  }, [initialQuery]);
   const normalized = query.trim().toLowerCase();
   const results = useMemo(() => {
     if (!normalized) return entries;
