@@ -15,6 +15,7 @@ export function HomeHeroSection() {
         alt="Dylan Faden entering altered Manhattan"
         fill
         sizes="100vw"
+        loading="eager"
         fetchPriority="high"
       />
       <div className={`container ${styles.heroGrid}`}>

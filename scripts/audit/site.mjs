@@ -171,6 +171,7 @@ try {
                 src: image.getAttribute("src"),
                 srcset: image.getAttribute("srcset"),
                 fetchPriority: image.getAttribute("fetchpriority"),
+                loading: image.getAttribute("loading"),
                 sizes: image.getAttribute("sizes"),
               }
             : null;
@@ -200,6 +201,10 @@ try {
       check(
         result.homeHero?.fetchPriority === "high",
         "Homepage: hero must have high fetch priority",
+      );
+      check(
+        result.homeHero?.loading === "eager",
+        "Homepage: hero must load eagerly because it is the LCP image",
       );
     }
     check(Boolean(result.title?.trim()), route + ": missing title");
