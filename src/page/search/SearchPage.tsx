@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight, Search, X } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import { HubHero } from "@/components/content/HubHero";
 import styles from "@/style/page/search/search.module.css";
@@ -16,9 +15,6 @@ export default function SearchPage({
   initialQuery?: string;
 }) {
   const [query, setQuery] = useState(initialQuery);
-  useEffect(() => {
-    setQuery(initialQuery);
-  }, [initialQuery]);
   const normalized = query.trim().toLowerCase();
   const results = useMemo(() => {
     if (!normalized) return entries;
@@ -73,7 +69,7 @@ export default function SearchPage({
           <ul className={styles.results}>
             {results.map((entry, index) => (
               <li key={`${entry.href}-${entry.title}`}>
-                <Link href={entry.href}>
+                <a href={entry.href}>
                   <span className={styles.index}>
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -83,7 +79,7 @@ export default function SearchPage({
                     <small>{entry.description}</small>
                   </span>
                   <ArrowRight aria-hidden="true" size={20} />
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

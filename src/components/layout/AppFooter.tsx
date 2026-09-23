@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 
 import { BrandLogo } from "@/components/common/BrandLogo";
@@ -31,9 +30,9 @@ export function AppFooter() {
               {primaryNavigation
                 .filter((item) => item.href !== "/game-info")
                 .map((item) => (
-                  <Link key={item.href} href={item.href}>
+                  <a key={item.href} href={item.href}>
                     {item.label}
-                  </Link>
+                  </a>
                 ))}
             </div>
           </nav>
@@ -41,9 +40,9 @@ export function AppFooter() {
             <strong>Game info</strong>
             <div>
               {gameInfoNavigation.map((item) => (
-                <Link key={item.href} href={item.href}>
+                <a key={item.href} href={item.href}>
                   {item.label}
-                </Link>
+                </a>
               ))}
             </div>
           </nav>
@@ -54,20 +53,20 @@ export function AppFooter() {
           <strong>Legal</strong>
           <nav aria-label="Legal navigation">
             {legalNavigation.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 rel="noopener noreferrer nofollow"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>
-        <Link href="#top" className={styles.backToTop} aria-label="Back to top">
+        <a href="#top" className={styles.backToTop} aria-label="Back to top">
           <span>Back to top</span>
           <ArrowUp aria-hidden="true" size={17} />
-        </Link>
+        </a>
       </div>
       <div className={`container ${styles.copyright}`}>
         <p>

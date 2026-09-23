@@ -67,6 +67,7 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
           description={entry.summary}
           image={entry.image}
           imageAlt={entry.imageAlt}
+          editorialDate={entry.updatedAt}
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Wiki", href: "/wiki" },
@@ -228,10 +229,6 @@ export default function WikiDetailPage({ entry }: { entry: WikiDetail }) {
               <strong>
                 {entry.group.toUpperCase()} / {entry.slug.toUpperCase()}
               </strong>
-            </div>
-            <div>
-              <span>Updated</span>
-              <time dateTime={entry.updatedAt}>{entry.updatedAt}</time>
             </div>
             <Link className={styles.back} href={`/wiki/${entry.group}`}>
               ← All {group.title} topics

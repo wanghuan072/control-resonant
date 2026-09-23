@@ -4,7 +4,7 @@ import type { WikiDetail } from "@/types/wiki";
 const organization = {
   "@type": "Organization",
   "@id": `${siteConfig.url}/#organization`,
-  name: siteConfig.name,
+  name: siteConfig.editorialTeam.name,
   url: `${siteConfig.url}/legal/about-us`,
   logo: `${siteConfig.url}/images/logo.png`,
   email: siteConfig.email,

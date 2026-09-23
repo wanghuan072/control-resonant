@@ -27,7 +27,7 @@ export default async function LegalRoute({ params }: Props) {
           { name: page.title, href: `/legal/${slug}` },
         ])}
       />
-      <LegalPage eyebrow="Legal / CONTROL Resonant Guide" {...page} />
+      <LegalPage slug={slug as LegalSlug} {...page} />
     </>
   );
 }

@@ -44,8 +44,15 @@ export default function GameInfoArticle({
             datePublished: topic.updatedAt,
             dateModified: topic.updatedAt,
             image: `${siteConfig.url}${image}`,
-            author: { "@type": "Organization", name: siteConfig.name },
-            publisher: { "@type": "Organization", name: siteConfig.name },
+            author: {
+              "@type": "Organization",
+              name: siteConfig.editorialTeam.name,
+              url: `${siteConfig.url}${siteConfig.editorialTeam.url}`,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: siteConfig.editorialTeam.name,
+            },
             inLanguage: "en",
           },
           breadcrumbSchema([
@@ -61,16 +68,12 @@ export default function GameInfoArticle({
         description={lead}
         image={image}
         imageAlt={`${topic.title} artwork`}
+        editorialDate={topic.updatedAt}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Release Date", href: "/game-info/release-date" },
           { label: topic.title },
         ]}
-        meta={
-          <span>
-            Updated <time dateTime={topic.updatedAt}>{topic.updatedAt}</time>
-          </span>
-        }
       />
       <div className={`container ${styles.layout}`}>
         <article className={styles.article}>{children}</article>

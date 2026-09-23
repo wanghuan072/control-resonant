@@ -7,6 +7,11 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
     "https://controlresonant.org",
   email: "wyong@controlresonant.org",
+  editorialTeam: {
+    name: "Frontline Pathfinder",
+    founded: "2026",
+    url: "/legal/about-us",
+  },
   trailerUrl: "https://www.youtube-nocookie.com/embed/JZuJlSGpgQo",
   officialUrl: "https://controlgame.com/en",
   release: {

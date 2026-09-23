@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { buyingFacts, displayDate } from "@/config/buying";
+import { gameInfoTopics } from "@/config/game-info-topics";
 import { siteConfig } from "@/config/site";
 import { ReleaseCountdown } from "@/page/home/components/ReleaseCountdown";
 import { JsonLd } from "@/seo/JsonLd";
@@ -68,6 +69,11 @@ export default function ReleaseDatePage() {
         description="Find the digital launch date, PS5 Deluxe early access window, physical edition date and later Mac timing in one clear schedule."
         image="/images/guides/editions.jpg"
         imageAlt="CONTROL Resonant edition artwork"
+        editorialDate={
+          gameInfoTopics.find(
+            (item) => item.href === "/game-info/release-date",
+          )!.updatedAt
+        }
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Release Date" }]}
         action={<a href="#release-schedule">View the release schedule ↓</a>}
       />

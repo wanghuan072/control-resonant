@@ -4,6 +4,7 @@ import { HubHero } from "@/components/content/HubHero";
 import { HardwareChecker } from "@/page/tools/HardwareChecker";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
+import { tools } from "@/config/tools";
 import styles from "@/style/page/tools/tools.module.css";
 
 export default function HardwareCheckerPage() {
@@ -25,6 +26,7 @@ export default function HardwareCheckerPage() {
         description="Select your CPU, GPU, memory, storage and Windows version to compare each component with the published CONTROL Resonant PC targets."
         image="/images/guides/pc-system-requirements.jpg"
         imageAlt="PC hardware used to check CONTROL Resonant system requirements"
+        editorialDate={tools[0].updatedAt}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Tools", href: "/tools" },

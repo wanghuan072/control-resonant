@@ -1,9 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
-import { type FormEvent, useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import { BrandLogo } from "@/components/common/BrandLogo";
 import { gameInfoNavigation, primaryNavigation } from "@/config/navigation";
@@ -11,27 +10,10 @@ import styles from "@/style/layout/app-header.module.css";
 
 export function AppHeader() {
   const pathname = usePathname();
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [gameInfoOpen, setGameInfoOpen] = useState(false);
   const [query, setQuery] = useState("");
   const gameInfoTrigger = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    setOpen(false);
-    setGameInfoOpen(false);
-  }, [pathname]);
-
-  function submitSearch(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const value = String(
-      new FormData(event.currentTarget).get("q") ?? "",
-    ).trim();
-    if (!value) return;
-    setQuery(value);
-    setOpen(false);
-    router.push(`/search?q=${encodeURIComponent(value)}`);
-  }
 
   function isActive(href: string) {
     if (href === "/") return pathname === "/";
@@ -40,7 +22,7 @@ export function AppHeader() {
     return pathname.startsWith(href);
   }
 
-  const desktopNav = primaryNavigation.filter((item) => item.href !== "/");
+  const desktopNav = primaryNavigation;
 
   return (
     <header className={styles.header}>
@@ -81,26 +63,26 @@ export function AppHeader() {
                 </button>
                 <div className={styles.dropdown} aria-label="Game Info pages">
                   {gameInfoNavigation.map((child) => (
-                    <Link
+                    <a
                       href={child.href}
                       key={child.href}
                       onClick={() => setGameInfoOpen(false)}
                     >
                       <strong>{child.label}</strong>
                       <small>{child.description}</small>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
             ) : (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className={`${styles.navItem} ${isActive(item.href) ? styles.active : ""}`}
                 aria-current={isActive(item.href) ? "page" : undefined}
               >
                 <span className={styles.navLabel}>{item.label}</span>
-              </Link>
+              </a>
             ),
           )}
         </nav>
@@ -110,7 +92,6 @@ export function AppHeader() {
             role="search"
             action="/search"
             method="get"
-            onSubmit={submitSearch}
           >
             <div className={styles.searchField}>
               <Search aria-hidden="true" size={15} />
@@ -161,18 +142,18 @@ export function AppHeader() {
                 </span>
                 <div aria-label="Game Info pages">
                   {gameInfoNavigation.map((child) => (
-                    <Link
+                    <a
                       href={child.href}
                       key={child.href}
                       onClick={() => setOpen(false)}
                     >
                       {child.label}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
             ) : (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
                 className={isActive(item.href) ? styles.active : ""}
@@ -180,7 +161,7 @@ export function AppHeader() {
                 onClick={() => setOpen(false)}
               >
                 {item.label}
-              </Link>
+              </a>
             ),
           )}
         </div>

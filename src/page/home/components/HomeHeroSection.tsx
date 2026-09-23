@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { EditorialByline } from "@/components/common/EditorialByline";
 import { ReleaseInfoPanel } from "@/page/home/components/ReleaseInfoPanel";
 import styles from "@/style/page/home/home-hero.module.css";
 
@@ -28,6 +29,7 @@ export function HomeHeroSection() {
             people, places, and missions behind Dylan Faden&apos;s journey
             beyond the Oldest House.
           </p>
+          <EditorialByline date="2026-09-23" />
           <div className={styles.heroActions}>
             <Link href="/gameplay">
               Explore the gameplay <ArrowRight size={17} />

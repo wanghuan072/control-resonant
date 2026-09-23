@@ -335,6 +335,18 @@ try {
 
   const runtimeErrors = [];
   page.on("pageerror", (error) => runtimeErrors.push(error.message));
+  const missingPageResponse = await page.goto(
+    base + "/guides/not-a-real-guide",
+    { waitUntil: "networkidle" },
+  );
+  check(
+    missingPageResponse?.status() === 404 &&
+      (await page.getByLabel("Document details").count()) === 0 &&
+      (await page
+        .getByRole("navigation", { name: "Related legal pages" })
+        .count()) === 0,
+    "404 page stays in compact mode without legal document chrome",
+  );
   await page.goto(base + "/", { waitUntil: "networkidle" });
   check(
     await page
@@ -382,6 +394,41 @@ try {
       .isVisible(),
     "Homepage introduces the game and the player's next step",
   );
+  check(
+    (await page.getByLabel("Editorial byline").first().textContent())
+      ?.replace(/\s+/g, " ")
+      .trim() === "By Frontline Pathfinder · Updated September 2026",
+    "Homepage shows the editorial author and month",
+  );
+  const authorLink = page
+    .locator('a[href="/legal/about-us"]')
+    .filter({ hasText: "Frontline Pathfinder" })
+    .first();
+  check(await authorLink.isVisible(), "Homepage author links to About Us");
+  await Promise.all([
+    page.waitForNavigation({ waitUntil: "networkidle" }),
+    authorLink.click(),
+  ]);
+  check(
+    await page
+      .getByRole("heading", { name: "About Frontline Pathfinder" })
+      .isVisible(),
+    "Author link performs a document navigation to the editorial page",
+  );
+  check(
+    await page.getByRole("heading", { name: "How we work" }).isVisible(),
+    "About page explains the editorial method",
+  );
+  await page.goto(base + "/guides/getting-started", {
+    waitUntil: "networkidle",
+  });
+  check(
+    (await page.getByLabel("Editorial byline").first().textContent())
+      ?.replace(/\s+/g, " ")
+      .trim() === "By Frontline Pathfinder · Updated September 2026",
+    "Guide detail shows the editorial author and month",
+  );
+  await page.goto(base + "/", { waitUntil: "networkidle" });
   check(
     (await page
       .locator('nav[aria-label="When and where can I play?"]')
@@ -679,6 +726,119 @@ try {
     "New Wiki detail provides a field comparison",
   );
 
+  const legalPagesToAudit = [
+    ["/legal/privacy-policy", "legal-privacy", "Privacy Policy"],
+    ["/legal/terms-of-service", "legal-terms", "Terms of Service"],
+    ["/legal/copyright", "legal-copyright", "Copyright"],
+    ["/legal/about-us", "legal-about", "About Frontline Pathfinder"],
+    ["/legal/contact-us", "legal-contact", "Contact Us"],
+  ];
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  for (const [route, , title] of legalPagesToAudit) {
+    await page.goto(base + route, { waitUntil: "networkidle" });
+    check(
+      await page.getByRole("heading", { name: title, level: 1 }).isVisible(),
+      `${route}: legal H1 is visible`,
+    );
+    const legalState = await page.evaluate(() => {
+      const articleSections = [
+        ...document.querySelectorAll("main article > section[id]"),
+      ];
+      const ids = [...document.querySelectorAll("[id]")].map(
+        (element) => element.id,
+      );
+      const tocTargets = [
+        ...document.querySelectorAll('aside nav a[href^="#"]'),
+      ].map((link) => link.getAttribute("href")?.slice(1));
+      const bodySizes = [
+        ...document.querySelectorAll("main article p, main article li"),
+      ].map((element) => Number.parseFloat(getComputedStyle(element).fontSize));
+      const auxiliarySizes = [
+        ...document.querySelectorAll(
+          "main aside a, main aside strong, main dt, main [aria-label='Document details']",
+        ),
+      ].map((element) => Number.parseFloat(getComputedStyle(element).fontSize));
+      return {
+        articleSections: articleSections.length,
+        duplicateIds: ids.filter((id, index) => ids.indexOf(id) !== index),
+        tocTargets,
+        missingTocTargets: tocTargets.filter(
+          (id) => !id || !document.getElementById(id),
+        ),
+        minBodySize: Math.min(...bodySizes),
+        minAuxiliarySize: Math.min(...auxiliarySizes),
+        relatedLinks: document.querySelectorAll(
+          'nav[aria-label="Related legal pages"] a',
+        ).length,
+        meta: document
+          .querySelector('[aria-label="Document details"]')
+          ?.textContent?.replace(/\s+/g, " ")
+          .trim(),
+      };
+    });
+    check(
+      legalState.articleSections >= 6,
+      `${route}: legal page needs at least six substantive sections`,
+    );
+    check(
+      !legalState.duplicateIds.length,
+      `${route}: duplicate IDs ${legalState.duplicateIds.join(", ")}`,
+    );
+    check(
+      legalState.tocTargets.length === legalState.articleSections &&
+        !legalState.missingTocTargets.length,
+      `${route}: contents links must match document sections`,
+    );
+    check(
+      legalState.minBodySize >= 14,
+      `${route}: body text is smaller than 14px`,
+    );
+    check(
+      legalState.minAuxiliarySize >= 12,
+      `${route}: auxiliary text is smaller than 12px`,
+    );
+    check(
+      legalState.relatedLinks === 4,
+      `${route}: related documents must link the other four pages`,
+    );
+    check(
+      legalState.meta?.includes("Published by Frontline Pathfinder") &&
+        legalState.meta?.includes("Effective September 2026") &&
+        legalState.meta?.includes("Last updated September 2026"),
+      `${route}: document author and dates are incomplete`,
+    );
+  }
+
+  await page.goto(base + "/legal/privacy-policy", {
+    waitUntil: "networkidle",
+  });
+  const firstContentsLink = page
+    .getByRole("navigation", { name: "Privacy Policy contents" })
+    .getByRole("link")
+    .first();
+  const firstContentsHref = await firstContentsLink.getAttribute("href");
+  await firstContentsLink.click();
+  check(
+    page.url().endsWith(firstContentsHref),
+    "Privacy contents link updates the URL fragment",
+  );
+  const navigationTimeOrigin = await page.evaluate(
+    () => performance.timeOrigin,
+  );
+  const contactDocumentLink = page
+    .getByRole("navigation", { name: "Related legal pages" })
+    .getByRole("link", { name: "Contact Us" });
+  await Promise.all([
+    page.waitForNavigation({ waitUntil: "networkidle" }),
+    contactDocumentLink.click(),
+  ]);
+  check(
+    page.url().endsWith("/legal/contact-us") &&
+      (await page.evaluate(() => performance.timeOrigin)) !==
+        navigationTimeOrigin,
+    "Related legal link performs a full document navigation",
+  );
+
   for (const [route, name] of [
     ["/", "home"],
     ["/guides", "guides"],
@@ -690,6 +850,7 @@ try {
     ["/tools", "tools"],
     ["/tools/pc-system-checker", "tool-detail"],
     ["/guides/combat-builds", "article"],
+    ...legalPagesToAudit.map(([route, name]) => [route, name]),
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
     await page.evaluate(async () => {
@@ -725,7 +886,8 @@ try {
         "system-requirements",
         "tools",
         "tool-detail",
-      ].includes(name)
+      ].includes(name) ||
+      name.startsWith("legal-")
     )
       await page.screenshot({
         path: path.join(output, name + "-desktop.png"),
@@ -745,6 +907,7 @@ try {
     ["/tools", "tools"],
     ["/tools/pc-system-checker", "tool-detail"],
     ["/guides/combat-builds", "article"],
+    ...legalPagesToAudit.map(([route, name]) => [route, name]),
   ]) {
     await page.goto(base + route, { waitUntil: "networkidle" });
     await page.evaluate(async () => {
@@ -777,7 +940,8 @@ try {
         "system-requirements",
         "tools",
         "tool-detail",
-      ].includes(name)
+      ].includes(name) ||
+      name.startsWith("legal-")
     )
       await page.screenshot({
         path: path.join(output, name + "-mobile.png"),

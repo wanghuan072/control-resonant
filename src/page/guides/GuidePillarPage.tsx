@@ -30,8 +30,15 @@ export default function GuidePillarPage({ id }: { id: GuidePillarId }) {
             datePublished: guide.updatedAt,
             dateModified: guide.updatedAt,
             image: `${siteConfig.url}${pillar.image}`,
-            author: { "@type": "Organization", name: siteConfig.name },
-            publisher: { "@type": "Organization", name: siteConfig.name },
+            author: {
+              "@type": "Organization",
+              name: siteConfig.editorialTeam.name,
+              url: `${siteConfig.url}${siteConfig.editorialTeam.url}`,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: siteConfig.editorialTeam.name,
+            },
             inLanguage: "en",
           },
           breadcrumbSchema([
@@ -48,20 +55,13 @@ export default function GuidePillarPage({ id }: { id: GuidePillarId }) {
           description={pillar.intro}
           image={pillar.image}
           imageAlt={`${pillar.title} guide artwork`}
+          editorialDate={guide.updatedAt}
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Guides", href: "/guides" },
             { label: pillar.title },
           ]}
-          meta={
-            <>
-              <span>{guide.readTime}</span>
-              <span>
-                Updated{" "}
-                <time dateTime={guide.updatedAt}>{guide.updatedAt}</time>
-              </span>
-            </>
-          }
+          meta={<span>{guide.readTime}</span>}
         />
 
         <div className={`container ${styles.readingGrid}`}>

@@ -4,6 +4,7 @@ import {
   Breadcrumb,
   type BreadcrumbItem,
 } from "@/components/common/Breadcrumb";
+import { EditorialByline } from "@/components/common/EditorialByline";
 import styles from "@/style/content/hub-hero.module.css";
 type HubHeroProps = {
   eyebrow: string;
@@ -14,6 +15,7 @@ type HubHeroProps = {
   breadcrumbs?: BreadcrumbItem[];
   meta?: ReactNode;
   action?: ReactNode;
+  editorialDate?: string;
   dark?: boolean;
 };
 export function HubHero({
@@ -25,6 +27,7 @@ export function HubHero({
   breadcrumbs,
   meta,
   action,
+  editorialDate,
 }: HubHeroProps) {
   const fullTitle = /^CONTROL Resonant\b/i.test(title)
     ? title
@@ -54,6 +57,7 @@ export function HubHero({
               )}
             </h1>
             <p className={styles.description}>{description}</p>
+            {editorialDate && <EditorialByline date={editorialDate} />}
             {(meta || action) && (
               <div className={styles.footer}>
                 {meta && <div className={styles.meta}>{meta}</div>}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { buyingFacts } from "@/config/buying";
+import { gameInfoTopics } from "@/config/game-info-topics";
 import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
@@ -78,6 +79,11 @@ export default function SystemRequirementsPage() {
         description="Compare the final Minimum and Recommended PC specifications, understand the resolution and frame-rate targets, and check PlayStation graphics modes."
         image="/images/guides/pc-system-requirements.jpg"
         imageAlt="PC display showing CONTROL Resonant imagery"
+        editorialDate={
+          gameInfoTopics.find(
+            (item) => item.href === "/game-info/system-requirements",
+          )!.updatedAt
+        }
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "System Requirements" },

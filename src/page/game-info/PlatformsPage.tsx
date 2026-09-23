@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { HubHero } from "@/components/content/HubHero";
 import { platformEntries, platformFacts } from "@/config/platforms";
+import { gameInfoTopics } from "@/config/game-info-topics";
 import { siteConfig } from "@/config/site";
 import { JsonLd } from "@/seo/JsonLd";
 import { breadcrumbSchema } from "@/seo/schema";
@@ -91,6 +92,10 @@ export default function PlatformsPage() {
         description="Compare every announced platform, release window and access method, then separate Xbox Play Anywhere from Game Pass and launch support from final performance testing."
         image="/images/home/dylan-manhattan.jpg"
         imageAlt="Dylan Faden standing in CONTROL Resonant's distorted Manhattan"
+        editorialDate={
+          gameInfoTopics.find((item) => item.href === "/game-info/platforms")!
+            .updatedAt
+        }
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Platforms" }]}
         action={<a href="#platform-matrix">Compare platforms ↓</a>}
       />

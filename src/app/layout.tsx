@@ -34,9 +34,14 @@ export const metadata: Metadata = {
   title: "CONTROL Resonant Guide",
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  authors: [{ name: siteConfig.name }],
-  creator: siteConfig.name,
-  publisher: siteConfig.name,
+  authors: [
+    {
+      name: siteConfig.editorialTeam.name,
+      url: `${siteConfig.url}${siteConfig.editorialTeam.url}`,
+    },
+  ],
+  creator: siteConfig.editorialTeam.name,
+  publisher: siteConfig.editorialTeam.name,
   category: "video games",
   robots: { index: true, follow: true },
 };

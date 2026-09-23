@@ -4,7 +4,7 @@ export const pageTdk = {
     title: "CONTROL Resonant - Game Guide, Wiki and Release Info",
     description:
       "Find CONTROL Resonant release dates, editions, PC requirements, gameplay advice, characters, abilities, enemies, missions and Manhattan locations in one place.",
-    updatedAt: "2026-09-21",
+    updatedAt: "2026-09-23",
   },
   "/game-info/release-date": {
     title: "CONTROL Resonant Release Date, Early Access & Editions",
@@ -112,30 +112,30 @@ export const pageTdk = {
     title: "Privacy Policy - CONTROL Resonant Guide Fan Site",
     description:
       "Read how the CONTROL Resonant Guide fan site handles email, local search, website delivery and optional video playback, plus your privacy choices.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-23",
   },
   "/legal/terms-of-service": {
     title: "Terms of Service - CONTROL Resonant Guide Site",
     description:
       "Review terms for CONTROL Resonant Guide, including fan-written content, accuracy limits, third-party links, intellectual property and site availability.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-23",
   },
   "/legal/copyright": {
     title: "Copyright - CONTROL Resonant Guide Fan Site",
     description:
       "Read the copyright notice for CONTROL Resonant Guide, learn who owns the game's marks and imagery, and see how to report a concern about material on this site.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-23",
   },
   "/legal/about-us": {
-    title: "About Us - CONTROL Resonant Guide Fan Site",
+    title: "About Frontline Pathfinder | CONTROL Resonant Guide",
     description:
-      "Learn what CONTROL Resonant Guide covers, how its guides and Wiki help players, why the site is independent, and how corrections are handled as the game grows.",
-    updatedAt: "2026-09-18",
+      "Meet Frontline Pathfinder, the independent editorial team behind CONTROL Resonant Guide, and learn how we research, test, structure and correct player guidance.",
+    updatedAt: "2026-09-23",
   },
   "/legal/contact-us": {
     title: "Contact Us - CONTROL Resonant Guide Fan Site",
     description:
       "Email CONTROL Resonant Guide about factual corrections, accessibility issues or rights concerns. Learn what details to include and what help we can provide.",
-    updatedAt: "2026-09-18",
+    updatedAt: "2026-09-23",
   },
 };
