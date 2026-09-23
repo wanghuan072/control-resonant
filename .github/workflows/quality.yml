@@ -21,6 +21,7 @@ jobs:
       - run: npm run format:check
       - run: npm run lint
       - run: npm run audit:data
+      - run: npm run audit:indexnow
       - run: npm run build
 
       - name: Audit the production site

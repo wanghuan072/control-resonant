@@ -7,6 +7,7 @@ import {
 
 import { AppFooter } from "@/components/layout/AppFooter";
 import { AppHeader } from "@/components/layout/AppHeader";
+import { ShareTools } from "@/components/common/ShareTools";
 import { siteConfig } from "@/config/site";
 import "@/style/globals.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({
         <main id="main-content" tabIndex={-1}>
           {children}
         </main>
+        <ShareTools variant="floating" />
         <AppFooter />
       </body>
     </html>

@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\" \"scripts/audit/*.mjs\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\" \"scripts/**/*.mjs\" \"indexnow/*.mjs\" \".github/workflows/*.yml\"",
     "audit:data": "node scripts/audit/content.mjs",
+    "audit:indexnow": "node indexnow/audit.mjs",
+    "indexnow:submit": "node indexnow/submit.mjs",
     "audit:site": "node scripts/audit/site.mjs"
   },
   "dependencies": {

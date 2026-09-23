@@ -1,6 +1,7 @@
 import { ArrowUp } from "lucide-react";
 
 import { BrandLogo } from "@/components/common/BrandLogo";
+import { ShareTools } from "@/components/common/ShareTools";
 import {
   gameInfoNavigation,
   legalNavigation,
@@ -22,6 +23,7 @@ export function AppFooter() {
           <a className={styles.email} href={`mailto:${siteConfig.email}`}>
             {siteConfig.email}
           </a>
+          <ShareTools variant="footer" />
         </div>
         <div className={styles.navColumns}>
           <nav aria-label="Explore" className={styles.navGroup}>

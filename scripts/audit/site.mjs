@@ -24,6 +24,9 @@ const context = await browser.newContext({
   viewport: { width: 1440, height: 1000 },
   reducedMotion: "reduce",
 });
+await context.grantPermissions(["clipboard-read", "clipboard-write"], {
+  origin: new URL(base).origin,
+});
 const page = await context.newPage();
 const errors = [];
 const warnings = [];
@@ -149,6 +152,14 @@ try {
         links: [...document.querySelectorAll("a[href]")].map((element) =>
           element.getAttribute("href"),
         ),
+        shareControls: [
+          ...document.querySelectorAll("[data-share-platform]"),
+        ].map((element) => ({
+          platform: element.getAttribute("data-share-platform"),
+          href: element.getAttribute("href"),
+          target: element.getAttribute("target"),
+          rel: element.getAttribute("rel"),
+        })),
         images: [...document.querySelectorAll("img")].map((element) => ({
           src: element.getAttribute("src"),
           alt: element.getAttribute("alt"),
@@ -234,12 +245,48 @@ try {
     const externalLinks = result.links.filter((href) =>
       /^https?:\/\//i.test(href ?? ""),
     );
+    const shareLinks = externalLinks.filter((href) =>
+      /^(https:\/\/twitter\.com\/intent\/tweet|https:\/\/www\.facebook\.com\/sharer\/sharer\.php|https:\/\/www\.reddit\.com\/submit)/i.test(
+        href ?? "",
+      ),
+    );
+    const contentExternalLinks = externalLinks.filter(
+      (href) => !shareLinks.includes(href),
+    );
     check(
       route === "/updates"
-        ? externalLinks.length === 17
-        : externalLinks.length === 0,
-      route + ": unexpected external anchor count " + externalLinks.length,
+        ? contentExternalLinks.length === 17
+        : contentExternalLinks.length === 0,
+      route +
+        ": unexpected content external anchor count " +
+        contentExternalLinks.length,
     );
+    const shareableRoute = !route.startsWith("/legal/");
+    check(
+      result.shareControls.length === (shareableRoute ? 8 : 0),
+      `${route}: expected ${shareableRoute ? 8 : 0} share controls, found ${result.shareControls.length}`,
+    );
+    if (shareableRoute) {
+      const expectedShareUrl = expectedOrigin + (route === "/" ? "" : route);
+      for (const control of result.shareControls) {
+        if (control.platform === "copy") continue;
+        check(
+          control.target === "_blank" &&
+            control.rel?.includes("noopener") &&
+            control.rel?.includes("noreferrer"),
+          `${route}: ${control.platform} share link needs safe new-tab attributes`,
+        );
+        const shareUrl = new URL(control.href);
+        const sharedTarget =
+          control.platform === "facebook"
+            ? shareUrl.searchParams.get("u")
+            : shareUrl.searchParams.get("url");
+        check(
+          sharedTarget === expectedShareUrl,
+          `${route}: ${control.platform} share target mismatch ${sharedTarget}`,
+        );
+      }
+    }
     for (const raw of result.schema) {
       try {
         const parsed = JSON.parse(raw);
@@ -339,6 +386,15 @@ try {
     base + "/guides/not-a-real-guide",
     { waitUntil: "networkidle" },
   );
+  const missingShareState = await page
+    .locator("[data-share-tools]")
+    .evaluateAll(
+      (elements) =>
+        elements.length === 2 &&
+        elements.every(
+          (element) => getComputedStyle(element).display === "none",
+        ),
+    );
   check(
     missingPageResponse?.status() === 404 &&
       (await page.getByLabel("Document details").count()) === 0 &&
@@ -347,6 +403,105 @@ try {
         .count()) === 0,
     "404 page stays in compact mode without legal document chrome",
   );
+  check(missingShareState, "404 page hides both share tool variants");
+
+  await page.goto(base + "/search?q=Reach", { waitUntil: "networkidle" });
+  check(
+    (await page.locator("[data-share-tools]").count()) === 0,
+    "Search page does not render share tools",
+  );
+
+  await page.goto(base + "/", { waitUntil: "networkidle" });
+  const floatingShare = page.locator('[data-share-variant="floating"]');
+  const footerShare = page.locator('[data-share-variant="footer"]');
+  check(
+    (await floatingShare.isVisible()) && (await footerShare.isVisible()),
+    "Homepage shows floating and footer share tools at 1440px",
+  );
+  const shareGeometry = await page.evaluate(() => {
+    const floating = document.querySelector('[data-share-variant="floating"]');
+    const content = document.querySelector("main .container");
+    if (!floating || !content) return null;
+    const floatingBox = floating.getBoundingClientRect();
+    const contentBox = content.getBoundingClientRect();
+    return { floatingLeft: floatingBox.left, contentRight: contentBox.right };
+  });
+  check(
+    shareGeometry && shareGeometry.floatingLeft >= shareGeometry.contentRight,
+    "Floating share rail stays outside the content container",
+  );
+  const floatingTop = (await floatingShare.boundingBox())?.y;
+  await page.evaluate(() => window.scrollTo(0, 700));
+  await page.waitForTimeout(50);
+  const floatingScrolledTop = (await floatingShare.boundingBox())?.y;
+  check(
+    typeof floatingTop === "number" &&
+      typeof floatingScrolledTop === "number" &&
+      Math.abs(floatingTop - floatingScrolledTop) <= 1,
+    "Floating share rail remains fixed while scrolling",
+  );
+  await page.evaluate(() => window.scrollTo(0, 0));
+
+  const expectedHomeShareUrl = "https://controlresonant.org";
+  for (const [platform, parameter] of [
+    ["x", "url"],
+    ["facebook", "u"],
+    ["reddit", "url"],
+  ]) {
+    const shareHref = await footerShare
+      .locator(`[data-share-platform="${platform}"]`)
+      .getAttribute("href");
+    check(
+      new URL(shareHref).searchParams.get(parameter) === expectedHomeShareUrl,
+      `Homepage ${platform} control uses the production canonical`,
+    );
+  }
+  const xShareHref = await footerShare
+    .locator('[data-share-platform="x"]')
+    .getAttribute("href");
+  check(
+    new URL(xShareHref).searchParams.get("text") ===
+      "CONTROL Resonant - Game Guide, Wiki and Release Info",
+    "X share intent uses the current page title",
+  );
+  await footerShare.locator('[data-share-platform="copy"]').click();
+  await page.waitForFunction(
+    () =>
+      document
+        .querySelector(
+          '[data-share-variant="footer"] [data-share-platform="copy"]',
+        )
+        ?.getAttribute("aria-label") === "Link copied",
+  );
+  check(
+    (await footerShare
+      .locator('[data-share-platform="copy"]')
+      .getAttribute("aria-label")) === "Link copied" &&
+      (await page.evaluate(() => navigator.clipboard.readText())) ===
+        expectedHomeShareUrl,
+    "Copy control writes the production canonical and announces success",
+  );
+  const socialResources = await page.evaluate(() =>
+    performance
+      .getEntriesByType("resource")
+      .map((entry) => entry.name)
+      .filter((url) => /(twitter\.com|facebook\.com|reddit\.com)/i.test(url)),
+  );
+  check(
+    socialResources.length === 0,
+    "Share tools do not preload third-party social resources",
+  );
+
+  for (const width of [1280, 1024, 390]) {
+    await page.setViewportSize({ width, height: width === 390 ? 844 : 900 });
+    await page.goto(base + "/", { waitUntil: "networkidle" });
+    check(
+      (await page.locator('[data-share-variant="floating"]').isHidden()) &&
+        (await page.locator('[data-share-variant="footer"]').isVisible()),
+      `Homepage share tools respond correctly at ${width}px`,
+    );
+  }
+  await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto(base + "/", { waitUntil: "networkidle" });
   check(
     await page
@@ -736,6 +891,10 @@ try {
   await page.setViewportSize({ width: 1440, height: 1000 });
   for (const [route, , title] of legalPagesToAudit) {
     await page.goto(base + route, { waitUntil: "networkidle" });
+    check(
+      (await page.locator("[data-share-tools]").count()) === 0,
+      `${route}: legal page must not render share tools`,
+    );
     check(
       await page.getByRole("heading", { name: title, level: 1 }).isVisible(),
       `${route}: legal H1 is visible`,

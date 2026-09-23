@@ -1,0 +1,162 @@
+.tools {
+  color: var(--color-ink-soft);
+}
+
+.label {
+  color: var(--color-signal);
+  font-family: var(--font-heading), sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.control {
+  position: relative;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--color-line);
+  background: rgb(255 255 255 / 3%);
+  color: var(--color-ink-soft);
+  cursor: pointer;
+  transition:
+    border-color 160ms var(--ease-out),
+    background 160ms var(--ease-out),
+    color 160ms var(--ease-out);
+}
+
+.control svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+
+.control:hover,
+.control:focus-visible {
+  border-color: var(--color-red);
+  background: var(--color-red);
+  color: white;
+}
+
+.control::after {
+  position: absolute;
+  z-index: 3;
+  padding: 5px 8px;
+  border: 1px solid var(--color-line);
+  background: var(--color-night);
+  color: var(--color-ink);
+  content: attr(data-tooltip);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms var(--ease-out);
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.control:hover::after,
+.control:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.copied {
+  border-color: #4da974;
+  color: #77d69d;
+}
+
+.copyError {
+  border-color: var(--color-signal);
+  color: var(--color-signal);
+}
+
+.footer {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+}
+
+.footer .control::after {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.floating {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .floating {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 40;
+    display: grid;
+    width: 52px;
+    gap: 0;
+    justify-items: center;
+    padding: 0;
+    border: 1px solid var(--color-line);
+    border-right: 0;
+    background: rgb(8 13 17 / 96%);
+    box-shadow: -12px 12px 32px rgb(0 0 0 / 24%);
+    transform: translateY(-50%);
+    backdrop-filter: blur(12px);
+  }
+
+  .floating .label {
+    width: 100%;
+    padding: 9px 4px 8px;
+    background: var(--color-red);
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .floating .controls {
+    display: grid;
+    width: 100%;
+    gap: 0;
+  }
+
+  .floating .control {
+    width: 51px;
+    height: 50px;
+    border: 0;
+    border-top: 1px solid var(--color-line);
+    background: transparent;
+  }
+
+  .floating .control:hover,
+  .floating .control:focus-visible {
+    background: var(--color-surface-2);
+    color: var(--color-signal);
+  }
+
+  .floating .control svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .floating .control::after {
+    top: 50%;
+    right: calc(100% + 10px);
+    transform: translateY(-50%);
+  }
+}

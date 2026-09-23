@@ -1,0 +1,151 @@
+name: IndexNow
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      current_origin:
+        description: Deployment origin to inspect
+        required: true
+        default: https://controlresonant.org
+      previous_origin:
+        description: Previous deployment origin (leave empty when submitting explicit URLs)
+        required: false
+      urls:
+        description: Optional canonical URLs or paths, separated by spaces or commas
+        required: false
+      dry_run:
+        description: Detect changes without notifying IndexNow
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: read
+  deployments: read
+
+jobs:
+  notify:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+      contains(github.event.deployment.environment, 'production'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Resolve production deployments
+        id: deployments
+        if: github.event_name == 'deployment_status'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const currentId = context.payload.deployment.id;
+            const environment = context.payload.deployment.environment;
+            const currentOrigin =
+              context.payload.deployment_status.environment_url ||
+              context.payload.deployment_status.target_url;
+
+            if (!currentOrigin) {
+              core.setFailed("The completed deployment did not provide an environment URL.");
+              return;
+            }
+
+            const deployments = await github.paginate(
+              github.rest.repos.listDeployments,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                environment,
+                per_page: 30,
+              },
+            );
+
+            let previousSha = "";
+            for (const deployment of deployments) {
+              if (deployment.id === currentId) continue;
+              const statuses = await github.rest.repos.listDeploymentStatuses({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployment.id,
+                per_page: 20,
+              });
+              const successful = statuses.data.find(
+                (status) => status.state === "success" && status.environment_url,
+              );
+              if (successful) {
+                previousSha = deployment.sha;
+                break;
+              }
+            }
+
+            if (!previousSha) {
+              core.setFailed("No previous successful production deployment was found.");
+              return;
+            }
+
+            core.setOutput("current_origin", currentOrigin);
+            core.setOutput("previous_sha", previousSha);
+
+      - name: Audit IndexNow configuration
+        run: npm run audit:indexnow
+
+      - name: Detect and submit changed URLs
+        shell: bash
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+          EVENT_NAME: ${{ github.event_name }}
+          AUTO_CURRENT_ORIGIN: ${{ steps.deployments.outputs.current_origin }}
+          AUTO_PREVIOUS_SHA: ${{ steps.deployments.outputs.previous_sha }}
+          MANUAL_CURRENT_ORIGIN: ${{ inputs.current_origin }}
+          MANUAL_PREVIOUS_ORIGIN: ${{ inputs.previous_origin }}
+          MANUAL_URLS: ${{ inputs.urls }}
+          MANUAL_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$EVENT_NAME" = "deployment_status" ]; then
+            git fetch --no-tags origin "$AUTO_PREVIOUS_SHA" --depth=1
+            git worktree add /tmp/indexnow-previous "$AUTO_PREVIOUS_SHA"
+            pushd /tmp/indexnow-previous
+            npm ci
+            npm run build
+            npm run start -- --port 3018 > /tmp/indexnow-previous.log 2>&1 &
+            previous_server_pid=$!
+            popd
+            trap 'kill "$previous_server_pid" 2>/dev/null || true' EXIT
+
+            for attempt in {1..30}; do
+              if curl --fail --silent http://127.0.0.1:3018/sitemap.xml > /dev/null; then
+                break
+              fi
+              if [ "$attempt" -eq 30 ]; then
+                cat /tmp/indexnow-previous.log
+                exit 1
+              fi
+              sleep 1
+            done
+
+            node indexnow/submit.mjs \
+              --current-origin "$AUTO_CURRENT_ORIGIN" \
+              --previous-origin http://127.0.0.1:3018 \
+              --submit
+            exit 0
+          fi
+
+          args=(--current-origin "$MANUAL_CURRENT_ORIGIN")
+          if [ -n "$MANUAL_PREVIOUS_ORIGIN" ]; then
+            args+=(--previous-origin "$MANUAL_PREVIOUS_ORIGIN")
+          fi
+          if [ -n "$MANUAL_URLS" ]; then
+            args+=(--urls "$MANUAL_URLS")
+          fi
+          if [ "$MANUAL_DRY_RUN" != "true" ]; then
+            args+=(--submit)
+          fi
+          node indexnow/submit.mjs "${args[@]}"

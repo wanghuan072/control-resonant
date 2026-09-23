@@ -141,6 +141,10 @@ textarea {
   border: 0;
 }
 
+body:has([data-no-share]) [data-share-tools] {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   :root {
     --header-height: 64px;
