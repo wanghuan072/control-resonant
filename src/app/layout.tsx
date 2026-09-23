@@ -15,6 +15,7 @@ const bodyFont = IBM_Plex_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
+  preload: false,
 });
 
 const displayFont = Archivo_Black({
@@ -28,6 +29,7 @@ const headingFont = Roboto_Condensed({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

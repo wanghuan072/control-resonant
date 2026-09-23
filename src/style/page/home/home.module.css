@@ -277,7 +277,7 @@
 .intentGrid small {
   display: block;
   margin-bottom: 3px;
-  color: #6d777d;
+  color: #566168;
   font:
     700 12px ui-monospace,
     monospace;
@@ -616,6 +616,9 @@
   font-size: 14px;
   line-height: 1.55;
 }
+.wiki header span {
+  color: var(--color-signal);
+}
 .wikiGrid {
   display: grid;
   grid-template-columns: 1.35fr repeat(2, 1fr);
@@ -844,6 +847,9 @@
     monospace;
   text-transform: uppercase;
 }
+.about > div:first-child > span {
+  color: var(--color-signal);
+}
 .about h2,
 .faq h2 {
   margin: 8px 0 0;
@@ -860,6 +866,14 @@
 .about a,
 .faq a {
   color: var(--color-signal);
+}
+.about a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-red);
+  text-underline-offset: 3px;
+}
+.faq a {
+  color: #9e2026;
 }
 .faq h2 {
   max-width: none;

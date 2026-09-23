@@ -15,6 +15,7 @@ export function HomeHeroSection() {
         alt="Dylan Faden entering altered Manhattan"
         fill
         sizes="100vw"
+        quality={60}
         loading="eager"
         fetchPriority="high"
       />

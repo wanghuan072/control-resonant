@@ -91,6 +91,7 @@ export function HomeIntentSection() {
             alt="Dylan Faden looking across altered Manhattan"
             fill
             sizes="(max-width: 768px) 100vw, 46vw"
+            quality={60}
           />
           <figcaption>
             <span>Field file / Manhattan</span>

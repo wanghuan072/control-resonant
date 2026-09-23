@@ -27,7 +27,7 @@ export function AppHeader() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
-        <BrandLogo priority compact />
+        <BrandLogo compact />
         <nav className={styles.desktopNav} aria-label="Primary navigation">
           {desktopNav.map((item) =>
             item.href === "/game-info" ? (

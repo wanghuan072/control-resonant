@@ -11,6 +11,7 @@ export function HomeWorldSection() {
         alt="Altered Manhattan in CONTROL Resonant"
         fill
         sizes="100vw"
+        quality={60}
       />
       <div className={styles.worldShade} />
       <div className={`container ${styles.worldInner}`}>

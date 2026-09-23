@@ -14,6 +14,7 @@ export function HomeClosingSection() {
             alt="Warped transit space in CONTROL Resonant"
             fill
             sizes="(max-width: 768px) 100vw, 42vw"
+            quality={60}
           />
           <figcaption>Player briefing / start with what you need</figcaption>
         </figure>
