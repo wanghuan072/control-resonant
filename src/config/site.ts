@@ -6,7 +6,7 @@ export const siteConfig = {
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
     "https://controlresonant.org",
-  email: "wyong@controlresonant.org",
+  email: "support@controlresonant.org",
   editorialTeam: {
     name: "Frontline Pathfinder",
     founded: "2026",

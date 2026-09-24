@@ -37,6 +37,6 @@ Not yet. The [Wiki](https://controlresonant.org/wiki) covers named and documente
 
 ### Where can I report a correction?
 
-See [Contact Us](https://controlresonant.org/legal/contact-us) or email wyong@controlresonant.org with the page URL and the detail that needs review.
+See [Contact Us](https://controlresonant.org/legal/contact-us) or email support@controlresonant.org with the page URL and the detail that needs review.
 
 For site policies, read the [Privacy Policy](https://controlresonant.org/legal/privacy-policy), [Terms of Service](https://controlresonant.org/legal/terms-of-service) and [Copyright](https://controlresonant.org/legal/copyright) notice. You can also learn more [About Us](https://controlresonant.org/legal/about-us).
